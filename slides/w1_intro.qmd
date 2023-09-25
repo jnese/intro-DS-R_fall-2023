@@ -1,0 +1,349 @@
+---
+title: "Introduction to Data Science with `R`"
+subtitle: "EDLD 651"
+author: "Joe Nese"
+institute: "University of Oregon<br>Fall 2023"
+format:
+  revealjs: 
+    theme: default
+    highlight-style: github
+    incremental: false
+    fig-width: 9
+    fig-height: 3.5
+    scrollable: true
+execute: 
+  echo: false
+  warning: false
+---
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(here)
+library(kableExtra)
+library(gt)
+
+```
+
+## How many beans are in the jar? {.center background-color="#CC79A7"}
+
+(keep your guess to yourself!)
+
+## Introduction to the Course
+
+### Week 1
+
+# Agenda
+
+-   Introductions
+-   Syllabus
+-   Introduce `R`
+
+**Learning Objectives**
+
+-   Understand the course requirements
+-   Get you excited about `R`!
+
+## About me  {.scrollable .smaller}
+
+-   BA: UC Santa Barbara
+-   PhD, School Psychology: University of Maryland
+-   Behavioral Research & Teaching ([BRT](http://brtprojects.org)) at UO since 2009
+-   Research Associate Professor
+
+**Research**
+
+* Applied statistical methods to measure and monitor student growth
+* Inform the applied research methodologies used by researchers
+* Developing and improving systems that support data-based decision making using advanced technologies to influence teachers' instructional practices and increase student achievement 
+    + [CORE](https://jnese.github.io/core-blog/) and [CORE II](https://jnese.github.io/coreprosody) 
+    + Inclusive Skill-building Learning Approach ([ISLA](https://blogs.uoregon.edu/neselabs/isla/))
+
+**Teaching**
+
+* EDLD 651 - this one!
+* EDLD 654 - Applied Machine Learning for Educational Data Scientists
+* EDLD 609 - Data Science Capstone
+
+## About you
+
+Please introduce yourself
+
+1.  Name and program/year of study
+2.  Why you want to learn `R`?
+3.  Do you have any `R` experience?
+4.  Tell me whatever you'd like me and the class to know (e.g., pronouns, circumstances)
+5.  How many beans are in the jar?
+    + No changing your answer! *Academic integrity!*
+
+# The Great Bean Experiment! {.center background-color="#CC79A7"}
+
+## Why is this important?
+
+* reproducibility
+* transparency
+* open data and code
+
+## Create a journal article!
+
+with `quarto`
+
+## Create slides! 
+
+with `quarto`
+
+Like these!
+
+## Create a website!
+
+with `{blogdown}`, `{distill}`, `{bookdown}`, `{rmarkdown}`, or `{quarto}`
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[**For a project**](https://jnese.github.io/coreprosody/)
+
+![](./images/coreprosody.PNG)
+:::
+
+::: {.column width="50%"}
+[**For this class**](https://uo-datasci-specialization.github.io/c1-intro-fall-2021/)
+
+```{r}
+knitr::include_graphics("images/edld651home.png")
+```
+:::
+
+::::
+
+## Create a dashboard! 
+
+with `{flexdashboard}`!
+
+```{r, out.width='100%'}
+knitr::include_graphics("images/dashboard-ex.png")
+```
+
+## Create an app! 
+
+with `{shiny}`!
+
+```{r, out.width='100%'}
+knitr::include_graphics("images/shiny-ex.png")
+```
+
+---
+
+## Create a poster! 
+
+with `{posterdown}`!
+
+```{r, out.width='100%'}
+knitr::include_graphics("images/poster_ex.png")
+```
+
+## 
+
+![](https://media3.giphy.com/media/l0Ex6Ut39Zj7DzJn2/giphy.gif?cid=ecf05e47nuxorxxyd90ssv30og5pfaysh3bmmj48f7h8exuc&rid=giphy.gif&ct=g)
+
+## Why is `R` awesome?
+
+**Data visualizations**
+
+- `{ggplot2}` -- your default by the end of this class, really powerful
+- `{plotly}` -- interactive data visualizations 
+- `{shiny}` –- interactive data communications
+
+. . .
+
+**Web**
+
+- `{blogdown}`, `{distill}`, `{bookdown}`, `quarto` –- build your own website
+- `{rvest}` –- scrape web data
+
+. . .
+
+**Modeling**
+
+- `{lme4}` –- multilevel modeling
+- `{lavaan}` –- SEM
+- `{tidymodels}` –- machine learning
+
+. . .
+
+**Workflow!**
+
+- RStudio projects
+- `{here}`
+
+## Acknowledgements
+
+This course, and much of the materials prepared and content presented, was originally developed by [Daniel Anderson](www.datalorax.com)
+
+* [Alison Hill](https://twitter.com/apreshill), [Chester Ismay](https://twitter.com/old_man_chester), and [Andrew Bray](https://andrewpbray.github.io/) helped Daniel design the content for this course and the specialization as a whole
+
+## What this class is about
+
+Celebrating successes!
+
+. . .
+
+![](https://media2.giphy.com/media/OcZp0maz6ALok/giphy.gif?cid=ecf05e47nmgpnfbcocno4uyal5vpv1orgvnyw028hqgsisak&rid=giphy.gif&ct=g){width=45%}
+
+## Dr. Richard Feynman
+
+American theoretical physicist, Nobel Laureate
+
+. . .
+
+![](./images/feynman_teach.png)
+
+## What this class is about
+
+Celebrating failures!
+
+. . .
+
+![](https://media0.giphy.com/media/g0KKEpxfjIPS7RpZPJ/giphy.gif?cid=ecf05e47gp0ldlgtsjg7b2bwvx5fa7x10j9taot0f8hsrdtp&rid=giphy.gif&ct=g){width=80%}
+
+## What does Richard Feynman have to say about failing?
+
+. . .
+
+![](./images/feynman_fail.png)
+
+
+## What this class is about
+
+Celebrating trying!
+
+. . .
+
+![](https://media0.giphy.com/media/26ybwvTX4DTkwst6U/giphy.gif?cid=ecf05e4784dexf3mrjfpve138d14ggn7x18kqt8fa4n17ua2&rid=giphy.gif&ct=g){width=60%}
+
+## Very smart person Richard Feynman said:
+
+. . .
+
+![](./images/feynman_trying.png)
+
+## What this class is about
+
+Learning to problem solve!
+
+. . .
+
+![](./images/problemsolved.gif){width=65%}
+
+
+## Richard?
+
+. . .
+
+![](./images/feynman_problemsolve.png)
+
+# This class... {.smaller}
+
+**...is**
+
+- data visualization 
+- data structuring and manipulations
+- reproducible workflows
+- a LOT (content and assignments at a fast pace)
+
+. . .
+
+**...is not**
+
+- all encompassing 
+- a statistics course 
+    + but we'll use some stats in examples
+
+## Sharing
+
+Sometimes I may ask people to share with the class something they have learned.
+
+- A success, a new `{package}` or `function()`
+- *Completely* voluntary
+    + **BUT**, you might get a hex sticker 🎉
+
+. . .
+
+![](https://www.kdnuggets.com/wp-content/uploads/r-packages.png)
+
+## A sharing example
+
+:::: {.columns}
+
+::: {.column width="50%"}
+> "I made this cool figure!
+> 
+> I used the `{gghighlight}` package for the first time!
+> 
+> And I annoted my facets separately!"
+:::
+
+::: {.column width="50%"}
+![](./images/share_ex.png)
+:::
+
+::::
+
+## Another sharing example
+
+:::: {.columns}
+
+::: {.column width="50%"}
+> "I went to re-run my ‘cool figure’ a couple months later and my code did not work!
+>
+>I spent [*mumble mumble*] minutes getting it to work again!"
+:::
+
+::: {.column width="50%"}
+![](./images/share_ex.png)
+:::
+
+::::
+
+## Courageous Conversations with Me
+
+* Creating norms of openness, understanding, and development
+* An opportunity for us to grow
+* Assume positive intent
+* Critical for my work (and yours)
+
+::: aside
+Credit: Dr. Rhonda Nese
+:::
+
+# Syllabus
+
+## Course Learning Outcomes {.smaller}
+
+- Understand the R package ecosystem
+    + how to find, install, load, and learn about them
+- Read "flat" (i.e., rectangular) datasets into `R` 
+- Perform basic data manipulations / transformations in R with the `{tidyverse}`
+    + leverage appropriate functions for introductory data science tasks
+    + prepare data using scripts and reproducible workflows
+- Use version control with `R` via git and GitHub
+- Use Quarto to create reproducible dynamic reports
+- Understand and create different types of data visualizations
+
+## Course Site {.smaller}
+
+**https://jnese.github.io/intro-DS-R-fall-2023/index.html**
+
+* schedule
+* slides (posted *before* each class)
+* assignments (posted *after* each class)
+* syllabus
+* data
+
+**Canvas**
+
+* submit assignments
+* course announcements
+
+
+
