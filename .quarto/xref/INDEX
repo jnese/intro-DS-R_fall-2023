@@ -30,10 +30,12 @@
     "hw10.html": "8c28c2f6"
   },
   "nopublish/hw/hw2-key.qmd": {
-    "hw2-key.tex": "b8cd56c1"
+    "hw2-key.tex": "b8cd56c1",
+    "hw2-key.html": "f96b75e0"
   },
   "nopublish/hw/hw2.qmd": {
-    "hw2.tex": "e674e68f"
+    "hw2.tex": "e674e68f",
+    "hw2.html": "a24d64bb"
   },
   "nopublish/hw/hw3-key.qmd": {
     "hw3-key.html": "c10dbe0c"
