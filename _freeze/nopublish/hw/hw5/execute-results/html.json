@@ -1,0 +1,16 @@
+{
+  "hash": "72c8efa755cb7982f671674778376fe7",
+  "result": {
+    "markdown": "---\ntitle: \"Homework 5\"\nformat:\n  html:\n    highlight-style: pygments\nexecute: \n  echo: false\n  message: false\n  warning: false\nfig-width: 9\nfig-height: 7\n---\n\n\n<br> <br>\n\n------------------------------------------------------------------------\n\n#### Please submit Homework 5 as a .qmd file **AND** as a rendered document (.pdf or .html)\n\n------------------------------------------------------------------------\n\n<br> <br>\n\n#### 1. Create a new Quarto document and modify the YAML to\n\n-   Include your name\n-   Change the syntax highlighting to any scheme but the default. The options are `default`, `tango`, `pygments`, `kate`, `monochrome`, `espresso`, `zenburn`, `haddock`, and `textmate`. You can also use `NULL` if you want no highlighting. <br> <br> <br>\n-   Set the global chunk option to make all figures 9\" wide and the height to a value that makes sense to you, and does not display the code, or any warnings or messages from the code, but evaluates every function/line of the code.\n\n#### 2. Create a code chunk that:\n\n-   Loads all the packages you decide to use for the lab.\n-   Sets the theme for your visualizations.\n\n\n\n\n\n<br> <br> <br>\n\n#### 3. Import the *ecls-k_samp.sav* dataset (found [here](https://jnese.github.io/intro-DS-R-fall-2023/data_list.html)), and produce the plot below. Do not show the code you used (colors, themes, etc. don't matter here).\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](hw5_files/figure-html/load-data-1.png){width=864}\n:::\n:::\n\n\n<br> <br> <br>\n\n#### 4. Run The following lines of code to store the mean and standard deviation of `t1mscale`. Extend this code to calculate (in the same code chunk) the mean and standard deviation of `t2mscale`. Note this code assumes you read the **ecls-k** dataset in as an object called `eclsk` - you should substitute in whatever the name is for your data object. The code below also assumes you have used `clean_names` and one more thing about the data we talked about in class.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt1mean <- mean(eclsk$t1mscale, na.rm = TRUE)\nt1sd <- sd(eclsk$t1mscale, na.rm = TRUE)\n\nt2mean <- mean(eclsk$t2mscale, na.rm = TRUE)\nt2sd <- sd(eclsk$t2mscale, na.rm = TRUE)\n```\n:::\n\n\n<br> <br> <br>\n\n#### 5. Using the values you calculated above, use an inline code evaluation below to report the *means* and *SD*s for each of the two time points (`t1mscale` and `t2mscale`). Also report the difference between the means (i.e., the average gain).\n\n<br> <br>\n\n#### 6. Pretend you are trying to teach somebody how to load data. Describe the process below that we've discussed in class, including why it helps reproducibility, and echo chunks of code as necessary without actually evaluating any of it.\n\n-   Include some text that is **bold** and some that is *italics*.\n",
+    "supporting": [
+      "hw5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

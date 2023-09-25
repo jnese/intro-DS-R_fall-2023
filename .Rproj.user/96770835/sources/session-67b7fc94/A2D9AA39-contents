@@ -1,0 +1,202 @@
+---
+title: "The Great Popcorn Experiment!"
+author: "Joe Nese and EDLD 651"
+date: "9/27/2023"
+format: 
+  html:
+    code-fold: true
+execute: 
+  echo: true
+  warning: false
+bibliography: popcorn_bib.bib
+---
+
+```{r}
+#| message: false
+
+library(tidyverse)
+library(here)
+library(ggthemes)
+library(ggrepel)
+library(reactable)
+library(parameters)
+library(knitr)
+
+theme_set(theme_minimal(base_size = 18))
+```
+
+# Introduction
+
+This is the great popcorn experiment! An under-powered (mediocre) scientific replication of the famous historical event (folktale?) in statistics in which each person in town was asked to guess the weight of the ox. Having no knowledge of oxen, no person correctly guessed the weight, but the average of all guesses was within one pound of the ox's weight! What an inspiring story of collectivism, the strength in numbers, and the power of data, data science, and statistics! We are better together.
+
+```{r}
+truth <- 3224
+
+dta <- read_csv(here("nopublish", "popcorn", "popcorn_data.csv")) %>% 
+  mutate(id = ifelse(uo_id %% 2 == 0, "even", "odd"),
+         initials = paste0(str_sub(first, 1, 1), str_sub(last, 1, 2)),
+         dist = guess - truth) %>% 
+  select(-uo_id)
+
+answ <- tibble(
+  name = c("Class Mean", "Truth"),
+  value = c(round(mean(dta$guess, na.rm = TRUE)), truth)
+)
+```
+
+# Method
+
+We used the following packages: `ggrepel` [@ggrepel], `ggthemes` [@ggthemes], `here` [@here], `knitr` [@knitr], `parameters` [@parameters], `reactable` [@reactable], and `tidyverse` [@tidyverse].
+
+### Research Question
+
+1.  Is the average of the class's popcorn guesses closer to the actual number of popcorn kernels in the jar than any one person?
+
+Our hypothesis is that the class average will be more accurate than the guess of any one person.
+
+# Results
+
+First, let's look at a density plot, which shows the distribution of the class guesses.
+
+```{r}
+dta %>% 
+  ggplot(aes(guess)) +
+  geom_density() +
+  geom_vline(xintercept = truth, color = "magenta", size = 2) +
+  geom_vline(xintercept = mean(dta$guess, na.rm = TRUE), size = 2) +
+  ggrepel::geom_label_repel(data = answ, aes(x = value, y = .0005, label = name)) +
+  theme(plot.title.position = "plot",
+        axis.text.y = element_blank()) +
+  labs(
+    x = "Class Guesses",
+    y = NULL,
+    title = "Class Guesses",
+    subtitle = "Density Plot"
+  )
+```
+
+And here is a table of the class guesses. You can filter and sort it!
+
+```{r}
+dta %>% 
+  select(first, guess) %>% 
+  reactable(filterable = TRUE, searchable = TRUE)
+```
+
+Here is another cool data visualization.
+
+```{r}
+
+dta %>% 
+  ggplot(aes(guess, reorder(first, guess), group = 1)) +
+  geom_point(size = 2.5) +
+  geom_segment(aes(x = 0, xend = guess, y = first, yend = first), color = "cornflowerblue") +
+  geom_vline(xintercept = truth, color = "magenta", size = 2) +
+  geom_vline(xintercept = mean(dta$guess, na.rm = TRUE), size = 2) +
+  geom_label_repel(data = answ, aes(x = value, y = 2, label = name)) +
+  theme(plot.title.position = "plot") +
+  labs(
+    x = "Class Guesses",
+    y = NULL,
+    title = "A Cool Figure"
+  )
+
+```
+
+Or perhaps my favorite:
+
+```{r}
+dta %>% 
+  ggplot(aes(dist, reorder(first, dist))) +
+  geom_col(aes(fill = ifelse(dist > 0, "plus", "minus"))) +
+  geom_vline(xintercept = 0, color = "magenta", size = .5) +
+  geom_vline(xintercept = mean(dta$guess, na.rm = TRUE) - truth, size = 2) +
+  ggrepel::geom_label_repel(data = filter(answ, name == "Class Mean"), 
+                            aes(x = value - truth, y = -1, label = name),
+                            min.segment.length = 0) +
+  ggthemes::scale_fill_colorblind() +
+  theme(legend.position="none",
+        plot.title.position = "plot") +
+  labs(
+    x = "Guesses Distance from Truth",
+    y = NULL,
+    title = "Distance from Truth"
+  )
+```
+
+Now let's get to the results...
+
+The actual number of popcorn kernels in the jar was **`r format(truth, big.mark = ",")`**.
+
+The person closest to the truth was **`r slice(dta, which.min(abs(dist))) %>% pull(first)`** with a guess of **`r slice(dta, which.min(abs(dist))) %>% pull(guess) %>% format(., big.mark = ",")`** kernels - off by `r abs(slice(dta, which.min(abs(dist))) %>% pull(guess) - truth)` kernels!
+
+The class mean was **`r format(round(mean(dta$guess, na.rm = TRUE)), big.mark = ",")`** (*SD* = `r format(round(sd(dta$guess, na.rm = TRUE)), big.mark = ",")`) - off by `r abs(round(mean(dta$guess, na.rm = TRUE)) - truth)` kernels.
+
+So to answer our research question...
+
+```{r, results='asis'}
+if(abs(mean(dta$guess, na.rm = TRUE) - truth) < abs(slice(dta, which.min(abs(dist))) %>% pull(guess) - truth)) {
+   cat("Hypothosis confirmed! The class average was more accurate than any one person!")
+} else if (abs(mean(dta$guess, na.rm = TRUE) - truth) > abs(slice(dta, which.min(abs(dist))) %>% pull(guess) - truth)) {
+   cat(paste0("**Hypthosis rejected! ", slice(dta, which.min(abs(dist))) %>% pull(first), "'s guess was closer than the class average! Replication crisis?**")) 
+} else if (abs(mean(dta$guess, na.rm = TRUE) - truth) == abs(slice(dta, which.min(abs(dist))) %>% pull(guess) - truth)) {
+  cat(paste0("What?! It was a tie! ", slice(dta, which.min(abs(dist))) %>% pull(first), "'s guess was the same as the class average!"))
+}
+```
+
+# Discussion
+
+Wait! I'm having fun with this, so let's look at major and ID number!
+
+```{r}
+dta_smry <- dta %>% 
+  group_by(major) %>% 
+  summarize(mean_guess = mean(guess, na.rm = TRUE))
+
+ggplot(dta, aes(guess, fct_reorder(major, guess), group = major)) +
+  geom_point() +
+  stat_summary(fun = "mean", 
+               geom = "crossbar",
+               width = .5,
+               color = "red") +
+  geom_vline(xintercept = truth, color = "magenta", size = 1) +
+  labs(
+    x = "Kernel Guess",
+    y = "Major",
+    title = "Guesses by Major"
+  ) +
+  theme(plot.title.position = "plot")
+```
+
+```{r}
+ggplot(dta, aes(guess, id, group = id)) +
+  geom_point() +
+  stat_summary(fun = "mean", 
+               geom = "crossbar",
+               width = .5,
+               color = "red") +
+  geom_vline(xintercept = truth, color = "magenta", size = 1) +
+  labs(
+    x = "UO ID",
+    y = "Kernel Guess",
+    title = "Guesses by UO ID"
+  ) +
+  theme(plot.title.position = "plot")
+```
+
+Let's run (bad) a regression!
+
+```{r}
+m1 <- lm(dist ~ major + id, data = dta)
+
+model_parameters(m1) %>%
+  as_tibble() %>% 
+  select(-c(CI, df_error, t)) %>% 
+  mutate(across(c(2:5), ~round(., 1)),
+         p = round(p, 3)) %>% 
+  kable(booktabs = TRUE,
+        align = c("l", "r", "r", "r", "r", "r"),
+        caption = "These are the Regression Results")
+```
+
+# References

@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "EDLD 651: Fall 2023"
+  description: "Introduction to Data Science with R"
+  navbar:
+    left:
+      - href: syllabus.qmd
+        text: Syllabus
+    right: 
+      - href: assignments.qmd
+        text: Assignments
+      - href: schedule.qmd
+        text: Schedule
+      - href: data_list.qmd
+        text: Data
+      - href: install.qmd
+        text: Installs
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    mainfont: "Atkinson Hyperlegible"
+
+execute:
+  freeze: auto
+  
+editor: visual
+

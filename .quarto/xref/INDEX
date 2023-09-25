@@ -1,0 +1,77 @@
+{
+  "index.qmd": {
+    "index.html": "d4b4b16d"
+  },
+  "assignments.qmd": {
+    "assignments.html": "810d1009"
+  },
+  "data_list.qmd": {
+    "data_list.html": "9652b793"
+  },
+  "installs.qmd": {
+    "installs.html": "31df27ee"
+  },
+  "schedule.qmd": {
+    "schedule.html": "a2325e72"
+  },
+  "syllabus.qmd": {
+    "syllabus.html": "b2efe3e2"
+  },
+  "homeworks/hw1.qmd": {
+    "hw1.html": "cac11902"
+  },
+  "nopublish/hw/hw1-key.qmd": {
+    "hw1-key.html": "b6fd5349"
+  },
+  "nopublish/hw/hw10-key.qmd": {
+    "hw10-key.html": "3a2889dc"
+  },
+  "nopublish/hw/hw10.qmd": {
+    "hw10.html": "8c28c2f6"
+  },
+  "nopublish/hw/hw2-key.qmd": {
+    "hw2-key.tex": "b8cd56c1"
+  },
+  "nopublish/hw/hw2.qmd": {
+    "hw2.tex": "e674e68f"
+  },
+  "nopublish/hw/hw3-key.qmd": {
+    "hw3-key.html": "c10dbe0c"
+  },
+  "nopublish/hw/hw3.qmd": {
+    "hw3.html": "b1dacdc9"
+  },
+  "nopublish/hw/hw4-key.qmd": {
+    "hw4-key.html": "4ffdbce1"
+  },
+  "nopublish/hw/hw4.qmd": {
+    "hw4.html": "9e33adcd"
+  },
+  "nopublish/hw/hw5-key.qmd": {
+    "hw5-key.html": "7cc060fe"
+  },
+  "nopublish/hw/hw5.qmd": {
+    "hw5.html": "c9c6eeb6"
+  },
+  "nopublish/hw/hw7.qmd": {
+    "hw7.html": "6ad63e8a"
+  },
+  "nopublish/hw/hw8-key.qmd": {
+    "hw8-key.html": "3404cb9a"
+  },
+  "nopublish/hw/hw8.qmd": {
+    "hw8.html": "7e7e9292"
+  },
+  "nopublish/hw/hw9-key.qmd": {
+    "hw9-key.html": "37e37892"
+  },
+  "nopublish/hw/hw9.qmd": {
+    "hw9.html": "b734aad5"
+  },
+  "nopublish/popcorn/popcorn-experiment.qmd": {
+    "popcorn-experiment.html": "a7811aa3"
+  },
+  "slides/w1_intro.qmd": {
+    "w1_intro.html": "c743a300"
+  }
+}
