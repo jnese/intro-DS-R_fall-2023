@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "!nopublish/"
 
 website:
   title: "EDLD 651: Fall 2023"
@@ -16,7 +18,7 @@ website:
         text: Schedule
       - href: data_list.qmd
         text: Data
-      - href: install.qmd
+      - href: installs.qmd
         text: Installs
 
 format:

@@ -11,6 +11,9 @@ format:
     fig-width: 9
     fig-height: 3.5
     scrollable: true
+    multiplex: true
+    chalkboard: true
+  pdf: default
 execute: 
   echo: false
   warning: false
@@ -25,15 +28,15 @@ library(gt)
 
 ```
 
-## How many beans are in the jar? {.center background-color="#CC79A7"}
+## How many popcorn kernels are in the jar? {.center background-color="#CC79A7"}
 
 (keep your guess to yourself!)
 
-## Introduction to the Course
+# Introduction to the Course
 
-### Week 1
+**Week 1**
 
-# Agenda
+## Agenda
 
 -   Introductions
 -   Syllabus
@@ -73,10 +76,10 @@ Please introduce yourself
 2.  Why you want to learn `R`?
 3.  Do you have any `R` experience?
 4.  Tell me whatever you'd like me and the class to know (e.g., pronouns, circumstances)
-5.  How many beans are in the jar?
+5.  How many popcorn kernels are in the jar?
     -   No changing your answer! *Academic integrity!*
 
-# The Great Bean Experiment! {.center background-color="#CC79A7"}
+# The Great Popcorn Experiment! {.center background-color="#CC79A7"}
 
 ## Why is this important?
 
@@ -87,6 +90,8 @@ Please introduce yourself
 ## Create a journal article!
 
 with `quarto`
+
+Kinda like we just did!
 
 ## Create slides!
 
@@ -146,6 +151,8 @@ knitr::include_graphics("images/poster_ex.png")
 
 ## Why is `R` awesome? {.smaller}
 
+. . .
+
 **Data visualizations**
 
 -   `{ggplot2}` -- your default by the end of this class, really powerful
@@ -195,6 +202,48 @@ American theoretical physicist, Nobel Laureate
 . . .
 
 ![](./images/feynman_teach.png)
+
+## Sharing
+
+Sometimes I may ask people to share with the class something they have learned.
+
+-   A success, a new `{package}` or `function()`
+-   *Completely* voluntary
+    -   **BUT**, you might get a hex sticker 🎉
+
+. . .
+
+![](https://www.kdnuggets.com/wp-content/uploads/r-packages.png)
+
+## A sharing example
+
+::: columns
+::: {.column width="50%"}
+> "I made this cool figure!
+>
+> I used the `{gghighlight}` package for the first time!
+>
+> And I annoted my facets separately!"
+:::
+
+::: {.column width="50%"}
+![](./images/share_ex.png)
+:::
+:::
+
+## Another sharing example
+
+::: columns
+::: {.column width="50%"}
+> "I went to re-run my 'cool figure' a couple months later and my code did not work!
+>
+> I spent \[*mumble mumble*\] minutes getting it to work again!"
+:::
+
+::: {.column width="50%"}
+![](./images/share_ex.png)
+:::
+:::
 
 ## What this class is about
 
@@ -255,48 +304,6 @@ Learning to problem solve!
 -   a statistics course
     -   but we'll use some stats in examples
 
-## Sharing
-
-Sometimes I may ask people to share with the class something they have learned.
-
--   A success, a new `{package}` or `function()`
--   *Completely* voluntary
-    -   **BUT**, you might get a hex sticker 🎉
-
-. . .
-
-![](https://www.kdnuggets.com/wp-content/uploads/r-packages.png)
-
-## A sharing example
-
-::: columns
-::: {.column width="50%"}
-> "I made this cool figure!
->
-> I used the `{gghighlight}` package for the first time!
->
-> And I annoted my facets separately!"
-:::
-
-::: {.column width="50%"}
-![](./images/share_ex.png)
-:::
-:::
-
-## Another sharing example
-
-::: columns
-::: {.column width="50%"}
-> "I went to re-run my 'cool figure' a couple months later and my code did not work!
->
-> I spent \[*mumble mumble*\] minutes getting it to work again!"
-:::
-
-::: {.column width="50%"}
-![](./images/share_ex.png)
-:::
-:::
-
 ## Courageous Conversations with Me
 
 -   Creating norms of openness, understanding, and development
@@ -312,10 +319,10 @@ Credit: Dr. Rhonda Nese
 
 ## Course Learning Outcomes {.smaller}
 
--   Understand the R package ecosystem
+-   Understand the `R` package ecosystem
     -   how to find, install, load, and learn about them
 -   Read "flat" (i.e., rectangular) datasets into `R`
--   Perform basic data manipulations / transformations in R with the `{tidyverse}`
+-   Perform basic data manipulations / transformations in `R` with the `{tidyverse}`
     -   leverage appropriate functions for introductory data science tasks
     -   prepare data using scripts and reproducible workflows
 -   Use version control with `R` via git and GitHub
@@ -324,13 +331,13 @@ Credit: Dr. Rhonda Nese
 
 ## Course Site {.smaller}
 
-**https://jnese.github.io/intro-DS-R_all-2023/index.html**
+**https://jnese.github.io/intro-DS-R_fall-2023/**
 
--   schedule
--   slides (posted *before* each class)
--   assignments (posted *after* each class)
--   syllabus
--   data
+-   [schedule](https://jnese.github.io/intro-DS-R_fall-2023/)
+-   [slides](https://jnese.github.io/intro-DS-R_fall-2023/) (posted *before* each class)
+-   [assignments](https://jnese.github.io/intro-DS-R_fall-2023/assignments.html) (posted *after* each class)
+-   [syllabus](https://jnese.github.io/intro-DS-R_fall-2023/syllabus.html)
+-   [data](https://jnese.github.io/intro-DS-R_fall-2023/data_list.html)
 
 **Canvas**
 
@@ -343,46 +350,46 @@ Credit: Dr. Rhonda Nese
 
 ## RStudio Primers, R-Bootcamp, & Codecademy
 
-* Supplemental learning opportunities that I hope are helpful
-* Part of your “Supplemental Learning” grade
+-   Supplemental learning opportunities that I hope are helpful
+-   Part of your "Supplemental Learning" grade
 
 ## Resources {.smaller}
 
-* [learnR4free](https://www.learnr4free.com/en/index.html)
-  + all sorts of resources (books, videos, websites, papers) to learn `R` for free 
-* [R-Ladies](https://rladies.org/)
-  + Global organization to promote gender diversity in the R community
-* [UO Libraries Data Services](https://library.uoregon.edu/department-of-open-research/data-service)
-  + cover statistical software (like R and Python), statistics, research design, GIS, git/GitHub
-* [RStudio Community](https://community.rstudio.com/)
-  + Similar to [stackoverflow](https://stackoverflow.com/questions/tagged/r) but friendlier (great place to post questions)
-  + Opinionated
-  + RStudio-philosophy dominant (as is this class)
+-   [UO Libraries Data Services](https://library.uoregon.edu/department-of-open-research/data-service)
+    -   cover statistical software (like R and Python), statistics, research design, GIS, git/GitHub
+-   [learnR4free](https://www.learnr4free.com/en/index.html)
+    -   all sorts of resources (books, videos, websites, papers) to learn `R` for free
+-   [R-Ladies](https://rladies.org/)
+    -   Global organization to promote gender diversity in the R community
+-   [RStudio Community](https://community.rstudio.com/)
+    -   Similar to [stackoverflow](https://stackoverflow.com/questions/tagged/r) but friendlier (great place to post questions)
+    -   Opinionated
+    -   RStudio-philosophy dominant (as is this class)
 
 ## Weekly Schedule
 
-* Readings - do before class
-* Homework - due before next class
-  + You **can** work in groups on these
+-   Readings - do before class
+-   Homeworks - due before following class
+    -   You **can** work in groups on these
 
 ## Assignements {.smaller}
 
 **Homework (200 points)**
 
-* Homeworks – 10 at 10 points each (100 points)
-* Supplemental Learning - 10 at 10 points each (100 points)
-  + RStudio Primers $\times$ 4
-  + R-Bootcamp $\times$ 2
-  + Codeacademy $\times$ 4
-  + Screenshot of specific part of "Supplemental Learning"
-  
+-   Homeworks -- 10 at 10 points each (100 points)
+-   Supplemental Learning - 10 at 10 points each (100 points)
+    -   RStudio Primers $\times$ 4
+    -   R-Bootcamp $\times$ 2
+    -   Codeacademy $\times$ 4
+    -   Screenshot of specific part of "Supplemental Learning"
+
 **Final Project (200 points)**
 
-* Outline (15 points)
-* Draft Data Prep Script (25 points)
-* Peer Review of Draft Data Prep Script (25 points)
-* Final Project Presentation (25 points)
-* Final Paper (110 points)
+-   Outline (15 points)
+-   Draft Data Prep Script (25 points)
+-   Peer Review of Draft Data Prep Script (25 points)
+-   Final Project Presentation (25 points)
+-   Final Paper (110 points)
 
 **400 points total**
 
@@ -395,43 +402,44 @@ Credit: Dr. Rhonda Nese
 read_csv(here("rubrics", "grades_rubric.csv")) %>% 
   mutate(across(everything(), ~ifelse(is.na(.), "", .))) %>% 
   kable(caption = "<b>Grading Components</b>") %>% 
-  kable_classic(full_width = F) %>% 
+  kable_classic(full_width = TRUE) %>% 
   kable_styling(font_size = 14, position = "left")
 
 ```
 
 ## Homework {.smaller}
 
-* Scored on a “best honest effort” basis
-  + generally zero or full credit 
-* If you find yourself stuck and unable to proceed, **please contact the instructor/GE for help rather than submitting incomplete work**
-  + Contacting the instructor/GE is part of the "best honest effort" and can result in full credit for an assignment even if the work is not fully complete
-* **If the assignment is not complete, and the student has not contacted the instructor for help, it is likely to result is a partial credit score or a zero** 
-  + Labs submitted late will be docked by 30% (3 points)
-* Labs are generally due the class after they are assigned, before class starts
+-   Scored on a "best honest effort" basis
+    -   generally zero or full credit
+-   If you find yourself stuck and unable to proceed, **please contact the instructor/GE for help rather than submitting incomplete work**
+    -   Contacting the instructor/GE is part of the "best honest effort" and can result in full credit for an assignment even if the work is not fully complete
+-   **If the assignment is not complete, and the student has not contacted the instructor for help, it is likely to result is a partial credit score or a zero**
+    -   Labs submitted late will be docked by 30% (3 points)
+-   Labs are generally due the class after they are assigned, before class starts
 
 ## Final Project {.smaller}
 
-* Group project, 3-4 people
-* Quarto document
+-   Group project, 3-4 people
+    + You select or me organize?
+-   Quarto document
 
 **Final project must:**
 
-* Be fully reproducible
-  + this implies the data are open
-* Be a collaborative project hosted on GitHub
-* Move data from its raw "messy" format to a tidy data format
-* Include at least two exploratory plots
-* Include at least summary statistics of the data in tables, although fitted models are also encouraged
+-   Be fully reproducible
+    -   this implies the data are open
+-   Be a collaborative project hosted on GitHub
+-   Move data from its raw "messy" format to a tidy data format
+-   Include at least two exploratory plots
+-   Include at least summary statistics of the data in tables, although fitted models are also encouraged
 
 ## Final Project - Dates
 
-* **Week 3  (10/11)**: Self-selected groups finalized
-* **Week 5  (10/25)**:  Final Project Outline due
-* **Week 9  (11/23)**: Data prep script due
-* **Week 10  (11/29)**:  Peer review due
-* **Week 10 (11/29)**:  Final project presentations
-* **Week 11 (12/6)**: Final Paper due
+-   **Week 3 (10/11)**: Self-selected groups finalized
+-   **Week 5 (10/25)**: Final Project Outline due
+-   **Week 9 (11/23)**: Data prep script due
+-   **Week 10 (11/29)**: Peer review due
+-   **Week 10 (11/29)**: Final project presentations
+-   **Week 11 (12/6)**: Final Paper due
 
 ## Final Project - Paper Scoring Rubric
 
@@ -463,41 +471,40 @@ read_csv(here("rubrics", "final-project_rubric.csv")) %>%
               container.height = pct(80))
 ```
 
-
 ## Final Project - Outline
 
 **Primary purpose:** Get feedback and give me a preview of your project
 
-* Description of the data to be used
-* Discussion of preparatory work that needs to be done
-* How the requirements of the final project will be met
-* Anything you want feedback on
+-   Description of the data to be used
+-   Discussion of preparatory work that needs to be done
+-   How the requirements of the final project will be met
+-   Anything you want feedback on
 
 ## Final Project - Data Prep Script
 
-* Expected to be a work in progress
-* Provided to your peers so they can learn from you as much as you can learn from their feedback
+-   Expected to be a work in progress
+-   Provided to your peers so they can learn from you as much as you can learn from their feedback
 
 **Peer Review**
 
-* Understand the purpose of the exercise
-* Conducted as a professional product
-* Should be **very** encouraging 
-* Zero tolerance policy for inappropriate comments
+-   Understand the purpose of the exercise
+-   Conducted as a professional product
+-   Should be **very** encouraging
+-   Zero tolerance policy for inappropriate comments
 
 ## Final Project - Presentation
 
 **Order randomly assigned. Should cover the following:**
 
-* Share your journey (everyone, at least for a minute or two)
-* Discuss challenges you had along the way
-* Celebrate your successes
-* Discuss challenges you are still facing
-* Discuss substantive findings
-* Show off your cool figures!
-* Discuss next `R` hurdle you want to address
+-   Share your journey (everyone, at least for a minute or two)
+-   Discuss challenges you had along the way
+-   Celebrate your successes
+-   Discuss challenges you are still facing
+-   Discuss substantive findings
+-   Show off your cool figures!
+-   Discuss next `R` hurdle you want to address
 
-## Final Project – Presentation Scoring Rubric
+## Final Project -- Presentation Scoring Rubric
 
 ```{r}
 #| echo: false
@@ -506,49 +513,48 @@ read_csv(here("rubrics", "final-project_rubric.csv")) %>%
 read_csv(here("rubrics", "final-presentation_rubric.csv")) %>% 
   mutate(across(everything(), ~ifelse(is.na(.), "", .))) %>% 
   kable(caption = "<b>Final Presentation Rubric</b>") %>% 
-  kable_classic(full_width = F) %>%
+  kable_classic(full_width = TRUE) %>%
   row_spec(6, bold = TRUE) %>% 
   kable_styling(font_size = 14, position = "left")
 ```
 
 ## Final Projct - Paper {.smaller}
 
-* Research Paper
-  + Abstract, Intro, Methods, Results, Discussion, References
-  + Should be brief: 3,500 words max 
-* No code displayed - should look like any other manuscript being submitted for publication
-* Include at least 1 table
-* Include at least 2 plots
-* Should be fully open, reproducible, and housed on GitHub
-  + I should be able to clone your repository, open the R Studio Project, and reproduce the full manuscript (by knitting the Quarto doc)
+-   Research Paper
+    -   Abstract, Intro, Methods, Results, Discussion, References
+    -   Should be brief: 3,500 words max
+-   No code displayed - should look like any other manuscript being submitted for publication
+-   Include at least 1 table
+-   Include at least 2 plots
+-   Should be fully open, reproducible, and housed on GitHub
+    -   I should be able to clone your repository, open the RStudio Project, and reproduce the full manuscript (by rendering the Quarto doc)
 
 ## git and GitHub {.smaller}
 
-* Will be required for final project
-* What is it?
-  + Version control system
-  + Collaboration tool
-  + Can be powerful for transparency and reproducibility
-  + More to come
-
-* Think of a GitHub profile as a public resume and treat it as such
-* [Username advice](https://happygitwithr.com/github-acct.html) from Jenny Bryan
+-   Will be required for final project
+-   What is it?
+    -   Version control system
+    -   Collaboration tool
+    -   Can be powerful for transparency and reproducibility
+    -   More to come
+-   Think of a GitHub profile as a public resume and treat it as such
+-   [Username advice](https://happygitwithr.com/github-acct.html) from Jenny Bryan
 
 . . .
 
-Git might be frustrating, but we’ll get through it together!
+Git might be frustrating, but we'll get through it together!
 
 # Welcome to `R` !
 
 ## What is `R` {.smaller}
 
-* `R` is an environment and programming language, created primarily for statistical analyses and graphics
-* No point-and-click interface
-* Open source
-  + source code is freely available, and can be redistributed and modified
-* Incredibly powerful and flexible
-  + Vast array of external packages available for specialized functions (analyses, data visualizations, automate the data “cleaning" process)
-  
+-   `R` is an environment and programming language, created primarily for statistical analyses and graphics
+-   No point-and-click interface
+-   Open source
+    -   source code is freely available, and can be redistributed and modified
+-   Incredibly powerful and flexible
+    -   Vast array of external packages available for specialized functions (analyses, data visualizations, automate the data "cleaning" process)
+
 ## 
 
 ![](./images/r-thought_1.png)
@@ -557,38 +563,38 @@ Git might be frustrating, but we’ll get through it together!
 
 ![](./images/r-thought_2.png)
 
-##
+## 
 
 ![](./images/r-thought_3.png)
 
-##
+## 
 
 > The bad news is that whenever you learn a new skill you're going to suck. It's going to be frustrating. The good news is that is typical and happens to everyone and it is only temporary. You can't go from knowing nothing to becoming an expert without going through a period of great frustration and great suckiness.
 
 -- Hadley Wickham
 
-# Moving to code/programming
+### Moving to code/programming {.smaller}
 
 ::: columns
 ::: {.column width="50%"}
 **Advantages**
-* Flexibility
-  + Essentially anything is possible
-* Transparency
-  + Documented history of your analysis
-* Efficiency
-  + Many tasks can be automated
+
+* Flexibility 
+    + Essentially anything is possible
+* Transparency 
+    + Documented history of your analysis 
+* Efficiency 
+    + Many tasks can be automated
 :::
 
 ::: {.column width="50%"}
 **Disadvantages**
 
-* Steep learning curve
-  + Definitely requires a significant time investment
-  + Similar to learning a new language
-* You will lose patience with point-and-click interfaces
-* Likely to become "one of the converted"
-
+-   Steep learning curve
+    -   Definitely requires a significant time investment
+    -   Similar to learning a new language
+-   You will lose patience with point-and-click interfaces
+-   Likely to become "one of the converted"
 :::
 :::
 
@@ -600,20 +606,17 @@ This is the `R` console
 
 ## Code-based Interface
 
-RStudio
-
-### This is the RStudio IDE 
-_(Integrated Development Environment)_
+This is the RStudio IDE *(Integrated Development Environment)*
 
 ![](./images/ide.png)
 
 ## How to learn `R`?
 
-* Time
-* Use it!
-* Dedication and determination help
-* Be patient and forgiving with yourself, it will feel slow at first
-* I still get frustrated
+-   Time
+-   Use it!
+-   Dedication and determination help
+-   Be patient and forgiving with yourself, it will feel slow at first
+-   I still get frustrated
 
 ## `R` as a big calculator
 
@@ -659,6 +662,12 @@ a / (a + b)
 
 ```{r}
 #| echo: true
+a
+```
+
+
+```{r}
+#| echo: true
 a <- 10
 a
 ```
@@ -677,20 +686,22 @@ Data can be a variety of types
 
 . . .
 
-* **character**: `"Hello world!"` or `"EDLD 651"`
+-   **character**: `"Hello world!"` or `"EDLD 651"`
 
 . . .
 
-* **numeric**: `2` and/or `15.5`
-  + decimal also called `double`
+-   **numeric**: `2` and/or `15.5`
+    - decimal also called `double`
 
 . . .
 
-* **integer**: `2L` (the `L` tells `R` to store this as an integer)
+-   **integer**: `2` 
+    - whole number also called an `integer`
+    - explicit about an integer `2L` (the `L` tells `R` to store this as an integer) ¯\_(ツ)_/¯
 
 . . .
 
-* **logical**: `TRUE` or `FALSE`
+-   **logical**: `TRUE` or `FALSE`
 
 . . .
 
@@ -700,19 +711,19 @@ These objects can be extremely useful in programming
 
 Objects can also be:
 
-* variables
-* data sets
-* models
-* results
-* functions
-* figures
-* more...
+-   variables
+-   data sets
+-   models
+-   results
+-   functions
+-   figures
+-   more...
 
 You can then use or manipulate these in different ways
 
-* plots
-* functions
-* operators (arithmetic, logical, comparison)
+-   plots
+-   functions
+-   operators (arithmetic, logical, comparison)
 
 ## `R` Functions {.smaller}
 
@@ -720,11 +731,11 @@ Anything that carries out an operation in `R` is a function, even `+`
 
 Functions are generally followed by `()`
 
-* **`function()`**
+-   **`function()`**
 
-  + `sum()`
-  + `lm()`
-  + `sqrt()`
+    -   `sum()`
+    -   `lm()`
+    -   `sqrt()`
 
 . . .
 
@@ -736,10 +747,10 @@ the package is also called the "namespace"
 
 `?` before a function name can be very helpful (and also confusing early on)
 
-* Helpful for understanding formal *arguments* of a function
-  + *arguments* are options within a `function()`
+-   Helpful for understanding formal *arguments* of a function
+    -   *arguments* are options within a `function()`
 
-`?function_name()`  
+`?function_name()`
 
 ```{r}
 #| eval: false
@@ -749,22 +760,33 @@ the package is also called the "namespace"
 ?dplyr::mutate()
 ```
 
-##
+```{r}
+#| eval: false
+#| echo: true
 
-![](./images/help_info.png)
-::: aside
-[https://socviz.co/](https://socviz.co/)
-:::
+?mean
+```
 
-## Getting help (con't)
 
-* Resources on syllabus
-* Your classmates!
-* Me
-  + Appointment by email
-  + If you email me with a question, provide your `R` files & data
-* Google
-  + stackoverflow
+## 
+
+![](./images/help_info.png) ::: aside <https://socviz.co/> :::
+
+## Getting help
+
+-   Resources on syllabus
+-   Your classmates!
+-   Me
+    -   Appointment by email
+    -   If you email me with a question, provide your `R` files & data
+-   Google
+    -   stackoverflow
+
+## Getting help
+
+ChatGPT
+
+![](./images/dumbledore.gif)
 
 ## Back to Dr. Feynman
 
@@ -778,41 +800,49 @@ the package is also called the "namespace"
 
 [Installs](installs.qmd)
 
-* [R](https://cloud.r-project.org/)
-* [Rstudio](https://www.rstudio.com/products/rstudio/#Desktop)
-* [Git](https://www.git-scm.com/download)
-* [GitKraken](https://www.gitkraken.com/download)
+-   [R](https://cloud.r-project.org/)
+-   [Rstudio](https://www.rstudio.com/products/rstudio/#Desktop)
+-   [Git](https://www.git-scm.com/download)
+-   [GitKraken](https://www.gitkraken.com/download)
 
 Also
-* [Register for GitHub account](https://github.com)
-  + username [advice](https://happygitwithr.com/github-acct.html) from Jenny Bryan
+
+* [Register for GitHub account](https://github.com) 
+    + username [advice](https://happygitwithr.com/github-acct.html) from Jenny Bryan
 
 # Customize!
 
-## Customize your RStudio Display! {.smaller}
+## Customize your RStudio Display!
 
-1. **Tools 🡆 Global Options 🡆 General**
+1.  **Tools 🡆 Global Options 🡆 General**
 
-* Workspace
-  + "*Restore .RData into workspace at startup*" -- **Uncheck**
-  + "*Save workspace to .RData on exit:*" -- **Never**
-* History
-  + "*“Always save history (even when not saving .RData)*" -- **Check**
+-   Workspace
+    -   *Restore .RData into workspace at startup* -- **Uncheck**
+    -   *Save workspace to .RData on exit:* -- **Never**
+-   History
+    -   *Always save history (even when not saving .RData)* -- **Check**
 
-2. **Tools 🡆 Global Options 🡆 Code 🡆 Display**
-  + Highlight R function calls (up to you)
-  + Show indent guides (up to you)
+## Customize your RStudio Display!
 
-3. **Tools 🡆 Global Options 🡆 Appearance**  
-  + Font, font size
-  + Editor theme!!
+2.  **Tools 🡆 Global Options 🡆 Code 🡆 Display**
 
-4. **Tools 🡆 Global Options 🡆 Pane Layout**
+- Highlight R function calls (I like it, up to you)
+- Show indent guides (up to you)
 
-  
+## Customize your RStudio Display!
+
+3.  **Tools 🡆 Global Options 🡆 Pane Layout**
+
+- As you like
+
+4.  **Tools 🡆 Global Options 🡆 Appearance**
+
+- Font, font size
+- Editor theme!!
+
 ## Keyboard Shortcuts {.smaller}
 
-There are a lot...
+#### There are a lot...
 
 **Tools 🡆 Keyboard Shortcuts Help** (`Alt + Shift + K`)
 
@@ -820,26 +850,26 @@ There are a lot...
 
 My favorites (for Macs, sub `Command` for `Ctrl`)
 
-* `Ctrl + Enter` = run code
-* `Ctrl + Shift + M` = insert pipe (`%>%`)
-* `Ctrl + Alt + I` = insert code chunk in R Markdown
-* `Ctrl + Shift + C` = comment a block
+1.   `Ctrl + Enter` = run code
+2.   `Ctrl + Shift + M` = insert pipe (`%>%`)
+3.  `Ctrl + Alt + I` = insert code chunk in R Markdown
+4.   `Ctrl + Shift + C` = comment a block
 
 Other good ones
 
-* `Alt + -` = insert assignment operator (<-)
-* `Alt + Shift + Up/Down` = add cursor above/below current cursor
+-   `Alt + -` = insert assignment operator (\<-)
+-   `Alt + Shift + Up/Down` = add cursor above/below current cursor
 
-**<span style="color:#D55E00;">demo</span>**
+[**demo**]{style="color:#D55E00;"}
 
 # `R` Packages
 
 ## The data science pipeline
 
-![](./images/ds_pipeline.png)
+![](https://r4ds.hadley.nz/diagrams/data-science/base.png)
 
 ::: aside
-[R4DS](https://r4ds.had.co.nz/explore-intro.html)
+[R4DS(2e)](https://r4ds.hadley.nz/diagrams/data-science/base.png)
 :::
 
 . . .
@@ -850,24 +880,24 @@ Other good ones
 
 `R` Packages provide functions (and datasets) for you to use
 
-Some packages are pre-loaded
+Some packages are pre-loaded: no need to load (`library(base)`), you can use all of their functions anytime
 
-* `{base}`
-* `{graphics}`
-* `{stats}`
+-   `{base}`
+-   `{graphics}`
+-   `{stats}`
 
-Some packages are pre-installed
+Some packages are pre-installed: you just need to load the package (`library(MASS)`) or use the namespace (`MASS::cats`)
 
-* `{boot}`
-* `{MASS}`
-* `{Matrix}`
+-   `{boot}`
+-   `{MASS}`
+-   `{Matrix}`
 
 ## Pre-loaded vs Installed
 
 Pre-loaded packages work on launch
 
-For example, `plot()` is part of the `{graphics}` package, which ships with `R`
-. . .
+For example, `plot()` is part of the `{graphics}` package, which ships with `R` . . .
+
 ```{r}
 #| echo: true
 #| fig-height: 5
@@ -876,15 +906,15 @@ plot(x = 1:10, y = 1:10)
 
 ## `{base}` package
 
-* All functions come from a package
+-   All functions come from a package
 
 . . .
 
-* What do you get with the following?
+-   What do you get with the following?
 
 `?'+'`
 
-##
+## 
 
 ![](./images/plus_help.png)
 
@@ -894,7 +924,8 @@ There is a TON of functionality that comes with R right from your initial downlo
 
 . . .
 
-CRAN is the official repository
+CRAN is the official repository 
+
 * a network of servers maintained by the R community around the world
 * coordinated by the [R Foundation](https://www.r-project.org/foundation/)
 * a package needs to pass several tests to be published on CRAN
@@ -902,6 +933,7 @@ CRAN is the official repository
 . . .
 
 Most often, you will first install a package, then load it
+
 * `install.packages(“package_name”)`
 * `library(package_name)`
 
@@ -912,10 +944,11 @@ You will only need to install a package **once** (generally). After that, it is 
 . . .
 
 Currently, the CRAN package repository features 19,900+ packages
+
 * 18,700+ last year at this time
 * constantly evolving to keep up with the varied demands of the data science community
 
-## One more time
+## One more time {.smaller}
 
 . . .
 
@@ -923,9 +956,9 @@ Currently, the CRAN package repository features 19,900+ packages
 
 . . .
 
-* you will only need to do this the **FIRST** time you use the package
-* don’t keep this code line (you can run it in the console, or delete it from your script)
-* notices the quotes
+-   you will only need to do this the **FIRST** time you use the package
+-   don't keep this code line (you can run it in the console, or delete it from your script)
+-   notices the quotes
 
 . . .
 
@@ -933,44 +966,44 @@ Currently, the CRAN package repository features 19,900+ packages
 
 . . .
 
-* you will do this **every** time you use the package in your scripts
-* notices no quotes
+-   you will do this **every** time you use the package in your scripts
+-   notices no quotes
 
 ## Other packages
 
 On GitHub
 
-* Popular repository for open source projects
-  + Integrated with git (version control)
-  + Easy to share/collaborate
-* Not necessarily `R` specific
-* Generally, these packages “in development,” or are the beta versions of existing packages
-* No review process associated with GitHub
+-   Popular repository for open source projects
+    -   Integrated with git (version control)
+    -   Easy to share/collaborate
+-   Not necessarily `R` specific
+-   Generally, these packages "in development," or are the beta versions of existing packages
+-   No review process associated with GitHub
 
 ## Possibilities
 
-With just a basic knowledge of `R` you have access to thousands of packages 
+With just a basic knowledge of `R` you have access to thousands of packages
 
-* Expanding on a daily basis
-* Provides access to cutting edge and specialized functionality for analysis, data visualization, and data preparation
-* Some of the most modern thinking on data analysis topics are often represented in these packages
+-   Expanding on a daily basis
+-   Provides access to cutting edge and specialized functionality for analysis, data visualization, and data preparation
+-   Some of the most modern thinking on data analysis topics are often represented in these packages
 
 # Let's dive in
 
 (or end here for today)
 
-## How do we access variables?
+## How do we access variables (columns) in our data?
 
-* Generally, in this course, with `{tidyverse}` tools
-* Sometimes with `base` using `$` or with `[]`
-  + `data_name$variable_name`
-  + `data_name["variable_name"]`
+-   Generally, in this course, with `{tidyverse}` tools
+-   Sometimes with `base` using `$` or with `[]`
+    -   `data_name$variable_name`
+    -   `data_name["variable_name"]`
 
 ## Some data {.smaller}
 
 Let's load the `{tidyverse}`, and then we'll access some variables from the data sets within the packages
 
-* Look at the `gss_cat` data frame which loads with `tidyverse`
+-   Let's take a `glimpse` the `gss_cat` data frame which loads with `tidyverse`
 
 . . .
 
@@ -981,7 +1014,7 @@ Let's load the `{tidyverse}`, and then we'll access some variables from the data
 ## if you have never installed {tidyverse} you'll need to do that first
 library(tidyverse)
 
-gss_cat
+glimpse(gss_cat)
 ```
 
 ## Selecting varaibles
@@ -999,14 +1032,14 @@ gss_cat$marital
 
 ```{r}
 #| echo: true
-str(gss_cat$marital)
+str(gss_cat)
 ```
 
 . . .
 
 ```{r}
 #| echo: true
-str(gss_cat)
+str(gss_cat$marital)
 ```
 
 ## Because `gss_cat` is a `tibble`
@@ -1018,8 +1051,8 @@ gss_cat
 
 ## When to use `$`?
 
-* Often when you need to use `{base} R` 
-* Execute a function casually
+-   Often when you need to use `{base} R`
+-   Execute a function casually
 
 . . .
 
@@ -1041,19 +1074,20 @@ hist(gss_cat$age)
 
 ## Your turn
 
-Run `table()` on the *religion* variable
+Run `table()` on the *religion* variable in `gss_cat`
 
-Produce a `hist`ogram of the *tvhours* variable
+Produce a `hist`ogram of the *tvhours* variable in `gss_cat`
 
 ## The pipe operator (`%>%`)
 
-* The `%>%` operator (`Ctrl + Shift + M`) inserts the input from the left as the first argument in the next function
-* To start, you can read it as, “then”
-* It is crucial for work in the `{tidyverse}`
+-   The `%>%` operator (`Ctrl + Shift + M`) inserts the input from the left as the first argument in the next function
+-   To start, you can read it as, "then"
+-   It is crucial for work in the `{tidyverse}`
 
-. . . 
+. . .
 
-```{r, echo=TRUE}
+```{r}
+#| echo: true
 gss_cat %>% 
   count(marital)
 ```
@@ -1061,6 +1095,20 @@ gss_cat %>%
 . . .
 
 We will talk about this a lot more later
+
+## Quick aside
+
+Base `R` has a native pipe now!
+
+R 4.1.0 introduced a native pipe operator, `|>`. As described in the R News:
+
+> R now provides a simple native forward pipe syntax `|>`. The simple form of the forward pipe inserts the left-hand side as the first argument in the right-hand side call. 
+
+The behavior of the native pipe is basically the same as the `%>%` pipe  (from the `{magrittr}` package)
+
+Luckily there’s no need to commit entirely to one pipe or the other — you can use the base pipe for the majority of cases where it’s sufficient and use the magrittr pipe when you really need its special features.
+
+More [here](https://www.tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/#-vs).
 
 ## Why use `%>%`
 
@@ -1094,15 +1142,16 @@ slice(arrange(select(filter(gss_cat, relig == "Buddhism", age > 55), age, partyi
 
 ## Before next class {.smaller}
 
-* Reading
+-   Reading
 
-  + [Week 1 reading](https://jnese.github.io/intro-DS-R_fall-2023/schedule.html#week-1-introduction) (if you haven't already)
-  + [Project-oriented Workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
-  + [R4DS(2e) CH 29](https://r4ds.hadley.nz/quarto)
-  + [here::here() Jenny Bryan](https://github.com/jennybc/here_here)
-  + [`{rio}` vignette](https://cran.r-project.org/web/packages/rio/vignettes/rio.html)
-* Assignments
+    -   [Week 1 reading](https://jnese.github.io/intro-DS-R_fall-2023/#week-1-introduction) (if you haven't already)
+        + [R4DS(2e) Ch. 5](https://r4ds.hadley.nz/workflow-style)
+        + [R4DS(2e) Ch. 3](https://r4ds.hadley.nz/workflow-basics)
+        + [R4DS(2e) Ch. 7](https://r4ds.hadley.nz/workflow-scripts)
 
-  + [A Quick Tour of the RStudio IDE](http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-a-quick-tour-of-r-studio)
-  + [RStudio Primer: Programming basics](https://posit.cloud/learn/primers/1.2)
-  + [Codecademy: Introduction to R Syntax](https://www.codecademy.com/courses/learn-r/lessons/introduction-to-r/exercises/why-r)
+-   Assignments
+
+    -   [Installs](https://jnese.github.io/intro-DS-R_fall-2023/install.qmd)
+    -   [A Quick Tour of the RStudio IDE](http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-a-quick-tour-of-r-studio)
+    -   [RStudio Primer: Programming basics](https://posit.cloud/learn/primers/1.2)
+    -   [Codecademy: Introduction to R Syntax](https://www.codecademy.com/courses/learn-r/lessons/introduction-to-r/exercises/why-r)
