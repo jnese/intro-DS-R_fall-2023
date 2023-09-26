@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: docs
-  render:
-    - "!nopublish/"
 
 website:
   title: "EDLD 651: Fall 2023"
