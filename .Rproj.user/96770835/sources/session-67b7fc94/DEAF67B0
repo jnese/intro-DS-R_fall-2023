@@ -3,7 +3,7 @@
     "path": "C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "2651585636",
+    "hash": "1832547576",
     "contents": "",
     "dirty": false,
     "created": 1695670015524.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "3,2",
+        "cursorPosition": "5,17",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1695753166,
+    "lastKnownWriteTime": 1695753625,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1695753166310,
+    "last_content_update": 1695753625232,
     "read_only": false,
     "read_only_alternatives": []
 }
