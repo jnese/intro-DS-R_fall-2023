@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!ignored-dir/"
 
 website:
   title: "EDLD 651: Fall 2023"
