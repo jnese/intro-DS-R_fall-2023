@@ -76,5 +76,8 @@
   },
   "slides/w1_intro.qmd": {
     "w1_intro.html": "c743a300"
+  },
+  "slides/w2_workflow.qmd": {
+    "w2_workflow.html": "dbd9c7bf"
   }
 }
