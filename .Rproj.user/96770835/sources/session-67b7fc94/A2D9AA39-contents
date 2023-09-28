@@ -36,7 +36,8 @@ dta <- read_csv(here("nopublish", "popcorn", "popcorn_data.csv")) %>%
   mutate(id = ifelse(uo_id %% 2 == 0, "even", "odd"),
          initials = paste0(str_sub(first, 1, 1), str_sub(last, 1, 2)),
          dist = guess - truth) %>% 
-  select(-uo_id)
+  select(-uo_id) %>% 
+  filter(!is.na(guess))
 
 answ <- tibble(
   name = c("Class Mean", "Truth"),
@@ -134,7 +135,9 @@ The class mean was **`r format(round(mean(dta$guess, na.rm = TRUE)), big.mark = 
 
 So to answer our research question...
 
-```{r, results='asis'}
+```{r}
+#| results: asis
+
 if(abs(mean(dta$guess, na.rm = TRUE) - truth) < abs(slice(dta, which.min(abs(dist))) %>% pull(guess) - truth)) {
    cat("Hypothosis confirmed! The class average was more accurate than any one person!")
 } else if (abs(mean(dta$guess, na.rm = TRUE) - truth) > abs(slice(dta, which.min(abs(dist))) %>% pull(guess) - truth)) {
@@ -142,6 +145,7 @@ if(abs(mean(dta$guess, na.rm = TRUE) - truth) < abs(slice(dta, which.min(abs(dis
 } else if (abs(mean(dta$guess, na.rm = TRUE) - truth) == abs(slice(dta, which.min(abs(dist))) %>% pull(guess) - truth)) {
   cat(paste0("What?! It was a tie! ", slice(dta, which.min(abs(dist))) %>% pull(first), "'s guess was the same as the class average!"))
 }
+
 ```
 
 # Discussion
@@ -187,7 +191,10 @@ ggplot(dta, aes(guess, id, group = id)) +
 Let's run (bad) a regression!
 
 ```{r}
+
 m1 <- lm(dist ~ major + id, data = dta)
+
+summary(m1)
 
 model_parameters(m1) %>%
   as_tibble() %>% 
@@ -198,5 +205,7 @@ model_parameters(m1) %>%
         align = c("l", "r", "r", "r", "r", "r"),
         caption = "These are the Regression Results")
 ```
+
+
 
 # References

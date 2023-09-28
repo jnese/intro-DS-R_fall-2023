@@ -99,7 +99,7 @@ tbl_fx <- function(n){
   unnest(cols = c(data)) %>% 
   gt::gt() %>% 
   fmt_markdown(columns = c(Reading, Slides, Lecture, Assigned, Due)) %>% 
-  fmt_missing(
+  sub_missing(
     columns = everything(),
     missing_text = ""
   ) %>% 

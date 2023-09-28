@@ -12,7 +12,8 @@ format:
     fig-height: 3.5
     scrollable: true
     multiplex: true
-    chalkboard: true
+#    chalkboard: true
+    embed-resources: true
   pdf: default
 execute: 
   echo: false
