@@ -1,0 +1,296 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EDLD 651: Introduction to Data Science with R",
+    "section": "",
+    "text": "This is the first course in a sequence of courses on educational data science that will lead to a Data Science Specialization in Educational Leadership. All courses will be taught through R, a free and open-source statistical computing environment. This course focuses on introductory programming with R and RStudio, basic data wrangling and visualization with the {tidyverse} suite of packages, version control with git and GitHub, and dynamic and reproducible workflows with quarto."
+  },
+  {
+    "objectID": "index.html#fall-2023",
+    "href": "index.html#fall-2023",
+    "title": "EDLD 651: Introduction to Data Science with R",
+    "section": "",
+    "text": "This is the first course in a sequence of courses on educational data science that will lead to a Data Science Specialization in Educational Leadership. All courses will be taught through R, a free and open-source statistical computing environment. This course focuses on introductory programming with R and RStudio, basic data wrangling and visualization with the {tidyverse} suite of packages, version control with git and GitHub, and dynamic and reproducible workflows with quarto."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "EDLD 651: Introduction to Data Science with R",
+    "section": "Schedule",
+    "text": "Schedule\n\nBefore Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\n1: Intro\n\nWeek 1 Recording 11\nA Quick Tour of the RStudio IDE2\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1 Recording 23\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: c+mzu9yt\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n    \n      3 Passcode: GP&8Grs8\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\n\n\n1\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\n\n\n1\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\n\n\n1\nMarkdown Tutorial\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\n\nHomework 4\n\nRbootcamp: Ch 3\n\n    \n\n\n\n\nCodecademy: Aggregates in R\n\n    \n\n\n\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 5: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nR4DS(2e) 30\n\n\n\n1\nDownload GitKraken\n\nMarkdown Tutorial\n\n    \n\n\n\n\nWatch What is a Git repository?\n\nHomework 4\n\n    \n\n\n\nWatch What is a remote repository?\n\nFinal Project: Outline\n\n    \n\n\n\nHomework 5\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 6: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nBryan 2017\n\n\n\n1\nRStudio Primer: Join Data Sets\n\nDownload GitKraken\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\nWatch What is a Git repository?\n\n    \n\n\n\nHomework 6\n\nWatch What is a remote repository?\n\n    \n\n\n\nHomework 7\n\nHomework 5\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n\n1\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n\n1\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n\n1\nHomework 10\n\nHomework 9\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n1\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Term: Fall 2023"
+  },
+  {
+    "objectID": "syllabus.html#student-learning-outcomes",
+    "href": "syllabus.html#student-learning-outcomes",
+    "title": "Syllabus",
+    "section": "Student Learning Outcomes",
+    "text": "Student Learning Outcomes\nBy the end of this course, students should be able to:\n\nUnderstand the R package ecosystem (how to find, install, load, and learn about package functionality)\nRead “flat” (i.e., rectangular) datasets into R\nPerform basic data wrangling and transformations in R, using the tidyverse\n\nLeverage appropriate functions for introductory data science tasks (pipeline)\n“clean up” the dataset using scripts and reproducible workflows\n\nUse version control with R via GitHub\nUse Quarto to create reproducible, dynamic reports\nUnderstand and create different types of data visualizations\n\n\nCourse Modality\nThis is an in-person course: that means that, unlike asynchronous online/ASYNC WEB courses, we will meet during scheduled class meeting times in (class location). I will accommodate absences as described in the Absences policy below. If you need additional flexibility, UO encourages you to consider ASYNC WEB courses. If you need accommodation related to a medical or other disability, you can request those by working with the Accessible Education Center."
+  },
+  {
+    "objectID": "syllabus.html#course-reading-materials-and-resources",
+    "href": "syllabus.html#course-reading-materials-and-resources",
+    "title": "Syllabus",
+    "section": "Course Reading Materials and Resources",
+    "text": "Course Reading Materials and Resources\nAll required course readings are freely available online or will be provided by the instructor. Note that the assigned readings should be read before each class.\n\nBooks (required)\n\nWickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science. O’Reilly. (referred to as R4DS(2e) in the weekly schedule)\n\nFreely available online in the link above. A full-color paper copy is also available from Bookshop.org for (currently) $74.39.\n\n\n\nBooks (optional and possibly helpful)\n\nIsmay, C. and Kim, A. Y. (2021). Statistical Inference via Data Science: A ModernDive into R and the Tidyverse. (referred to as MD in the weekly schedule)"
+  },
+  {
+    "objectID": "syllabus.html#resources",
+    "href": "syllabus.html#resources",
+    "title": "Syllabus",
+    "section": "Resources",
+    "text": "Resources\n\nSupplemental Learning\nThe best way to learn to use R is to be exposed to and use R, so in this course we will use some supplemental content developed outside this course. Specifically, we will be using some RStudio Primers, and R-Bootcamp.\n\nRStudio Primers\nWe will use some of the primers offered and developed by RStudio, mostly around introducing R programming, data visualization, and data cleaning in R. You will be working through:\n\nProgramming Basics,\nVisualization Basics,\nWorking with Tibbles, and\nJoin Data Sets.\n\n\n\nR-Bootcamp\nWe will be using some content from the R-Bootcamp course, developed by Ted Laderas and Jessica Minnier, to supplement lectures. R-Bootcamp offers an introduction to manipulating and visualizing data in R using the tidyverse suite of packages. You will be working through:\n\nChapter 2, and\nChapter 3.\n\n\n\nCodecademy\nWe will also be using some content from the Learn R course through Codecademy. You will need to sign up for a free account. Codecademy can be used as a place for you to practice/grow the skills you learn in class, and a resource for your own exploration of topics not covered by this class if you so choose. You will be working through:\n\nIntroduction: Introduction to R Syntax,\nFundamentals of Data Visualization with ggplot2: Introduction to Visualization with R,\nLearn R: Aggregates in R, and\nLearn R: Joining Tables in R\n\n\n\n\nHelpful People/Groups\n\nUO Libraries Data Services\nThe team at the UO Libraries’ Statistical Help Desk is here to assist you with everything from intermediate statistics-based coursework to dissertation-level analysis. They are available this term Monday through Friday 11am to 4pm with in-person support at the Knight Library DREAM Lab and by appointment (in person or via Zoom). They cover a wide array of topics, including introductory and advanced statistics, statistical software (like R and Python), research design, GIS, git/GitHub, Zotero, and qualitative software like Dedoose.\nIn addition to one-on-one assistance, they also provide a series of workshops. This term, workshops encompass a range of topics from introduction to R (!) and Python to effectively managing citations with Zotero. They also offer specialized workshops upon request, including qualitative data analysis and GitHub tutorials.\nThey host Friday lunch chats, Coffee + Data && Code that provide an opportunity for students and faculty to connect with like-minded peers from across the university. This term, they’re hosting a book club exploring How Statistics Revolutionized Science in the Twentieth Century and reading David Salsburg’s The Lady Tasting Tea: How Statistics Revolutionized Science in the Twentieth Century (such a fun read!).\n\n\nlearnR4free\nlearnR4free includes all sorts of resources (including books, videos, interactive websites, papers) to learn R for free.\n\n\nR-Ladies\nRegardless of how you identify, but particularly if you identify as a woman or gender non-binary, connect with the global R-Ladies organization. They are an excellent organization of incredibly supportive individuals who routinely share great information.\n\n\nRStudio Community\nThe RStudio community is similar to stackoverflow but is generally more friendly, willing to engage in more philosophical and deeper discussions than “how do you do X”, and more opinionated about workflows/software design. This last part is important because these discussions will generally be biased toward the {tidyverse} philosophy, and so it’s important that you understand that going in. However, this course is also biased toward the {tidyverse} philosophy, as I think it’s a good one. Stackoverflow is a very useful resource, but the RStudio community is a better place for beginners to post questions."
+  },
+  {
+    "objectID": "syllabus.html#week-1-introduction",
+    "href": "syllabus.html#week-1-introduction",
+    "title": "Syllabus",
+    "section": "Week 1: Introduction",
+    "text": "Week 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\n1: Intro\n\nWeek 1 Recording 11\nA Quick Tour of the RStudio IDE2\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1 Recording 23\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: c+mzu9yt\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n    \n      3 Passcode: GP&8Grs8"
+  },
+  {
+    "objectID": "syllabus.html#week-2-workflow",
+    "href": "syllabus.html#week-2-workflow",
+    "title": "Syllabus",
+    "section": "Week 2: Workflow",
+    "text": "Week 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\n\n\n1\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-3-ggplot2",
+    "href": "syllabus.html#week-3-ggplot2",
+    "title": "Syllabus",
+    "section": "Week 3: {ggplot2}",
+    "text": "Week 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\n\n\n1\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-4-dplyr",
+    "href": "syllabus.html#week-4-dplyr",
+    "title": "Syllabus",
+    "section": "Week 4: {dplyr}",
+    "text": "Week 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\n\n\n1\nMarkdown Tutorial\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\n\nHomework 4\n\nRbootcamp: Ch 3\n\n    \n\n\n\n\nCodecademy: Aggregates in R\n\n    \n\n\n\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-5-rmarkdown",
+    "href": "syllabus.html#week-5-rmarkdown",
+    "title": "Syllabus",
+    "section": "Week 5: RMarkdown",
+    "text": "Week 5: RMarkdown\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nR4DS(2e) 30\n\n\n\n1\nDownload GitKraken\n\nMarkdown Tutorial\n\n    \n\n\n\n\nWatch What is a Git repository?\n\nHomework 4\n\n    \n\n\n\nWatch What is a remote repository?\n\nFinal Project: Outline\n\n    \n\n\n\nHomework 5\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-6-github",
+    "href": "syllabus.html#week-6-github",
+    "title": "Syllabus",
+    "section": "Week 6: GitHub",
+    "text": "Week 6: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nBryan 2017\n\n\n\n1\nRStudio Primer: Join Data Sets\n\nDownload GitKraken\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\nWatch What is a Git repository?\n\n    \n\n\n\nHomework 6\n\nWatch What is a remote repository?\n\n    \n\n\n\nHomework 7\n\nHomework 5\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-7-mutating-joins",
+    "href": "syllabus.html#week-7-mutating-joins",
+    "title": "Syllabus",
+    "section": "Week 7: Mutating Joins",
+    "text": "Week 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n\n1\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-8-tidy-data",
+    "href": "syllabus.html#week-8-tidy-data",
+    "title": "Syllabus",
+    "section": "Week 8: Tidy Data",
+    "text": "Week 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n\n1\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-9-factors-pull-request",
+    "href": "syllabus.html#week-9-factors-pull-request",
+    "title": "Syllabus",
+    "section": "Week 9: Factors & Pull Request",
+    "text": "Week 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n\n1\nHomework 10\n\nHomework 9\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-10-presentations",
+    "href": "syllabus.html#week-10-presentations",
+    "title": "Syllabus",
+    "section": "Week 10: Presentations",
+    "text": "Week 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n1\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA"
+  },
+  {
+    "objectID": "syllabus.html#week-11-no-class-final-papers-due",
+    "href": "syllabus.html#week-11-no-class-final-papers-due",
+    "title": "Syllabus",
+    "section": "Week 11: No class: Final papers due",
+    "text": "Week 11: No class: Final papers due"
+  },
+  {
+    "objectID": "syllabus.html#homework-200-points-50",
+    "href": "syllabus.html#homework-200-points-50",
+    "title": "Syllabus",
+    "section": "Homework (200 points; 50%)",
+    "text": "Homework (200 points; 50%)\n\nHomework Assignments (100 points)\nThere are 10 homework assignments during the course, which must be submitted to the instructor prior to the start of the following class. At 10 points per lab, these labs will be scored on a “best honest effort” basis, which generally implies zero or full credit (i.e., the assignment was or was not fully completed). However, many of the homework assignments require students complete specific portions before moving on to the next sections. If you find yourself stuck and unable to proceed, please contact the instructor for help rather than submitting incomplete work. Contacting the instructor is part of the “best honest effort”, and can result in full credit for an assignment even if the work is not fully complete. If the assignment is not complete, and the student has not contacted the instructor for help, it is likely to result is a score of zero.\n\n\nSupplemental Learning Platforms\n\nRStudio Primers, R-Bootcamp Chapters, & Codecademy-Learn R (100 points)\nIn addition to providing supplemental support, four RStudio Primers, two R-Bootcamp Chapters, and four Codecademy Lessons will be assigned and scored as part of homework at 10 points each. For the RStudio Primers and R-Bootcamp assignments you will submit a screenshot of a specific part of each lesson as evidence of completion (see below). For the Codecademy assignments you will submit a screenshot of the completed lesson with a black checkmark in a yellow circle on your syllabus page. This information is also in the Weekly Schedule.\n\nRStudio Primers Screenshot to submit (10 points each)\n\nProgramming Basics: screenshot of Types &gt; Character or object?\nVisualization Basics: screenshot of A code template &gt; A graphing template\nWorking with Tibbles: screenshot of tidyverse &gt; Quiz\nJoin Data Sets: screenshot of Mutating Joins &gt; Test your comprehension\n\n\n\nR-Bootcamp Screenshots to submit (10 points each)\n\nChapter 2: screenshot of part 13\nChapter 3: screenshot of part 21\nChapter 4: screenshot of part 7\n\n\n\nCodecademy Screenshots to submit (10 points each)\n\nIntroduction: Introduction to R Syntax: screenshot of completion checkmark (example)\nFundamentals of Data Visualization with ggplot2: Introduction to Visualization with R: screenshot of completion checkmark\nLearn R: Aggregates in R: screenshot of completion checkmark\nLearn R: Joining Tables in R: screenshot of completion checkmark"
+  },
+  {
+    "objectID": "syllabus.html#final-project-200-points-50",
+    "href": "syllabus.html#final-project-200-points-50",
+    "title": "Syllabus",
+    "section": "Final Project (200 points; 50%)",
+    "text": "Final Project (200 points; 50%)\nThe final project in this class is a group project, requiring students use a “real world” dataset to write, essentially, a miniature manuscript, including an introduction (paragraph or two), methods, results, and discussion (again, maybe 2-3 paragraphs). Ideally, students would work with a dataset that includes variables they are interested in using beyond just this class; however, if students do not have access to a dataset, the instructor will provide one. Students who do not have access to data should plan to meet with the instructor as soon as possible so a dataset can be provided. Additionally, the dataset must be able to be shared publicly, as the full project will be required to be housed on GitHub and be fully reproducible. If making your data publicly available is a problem for you, please contact the instructor as soon as possible. We can work together to either find a dataset that will work for you, or simulate a dataset that is similar to the data you’d like to work with in reality (and then all your code should work for the real dataset, but you can share the simulated data with your classmates). Students are required to work in groups of 2-4 people. The final assignment is assigned during the first class, and groups must be finalized by the end of Week 2 (at which point students who have not self-selected into groups will be randomly assigned).\n\nOutline (15 points)\nA basic outline of the final project is due at the end of Week 5. The outline should include a description of the data to be used, a discussion of what preparatory work will need to be done, and how the requirements of the final project will be met. The outline is intended to be low-stakes and is primarily designed to be a means for you to obtain feedback on the feasibility of the project and areas to consider.\n\n\nDraft Data Preparation Script (25 points)\nAt the end of Week 8, you must have a draft of the data preparation complete, including moving the data from its raw to tidy form and a variety of exploratory data visualizations. Final project must use the following functions: pivot_longer(), select(), filter(), mutate(), pivot_wider(), group_by(), and summarize().\n\n\nPeer Review of Data Preparation Script (25 points)\nFollowing the submission of the data preparation scripts, you will be assigned to review your peers’ code. The purpose of this exercise is to learn from each other. Programming is an immensely open-ended enterprise and there are lots of winding paths that all ultimately end up at the same destination. During your peer review, you must note (a) at least three areas of strength, (b) at least one thing you learned from reviewing their script, and (c) at least one and no more than three areas for improvement. Making your code publicly available can feel daunting. The purpose of this portion of the final project is to help us all learn from each other, not to denigrate. Under no circumstances will negative comments be tolerated. Any comments that could be perceived as negative, and outside the scope of the code, will result in an immediate score of zero. Be constructive in your feedback. Be kind. We are all learning.\n\n\nFinal Project Presentation (25 points)\nEach group will present on their final project during Week 10, which is expected to still be in progress. These presentations are expected to be informal, and emphasize what learning occurred during the project. Specifically, the presentations are to commiserate with each other about the failures and challenges experienced along the way, while also celebrating the successes. Learning R is a difficult task, and we should all take solace knowing that others are struggling along with us. The final presentation should be equal parts “journey” and substantive findings/conclusions/results. Students are expected to present for approximately 10 minutes each (20-40 minutes per group), although the time may change depending on the enrollment of the class.\n\n\nFinal Paper (110)\nThe purpose of the final project is to allow students an opportunity to demonstrate all the skills they have learned throughout the course. The final project must (a) be a reproducible and dynamic R Markdown document with references to the extant literature; (b) be housed on GitHub, with contributions from all authors obvious; (c) demonstrate moving data from its raw “messy” format to a tidy data format through the R Markdown file, but not in the final document; (d) include at least two exploratory data visualizations, and (e) include at least summary statistics of the data in tables, although fitted models of any sort are an added bonus (not literally, there are not extra points for fitting a model). The points for the final project are broken down as follows.\n\n\n\n\n\n\n  \n    \n      Final Paper Rubric\n    \n    \n    \n      Criteria\n      Points Possible\n    \n  \n  \n    Writing\n\n\n    Abstract\n\n5\n    Introduction\n\n5\n    Methods\n\n5\n    Results\n\n5\n    Discussion\n\n5\n    References\n\n5\n    Code\n\n\n    Document is fully reproducible\n\n25\n    Demonstrate use of inline code\n\n5\n    At least two data visualizations\n\n10 (5 pts each)\n    Demonstrate tidying messy data using:\n\n\n    pivot_longer()\n\n5\n    mutate()\n\n5\n    select()`` and ``filter()\n\n5\n    pivot_wider()\n\n5\n    At least one table of descriptive statistics\n\n10\n    group_by()\n\n5\n    summarize()\n\n5\n    Total\n\n110\n  \n  \n  \n\n\n\n\nI will investigate the commits made by different authors when evaluating the final project. If it is obvious that one person did not utilize GitHub, and instead added all of their contributions through a single or only a few commits, I will dock points from that individual. There should be numerous commits by each author, and they should be roughly even in terms of contribution activity (which GitHub has metrics to track, both in terms of the number of commits as well as the number of lines modified)."
+  },
+  {
+    "objectID": "syllabus.html#grading-components",
+    "href": "syllabus.html#grading-components",
+    "title": "Syllabus",
+    "section": "Grading Components",
+    "text": "Grading Components\n\n\n\n\n\n\n  \n    \n      Grading Components\n    \n    \n    \n      Lower %\n      Lower point range\n      Grade\n      Upper point range\n      Upper %\n    \n  \n  \n    97\n388\nA+\n\n\n    93\n372\nA\n384\n96\n    90\n360\nA-\n368\n92\n    87\n348\nB+\n356\n89\n    83\n332\nB\n344\n86\n    80\n320\nB-\n328\n82\n    77\n308\nC+\n316\n79\n    73\n292\nC\n304\n76\n    70\n280\nC-\n288\n72\n    \n\nF\n276\n69"
+  },
+  {
+    "objectID": "syllabus.html#student-engagement-inventory",
+    "href": "syllabus.html#student-engagement-inventory",
+    "title": "Syllabus",
+    "section": "Student Engagement Inventory",
+    "text": "Student Engagement Inventory\nGraduate: 1 credit hour = 40 hours of student engagement (3 credit hours = 120 hours of student engagement).\n\n\n\n\n\n\n  \n    \n      Student Engagement Inventory\n    \n    \n    \n      Educational activity\n      Hours student engaged\n      Explanatory comments (if any):\n    \n  \n  \n    Course attendance\n28.33\n10 meetings at 170 minutes per meeting\n    Assigned readings\n15.67\nWeekly readings are assigned, and expected to take approximatley 1.5 hours each week\n    Projects\n36.00\nFinal project, as described above\n    Homework\n40.00\n10 Labs, at approximately 3 hours per lab spent out of class (20 hours), plus 4 Rstudio Primers, 3 R-Bootcamp Chapters, and 4 Codecademy Lessons at approximately 1 hour each (10 hours)\n    Total hours:\n120.00"
+  },
+  {
+    "objectID": "syllabus.html#indigenous-recognition-statement",
+    "href": "syllabus.html#indigenous-recognition-statement",
+    "title": "Syllabus",
+    "section": "Indigenous Recognition Statement",
+    "text": "Indigenous Recognition Statement\nThe University of Oregon is located on Kalapuya Ilihi, the traditional indigenous homeland of the Kalapuya people. Today, descendants are citizens of the Confederated Tribes of the Grand Ronde Community of Oregon and the Confederated Tribes of the Siletz Indians of Oregon, and they continue to make important contributions in their communities, at UO, and across the land we now refer to as Oregon."
+  },
+  {
+    "objectID": "syllabus.html#communicating-with-me-how-and-why",
+    "href": "syllabus.html#communicating-with-me-how-and-why",
+    "title": "Syllabus",
+    "section": "Communicating with Me: How and Why",
+    "text": "Communicating with Me: How and Why\nHow will I communicate with you? Our class will communicate through our Canvas site. Announcements and emails are archived there, automatically forwarded to your UO email, and can even reach you by text. Check and adjust your settings under Account &gt; Notifications.\nWhen I need to get in touch with individual students, I do so through email.\nWhen giving feedback on assignments, I do so in Canvas, and turnaround time for feedback is generally one week.\nHow can you communicate with me? If your question (or comment) is about a technical challenge with Canvas or another technology, please contact the UO Service Portal. IF it about course content or activities, about something personal, time sensitive, or something else that doesn’t feel like it fits above, please reach out to me by email. I try to respond to questions within one business day.\nWhy should you communicate with me? I enjoy talking with students about our course material! Are you confused or excited about something? Wondering how what we’re learning relates to current events, career choices, or other classes you can take UO? Please be in touch! Please also be in touch to tell me how you are doing in the course. If you are having trouble with some aspect of it, I would like to strategize with you. I believe every student can succeed in this course, and I care about your success."
+  },
+  {
+    "objectID": "syllabus.html#classroom-community-expectations",
+    "href": "syllabus.html#classroom-community-expectations",
+    "title": "Syllabus",
+    "section": "Classroom Community Expectations",
+    "text": "Classroom Community Expectations\nParticipate and Contribute: All students are expected to participate by sharing ideas and contributing to the learning environment. This entails preparing, following instructions, and engaging respectfully and thoughtfully with others. While all students should participate, participation is not just talking, and a range of participation activities support learning. Participation might look like speaking aloud in the full class and in small groups as well as submitting questions prior to class or engaging with Discussion posts. We will establish more specific participation guidelines and criteria for contributions in our first weeks of the term.\nExpect and Respect Diversity: All classes at the University of Oregon welcome and respect diverse experiences, perspectives, and approaches. What is not welcome are behaviors or contributions that undermine, demean, or marginalize others based on race, ethnicity, gender, sex, age, sexual orientation, religion, ability, or socioeconomic status. We will value differences and communicate disagreements with respect. We may establish more specific guidelines and protocols to ensure inclusion and equity for all members of our learning community.\nHelp Everyone Learn: Part of how we learn together is by learning from one another. To do this effectively, we need to be patient with each other, identify ways we can assist others, and be open-minded to receiving help and feedback from others. Don’t hesitate to contact me to ask for assistance or offer suggestions that might help us learn better.\nGuidelines for using Canvas Discussion:\n\nUse subject lines that clearly communicate the content of your post - Write concisely, and be aware that humor or sarcasm doesn’t always translate in writing.\nBe supportive and considerate when replying to others’ posts. This means avoiding use of jargon or inappropriate language, and it means disagreeing with respect and providing clear rationale or evidence to support your different view.\n\nKeep focused on the topic and reference readings and other class materials to support your points (as applicable).\n\nTry to use correct spelling and grammar and proofread your submissions. After submitting, use the edit feature to make corrections and resubmit (don’t create a new or duplicate post that corrects your error)."
+  },
+  {
+    "objectID": "syllabus.html#absences",
+    "href": "syllabus.html#absences",
+    "title": "Syllabus",
+    "section": "Absences",
+    "text": "Absences\nThis is a face-to-face course. Attendance is important because we will develop our knowledge through in-class activities that require your active engagement. We’ll have discussions, small-group activities, and do other work during class that will be richer for your presence, and that you won’t be able to benefit from if you are not there. Excessive absences make it impossible to learn well and succeed in the course. While there is not an automatic grade deduction for missing classes, it is unlikely that students who miss X or more classes will be able pass this course.\nWe know our UO community will still be navigating COVID-19, and some students will need to isolate and rest if they get COVID. Please take absences only when necessary, so when they are necessary, your prior attendance will have positioned you for success.\nAttendance at all class and discussion groups is expected and required. Students must contact the instructor in case of illness or emergencies that preclude attending class sessions. Messages can be left on the instructor’s e-mail at any time of the day or night, prior to class. If you are unable to complete an assignment due to a personal and/or family emergency, you should contact your instructor as soon as possible.\nIf you must miss a class please fill out the absence report form."
+  },
+  {
+    "objectID": "syllabus.html#generative-artificial-intelligence-use",
+    "href": "syllabus.html#generative-artificial-intelligence-use",
+    "title": "Syllabus",
+    "section": "Generative Artificial Intelligence Use",
+    "text": "Generative Artificial Intelligence Use\nStudents can use GenAI tools in this class to help with course work and assignments. However, if you use a GenAI tool, you need to document your use, including the tool you use and when, where, and how in your work process you used it (for example: “I used ChatGPT to generate this part of my code, which I then revised before submitting”). In certain cases, as part of your documentation, I may ask you to submit any GenAI results you obtained, so you need to keep GenAI-created drafts and logs of your interactions with GenAI tools; failure to provide such documentation may result in a grade reduction in certain instances.\nAlong with documentation of your GenAI use, you are also required to cite GenAI if you use any GenAI-created content in your work submissions, for example text or images or graphics generated by GenAI tools. That is, you need to treat GenAI just like other sources such as books, articles, videos, etc."
+  },
+  {
+    "objectID": "syllabus.html#children-in-class",
+    "href": "syllabus.html#children-in-class",
+    "title": "Syllabus",
+    "section": "Children in Class",
+    "text": "Children in Class\nI understand the difficulty in balancing academic, work, and family commitments and I want you to succeed. Here are my policies regarding children in class.\n\nAll breastfeeding babies are welcome in class as often as necessary.\nNon-nursing babies and older children are welcome whenever alternate arrangements cannot be made. As a parent, I understand that babysitters fall through, partners have conflicting schedules, and other issues arise that leave parents with few other options. Please do not bring a sick child into class.\nIn cases where children come to class, I invite parents/caregivers to sit close to the door so as to more easily excuse yourself to attend to your child’s needs. Non-parents in the class: please reserve seats near the door for your parenting classmates.\nAll students are expected to join with me in creating a welcoming environment that is respectful of your classmates who bring children to class.\n\nI understand that sleep deprivation and exhaustion are among the most difficult aspects of parenting young children. The struggle of balancing school, work, childcare, and graduate school is tiring, and I will do my best to accommodate any such issues while maintaining the same high expectations for all students enrolled in the class. Please do not hesitate to contact me with any questions or concerns."
+  },
+  {
+    "objectID": "syllabus.html#using-pronouns-and-personal-preference",
+    "href": "syllabus.html#using-pronouns-and-personal-preference",
+    "title": "Syllabus",
+    "section": "Using Pronouns and Personal Preference",
+    "text": "Using Pronouns and Personal Preference\nPlease feel safe to share your pronouns, or the words you want to be called when people aren’t using your name. Like names, pronouns are an important part of how we identify that deserves to be respected. And I recognize that assuming someone’s gender can be hurtful, especially to members of our community who are transgender, genderqueer, or non-binary. As a community, we are all learning together about the importance of pronouns and being better allies to the trans community on campus. Please discuss the pronouns you wish to be used with me so I can address you respectfully. Please visit this university website for more information - https://studentlife.uoregon.edu/pronouns"
+  },
+  {
+    "objectID": "syllabus.html#access-and-accommodations",
+    "href": "syllabus.html#access-and-accommodations",
+    "title": "Syllabus",
+    "section": "Access and Accommodations",
+    "text": "Access and Accommodations\nThe University of Oregon and I are dedicated to fostering inclusive learning environments for all students and welcomes students with disabilities into all of the University’s educational programs. The Accessible Education Center (AEC) assists students with disabilities in reducing campus-wide and classroom-related barriers. If you have or think you have a disability (https://aec.uoregon.edu/content/what-disability) and experience academic barriers, please contact the AEC to discuss appropriate accommodations or support. Visit 360 Oregon Hall or aec.uoregon.edu for more information. You can contact AEC at 541-346-1155 or via email at uoaec@uoregon.edu."
+  },
+  {
+    "objectID": "syllabus.html#accommodation-for-religious-observances",
+    "href": "syllabus.html#accommodation-for-religious-observances",
+    "title": "Syllabus",
+    "section": "Accommodation for Religious Observances",
+    "text": "Accommodation for Religious Observances\nThe University of Oregon respects the right of all students to observe their religious holidays, and will make reasonable accommodations, upon request, for these observances. If you need to be absent from a class period this term because of a religious obligation or observance, please fill out the Student Religious Accommodation Request fillable PDF form and send it to me within the first weeks of the course so we can make arrangements in advance."
+  },
+  {
+    "objectID": "syllabus.html#your-wellbeing",
+    "href": "syllabus.html#your-wellbeing",
+    "title": "Syllabus",
+    "section": "Your Wellbeing",
+    "text": "Your Wellbeing\nLife at college can be very complicated. Students often feel overwhelmed or stressed, experience anxiety or depression, struggle with relationships, or just need help navigating challenges in their life. If you’re facing such challenges, you don’t need to handle them on your own - there’s help and support on campus.\nAs your instructor if I believe you may need additional support, I will express my concerns, the reasons for them, and refer you to resources that might be helpful. It is not my intention to know the details of what might be bothering you, but simply to let you know I care and that help is available. Getting help is a courageous thing to do - for yourself and those you care about.\nUniversity Health Services help students cope with difficult emotions and life stressors. . If you need general resources on coping with stress or want to talk with another student who has been in the same place as you, visit the Duck Nest (located in the EMU on the ground floor) and get help from one of the specially trained Peer Wellness Advocates.\nUniversity Counseling Services (UCS) has a team of dedicated staff members to support you with your concerns, many of whom can provide identity-based support. All clinical services are free and confidential. Find out more at counseling.uoregon.edu or by calling 541-346-3227 (anytime UCS is closed, the After-Hours Support and Crisis Line is available by calling this same number)."
+  },
+  {
+    "objectID": "syllabus.html#basic-needs",
+    "href": "syllabus.html#basic-needs",
+    "title": "Syllabus",
+    "section": "Basic Needs",
+    "text": "Basic Needs\nBeing able to meet your basic needs is foundational to your success as a student at the University of Oregon. If you are having difficulty affording food, don’t have a stable, safe place to live, or are struggling to meet another need, visit the UO Basic Needs Resource page for information on how to get support. They have information food, housing, healthcare, childcare, transportation, technology, finances (including emergency funds), and legal support.\nIf your need is urgent, please contact the Care and Advocacy Program by calling 541-346-3216, filling out the Community Care and Support form, or by scheduling an appointment with an advocate."
+  },
+  {
+    "objectID": "syllabus.html#respect-for-diversity",
+    "href": "syllabus.html#respect-for-diversity",
+    "title": "Syllabus",
+    "section": "Respect for Diversity",
+    "text": "Respect for Diversity\nYou can expect to be treated with respect in this course. Both students and your instructor(s) enter with many identities, backgrounds, and beliefs. Students of all racial identities, ethnicities, genders, gender identities, gender expressions, national origins, religious affiliations, sexual orientations, citizenship statuses, ability and other visible and non-visible differences belong in and contribute to this class and this discipline. All students are expected to contribute to a respectful, welcoming and inclusive environment for every other member of the class.\nClass rosters are provided to instructors with students’ legal names. Please let me know if the name or pronouns I have for you are not accurate. It is important to me to address you properly.\nPlease let me know if aspects of the instruction, course design, or class activities undermine these principles in any way. You may also notify the [Home Department] at [contact information]. For additional assistance and resources, you may also consider contacting the Division of Equity and Inclusion through their website or by phone (at 541-346-3175), or the Center for Multicultural Academic Excellence through their website or by phone (at 541-346-3479)."
+  },
+  {
+    "objectID": "syllabus.html#academic-integrity",
+    "href": "syllabus.html#academic-integrity",
+    "title": "Syllabus",
+    "section": "Academic Integrity",
+    "text": "Academic Integrity\nThe University Student Conduct Code defines academic misconduct, which includes using unauthorized help on assignments and examinations, the use of sources without acknowledgment, and recording class without “the express written permission of the instructor(s).” Academic misconduct is prohibited at UO. I will report all suspected misconduct to the Office of Student Conduct and Community Standards. If the Office finds a student has committed misconduct, consequences can include of the relevant assignment or exam, or of the course.\nWhile unauthorized help and use of sources without citation is prohibited, learning together and citing sources is crucial! Each assignment and assessment will have a note about whether and how you might work with others so that you can clearly act with academic integrity. All assignments will use APA citation (preferred), and you can find support in using [citation method] at the UO Libraries’ Citation Guides research guide.\nIf at any point in the term you are unsure about whether a behavior aligns with academic integrity in our course, please contact me. I view student questions about academic integrity as a desire to act with integrity, so I welcome your questions."
+  },
+  {
+    "objectID": "syllabus.html#student-experience-surveys",
+    "href": "syllabus.html#student-experience-surveys",
+    "title": "Syllabus",
+    "section": "Student Experience Surveys",
+    "text": "Student Experience Surveys\nThe midway and end-of-term Student Experience Surveys will be conducted in class on [insert dates. These happen during week four, then week 10]. These are important opportunities to provide feedback about your learning experiences. I value this feedback and am continually improving the course with students’ responses in mind. The key parts of the survey are the open-ended questions where you share concrete, actionable feedback and about the teaching practices that stand out to you. Thank you for your thoughtful reflections!"
+  },
+  {
+    "objectID": "syllabus.html#reporting-obligations",
+    "href": "syllabus.html#reporting-obligations",
+    "title": "Syllabus",
+    "section": "Reporting Obligations",
+    "text": "Reporting Obligations\nI am a designated reporter. For information about my reporting obligations as an employee, please see Employee Reporting Obligations on the Office of Investigations and Civil Rights Compliance (OICRC) website. Students experiencing sex or gender-based discrimination, harassment or violence should call the 24-7 hotline 541-346-SAFE [7244] or visit safe.uoregon.edu for help. Students experiencing all forms of prohibited discrimination or harassment may contact the Dean of Students Office at 5411-346-3216 or the non-confidential Title IX Coordinator/OICRC at 541-346-3123. Additional resources are available at UO’s How to Get Support webpage.\nI am also a mandatory reporter of child abuse. Please find more information at Mandatory Reporting of Child Abuse and Neglect."
+  },
+  {
+    "objectID": "syllabus.html#conflict-resolution",
+    "href": "syllabus.html#conflict-resolution",
+    "title": "Syllabus",
+    "section": "Conflict Resolution",
+    "text": "Conflict Resolution\nSeveral options, both informal and formal, are available to resolve conflicts for students who believe they have been subjected to or have witnessed bias, unfairness, or other improper treatment.\nIt is important to exhaust the administrative remedies available to you including discussing the conflict with the specific individual, contacting the Department Head, or within the College of Education, fall term you can contact the Associate Dean for Academic Affairs, Sylvia Thompson, (541) 346-2483, sthomps5@uoregon.edu. Outside the College, you can contact:\n\nUO Bias Response Team: 346-3216\n\nConflict Resolution Services: 346-3216\nAffirmative Action and Equal Opportunity: 346-3123"
+  },
+  {
+    "objectID": "syllabus.html#grievance-policy",
+    "href": "syllabus.html#grievance-policy",
+    "title": "Syllabus",
+    "section": "Grievance Policy",
+    "text": "Grievance Policy\nA student or group of students of the College of Education may appeal decisions or actions pertaining to admissions, programs, evaluation of performance and program retention and completion. Students who decide to file a grievance should follow University student grievance procedures (https://policies.uoregon.edu/grievance-procedures) and/or consult with the College Associate Dean for Academic Affairs (Sylvia Thompson, 541-346-2483, sthomps5@uoregon.edu). &lt;br"
+  },
+  {
+    "objectID": "syllabus.html#academic-disruption-due-to-campus-emergency",
+    "href": "syllabus.html#academic-disruption-due-to-campus-emergency",
+    "title": "Syllabus",
+    "section": "Academic Disruption due to Campus Emergency",
+    "text": "Academic Disruption due to Campus Emergency\nIn the event of a campus emergency that disrupts academic activities, course requirements, deadlines, and grading percentages are subject to change. Information about changes in this course will be communicated as soon as possible by email, and on Canvas. If we are not able to meet face-to-face, students should immediately log onto Canvas and read any announcements and/or access alternative assignments. Students are also expected to continue coursework as outlined in this syllabus or other instructions on Canvas."
+  },
+  {
+    "objectID": "syllabus.html#inclement-weather",
+    "href": "syllabus.html#inclement-weather",
+    "title": "Syllabus",
+    "section": "Inclement Weather",
+    "text": "Inclement Weather\nIt is generally expected that class will meet unless the University is officially closed for inclement weather. If it becomes necessary to cancel class while the University remains open, this will be announced on Canvas and by email. Updates on inclement weather and closure are also communicated as described on the Inclement Weather webpage."
+  },
+  {
+    "objectID": "syllabus.html#course-incomplete-policy",
+    "href": "syllabus.html#course-incomplete-policy",
+    "title": "Syllabus",
+    "section": "Course Incomplete Policy",
+    "text": "Course Incomplete Policy\nStudents are expected to be familiar with university policy regarding grades of “incomplete” and the timeline for completion. For details on the policy and procedures regarding incompletes, Please see: https://education.uoregon.edu/academics/incompletes-courses"
+  }
+]

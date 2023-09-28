@@ -77,7 +77,7 @@ sched_1 <- read_xlsx(here::here("nopublish", "schedule.xlsx"), sheet = "schedule
   ) %>% 
   select(-ends_with("link"), -ends_with("shortcut"), -c(Topic, screenshot)) %>% 
   mutate(across(everything(), ~ifelse(. == "NA(NA)", NA_character_, .))) %>% 
-  mutate(Lecture = ifelse(str_detect(Lecture, "fas"), Lecture, NA_character_)) %>% 
+  mutate(Lecture = ifelse(str_detect(Lecture, "https"), Lecture, NA_character_)) %>% 
   mutate(across(everything(), ~str_remove(., "\\(NA\\)")))  
 
 
