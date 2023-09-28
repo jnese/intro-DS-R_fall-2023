@@ -79,5 +79,11 @@
   },
   "slides/w2_workflow.qmd": {
     "w2_workflow.html": "dbd9c7bf"
+  },
+  "foo.qmd": {
+    "foo.html": "309884b8"
+  },
+  "schedule_orig.qmd": {
+    "schedule_orig.html": "ad85e00f"
   }
 }

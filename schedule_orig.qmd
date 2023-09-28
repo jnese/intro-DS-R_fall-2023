@@ -134,11 +134,6 @@ Instructions for each are on the [Installs page](installs.qmd).
 
 tbl_fx(1) %>% 
   tab_footnote(
-  footnote = "Passcode: GP&8Grs8",
-  locations = cells_body(
-    columns = Lecture, rows = 2)
-  ) %>% 
-  tab_footnote(
     footnote = "I do not rearrange my RStudio panes as he does.",
     locations = cells_body(
       columns = Assigned, rows = 1)
