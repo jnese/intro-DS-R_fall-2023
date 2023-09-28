@@ -75,7 +75,8 @@
     "popcorn-experiment.html": "a7811aa3"
   },
   "slides/w1_intro.qmd": {
-    "w1_intro.html": "c743a300"
+    "w1_intro.html": "c743a300",
+    "w1_intro.tex": "9cc12bd0"
   },
   "slides/w2_workflow.qmd": {
     "w2_workflow.html": "dbd9c7bf"
