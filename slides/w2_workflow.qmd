@@ -12,8 +12,6 @@ format:
     fig-height: 3.5
     scrollable: true
     multiplex: true
-    chalkboard: true
-  pdf: default
 execute: 
   echo: true
   warning: false
@@ -26,36 +24,54 @@ library(knitr)
 library(here)
 library(kableExtra)
 library(janitor)
+library(rio)
 
 ```
+
+## Housekeeping
+
+Let's give Andrew a hex sticker!
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUCh4UcLoDZUhQGSuHinhZd0ga1DkZkLD_A&usqp=CAU)
+
+. . .
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBdqUT_41pAu_2qJF1Y6-kDC7T_XiY0f_Tw&usqp=CAU)
+
+## Housekeeping
+
+Screenshots
+
+- [RStudio Primer: Programming basics](https://posit.cloud/learn/primers/1.2)
+    + **Types > Character or object?**
+- Codecademy: Introduction to R Syntax
+    + [something to show you completed the module in its entirety](https://jnese.github.io/intro-DS-R_fall-2023/slides/images/codecademy_complete.png)
+- [Rbootcamp: Ch 2](https://r-bootcamp.netlify.app/chapter2)
+    + **part 13**
+  
 
 # Workflow
 
 Week 2
 
-## Housekeeping
-
-* assignments
-* breaks
-
 ## Agenda {.smaller}
 
-* Project Oriented Workflow
-  + RStudio Projects
-  + File paths
-  + Reading in data
-  + Scripts (.R & .qmd)
-  + Loading packages
-* Looking at data
-* The pipe `%>%`
-  + also `|>`
+-   Project Oriented Workflow
+    -   RStudio Projects
+    -   File paths
+    -   Reading in data
+    -   Scripts (.R & .qmd)
+    -   Loading packages
+-   Looking at data
+-   The pipe `%>%`
+    -   also `|>`
 
 **Learning Objectives**
 
-* Open an RStudio Project
-* Understand file paths
-* Learn two ways to read data
-* Establish good workflow habits
+-   Open an RStudio Project
+-   Understand file paths
+-   Learn two ways to read data
+-   Establish good workflow habits
 
 # RStudio Projects
 
@@ -63,42 +79,41 @@ Week 2
 
 An RStudio project - .Rproj - is basically a folder to house all the files for your project
 
-* scripts
-* products
-* data
-* figures
+-   scripts
+-   products
+-   data
+-   figures
 
 ## RStudio Projects (.Rproj)
 
 **Advantages**
 
-* Work with several projects at the same time (several projects open)
-  + these are self-contained!
-* Can save the history of your commands after quitting
-* Can specify version control system (e.g., Git)
-* Previously edited code tabs are restored upon opening
-* The current **working directory** is set to the project directory
+-   Work with several projects at the same time (several projects open)
+    -   these are self-contained!
+-   Can save the history of your commands after quitting
+-   Can specify version control system (e.g., Git)
+-   Previously edited code tabs are restored upon opening
+-   The current **working directory** is set to the project directory
 
 ## What's a working directory? {.smaller}
 
 Where you're at on your computer
 
-* the folder location
-* *Quick check-in*: does this make sense?
+-   the folder location
+-   *Quick check-in*: does this make sense?
 
 You *can* change your working directory with `setwd("path/to/files")`...
 
 ...**BUT** I strongly urge you to avoid that
 
-Instead, we’re going to use RStudio Projects and the `{here}` package
+Instead, we're going to use RStudio Projects and the `{here}` package
 
 You can `list.files("path/to/files")` to see the contents of your project directory (i.e., what your computer "sees")
 
 . . .
 
-* See where you're currently at by looking at the top of the console
-* Or run `getwd()` in the console
-
+-   See where you're currently at by looking at the top of the console
+-   Or run `getwd()` in the console
 
 ![](./images/directory.png)
 
@@ -110,7 +125,7 @@ This is true for whoever is accessing the project
 
 Use the `{here}` package to specify **paths**
 
-* You can read/save data (and figures, products, etc.) which we'll talk about more later
+-   You can read/save data (and figures, products, etc.) which we'll talk about more later
 
 ## Best practices {.smaller}
 
@@ -118,23 +133,21 @@ Use the `{here}` package to specify **paths**
 ::: {.column width="50%"}
 `here()`
 
-* works for anyone who uses the script
-* share it out with no code editing
-* easy to work on other projects with different directories
-
+-   works for anyone who uses the script
+-   share it out with no code editing
+-   easy to work on other projects with different directories
 :::
 
 ::: {.column width="50%"}
-**Session > Restart R** (`Ctrl/Command + Shift + F10`)
+**Session \> Restart R** (`Ctrl/Command + Shift + F10`)
 
 Restart the `R` session
 
-* Create a fresh `R` process
-* Deletes **all** objects
-* Packages will need to be re-loaded
-* Resets any code-enables options
-* Ensures script is self-contained
-
+-   Create a fresh `R` process
+-   Deletes **all** objects
+-   Packages will need to be re-loaded
+-   Resets any code-enables options
+-   Ensures script is self-contained
 :::
 :::
 
@@ -144,67 +157,67 @@ Write every script assuming it will be run in a fresh `R` process
 
 . . .
 
-1) Do not save `.RData` when you quit `R` and don’t load `.RData` when you start `R`
+1)  Do not save `.RData` when you quit `R` and don't load `.RData` when you start `R`
 
 Week 1: **Tools 🡆 Global Options 🡆 General**
 
 Workspace
 
-- "*Restore .RData into workspace at startup*" -- **Uncheck**
-- "*Save workspace to .RData on exit:*" -- **Never**
+-   "*Restore .RData into workspace at startup*" -- **Uncheck**
+-   "*Save workspace to .RData on exit:*" -- **Never**
 
 . . .
 
-2) Daily work habit: 
-  + Restart `R` very often and re-run your developing script from the top
-  + Use the RStudio menu item: **Session > Restart R** (`Ctrl/Command + Shift + F10`)
+2)  Daily work habit:
+
+-   Restart `R` very often and re-run your developing script from the top
+-   Use the RStudio menu item: **Session \> Restart R** (`Ctrl/Command + Shift + F10`)
 
 # Workflow
 
-## Let’s start by making a new project
+## Let's start by making a new project
 
 Typical workflow
 
-1. Make a new .RProj
+1.  Make a new .RProj
 
-2. Add folders
-    + "data"
-    + "scripts"
-    
-3. Read in data
+2.  Add folders
 
-4. Create scripts
+    -   "data"
+    -   "scripts"
 
-5. Load packages
+3.  Read in data
+
+4.  Create scripts
+
+5.  Load packages
 
 # RStudio Project
 
 ## 1. Make a new .RProj
 
-*File* > *New Project...*
+*File* \> *New Project...*
 
-or
+or - upper right of RStudio by the `R` cube
 
-upper right of RStudio IDE by the `R` cube
-
-down arrow > *New Project...*
+⬇️ \> *New Project...*
 
 ## 1. Make a new .RProj
 
-Let’s name it: "my_first_project"
+Let's name it: "my_first_project"
 
-* notice the naming convention
-  + no caps
-  + no spaces
-  + no special characters (e.g., `?`, `!`, `"`, `#`)
-  + "`_`" and "`-`" are ok
-  
+-   notice the naming convention
+    -   no caps
+    -   no spaces
+    -   no special characters (e.g., `?`, `!`, `"`, `#`)
+    -   "`_`" and "`-`" are ok
+
 . . .
-  
+
 Choose a location for it
 
-* An .RProj will need its own folder, with no other projects in it!
-* Projects in Dropbox often lead to unexpected occurences
+-   An .RProj will need its own folder, with no other projects in it!
+-   Projects in Dropbox often lead to unexpected occurences
 
 . . .
 
@@ -216,17 +229,17 @@ I'll just save "my_first_project" to my desktop
 
 ## 2. Create folders
 
-Let’s make two folder in different ways (either is fine)
+Let's make two folder in different ways (either is fine)
 
 **data**
 
-* where we will store all our project-related data
-* let’s create that in Rstudio
+-   where we will store all our project-related data
+-   let's create that in Rstudio
 
 **scripts**
 
-* where we will hold all our scripts (.R or .Rmd or .qmd files)
-* let’s create that in the folder on our machine
+-   where we will hold all our scripts (.R or .Rmd or .qmd files)
+-   let's create that in the folder on our machine
 
 [**demo**]{style="color:#D55E00;"}
 
@@ -234,36 +247,56 @@ Let’s make two folder in different ways (either is fine)
 
 ## Dowload data
 
-Let’s save the following data files into our project "data" folder
+Let's save the following data files into our project "data" folder
 
 (*go [here](https://jnese.github.io/intro-DS-R_fall-2023/data_list.html) to download*)
 
-1. ecls-k_samp.sav
-2. Fatality.txt
-3. Project_Reads_Scores.csv
+1.  ecls-k_samp.sav
+2.  Fatality.txt
+3.  Project_Reads_Scores.csv
 
-## Reading data into `R` 
+## Let's see files are in our "data" folder
 
-You just need one thing:
+`list.files(here("data"))`
 
-1. **where** the data is located
+You can also use the *Files* tab in RStudio
+
+. . .
+
+Use `here()` to access data or any file in your project
+
+. . .
+
+`here()` is simply a function to print a path
+
+. . .
+
+[**demo**]{style="color:#D55E00;"}
+
+## Reading data into `R`
+
+You just need two things:
+
+1.  **where** the data is located
 
 This is most often just a path on you machine
 
 . . .
 
+2. `package::function()` to read the data 
+
 We'll be talking about two data reading packages
 
-1. `{rio}`
-2. `{readr}`
+1.  `{rio}`
+2.  `{readr}`
 
-## We’ll use the `{here}` package ![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/here.png){fig-align="right" width=10%} {.smaller}
+## We'll use the `{here}` package ![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/here.png){fig-align="right" width="10%"} {.smaller}
 
 `{here}` uses the top-level directory of a project to easily build **paths** to files
 
-* Allows you to worry about paths a little less
-* Helps reproducibility
-* Your final project!
+-   Allows you to worry about paths a little less
+-   Helps reproducibility
+-   Your final project!
 
 Think of `here()` simply as a function to print a path name
 
@@ -295,22 +328,6 @@ library(here)
 
 ## [`{here}`](https://here.r-lib.org/)
 
-Think of `here()` simply as a function to print a path
-
-Run this code in your project (console is fine)
-
-```{r}
-#| echo: true
-#| eval: false
-here()
-```
-
-. . .
-
-This is the "top level" directory of our project
-
-## [`{here}`](https://here.r-lib.org/)
-
 Think of `here()` simply as a function to print a path name
 
 Run this code in your project (console is fine)
@@ -335,11 +352,19 @@ Run this code in your project (console is fine)
 here()
 ```
 
-This is the path to the project directory
+**This is the path to the project directory**
 
 . . .
 
 ```{r}
+# eval: false
+here("data")
+```
+
+. . .
+
+```{r}
+# echo: false
 here("data")
 ```
 
@@ -374,46 +399,31 @@ here("data", "ecls-k_samp.sav")
 here("data", "ecls-k_samp.sav")
 ```
 
-## Let's see files are in our "data" folder
-
-`list.files(here("data"))`
-
-You can also use the *Files* tab in RStudio
-
-. . .
-
-Use `here()` to access data or any file in your project
-
-. . .
-
-`here()` is simply a function to print a path
-
-. . .
-
-[**demo**]{style="color:#D55E00;"}
-
 ## `{rio}`
 
-* `{rio}` is a wrapper around many different packages that import/export data in different formats
+-   `{rio}` is a wrapper around many different packages that import/export data in different formats
 
-* Great package
+-   Great package
 
-* Most of the time "it just works" regardless of the source file type
-    + this might not impress you, but it really should! 
-    + any package that turns a complex task into a simple procedure that "just works" is invaluable
+-   Most of the time "it just works" regardless of the source file type
+
+    -   this might not impress you, but it really should!
+    -   any package that turns a complex task into a simple procedure that "just works" is invaluable
 
 ## [`import()`](https://cran.r-project.org/web/packages/rio/vignettes/rio.html) {.smaller}
 
 <p>
-<span style="color:#0072B2">import</span>(<span style="color:#D55E00">file</span>, <span style="color:#CC79A7">format</span>, <span style="color:#009E73">setclass</span>, ...)
 
-<span style="color:#D55E00">file</span>      = character string naming a file
+[import]{style="color:#0072B2"}([file]{style="color:#D55E00"}, [format]{style="color:#CC79A7"}, [setclass]{style="color:#009E73"}, ...)
+
+[file]{style="color:#D55E00"} = character string naming a file
 
 . . .
 
-<span style="color:#CC79A7">format</span>           = (*optional*) character string of file format; e.g., `","` for comma-separated values
+[format]{style="color:#CC79A7"} = (*optional*) character string of file format; e.g., `","` for comma-separated values
 
-<span style="color:#009E73">setclass</span>     = (*optional*) character vector specifying one or more classes to set on the import. Default is `"data.frame"`. We would probably prefer `"tbl_df"` for a `tibble`
+[setclass]{style="color:#009E73"} = (*optional*) character vector specifying one or more classes to set on the import. Default is `"data.frame"`. We would probably prefer `"tbl_df"` for a `tibble`
+
 </p>
 
 ## 3a. Read in data
@@ -421,6 +431,8 @@ Use `here()` to access data or any file in your project
 Try it!
 
 ```{r}
+#| code-line-numbers: "|3|10,14"
+
 library(rio)
 
 # .sav
@@ -456,16 +468,17 @@ Save data just as easily with `export()`
 You need two things:
 
 <p>
-1. <span style="color:#009E73">What</span> to export?
-2. <span style="color:#D55E00">Where</span> to export?
+
+1.  [What]{style="color:#009E73"} to export?
+2.  [Where]{style="color:#D55E00"} to export?
 
 . . .
 
-<span style="color:#0072B2">export</span>(<span style="color:#009E73">x</span>, <span style="color:#D55E00">file</span>, <span style="color:#CC79A7">format</span>, ...)
+[export]{style="color:#0072B2"}([x]{style="color:#009E73"}, [file]{style="color:#D55E00"}, [format]{style="color:#CC79A7"}, ...)
 
-<span style="color:#009E73">x</span>      = data frame (tibble) to be written into a file
+[x]{style="color:#009E73"} = data frame (tibble) to be written into a file
 
-<span style="color:#D55E00">file</span> = character string naming a file
+[file]{style="color:#D55E00"} = character string naming a file
 
 </p>
 
@@ -489,13 +502,13 @@ Just run one line of code!
 
 <p>
 
-<span style="color:#0072B2">convert</span>(<span style="color:#009E73">in_file</span>, <span style="color:#CC79A7">out_file</span>, ...)
+[convert]{style="color:#0072B2"}([in_file]{style="color:#009E73"}, [out_file]{style="color:#CC79A7"}, ...)
 
-<span style="color:#009E73">in_file</span> = character string naming an input file
+[in_file]{style="color:#009E73"} = character string naming an input file
 
-<span style="color:#CC79A7">out_file</span> = character string naming an output file
+[out_file]{style="color:#CC79A7"} = character string naming an output file
 
-<span style="color:#0072B2">convert</span>(here("data", <span style="color:#009E73">ecls-k_samp.sav</span>)), (here("data", <span style="color:#CC79A7">ecls-k_samp.dta</span>))
+[convert]{style="color:#0072B2"}(here("data", [ecls-k_samp.sav]{style="color:#009E73"})), (here("data", [ecls-k_samp.dta]{style="color:#CC79A7"}))
 
 </p>
 
@@ -503,15 +516,15 @@ Just run one line of code!
 
 `{rio}` wraps a variety of faster, more stream-lined packages than those provided by base `R`
 
-* `{data.table}` for delimited formats
-* `{haven}` for SAS, Stata, and SPSS files
-* `{readxl}` and `{openxlsx}` for reading and writing Excel workbooks
-* `data.table::fread()` for text-delimited files to automatically determine the file format regardless of the extension
-    + also *very* fast
+-   `{data.table}` for delimited formats
+-   `{haven}` for SAS, Stata, and SPSS files
+-   `{readxl}` and `{openxlsx}` for reading and writing Excel workbooks
+-   `data.table::fread()` for text-delimited files to automatically determine the file format regardless of the extension
+    -   also *very* fast
 
 . . .
 
-* again, "just works"
+-   again, "just works"
 
 ## Maintaining data "labels" {.smaller}
 
@@ -521,14 +534,16 @@ Just run one line of code!
 
 In SPSS, numeric data are often encoded with labels
 
+. . .
+
 `{rio}` and `{haven}` allow you to transform the data into the character/factor version
 
-`{rio}` and `{haven}` store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function 
+`{rio}` and `{haven}` store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function
 
-* `rio::characterize()` converts a single variable or all variables in the data that have *label* attributes into character vectors
-* `rio::factorize()` does the same but returns factor variables
+-   `rio::characterize()` converts a single variable or all variables in the data that have *label* attributes into character vectors
+-   `rio::factorize()` does the same but returns factor variables
 
-##
+## 
 
 ```{r}
 eclsk %>%
@@ -549,30 +564,29 @@ eclsk %>%
 
 ## [`{readr}`](https://readr.tidyverse.org/) {.smaller}
 
-* Great package; most of the time "it just works" regardless of the source file type
-* Loads with `{tidyverse}`
-* Default loads data as a `tibble`
-  + this is nice!
+-   Great package; most of the time "it just works" regardless of the source file type
+-   Loads with `{tidyverse}`
+-   Default loads data as a `tibble`
+    -   this is nice!
 
 . . .
 
-* [`read_csv()`](https://readr.tidyverse.org/reference/read_delim.html):   comma separated (CSV) files
-* [`read_tsv()`](https://readr.tidyverse.org/reference/read_delim.html):   tab separated files
-* [`read_delim()`](https://readr.tidyverse.org/reference/read_delim.html): general delimited files
-* [`read_fwf()`](https://readr.tidyverse.org/reference/read_fwf.html):   fixed width files
-* [`read_table()`](https://readr.tidyverse.org/reference/read_table.html): tabular files where columns are separated by white-space
-* [`read_log()`](https://readr.tidyverse.org/reference/read_log.html):   web log files
+-   [`read_csv()`](https://readr.tidyverse.org/reference/read_delim.html): comma separated (CSV) files
+-   [`read_tsv()`](https://readr.tidyverse.org/reference/read_delim.html): tab separated files
+-   [`read_delim()`](https://readr.tidyverse.org/reference/read_delim.html): general delimited files
+-   [`read_fwf()`](https://readr.tidyverse.org/reference/read_fwf.html): fixed width files
+-   [`read_table()`](https://readr.tidyverse.org/reference/read_table.html): tabular files where columns are separated by white-space
+-   [`read_log()`](https://readr.tidyverse.org/reference/read_log.html): web log files
 
 ## [`read_csv()`](https://readr.tidyverse.org/reference/read_delim.html) {.smaller}
 
 You just need one thing:
 
-1. [where]{style="color:#D55E00;"} the data is located
-
+1.  [where]{style="color:#D55E00;"} the data is located
 
 [read_csv]{style="color:#0072B2;"}([file]{style="color:#D55E00;"}, ...)
 
-[file]{style="color:#D55E00;"}       = a **path** to a file, a connection, or literal data (either a single string or a raw vector)
+[file]{style="color:#D55E00;"} = a **path** to a file, a connection, or literal data (either a single string or a raw vector)
 
 . . .
 
@@ -586,7 +600,6 @@ with the `here()` function
 #| eval: false
 read_csv(here("path", "to", "data.csv"))
 ```
-
 
 ## 3b. Read in data
 
@@ -615,14 +628,14 @@ Save data just as easily with `write_*()`
 
 You need two things:
 
-1. [What]{style="color:#009E73;"} to export?
-2. [Where]{style="color:#D55E00;"} to export?
+1.  [What]{style="color:#009E73;"} to export?
+2.  [Where]{style="color:#D55E00;"} to export?
 
 . . .
 
 [write_csv]{style="color:#0072B2;"}([x]{style="color:#009E73;"}, [file]{style="color:#D55E00;"}, ...)
 
-[x]{style="color:#009E73;"}      = data frame (tibble) to be written into a file
+[x]{style="color:#009E73;"} = data frame (tibble) to be written into a file
 
 [file]{style="color:#D55E00;"} = character string naming a file to write to
 
@@ -642,18 +655,18 @@ write_csv(exam1, here("data", "exam1.csv"))
 
 .R is `R` script (code) file
 
-*File* > *New File* > *R Script*
+*File* \> *New File* \> *R Script*
 
-* Everything is code
-* Text - comments! - need to begin with "`#`"
-  + Comments are a **great** habit!
-  + Use them to document the what & why of your code
+-   Everything is code
+-   Text - comments! - need to begin with "`#`"
+    -   Comments are a **great** habit!
+    -   Use them to document the what & why of your code
 
 Run code
 
-* `Ctrl/Command + Enter`
-* Highlight specific code, `Ctrl/Command + Enter`
-* Put mouse on line, `Ctrl/Command + Enter`, and it will execute the all connected (piped) code
+-   `Ctrl/Command + Enter`
+-   Highlight specific code, `Ctrl/Command + Enter`
+-   Put mouse on line, `Ctrl/Command + Enter`, and it will execute the all connected (piped) code
 
 [demo]{style="color:#D55E00;"}
 
@@ -661,30 +674,34 @@ Run code
 
 What is Quarto?
 
-- an open-source scientific and technical publishing system
-- create dynamic content with Python, R, Julia, and Observable.
-- publish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.
-- include equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.
+-   an open-source scientific and technical publishing system
 
-- a multi-language, next generation version of R Markdown (from Posit)
-- includes many built in output formats (and options for customizing each)
-- has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages).
+-   create dynamic content with Python, R, Julia, and Observable.
+
+-   publish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.
+
+-   include equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.
+
+-   a multi-language, next generation version of R Markdown (from Posit)
+
+-   includes many built in output formats (and options for customizing each)
+
+-   has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages).
 
 ## Why Quarto?
 
-- **Reproducibility**: reproducible workflow
-    + Code + output + prose together
-    + Syntax highlighting FTW!
-    + Familiar-feeling authoring with the visual editor without having to learn a bunch of new markdown syntax
-- **Efficiency**: consistent formatting 
-- **Extendability**: Use with Python, and Julia, and Observable, and more
-
+-   **Reproducibility**: reproducible workflow
+    -   Code + output + prose together
+    -   Syntax highlighting FTW!
+    -   Familiar-feeling authoring with the visual editor without having to learn a bunch of new markdown syntax
+-   **Efficiency**: consistent formatting
+-   **Extendability**: Use with Python, and Julia, and Observable, and more
 
 ## .qmd
 
 .qmd is a document format file that combines code **AND** prose
 
-* *File* > *New File* > *R Markdown...*
+-   *File* \> *New File* \> *R Markdown...*
 
 . . .
 
@@ -692,6 +709,7 @@ Code goes into **"code chunks"**
 
 ```{r}
 #| echo: fenced
+#| eval: false
 # comment
 
 data %>% 
@@ -708,15 +726,15 @@ Prose goes outside the code chunks
 
 ## .R & .qmd
 
-* Both are great
-* Serve different purposes
+-   Both are great
+-   Serve different purposes
 
 . . .
 
 Organization tip
 
-* .Rmd with headers
-* .R with `# Header ----`
+-   .Rmd with headers
+-   .R with `# Header ----`
 
 [demo]{style="color:#D55E00;"}
 
@@ -732,10 +750,10 @@ Organization tip
 
 . . .
 
-* you will only need to do this the first time you want to use the package
-* **never** keep this code line (you can run it in the console, or delete it from your script)
-* notices the quotes
-* **never keep this code line**
+-   you will only need to do this the first time you want to use the package
+-   **never** keep this code line (you can run it in the console, or delete it from your script)
+-   notices the quotes
+-   **never keep this code line**
 
 . . .
 
@@ -745,65 +763,68 @@ Any time you want to use a package it should be *loaded*
 
 . . .
 
-* you will do this each time you use the package in your scripts
-* notices no quotes
+-   you will do this each time you use the package in your scripts
+-   notices no quotes
 
-## [`{janitor}`](https://github.com/sfirke/janitor) ![](https://raw.githubusercontent.com/sfirke/janitor/main/man/figures/logo_small.png){fig-align="right" width=10%} {.smaller}
+## [`{janitor}`](https://github.com/sfirke/janitor) ![](https://raw.githubusercontent.com/sfirke/janitor/main/man/figures/logo_small.png){fig-align="right" width="10%"} {.smaller}
 
-A fantastic package! 
+A fantastic package!
 
-* `remove_empty_rows()`
-* `remove_empty_cols()`
-* `excel_numeric_to_date()`
-  + changes numeric dates imported from Excel to actual dates
-* `tabyl()`
-  + frequency table with *n* and *%*
+-   `remove_empty_rows()`
+-   `remove_empty_cols()`
+-   `excel_numeric_to_date()`
+    -   changes numeric dates imported from Excel to actual dates
+-   `tabyl()`
+    -   frequency table with *n* and *%*
 
 . . .
 
-* `clean_names()`
-  + styles **column names** (NOT data itself) with "snake_case": lower case and underscore between words
-  + can choose other "`*_case`"
-
+-   `clean_names()`
+    -   styles **column names** (NOT data itself) with "snake_case": lower case and underscore between words
+    -   can choose other "`*_case`"
 
 # Let's put it all together
 
 ## New script {.smaller}
 
-Let's work within the "my_first_project" .RProj 
+Let's work within the "my_first_project" .RProj
 
-(1) Open a new Quarto document 
-  
+(1) Open a new Quarto document
+
 [demo]{style="color:#D55E00;"}
-  
+
+## New script {.smaller}
+
+Let's work within the "my_first_project" .RProj
+
 (2) Clean it up
 
-  + Modify the YAML
-  + Save the file as "practice.qmd" in the **scripts** folder
-  + Render!
+-   Modify the YAML
+-   Save the file as "practice.qmd" in the **scripts** folder
+-   Render!
 
 [demo]{style="color:#D55E00;"}
 
 ## EDIT THIS!!!!
 
-* Let's remove all chunks after the first (`setup`)
-* This is what you will do with .Rmd going forward
+-   Let's remove all chunks after the first (`setup`)
+-   This is what you will do with .Rmd going forward
 
 ## Working with data
 
 (1) What packages will we use?
 
-* `library(here)` - where the data is located
-* `library(rio)` - read the data into `R`
-* `library(janitor)` - clean the variable names in the data
-* `library(tidyverse)` - clean the data
+-   `library(here)` - where the data is located
+-   `library(rio)` - read the data into `R`
+-   `library(janitor)` - clean the variable names in the data
+-   `library(tidyverse)` - clean the data
 
 ## Working with data
 
 (2) Read in the [Penguins.csv](https://uo-datasci-specialization.github.io/c1-intro-fall-2022/data_list.html) data
 
-* Let's name the data "*penguins*"
-* Three options, choose one
+-   Let's name the data "*penguins*"
+-   Three options, choose one
 
 ```{r, results='hide'}
 # rio::import()
@@ -823,6 +844,7 @@ Note that this data is taken from the `{palmerpenguins}` package but has slight 
 
 ```{r}
 penguins
+
 ```
 
 . . .
@@ -833,6 +855,9 @@ Or use `View()` to take a look at the full data in RStudio
 View(penguins)
 ```
 
+. . .
+
+Or click on the object name in your RStudio *Environment*
 
 ## `janitor::clean_names()`
 
@@ -846,11 +871,11 @@ penguins <- penguins %>%
   clean_names()
 ```
 
-<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/janitor_clean_names.png" width="50%" height="50%" class="center">
+<img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/janitor_clean_names.png" class="center" width="50%" height="50%"/>
 
 ## Looking at the data `str`ucture
 
-`str`ucture 
+`str`ucture
 
 ```{r}
 str(penguins)
@@ -866,8 +891,7 @@ dim(penguins)
 
 . . .
 
-`n`umber of `row`s or
-`n`umber of `col`umns
+`n`umber of `row`s or `n`umber of `col`umns
 
 ```{r}
 nrow(penguins)
@@ -898,14 +922,12 @@ library(skimr)
 skim(penguins)
 ```
 
-[demo]{style="color:#D55E00;"}
-
 ## The pipe operator (`%>%`) {.smaller}
 
-* The `%>%` operator (`Super + Shift + M`) 
-  + <mark>inserts the input as the first argument in the next function</mark>
-* To start, you can read it as "then"
-* It is crucial for work in the `{tidyverse}`
+-   The `%>%` operator (`Super + Shift + M`)
+    -   <mark>inserts the input as the first argument in the next function</mark>
+-   To start, you can read it as "then"
+-   It is crucial for work in the `{tidyverse}`
 
 . . .
 
@@ -1002,23 +1024,26 @@ count(penguins, sex)
 
 Script on website
 
-* Download **Homework 1** from the course [Assignments](https://jnese.github.io/intro-DS-R_fall-2023/assignments.html#homework-assignments) page
-* Work with this .qmd file
+-   Download **Homework 1** from the course [Assignments](https://jnese.github.io/intro-DS-R_fall-2023/assignments.html#homework-assignments) page
+-   Work with this .qmd file
 
 Submit a rendered .html file to Canvas
 
-* *Assignments > Homeworks > HW 1*
+-   *Assignments \> Homeworks \> HW 1*
 
 ## Before next class {.smaller}
 
-* Reading
-  + [R4DS(2e) Ch 2](https://r4ds.hadley.nz/data-visualize)
-* Supplemental Learning
-  + [RStudio Primer: Data Visualization Basics](https://posit.cloud/learn/primers/1.1)
-  + [Rbootcamp: Ch 2](https://r-bootcamp.netlify.app/chapter2)
-  + [Codecademy: Introduction to Visualization with R](https://www.codecademy.com/courses/learn-r/lessons/intro-visualization-ggplot2-r/exercises/layers-and-geoms)
-* Homework
-  + **Homework 1**
-* Final project
-  + <p style="color:red;">Finalize Groups</p>		
-  
+-   Reading
+    -   [R4DS(2e) Ch 2](https://r4ds.hadley.nz/data-visualize)
+-   Supplemental Learning
+    -   [RStudio Primer: Data Visualization Basics](https://posit.cloud/learn/primers/1.1)
+    -   [Rbootcamp: Ch 2](https://r-bootcamp.netlify.app/chapter2)
+    -   [Codecademy: Introduction to Visualization with R](https://www.codecademy.com/courses/learn-r/lessons/intro-visualization-ggplot2-r/exercises/layers-and-geoms)
+-   Homework
+    -   **Homework 1**
+-   Final project
+    -   <p style="color:red;">
+
+        Finalize Groups
+
+        </p>

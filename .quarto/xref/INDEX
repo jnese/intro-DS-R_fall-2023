@@ -86,5 +86,8 @@
   },
   "schedule_orig.qmd": {
     "schedule_orig.html": "ad85e00f"
+  },
+  "slides/w3_ggplot2.qmd": {
+    "w3_ggplot2.html": "ea7d4e6f"
   }
 }

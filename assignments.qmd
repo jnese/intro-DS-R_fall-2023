@@ -90,7 +90,7 @@ dta %>%
 ```{r}
 dta %>% 
   filter(type == "supplemental") %>% 
-  select(-c(assigned_link, type, Week), -contains("ey")) %>%
+  select(-c(assigned_link, type, Week, assign_type), -contains("ey")) %>%
   mutate(Screenshot = ifelse(str_detect(Screenshot, "href", negate = TRUE), paste0("**", Screenshot, "**"), Screenshot)) %>% 
   gt() %>% 
   table_style() %>% 

@@ -18,7 +18,7 @@
     "href": "index.html#schedule",
     "title": "EDLD 651: Introduction to Data Science with R",
     "section": "Schedule",
-    "text": "Schedule\n\nBefore Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\n1: Intro\n\nWeek 1 Recording 11\nA Quick Tour of the RStudio IDE2\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1 Recording 23\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: c+mzu9yt\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n    \n      3 Passcode: GP&8Grs8\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\n\n\n1\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\n\n\n1\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\n\n\n1\nMarkdown Tutorial\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\n\nHomework 4\n\nRbootcamp: Ch 3\n\n    \n\n\n\n\nCodecademy: Aggregates in R\n\n    \n\n\n\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 5: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nR4DS(2e) 30\n\n\n\n1\nDownload GitKraken\n\nMarkdown Tutorial\n\n    \n\n\n\n\nWatch What is a Git repository?\n\nHomework 4\n\n    \n\n\n\nWatch What is a remote repository?\n\nFinal Project: Outline\n\n    \n\n\n\nHomework 5\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 6: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nBryan 2017\n\n\n\n1\nRStudio Primer: Join Data Sets\n\nDownload GitKraken\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\nWatch What is a Git repository?\n\n    \n\n\n\nHomework 6\n\nWatch What is a remote repository?\n\n    \n\n\n\nHomework 7\n\nHomework 5\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n\n1\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n\n1\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n\n1\nHomework 10\n\nHomework 9\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n1\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
+    "text": "Schedule\n\nBefore Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\n\n\n1\nA Quick Tour of the RStudio IDE2\nInstalls\n\n    \nR4DS(2e) 3\n\n\n3\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: c+mzu9yt\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n    \n      3 Passcode: GP&8Grs8\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\n\n1\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\n\n1\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\n\n1\nMarkdown Tutorial\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nHomework 4\n\nRbootcamp: Ch 3\n\n    \n\n\n\n\nCodecademy: Aggregates in R\n\n    \n\n\n\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 5: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nR4DS(2e) 30\n\n\n1\nDownload GitKraken\n\nMarkdown Tutorial\n\n    \n\n\n\nWatch What is a Git repository?\n\nHomework 4\n\n    \n\n\n\nWatch What is a remote repository?\n\nFinal Project: Outline\n\n    \n\n\n\nHomework 5\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 6: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nBryan 2017\n\n\n1\nRStudio Primer: Join Data Sets\n\nDownload GitKraken\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nWatch What is a Git repository?\n\n    \n\n\n\nHomework 6\n\nWatch What is a remote repository?\n\n    \n\n\n\nHomework 7\n\nHomework 5\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n1\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n1\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n1\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n1\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
   },
   {
     "objectID": "syllabus.html",
@@ -53,63 +53,63 @@
     "href": "syllabus.html#week-1-introduction",
     "title": "Syllabus",
     "section": "Week 1: Introduction",
-    "text": "Week 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\n1: Intro\n\nWeek 1 Recording 11\nA Quick Tour of the RStudio IDE2\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1 Recording 23\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: c+mzu9yt\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n    \n      3 Passcode: GP&8Grs8"
+    "text": "Week 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\n\n\n1\nA Quick Tour of the RStudio IDE2\nInstalls\n\n    \nR4DS(2e) 3\n\n\n3\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: c+mzu9yt\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n    \n      3 Passcode: GP&8Grs8"
   },
   {
     "objectID": "syllabus.html#week-2-workflow",
     "href": "syllabus.html#week-2-workflow",
     "title": "Syllabus",
     "section": "Week 2: Workflow",
-    "text": "Week 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\n\n\n1\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\n\n1\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-3-ggplot2",
     "href": "syllabus.html#week-3-ggplot2",
     "title": "Syllabus",
     "section": "Week 3: {ggplot2}",
-    "text": "Week 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\n\n\n1\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\n\n1\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-4-dplyr",
     "href": "syllabus.html#week-4-dplyr",
     "title": "Syllabus",
     "section": "Week 4: {dplyr}",
-    "text": "Week 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\n\n\n1\nMarkdown Tutorial\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\n\nHomework 4\n\nRbootcamp: Ch 3\n\n    \n\n\n\n\nCodecademy: Aggregates in R\n\n    \n\n\n\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\n\n1\nMarkdown Tutorial\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nHomework 4\n\nRbootcamp: Ch 3\n\n    \n\n\n\n\nCodecademy: Aggregates in R\n\n    \n\n\n\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-5-rmarkdown",
     "href": "syllabus.html#week-5-rmarkdown",
     "title": "Syllabus",
     "section": "Week 5: RMarkdown",
-    "text": "Week 5: RMarkdown\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nR4DS(2e) 30\n\n\n\n1\nDownload GitKraken\n\nMarkdown Tutorial\n\n    \n\n\n\n\nWatch What is a Git repository?\n\nHomework 4\n\n    \n\n\n\nWatch What is a remote repository?\n\nFinal Project: Outline\n\n    \n\n\n\nHomework 5\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 5: RMarkdown\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nR4DS(2e) 30\n\n\n1\nDownload GitKraken\n\nMarkdown Tutorial\n\n    \n\n\n\nWatch What is a Git repository?\n\nHomework 4\n\n    \n\n\n\nWatch What is a remote repository?\n\nFinal Project: Outline\n\n    \n\n\n\nHomework 5\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-6-github",
     "href": "syllabus.html#week-6-github",
     "title": "Syllabus",
     "section": "Week 6: GitHub",
-    "text": "Week 6: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nBryan 2017\n\n\n\n1\nRStudio Primer: Join Data Sets\n\nDownload GitKraken\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\nWatch What is a Git repository?\n\n    \n\n\n\nHomework 6\n\nWatch What is a remote repository?\n\n    \n\n\n\nHomework 7\n\nHomework 5\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 6: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nBryan 2017\n\n\n1\nRStudio Primer: Join Data Sets\n\nDownload GitKraken\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nWatch What is a Git repository?\n\n    \n\n\n\nHomework 6\n\nWatch What is a remote repository?\n\n    \n\n\n\nHomework 7\n\nHomework 5\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-7-mutating-joins",
     "href": "syllabus.html#week-7-mutating-joins",
     "title": "Syllabus",
     "section": "Week 7: Mutating Joins",
-    "text": "Week 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n\n1\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n1\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-8-tidy-data",
     "href": "syllabus.html#week-8-tidy-data",
     "title": "Syllabus",
     "section": "Week 8: Tidy Data",
-    "text": "Week 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n\n1\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n1\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-9-factors-pull-request",
     "href": "syllabus.html#week-9-factors-pull-request",
     "title": "Syllabus",
     "section": "Week 9: Factors & Pull Request",
-    "text": "Week 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n\n1\nHomework 10\n\nHomework 9\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n1\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-10-presentations",
@@ -292,5 +292,1160 @@
     "title": "Syllabus",
     "section": "Course Incomplete Policy",
     "text": "Course Incomplete Policy\nStudents are expected to be familiar with university policy regarding grades of “incomplete” and the timeline for completion. For details on the policy and procedures regarding incompletes, Please see: https://education.uoregon.edu/academics/incompletes-courses"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#housekeeping",
+    "href": "slides/w2_workflow.html#housekeeping",
+    "title": "Week 2: Workflow",
+    "section": "Housekeeping",
+    "text": "Housekeeping\nLet’s give Andrew a hex sticker!"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#agenda",
+    "href": "slides/w2_workflow.html#agenda",
+    "title": "Week 2: Workflow",
+    "section": "Agenda",
+    "text": "Agenda\n\nProject Oriented Workflow\n\nRStudio Projects\nFile paths\nReading in data\nScripts (.R & .qmd)\nLoading packages\n\nLooking at data\nThe pipe %&gt;%\n\nalso |&gt;\n\n\nLearning Objectives\n\nOpen an RStudio Project\nUnderstand file paths\nLearn two ways to read data\nEstablish good workflow habits"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#rstudio-projects-.rproj",
+    "href": "slides/w2_workflow.html#rstudio-projects-.rproj",
+    "title": "Week 2: Workflow",
+    "section": "RStudio Projects (.Rproj)",
+    "text": "RStudio Projects (.Rproj)\nAn RStudio project - .Rproj - is basically a folder to house all the files for your project\n\nscripts\nproducts\ndata\nfigures"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#rstudio-projects-.rproj-1",
+    "href": "slides/w2_workflow.html#rstudio-projects-.rproj-1",
+    "title": "Week 2: Workflow",
+    "section": "RStudio Projects (.Rproj)",
+    "text": "RStudio Projects (.Rproj)\nAdvantages\n\nWork with several projects at the same time (several projects open)\n\nthese are self-contained!\n\nCan save the history of your commands after quitting\nCan specify version control system (e.g., Git)\nPreviously edited code tabs are restored upon opening\nThe current working directory is set to the project directory"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#whats-a-working-directory",
+    "href": "slides/w2_workflow.html#whats-a-working-directory",
+    "title": "Week 2: Workflow",
+    "section": "What’s a working directory?",
+    "text": "What’s a working directory?\nWhere you’re at on your computer\n\nthe folder location\nQuick check-in: does this make sense?\n\nYou can change your working directory with setwd(\"path/to/files\")…\n…BUT I strongly urge you to avoid that\nInstead, we’re going to use RStudio Projects and the {here} package\nYou can list.files(\"path/to/files\") to see the contents of your project directory (i.e., what your computer “sees”)\n\n\nSee where you’re currently at by looking at the top of the console\nOr run getwd() in the console"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#whats-different-with-.rproj",
+    "href": "slides/w2_workflow.html#whats-different-with-.rproj",
+    "title": "Week 2: Workflow",
+    "section": "What’s different with .Rproj?",
+    "text": "What’s different with .Rproj?\nYour working directory is immediately wherever your .Rproj project is located\nThis is true for whoever is accessing the project\nUse the {here} package to specify paths\n\nYou can read/save data (and figures, products, etc.) which we’ll talk about more later"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#best-practices",
+    "href": "slides/w2_workflow.html#best-practices",
+    "title": "Week 2: Workflow",
+    "section": "Best practices",
+    "text": "Best practices\n\n\nhere()\n\nworks for anyone who uses the script\nshare it out with no code editing\neasy to work on other projects with different directories\n\n\nSession &gt; Restart R (Ctrl/Command + Shift + F10)\nRestart the R session\n\nCreate a fresh R process\nDeletes all objects\nPackages will need to be re-loaded\nResets any code-enables options\nEnsures script is self-contained"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#project-oriented-workflow",
+    "href": "slides/w2_workflow.html#project-oriented-workflow",
+    "title": "Week 2: Workflow",
+    "section": "Project Oriented Workflow",
+    "text": "Project Oriented Workflow\nWrite every script assuming it will be run in a fresh R process\n\n\nDo not save .RData when you quit R and don’t load .RData when you start R\n\nWeek 1: Tools 🡆 Global Options 🡆 General\nWorkspace\n\n“Restore .RData into workspace at startup” – Uncheck\n“Save workspace to .RData on exit:” – Never\n\n\n\n\nDaily work habit:\n\n\nRestart R very often and re-run your developing script from the top\nUse the RStudio menu item: Session &gt; Restart R (Ctrl/Command + Shift + F10)"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#lets-start-by-making-a-new-project",
+    "href": "slides/w2_workflow.html#lets-start-by-making-a-new-project",
+    "title": "Week 2: Workflow",
+    "section": "Let’s start by making a new project",
+    "text": "Let’s start by making a new project\nTypical workflow\n\nMake a new .RProj\nAdd folders\n\n“data”\n“scripts”\n\nRead in data\nCreate scripts\nLoad packages"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#make-a-new-.rproj",
+    "href": "slides/w2_workflow.html#make-a-new-.rproj",
+    "title": "Week 2: Workflow",
+    "section": "1. Make a new .RProj",
+    "text": "1. Make a new .RProj\nFile &gt; New Project…\nor - upper right of RStudio by the R cube\n⬇️ &gt; New Project…"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#make-a-new-.rproj-1",
+    "href": "slides/w2_workflow.html#make-a-new-.rproj-1",
+    "title": "Week 2: Workflow",
+    "section": "1. Make a new .RProj",
+    "text": "1. Make a new .RProj\nLet’s name it: “my_first_project”\n\nnotice the naming convention\n\nno caps\nno spaces\nno special characters (e.g., ?, !, \", #)\n“_” and “-” are ok\n\n\n\nChoose a location for it\n\nAn .RProj will need its own folder, with no other projects in it!\nProjects in Dropbox often lead to unexpected occurences\n\n\n\nI’ll just save “my_first_project” to my desktop\ndemo"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#create-folders",
+    "href": "slides/w2_workflow.html#create-folders",
+    "title": "Week 2: Workflow",
+    "section": "2. Create folders",
+    "text": "2. Create folders\nLet’s make two folder in different ways (either is fine)\ndata\n\nwhere we will store all our project-related data\nlet’s create that in Rstudio\n\nscripts\n\nwhere we will hold all our scripts (.R or .Rmd or .qmd files)\nlet’s create that in the folder on our machine\n\ndemo"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#dowload-data",
+    "href": "slides/w2_workflow.html#dowload-data",
+    "title": "Week 2: Workflow",
+    "section": "Dowload data",
+    "text": "Dowload data\nLet’s save the following data files into our project “data” folder\n(go here to download)\n\necls-k_samp.sav\nFatality.txt\nProject_Reads_Scores.csv"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#reading-data-into-r",
+    "href": "slides/w2_workflow.html#reading-data-into-r",
+    "title": "Week 2: Workflow",
+    "section": "Reading data into R",
+    "text": "Reading data into R\nYou just need two things:\n\nwhere the data is located\n\nThis is most often just a path on you machine\n\n\npackage::function() to read the data\n\nWe’ll be talking about two data reading packages\n\n{rio}\n{readr}"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#well-use-the-here-package",
+    "href": "slides/w2_workflow.html#well-use-the-here-package",
+    "title": "Week 2: Workflow",
+    "section": "We’ll use the {here} package ",
+    "text": "We’ll use the {here} package \n{here} uses the top-level directory of a project to easily build paths to files\n\nAllows you to worry about paths a little less\nHelps reproducibility\nYour final project!\n\nThink of here() simply as a function to print a path name\nA path can be the location of your data\n\n\npath = location\n\n\nArt: Allison Horst"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#here",
+    "href": "slides/w2_workflow.html#here",
+    "title": "Week 2: Workflow",
+    "section": "{here}",
+    "text": "{here}\nThink of here() simply as a function to print a path name\nFirst, install/load the package\n\n# In the console: \n# install.packages(\"here\")\n# Then, load the package\n\nlibrary(here)"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#here-1",
+    "href": "slides/w2_workflow.html#here-1",
+    "title": "Week 2: Workflow",
+    "section": "{here}",
+    "text": "{here}\nThink of here() simply as a function to print a path name\nRun this code in your project (console is fine)\n\nhere()\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023\"\n\n\n\nThis is the “top level” directory of my project"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#here-2",
+    "href": "slides/w2_workflow.html#here-2",
+    "title": "Week 2: Workflow",
+    "section": "{here}",
+    "text": "{here}\nThink of here() simply as a function to print a path\nRun this code in your project (console is fine)\n\nhere()\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023\"\n\n\nThis is the path to the project directory\n\n\n# eval: false\nhere(\"data\")\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data\"\n\n\n\n\n\n# echo: false\nhere(\"data\")\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data\"\n\n\nThis is the path to the “data” folder in our project directory"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#here-3",
+    "href": "slides/w2_workflow.html#here-3",
+    "title": "Week 2: Workflow",
+    "section": "{here}",
+    "text": "{here}\nThink of here() simply as a function to print a path\n\nhere()\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023\"\n\n\n\nhere(\"data\")\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data\"\n\n\nQuestion: What was the difference in the output between these?\n\nQuestion: What will the following produce?\n\nhere(\"data\", \"ecls-k_samp.sav\")\n\n\n\n\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data/ecls-k_samp.sav\""
+  },
+  {
+    "objectID": "slides/w2_workflow.html#here-4",
+    "href": "slides/w2_workflow.html#here-4",
+    "title": "Week 2: Workflow",
+    "section": "{here}",
+    "text": "{here}\nThink of here() simply as a function to print a path\n\nhere()\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023\"\n\n\n\nhere(\"data\")\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data\"\n\n\nQuestion: What was the difference in the output between these?\n\nQuestion: What will the following produce?\n\nhere(\"data\", \"ecls-k_samp.sav\")\n\n\n\n\n\n[1] \"C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data/ecls-k_samp.sav\""
+  },
+  {
+    "objectID": "slides/w2_workflow.html#lets-see-files-are-in-our-data-folder",
+    "href": "slides/w2_workflow.html#lets-see-files-are-in-our-data-folder",
+    "title": "Week 2: Workflow",
+    "section": "Let’s see files are in our “data” folder",
+    "text": "Let’s see files are in our “data” folder\nlist.files(here(\"data\"))\nYou can also use the Files tab in RStudio\n\nUse here() to access data or any file in your project\n\n\nhere() is simply a function to print a path\n\n\ndemo"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#rio",
+    "href": "slides/w2_workflow.html#rio",
+    "title": "Week 2: Workflow",
+    "section": "{rio}",
+    "text": "{rio}\n\n{rio} is a wrapper around many different packages that import/export data in different formats\nGreat package\nMost of the time “it just works” regardless of the source file type\n\nthis might not impress you, but it really should!\nany package that turns a complex task into a simple procedure that “just works” is invaluable"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#import",
+    "href": "slides/w2_workflow.html#import",
+    "title": "Week 2: Workflow",
+    "section": "import()",
+    "text": "import()\n\nimport(file, format, setclass, …)\nfile = character string naming a file\n\nformat = (optional) character string of file format; e.g., \",\" for comma-separated values\nsetclass = (optional) character vector specifying one or more classes to set on the import. Default is \"data.frame\". We would probably prefer \"tbl_df\" for a tibble"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#a.-read-in-data",
+    "href": "slides/w2_workflow.html#a.-read-in-data",
+    "title": "Week 2: Workflow",
+    "section": "3a. Read in data",
+    "text": "3a. Read in data\nTry it!\n\nlibrary(rio)\n\n# .sav\neclsk &lt;- import(here(\"data\", \"ecls-k_samp.sav\"), setclass = \"tbl_df\")\n\n# Use `as_tibble` instead of `setclass = \"tbl_df\"`\n\n# .txt\nfatality &lt;- import(here(\"data\", \"Fatality.txt\")) %&gt;% \n  as_tibble()\n\n#.csv\nexam1 &lt;- import(here(\"data\", \"Project_Reads_Scores.csv\")) %&gt;% \n  as_tibble()"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#you-can-even-read-directly-from-the-web",
+    "href": "slides/w2_workflow.html#you-can-even-read-directly-from-the-web",
+    "title": "Week 2: Workflow",
+    "section": "You can even read directly from the web 😲",
+    "text": "You can even read directly from the web 😲\nFatality.txt\n\nimport(\"https://raw.githubusercontent.com/jnese/intro-DS-R_fall-2023/master/data/Fatality.txt\",\n       setclass = \"tbl_df\")\n\n# A tibble: 336 × 10\n   state  year mrall beertax  mlda jaild comserd vmiles unrate perinc\n   &lt;int&gt; &lt;int&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;    &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n 1     1  1982  2.13   1.54   19   no    no        7.23  14.4  10544.\n 2     1  1983  2.35   1.79   19   no    no        7.84  13.7  10733.\n 3     1  1984  2.34   1.71   19   no    no        8.26  11.1  11109.\n 4     1  1985  2.19   1.65   19.7 no    no        8.73   8.90 11333.\n 5     1  1986  2.67   1.61   21   no    no        8.95   9.80 11662.\n 6     1  1987  2.72   1.56   21   no    no        9.17   7.80 11944 \n 7     1  1988  2.49   1.50   21   no    no        9.67   7.20 12369.\n 8     4  1982  2.50   0.215  19   yes   yes       6.81   9.90 12309.\n 9     4  1983  2.27   0.206  19   yes   yes       6.59   9.10 12694.\n10     4  1984  2.83   0.297  19   yes   yes       6.71   5    13266.\n# ℹ 326 more rows"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#export",
+    "href": "slides/w2_workflow.html#export",
+    "title": "Week 2: Workflow",
+    "section": "export()",
+    "text": "export()\nSave data just as easily with export()\n\nYou need two things:\n\n\nWhat to export?\nWhere to export?\n\n\n\nexport(x, file, format, …)\nx = data frame (tibble) to be written into a file\nfile = character string naming a file\n\n\n\n\nexport(exam1, here(\"data\", \"exam1.sav\"))\n\nexport(exam1, here(\"data\", \"exam1.txt\"))\n\nexport(exam1, here(\"data\", \"exam1.dta\"))"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#convert",
+    "href": "slides/w2_workflow.html#convert",
+    "title": "Week 2: Workflow",
+    "section": "convert()",
+    "text": "convert()\nAnother really useful feature is convert(), which just takes a file of one type and converts it to another\nSay your advisor uses SPSS 😐, but their colleague uses Stata 😐, and you use R 😎\nJust run one line of code!\n\nconvert(in_file, out_file, …)\nin_file = character string naming an input file\nout_file = character string naming an output file\nconvert(here(“data”, ecls-k_samp.sav)), (here(“data”, ecls-k_samp.dta))"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#how-is-this-all-working",
+    "href": "slides/w2_workflow.html#how-is-this-all-working",
+    "title": "Week 2: Workflow",
+    "section": "How is this all working?",
+    "text": "How is this all working?\n{rio} wraps a variety of faster, more stream-lined packages than those provided by base R\n\n{data.table} for delimited formats\n{haven} for SAS, Stata, and SPSS files\n{readxl} and {openxlsx} for reading and writing Excel workbooks\ndata.table::fread() for text-delimited files to automatically determine the file format regardless of the extension\n\nalso very fast\n\n\n\n\nagain, “just works”"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#maintaining-data-labels",
+    "href": "slides/w2_workflow.html#maintaining-data-labels",
+    "title": "Week 2: Workflow",
+    "section": "Maintaining data “labels”",
+    "text": "Maintaining data “labels”\nQuestion: How many of you or your colleagues use SPSS or Stata?\n\nIn SPSS, numeric data are often encoded with labels\n\n\n{rio} and {haven} allow you to transform the data into the character/factor version\n{rio} and {haven} store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function\n\nrio::characterize() converts a single variable or all variables in the data that have label attributes into character vectors\nrio::factorize() does the same but returns factor variables"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#section",
+    "href": "slides/w2_workflow.html#section",
+    "title": "Week 2: Workflow",
+    "section": "",
+    "text": "eclsk %&gt;%\n  select(child_id, k_type:sex) %&gt;%\n  head()\n\n# A tibble: 6 × 4\n  child_id k_type school_type   sex\n  &lt;chr&gt;     &lt;dbl&gt;       &lt;dbl&gt; &lt;dbl&gt;\n1 0842021C      1           0     0\n2 0905002C      1           1     0\n3 0150012C      1           1     1\n4 0556009C      1           1     1\n5 0089013C      1           0     0\n6 1217001C      0           0     1"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#section-1",
+    "href": "slides/w2_workflow.html#section-1",
+    "title": "Week 2: Workflow",
+    "section": "",
+    "text": "eclsk %&gt;%\n  characterize() %&gt;%\n  select(child_id, k_type:sex) %&gt;%\n  head()\n\n# A tibble: 6 × 4\n  child_id k_type   school_type sex   \n  &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt; \n1 0842021C full-day public      male  \n2 0905002C full-day private     male  \n3 0150012C full-day private     female\n4 0556009C full-day private     female\n5 0089013C full-day public      male  \n6 1217001C half-day public      female"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#readr",
+    "href": "slides/w2_workflow.html#readr",
+    "title": "Week 2: Workflow",
+    "section": "{readr}",
+    "text": "{readr}\n\nGreat package; most of the time “it just works” regardless of the source file type\nLoads with {tidyverse}\nDefault loads data as a tibble\n\nthis is nice!\n\n\n\n\nread_csv(): comma separated (CSV) files\nread_tsv(): tab separated files\nread_delim(): general delimited files\nread_fwf(): fixed width files\nread_table(): tabular files where columns are separated by white-space\nread_log(): web log files"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#read_csv",
+    "href": "slides/w2_workflow.html#read_csv",
+    "title": "Week 2: Workflow",
+    "section": "read_csv()",
+    "text": "read_csv()\nYou just need one thing:\n\nwhere the data is located\n\nread_csv(file, …)\nfile = a path to a file, a connection, or literal data (either a single string or a raw vector)\n\nAnd how do we get a path string?\n\n\nwith the here() function\n\nread_csv(here(\"path\", \"to\", \"data.csv\"))"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#b.-read-in-data",
+    "href": "slides/w2_workflow.html#b.-read-in-data",
+    "title": "Week 2: Workflow",
+    "section": "3b. Read in data",
+    "text": "3b. Read in data\nTry it!\n\nlibrary(tidyverse)\n\n# {haven} package\neclsk &lt;- haven::read_sav(here(\"data\", \"ecls-k_samp.sav\"))\n\n# read_table() for space separated data\nfatality &lt;- read_table(here(\"data\", \"Fatality.txt\")) \n\n#read_csv(), the one I most often use\nexam1 &lt;- read_csv(here(\"data\", \"Project_Reads_Scores.csv\"))\n\n# read directly from the web, in this case a .csv\nweb &lt;- read_csv(\"https://github.com/datalorax/ncme_18/raw/master/data/pubschls.csv\")"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#write_",
+    "href": "slides/w2_workflow.html#write_",
+    "title": "Week 2: Workflow",
+    "section": "write_*()",
+    "text": "write_*()\nSave data just as easily with write_*()\nYou need two things:\n\nWhat to export?\nWhere to export?\n\n\nwrite_csv(x, file, …)\nx = data frame (tibble) to be written into a file\nfile = character string naming a file to write to\n\n\nBasically\nwrite_*(what, \"where\")\n\nwrite_csv(exam1, here(\"data\", \"exam1.csv\"))"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#r",
+    "href": "slides/w2_workflow.html#r",
+    "title": "Week 2: Workflow",
+    "section": ".R",
+    "text": ".R\n.R is R script (code) file\nFile &gt; New File &gt; R Script\n\nEverything is code\nText - comments! - need to begin with “#”\n\nComments are a great habit!\nUse them to document the what & why of your code\n\n\nRun code\n\nCtrl/Command + Enter\nHighlight specific code, Ctrl/Command + Enter\nPut mouse on line, Ctrl/Command + Enter, and it will execute the all connected (piped) code\n\ndemo"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#quick-peek",
+    "href": "slides/w2_workflow.html#quick-peek",
+    "title": "Week 2: Workflow",
+    "section": "Quick Peek",
+    "text": "Quick Peek\nWhat is Quarto?\n\nan open-source scientific and technical publishing system\ncreate dynamic content with Python, R, Julia, and Observable.\npublish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.\ninclude equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.\na multi-language, next generation version of R Markdown (from Posit)\nincludes many built in output formats (and options for customizing each)\nhas native features for special project types like Websites, Books, and Blogs (rather than relying on external packages)."
+  },
+  {
+    "objectID": "slides/w2_workflow.html#why-quarto",
+    "href": "slides/w2_workflow.html#why-quarto",
+    "title": "Week 2: Workflow",
+    "section": "Why Quarto?",
+    "text": "Why Quarto?\n\nReproducibility: reproducible workflow\n\nCode + output + prose together\nSyntax highlighting FTW!\nFamiliar-feeling authoring with the visual editor without having to learn a bunch of new markdown syntax\n\nEfficiency: consistent formatting\nExtendability: Use with Python, and Julia, and Observable, and more"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#qmd",
+    "href": "slides/w2_workflow.html#qmd",
+    "title": "Week 2: Workflow",
+    "section": ".qmd",
+    "text": ".qmd\n.qmd is a document format file that combines code AND prose\n\nFile &gt; New File &gt; R Markdown…\n\n\nCode goes into “code chunks”\n\n```{r}\n#| eval: false\n# comment\n\ndata %&gt;% \n  select(id, read, math)\n```\n\n\n\nProse goes outside the code chunks\n\n\ndemo"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#r-.qmd",
+    "href": "slides/w2_workflow.html#r-.qmd",
+    "title": "Week 2: Workflow",
+    "section": ".R & .qmd",
+    "text": ".R & .qmd\n\nBoth are great\nServe different purposes\n\n\nOrganization tip\n\n.Rmd with headers\n.R with # Header ----\n\ndemo"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#packages-1",
+    "href": "slides/w2_workflow.html#packages-1",
+    "title": "Week 2: Workflow",
+    "section": "Packages",
+    "text": "Packages\n\nFirst the package must be installed on your machine\ninstall.packages(“package_name”)\n\n\n\nyou will only need to do this the first time you want to use the package\nnever keep this code line (you can run it in the console, or delete it from your script)\nnotices the quotes\nnever keep this code line\n\n\n\nAny time you want to use a package it should be loaded\nlibrary(package_name)\n\n\n\nyou will do this each time you use the package in your scripts\nnotices no quotes"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#janitor",
+    "href": "slides/w2_workflow.html#janitor",
+    "title": "Week 2: Workflow",
+    "section": "{janitor} ",
+    "text": "{janitor} \nA fantastic package!\n\nremove_empty_rows()\nremove_empty_cols()\nexcel_numeric_to_date()\n\nchanges numeric dates imported from Excel to actual dates\n\ntabyl()\n\nfrequency table with n and %\n\n\n\n\nclean_names()\n\nstyles column names (NOT data itself) with “snake_case”: lower case and underscore between words\ncan choose other “*_case”"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#new-script",
+    "href": "slides/w2_workflow.html#new-script",
+    "title": "Week 2: Workflow",
+    "section": "New script",
+    "text": "New script\nLet’s work within the “my_first_project” .RProj\n\nOpen a new Quarto document\n\ndemo"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#edit-this",
+    "href": "slides/w2_workflow.html#edit-this",
+    "title": "Week 2: Workflow",
+    "section": "EDIT THIS!!!!",
+    "text": "EDIT THIS!!!!\n\nLet’s remove all chunks after the first (setup)\nThis is what you will do with .Rmd going forward"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#working-with-data",
+    "href": "slides/w2_workflow.html#working-with-data",
+    "title": "Week 2: Workflow",
+    "section": "Working with data",
+    "text": "Working with data\n\nWhat packages will we use?\n\n\nlibrary(here) - where the data is located\nlibrary(rio) - read the data into R\nlibrary(janitor) - clean the variable names in the data\nlibrary(tidyverse) - clean the data"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#working-with-data-1",
+    "href": "slides/w2_workflow.html#working-with-data-1",
+    "title": "Week 2: Workflow",
+    "section": "Working with data",
+    "text": "Working with data\n\nRead in the Penguins.csv data\n\n\nLet’s name the data “penguins”\nThree options, choose one\n\n\n# rio::import()\npenguins &lt;- import(here(\"data\", \"Penguins.csv\"), setclass = \"tbl_df\")\n\npenguins &lt;- import(here(\"data\", \"Penguins.csv\"))\n\n# readr::read_csv()\npenguins &lt;- read_csv(here(\"data\", \"Penguins.csv\")) \n\n\n\nNote that this data is taken from the {palmerpenguins} package but has slight modifications"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#what-do-our-data-look-like",
+    "href": "slides/w2_workflow.html#what-do-our-data-look-like",
+    "title": "Week 2: Workflow",
+    "section": "What do our data look like?",
+    "text": "What do our data look like?\n\npenguins\n\n# A tibble: 344 × 8\n   Species Island    `Bill Length (mm)` `Bill Depth (mm)` `Flipper Length (mm)`\n   &lt;chr&gt;   &lt;chr&gt;                  &lt;dbl&gt;             &lt;dbl&gt;                 &lt;dbl&gt;\n 1 Adelie  Torgersen               39.1              18.7                   181\n 2 Adelie  Torgersen               39.5              17.4                   186\n 3 Adelie  Torgersen               40.3              18                     195\n 4 Adelie  Torgersen               NA                NA                      NA\n 5 Adelie  Torgersen               36.7              19.3                   193\n 6 Adelie  Torgersen               39.3              20.6                   190\n 7 Adelie  Torgersen               38.9              17.8                   181\n 8 Adelie  Torgersen               39.2              19.6                   195\n 9 Adelie  Torgersen               34.1              18.1                   193\n10 Adelie  Torgersen               42                20.2                   190\n# ℹ 334 more rows\n# ℹ 3 more variables: `Body Mass (g)` &lt;dbl&gt;, Sex &lt;chr&gt;, Year &lt;dbl&gt;\n\n\n\nOr use View() to take a look at the full data in RStudio\n\nView(penguins)\n\n\n\nOr click on the object name in your RStudio Environment"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#janitorclean_names",
+    "href": "slides/w2_workflow.html#janitorclean_names",
+    "title": "Week 2: Workflow",
+    "section": "janitor::clean_names()",
+    "text": "janitor::clean_names()\n\n# re-assign the \"reads\" object by reading the data in again\npenguins &lt;- read_csv(here(\"data\", \"Penguins.csv\")) %&gt;% \n  clean_names()\n\n# or just work with the existing \"penguins\" object\npenguins &lt;- penguins %&gt;% \n  clean_names()"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#looking-at-the-data-structure",
+    "href": "slides/w2_workflow.html#looking-at-the-data-structure",
+    "title": "Week 2: Workflow",
+    "section": "Looking at the data structure",
+    "text": "Looking at the data structure\nstructure\n\nstr(penguins)\n\nspc_tbl_ [344 × 8] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ species          : chr [1:344] \"Adelie\" \"Adelie\" \"Adelie\" \"Adelie\" ...\n $ island           : chr [1:344] \"Torgersen\" \"Torgersen\" \"Torgersen\" \"Torgersen\" ...\n $ bill_length_mm   : num [1:344] 39.1 39.5 40.3 NA 36.7 39.3 38.9 39.2 34.1 42 ...\n $ bill_depth_mm    : num [1:344] 18.7 17.4 18 NA 19.3 20.6 17.8 19.6 18.1 20.2 ...\n $ flipper_length_mm: num [1:344] 181 186 195 NA 193 190 181 195 193 190 ...\n $ body_mass_g      : num [1:344] 3750 3800 3250 NA 3450 ...\n $ sex              : chr [1:344] \"male\" \"female\" \"female\" NA ...\n $ year             : num [1:344] 2007 2007 2007 2007 2007 ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   Species = col_character(),\n  ..   Island = col_character(),\n  ..   `Bill Length (mm)` = col_double(),\n  ..   `Bill Depth (mm)` = col_double(),\n  ..   `Flipper Length (mm)` = col_double(),\n  ..   `Body Mass (g)` = col_double(),\n  ..   Sex = col_character(),\n  ..   Year = col_double()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt;"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#looking-at-the-data-properties",
+    "href": "slides/w2_workflow.html#looking-at-the-data-properties",
+    "title": "Week 2: Workflow",
+    "section": "Looking at the data properties",
+    "text": "Looking at the data properties\ndimensions (rows \\(\\times\\) columns)\n\ndim(penguins)\n\n[1] 344   8\n\n\n\nnumber of rows or number of columns\n\nnrow(penguins)\n\n[1] 344\n\nncol(penguins)\n\n[1] 8"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#head",
+    "href": "slides/w2_workflow.html#head",
+    "title": "Week 2: Workflow",
+    "section": "head()",
+    "text": "head()\nView the six first elements\n\n# first six rows\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;chr&gt;   &lt;chr&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;dbl&gt;       &lt;dbl&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;chr&gt;, year &lt;dbl&gt;\n\n\n\n\n# first six elements of the column\nhead(penguins$flipper_length_mm)\n\n[1] 181 186 195  NA 193 190"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#another-cool-package-skimr",
+    "href": "slides/w2_workflow.html#another-cool-package-skimr",
+    "title": "Week 2: Workflow",
+    "section": "Another cool package {skimr}",
+    "text": "Another cool package {skimr}\n\nlibrary(skimr)\n\nskim(penguins)\n\n\n\n\nData summary\n\n\n\n\nName\n\n\npenguins\n\n\n\n\nNumber of rows\n\n\n344\n\n\n\n\nNumber of columns\n\n\n8\n\n\n\n\n_______________________\n\n\n\n\n\n\nColumn type frequency:\n\n\n\n\n\n\ncharacter\n\n\n3\n\n\n\n\nnumeric\n\n\n5\n\n\n\n\n________________________\n\n\n\n\n\n\nGroup variables\n\n\nNone\n\n\n\n\n\nVariable type: character\n\n\n\n\n\nskim_variable\n\n\nn_missing\n\n\ncomplete_rate\n\n\nmin\n\n\nmax\n\n\nempty\n\n\nn_unique\n\n\nwhitespace\n\n\n\n\n\n\nspecies\n\n\n0\n\n\n1.00\n\n\n6\n\n\n9\n\n\n0\n\n\n3\n\n\n0\n\n\n\n\nisland\n\n\n0\n\n\n1.00\n\n\n5\n\n\n9\n\n\n0\n\n\n3\n\n\n0\n\n\n\n\nsex\n\n\n11\n\n\n0.97\n\n\n4\n\n\n6\n\n\n0\n\n\n2\n\n\n0\n\n\n\n\n\nVariable type: numeric\n\n\n\n\n\nskim_variable\n\n\nn_missing\n\n\ncomplete_rate\n\n\nmean\n\n\nsd\n\n\np0\n\n\np25\n\n\np50\n\n\np75\n\n\np100\n\n\nhist\n\n\n\n\n\n\nbill_length_mm\n\n\n2\n\n\n0.99\n\n\n43.92\n\n\n5.46\n\n\n32.1\n\n\n39.23\n\n\n44.45\n\n\n48.5\n\n\n59.6\n\n\n▃▇▇▆▁\n\n\n\n\nbill_depth_mm\n\n\n2\n\n\n0.99\n\n\n17.15\n\n\n1.97\n\n\n13.1\n\n\n15.60\n\n\n17.30\n\n\n18.7\n\n\n21.5\n\n\n▅▅▇▇▂\n\n\n\n\nflipper_length_mm\n\n\n2\n\n\n0.99\n\n\n200.92\n\n\n14.06\n\n\n172.0\n\n\n190.00\n\n\n197.00\n\n\n213.0\n\n\n231.0\n\n\n▂▇▃▅▂\n\n\n\n\nbody_mass_g\n\n\n2\n\n\n0.99\n\n\n4201.75\n\n\n801.95\n\n\n2700.0\n\n\n3550.00\n\n\n4050.00\n\n\n4750.0\n\n\n6300.0\n\n\n▃▇▆▃▂\n\n\n\n\nyear\n\n\n0\n\n\n1.00\n\n\n2008.03\n\n\n0.82\n\n\n2007.0\n\n\n2007.00\n\n\n2008.00\n\n\n2009.0\n\n\n2009.0\n\n\n▇▁▇▁▇"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#the-pipe-operator",
+    "href": "slides/w2_workflow.html#the-pipe-operator",
+    "title": "Week 2: Workflow",
+    "section": "The pipe operator (%>%)",
+    "text": "The pipe operator (%&gt;%)\n\nThe %&gt;% operator (Super + Shift + M)\n\ninserts the input as the first argument in the next function\n\nTo start, you can read it as “then”\nIt is crucial for work in the {tidyverse}\n\n\n\n\nWith the {tidyverse}\n\npenguins %&gt;% \n  count(species)\n\n# A tibble: 3 × 2\n  species       n\n  &lt;chr&gt;     &lt;int&gt;\n1 Adelie      152\n2 Chinstrap    68\n3 Gentoo      124\n\n\n\nOr with {janitor}\n\npenguins %&gt;% \n  tabyl(species)\n\n   species   n   percent\n    Adelie 152 0.4418605\n Chinstrap  68 0.1976744\n    Gentoo 124 0.3604651\n\n\n\n\n\n\nLet’s look at ?count and ?tabyl"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#why-use",
+    "href": "slides/w2_workflow.html#why-use",
+    "title": "Week 2: Workflow",
+    "section": "Why use %>%",
+    "text": "Why use %&gt;%\nChaining arguments is efficient and easy to read\n\n\npenguins %&gt;% \n  filter(species == \"Adelie\",\n         bill_length_mm &gt; 40) %&gt;% \n  select(island, bill_length_mm, body_mass_g) %&gt;% \n  arrange(bill_length_mm) \n\n# A tibble: 51 × 3\n   island    bill_length_mm body_mass_g\n   &lt;chr&gt;              &lt;dbl&gt;       &lt;dbl&gt;\n 1 Biscoe              40.1        4300\n 2 Torgersen           40.2        3450\n 3 Dream               40.2        3975\n 4 Dream               40.2        3400\n 5 Torgersen           40.3        3250\n 6 Dream               40.3        4350\n 7 Biscoe              40.5        3200\n 8 Biscoe              40.5        3950\n 9 Biscoe              40.6        3550\n10 Biscoe              40.6        3800\n# ℹ 41 more rows"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#why-use-1",
+    "href": "slides/w2_workflow.html#why-use-1",
+    "title": "Week 2: Workflow",
+    "section": "Why use %>%",
+    "text": "Why use %&gt;%\nChaining arguments is efficient and easy to read\n\npenguins %&gt;% \n  filter(species == \"Adelie\",\n         bill_length_mm &gt; 40) %&gt;% \n  select(island, bill_length_mm, body_mass_g) %&gt;% \n  arrange(bill_length_mm) \n\n\nEquivalent to:\n\narrange(select(filter(penguins, species == \"Adelie\", bill_length_mm &gt; 40), island, bill_length_mm, body_mass_g), bill_length_mm)"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#section-2",
+    "href": "slides/w2_workflow.html#section-2",
+    "title": "Week 2: Workflow",
+    "section": "%>%",
+    "text": "%&gt;%\nThe %&gt;% works so well in the {tidyverse} because the first argument in (nearly) all functions is the data (tibble)\n\nSo you don’t need to name the data each time\n\n\n\nSo this:\n\npenguins %&gt;% \n  count(sex)\n\n# A tibble: 3 × 2\n  sex        n\n  &lt;chr&gt;  &lt;int&gt;\n1 female   165\n2 male     168\n3 &lt;NA&gt;      11\n\n\n\nIs equivalent to this:\n\ncount(penguins, sex)\n\n# A tibble: 3 × 2\n  sex        n\n  &lt;chr&gt;  &lt;int&gt;\n1 female   165\n2 male     168\n3 &lt;NA&gt;      11"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#homework-notes",
+    "href": "slides/w2_workflow.html#homework-notes",
+    "title": "Week 2: Workflow",
+    "section": "Homework notes",
+    "text": "Homework notes\nScript on website\n\nDownload Homework 1 from the course Assignments page\nWork with this .qmd file\n\nSubmit a rendered .html file to Canvas\n\nAssignments &gt; Homeworks &gt; HW 1"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#before-next-class",
+    "href": "slides/w2_workflow.html#before-next-class",
+    "title": "Week 2: Workflow",
+    "section": "Before next class",
+    "text": "Before next class\n\nReading\n\nR4DS(2e) Ch 2\n\nSupplemental Learning\n\nRStudio Primer: Data Visualization Basics\nRbootcamp: Ch 2\nCodecademy: Introduction to Visualization with R\n\nHomework\n\nHomework 1\n\nFinal project\n\n\nFinalize Groups"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#new-script-1",
+    "href": "slides/w2_workflow.html#new-script-1",
+    "title": "Week 2: Workflow",
+    "section": "New script",
+    "text": "New script\nLet’s work within the “my_first_project” .RProj\n\nClean it up\n\n\nModify the YAML\nSave the file as “practice.qmd” in the scripts folder\nRender!\n\ndemo"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#popcorn-revisited",
+    "href": "slides/w2_workflow.html#popcorn-revisited",
+    "title": "Week 2: Workflow",
+    "section": "Popcorn Revisited",
+    "text": "Popcorn Revisited\nLet’s give Andrew a hex sticker!"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#housekeeping",
+    "href": "slides/w3_ggplot2.html#housekeeping",
+    "title": "Week 3: Data Visualization",
+    "section": "Housekeeping",
+    "text": "Housekeeping\n\nHomework 1 due today\nGroups due today\n\nI need emails from everyone by 5pm (if you have not already emailed)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#agenda",
+    "href": "slides/w3_ggplot2.html#agenda",
+    "title": "Week 3: Data Visualization",
+    "section": "Agenda",
+    "text": "Agenda\n{ggplot2}\n\nsyntax\ncontinuous data visualizations\ncategorical data visualizations\noptions\n\ncolor/fill\ntransparency\nlabels\nfacets\n\n\nLearning Objectives\n\nUnderstand the basic syntax requirements for {ggplot2}\nRecognize various options for displaying continuous and categorical data\nFamiliarity with various {ggplot2} options\n\ncolor/fill\ntransparency\nlabels\nfacets"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#datapasta",
+    "href": "slides/w3_ggplot2.html#datapasta",
+    "title": "Week 3: Data Visualization",
+    "section": "{datapasta}",
+    "text": "{datapasta}\n\nCopy and paste data to and from R\nVERY handy!\nGood for reprex\n\nposting questions on Rstudio Community or stackoverflow\n\n\ndemo"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#providing-grammar-for",
+    "href": "slides/w3_ggplot2.html#providing-grammar-for",
+    "title": "Week 3: Data Visualization",
+    "section": "Providing grammar for:",
+    "text": "Providing grammar for:\n\nGraphics\n\n{ggplot2}\n\nData manipulations\n\n{dplyr}\n{tidyr}\n\nExpanding area of specialized topics\n\n{lubridate}\n{glue}\n{tidymodels}\n\nMany more…"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#providing-grammar-for-1",
+    "href": "slides/w3_ggplot2.html#providing-grammar-for-1",
+    "title": "Week 3: Data Visualization",
+    "section": "Providing grammar for:",
+    "text": "Providing grammar for:\n\nGraphics\n\n{ggplot2}\n\nData manipulations\n\n{dplyr}\n{tidyr}\n\nExpanding area of specialized topics\n\n{lubridate}\n{glue}\n{tidymodels}\n\nMany more…"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#the-ggplot2-package",
+    "href": "slides/w3_ggplot2.html#the-ggplot2-package",
+    "title": "Week 3: Data Visualization",
+    "section": "The {ggplot2} package",
+    "text": "The {ggplot2} package\ngg stands for the “grammar of graphics”"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#resources",
+    "href": "slides/w3_ggplot2.html#resources",
+    "title": "Week 3: Data Visualization",
+    "section": "Resources",
+    "text": "Resources\nThe {ggplot2} package is one of the most popular R packages, and there are many resources to learn the syntax\n\nggplot2 book (email me for digital copy)\nRStudio cheat sheet\n\nCan be helpful, perhaps more so after a little experience\n\nR Graphics Cookbook\nR Graph Gallery\n\npast students have really liked this one"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#components",
+    "href": "slides/w3_ggplot2.html#components",
+    "title": "Week 3: Data Visualization",
+    "section": "Components",
+    "text": "Components\nEvery ggplot plot has three components\n\ndata\n\nthe data used to produce the plot\n\naesthetic mappings (aes)\n\nbetween variables and visual properties\n\nlayer(s)\n\nusually through the geom_*() function to produce geometric shapes to be rendered\n\n\n\nggplot() always takes a data frame (tibble) as the first argument"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#basic-syntax",
+    "href": "slides/w3_ggplot2.html#basic-syntax",
+    "title": "Week 3: Data Visualization",
+    "section": "Basic syntax",
+    "text": "Basic syntax\nggplot(data, aes(x = xvar, y = yvar)) +  geom_function()\n\nggplot() = the function is ggplot and the package is {ggplot2}\n\n\ndata = the data to be plotted\n\n\naes(x = xvar, y = yvar) = the aesthetic mappings\n\n\ngeom_function() = the geometrics of the plot; the “function()” here represents any of the geom_* offerings\n\n\n\nnote the + and NOT the %&gt;%"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#ggplot2-template",
+    "href": "slides/w3_ggplot2.html#ggplot2-template",
+    "title": "Week 3: Data Visualization",
+    "section": "{ggplot2} template",
+    "text": "{ggplot2} template\n\nggplot(data, aes(mappings)) +\n  geom_function()\n\n\nor equivalently\n\n\n\ndata %&gt;% \n  ggplot(aes(mappings)) +\n  geom_function()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#some-data-for-today-httpsallisonhorst.github.iopalmerpenguinsreferencefigureslter_penguins.png",
+    "href": "slides/w3_ggplot2.html#some-data-for-today-httpsallisonhorst.github.iopalmerpenguinsreferencefigureslter_penguins.png",
+    "title": "Week 3: Data Visualization",
+    "section": "Some data for today !()https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png",
+    "text": "Some data for today !()https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png\nrun the following\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#setting-up-a-plot",
+    "href": "slides/w3_ggplot2.html#setting-up-a-plot",
+    "title": "Week 3: Data Visualization",
+    "section": "Setting up a plot",
+    "text": "Setting up a plot\nRun the following code. What do you see?\n\nggplot(penguins, aes(bill_length_mm, body_mass_g))"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#setting-up-a-plot-output",
+    "href": "slides/w3_ggplot2.html#setting-up-a-plot-output",
+    "title": "Week 3: Data Visualization",
+    "section": "Setting up a plot",
+    "text": "Setting up a plot"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#setting-up-a-plot-1",
+    "href": "slides/w3_ggplot2.html#setting-up-a-plot-1",
+    "title": "Week 3: Data Visualization",
+    "section": "Setting up a plot",
+    "text": "Setting up a plot\nlayering"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#setting-up-a-plot-2",
+    "href": "slides/w3_ggplot2.html#setting-up-a-plot-2",
+    "title": "Week 3: Data Visualization",
+    "section": "Setting up a plot",
+    "text": "Setting up a plot\nIt’s ready for you to add some geometric layers…what should we add?"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#how-about-points",
+    "href": "slides/w3_ggplot2.html#how-about-points",
+    "title": "Week 3: Data Visualization",
+    "section": "How about points?",
+    "text": "How about points?\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#adding-layers",
+    "href": "slides/w3_ggplot2.html#adding-layers",
+    "title": "Week 3: Data Visualization",
+    "section": "Adding layers",
+    "text": "Adding layers\n\nIn the previous slide, we added a layer of points\nThe geom_point() layer is a function, complete with it’s own arguments\n\n\nLet’s change the color of the points\nHow would you change the color of the points?\n\nor\n\nHow would you find out about changing the color of the points?\n\n\n?geom_point"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#color",
+    "href": "slides/w3_ggplot2.html#color",
+    "title": "Week 3: Data Visualization",
+    "section": "color",
+    "text": "color\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = \"magenta\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#add-another-layer",
+    "href": "slides/w3_ggplot2.html#add-another-layer",
+    "title": "Week 3: Data Visualization",
+    "section": "Add another layer",
+    "text": "Add another layer\nLet’s add a smoothed line with geom_smooth()\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = \"magenta\") + \n  geom_smooth()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#you-try",
+    "href": "slides/w3_ggplot2.html#you-try",
+    "title": "Week 3: Data Visualization",
+    "section": "You try",
+    "text": "You try\nYou probably got the message below when you ran (defaults)\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = \"magenta\") + \n  geom_smooth()\n\n`geom_smooth()` using method = 'loess' and formula = 'y ~ x'\n\n\n\n\nChange the method to \"lm\""
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#lets-do-this-one-together",
+    "href": "slides/w3_ggplot2.html#lets-do-this-one-together",
+    "title": "Week 3: Data Visualization",
+    "section": "Let’s do this one together",
+    "text": "Let’s do this one together\nLook at the help page – ?geom_smooth\n\nRemove the confidence interval around the line\nNow change the SE band to reflect a 68% confidence interval"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#color-global-vs.-conditional",
+    "href": "slides/w3_ggplot2.html#color-global-vs.-conditional",
+    "title": "Week 3: Data Visualization",
+    "section": "color: global vs. conditional",
+    "text": "color: global vs. conditional\nPrior examples changed colors globally\n\ngeom_point(color = \"magenta\")\n\n\nUse aes() to access variables, and color according to a specific variable\n\n\n\nWe use variable names within aes()\n\n\n\nLet’s check the data again (head()) and the “species” variable (table())\n\n\nlet’s do this together"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-4",
+    "href": "slides/w3_ggplot2.html#section-4",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "ggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = \"black\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#color-global-vs.-conditional-1",
+    "href": "slides/w3_ggplot2.html#color-global-vs.-conditional-1",
+    "title": "Week 3: Data Visualization",
+    "section": "color: global vs. conditional",
+    "text": "color: global vs. conditional\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(aes(color = species))\n\n\nWhen we did geom_point(color = \"magenta\") we put quotes around the color\nWhy now is “species” not in quotes?\n\n\n\ncolor names/hex codes are in quotes NOT in the aes()\nvariable names are in the aes() NOT in quotes\naes() is where you map to your data!"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#conditional-flow-through-layers",
+    "href": "slides/w3_ggplot2.html#conditional-flow-through-layers",
+    "title": "Week 3: Data Visualization",
+    "section": "Conditional flow through layers",
+    "text": "Conditional flow through layers\nIf we use something like color = “x” in the first aesthetic, it will carry on through all additional layers\nThese two codes are the same:\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(aes(color = species))\n\n\nggplot(penguins, aes(bill_length_mm, body_mass_g, color = species)) +\n  geom_point()\n\n\nBut these two are not…why? run to find out\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(aes(color = species)) + \n  geom_smooth()\n\n\nggplot(penguins, aes(bill_length_mm, body_mass_g, color = species)) +\n  geom_point() + \n  geom_smooth()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#be-mindful-with-aes",
+    "href": "slides/w3_ggplot2.html#be-mindful-with-aes",
+    "title": "Week 3: Data Visualization",
+    "section": "Be mindful with aes()",
+    "text": "Be mindful with aes()\nUsing aes() when you don’t need it\nWhat is happening here?\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(aes(color = \"blue\")) + \n  geom_smooth()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#be-mindful-with-aes-1",
+    "href": "slides/w3_ggplot2.html#be-mindful-with-aes-1",
+    "title": "Week 3: Data Visualization",
+    "section": "Be mindful with aes()",
+    "text": "Be mindful with aes()\nNot using aes() when you need it\nWhat is happening here?\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = species) + \n  geom_smooth()\n\nError in list2(na.rm = na.rm, ...): object 'species' not found\n\n\n\n\nKind of helpful message here."
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#lets-talk-themes",
+    "href": "slides/w3_ggplot2.html#lets-talk-themes",
+    "title": "Week 3: Data Visualization",
+    "section": "Let’s talk themes",
+    "text": "Let’s talk themes\n\nThe default is theme_gray\n\nI don’t like it\n\nBut there are a lot of build-in alternative in {ggplot2}\n\ntheme_minimal is my favorite\n\nCheck out the {ggthemes} package for a lot of alternatives\n\nThese days I often use the colorblind theme for discrete values in my plots\n\nCheck out the {ggthemeassist} add-in"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#get-a-little-fancy",
+    "href": "slides/w3_ggplot2.html#get-a-little-fancy",
+    "title": "Week 3: Data Visualization",
+    "section": "Get a little fancy",
+    "text": "Get a little fancy\n\nYou can use geom_point() for more than one layer\nYou can also use a different data source on a layer\nUse these two properties to highlight points\n\nHow about penguins from Torgersen Island?"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-5",
+    "href": "slides/w3_ggplot2.html#section-5",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "ggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = \"black\") + \n  geom_point(data = dplyr::filter(penguins, island == \"Torgersen\"), color = \"magenta\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-6",
+    "href": "slides/w3_ggplot2.html#section-6",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "ggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = \"black\") + \n  geom_point(data = dplyr::filter(penguins, island == \"Torgersen\"), color = \"magenta\") + \n  geom_smooth(se = FALSE)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-7",
+    "href": "slides/w3_ggplot2.html#section-7",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "ggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = \"black\") + \n  geom_point(data = dplyr::filter(penguins, island == \"Torgersen\"), color = \"magenta\") + \n  geom_smooth(se = FALSE) + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-8",
+    "href": "slides/w3_ggplot2.html#section-8",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "geom_bar() default\n\nggplot(mpg, aes(class)) + \n  geom_bar()\n\n\n\n\n\ngeom_bar(stat = \"identity\")\n\nggplot(summarized_mpg, aes(class, n)) + \n  geom_bar(stat = \"identity\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#another-option",
+    "href": "slides/w3_ggplot2.html#another-option",
+    "title": "Week 3: Data Visualization",
+    "section": "Another option",
+    "text": "Another option\n{gghighlight} varying flexibility\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(color = \"magenta\") + \n  gghighlight::gghighlight(island == \"Torgersen\") + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#line-plots",
+    "href": "slides/w3_ggplot2.html#line-plots",
+    "title": "Week 3: Data Visualization",
+    "section": "Line plots",
+    "text": "Line plots\n\nWhen should you use line plots instead of smooths?\n\n\n+ usually when time is involved\n\n\n\nWhat are some good candidate data for line plots?\n\n\n\n+ observed versus model-implied (estimated)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#geom_line",
+    "href": "slides/w3_ggplot2.html#geom_line",
+    "title": "Week 3: Data Visualization",
+    "section": "geom_line()",
+    "text": "geom_line()\nClassic time series example\neconomics data from {ggplot2}\n\neconomics\n\n# A tibble: 574 × 6\n   date         pce    pop psavert uempmed unemploy\n   &lt;date&gt;     &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;\n 1 1967-07-01  507. 198712    12.6     4.5     2944\n 2 1967-08-01  510. 198911    12.6     4.7     2945\n 3 1967-09-01  516. 199113    11.9     4.6     2958\n 4 1967-10-01  512. 199311    12.9     4.9     3143\n 5 1967-11-01  517. 199498    12.8     4.7     3066\n 6 1967-12-01  525. 199657    11.8     4.8     3018\n 7 1968-01-01  531. 199808    11.7     5.1     2878\n 8 1968-02-01  534. 199920    12.3     4.5     3001\n 9 1968-03-01  544. 200056    11.7     4.1     2877\n10 1968-04-01  544  200208    12.3     4.6     2709\n# ℹ 564 more rows"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#lets-try-it",
+    "href": "slides/w3_ggplot2.html#lets-try-it",
+    "title": "Week 3: Data Visualization",
+    "section": "Let’s try it",
+    "text": "Let’s try it\nHow do you think we’d fit a line plot to these data, showing unemployment (“unemploy”) over time?\n\n\nggplot(economics, aes(date, unemploy)) +\n  geom_line()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#layers",
+    "href": "slides/w3_ggplot2.html#layers",
+    "title": "Week 3: Data Visualization",
+    "section": "Layers",
+    "text": "Layers\nWhat happens when we layer geom_line and geom_point?\n\nggplot(economics, aes(date, unemploy)) +\n  geom_line() +\n  geom_point()\n\ntry it!\n\nNot the best instance of this\nIt would work better on a plot with fewer time points, but you get the idea"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#axis-labels",
+    "href": "slides/w3_ggplot2.html#axis-labels",
+    "title": "Week 3: Data Visualization",
+    "section": "Axis Labels",
+    "text": "Axis Labels\n\nggplot(economics, aes(date, unemploy)) +\n  geom_line() +\n  theme_minimal() +\n  labs(x = \"Date\",\n       y = \"Unemployment\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#title",
+    "href": "slides/w3_ggplot2.html#title",
+    "title": "Week 3: Data Visualization",
+    "section": "Title",
+    "text": "Title\n\nggplot(economics, aes(date, unemploy)) +\n  geom_line() +\n  theme_minimal() +\n  labs(x = \"Date\", \n       y = \"Unemployment\",\n       title = \"Unemployment Over Time\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#subtitle",
+    "href": "slides/w3_ggplot2.html#subtitle",
+    "title": "Week 3: Data Visualization",
+    "section": "Subtitle",
+    "text": "Subtitle\n\nggplot(economics, aes(date, unemploy)) +\n  geom_line() +\n  theme_minimal() +\n  labs(x = \"Date\", \n       y = \"Unemployment\",\n       title = \"Unemployment Over Time\",\n       subtitle = \"This is the subtitle\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#caption",
+    "href": "slides/w3_ggplot2.html#caption",
+    "title": "Week 3: Data Visualization",
+    "section": "Caption",
+    "text": "Caption\n\nggplot(economics, aes(date, unemploy)) +\n  geom_line() +\n  theme_minimal() +\n  labs(x = \"Date\", \n       y = \"Unemployment\",\n       title = \"Unemployment Over Time\",\n       subtitle = \"This is the subtitle\",\n       caption = \"Created by Joe Nese\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#tag",
+    "href": "slides/w3_ggplot2.html#tag",
+    "title": "Week 3: Data Visualization",
+    "section": "Tag",
+    "text": "Tag\n\nggplot(economics, aes(date, unemploy)) +\n  geom_line() +\n  theme_minimal() +\n  labs(x = \"Date\", \n       y = \"Unemployment\",\n       title = \"Unemployment Over Time\",\n       subtitle = \"This is the subtitle\",\n       caption = \"Created by Joe Nese\",\n       tag = \"(A)\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#legend-one-way",
+    "href": "slides/w3_ggplot2.html#legend-one-way",
+    "title": "Week 3: Data Visualization",
+    "section": "Legend (one way)",
+    "text": "Legend (one way)\n\nggplot(penguins, aes(bill_length_mm, body_mass_g, color = species)) + # 'color = '\n  geom_point() +\n  theme_minimal() +\n  labs(x = \"Bill Length (mm)\",\n       y = \"Body Mass (g)\",\n       color = \"Species!\") # 'color = '"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#faceting",
+    "href": "slides/w3_ggplot2.html#faceting",
+    "title": "Week 3: Data Visualization",
+    "section": "Faceting",
+    "text": "Faceting\n\nOne of the most powerful features of {ggplot2}\nProduce n plots by a specific variable\nfacet_wrap()\n\nwrap a sequence of panels into two dimensions\nbased on variables(s)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#faceting-1",
+    "href": "slides/w3_ggplot2.html#faceting-1",
+    "title": "Week 3: Data Visualization",
+    "section": "Faceting",
+    "text": "Faceting\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) + \n  geom_point() +\n  geom_smooth() +\n  facet_wrap(~species)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#careful-about-the",
+    "href": "slides/w3_ggplot2.html#careful-about-the",
+    "title": "Week 3: Data Visualization",
+    "section": "Careful about the ~",
+    "text": "Careful about the ~\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) + \n  geom_point() +\n  geom_smooth() +\n  facet_wrap(species)\n\nError in validate_facets(x): object 'species' not found"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#faceting-2",
+    "href": "slides/w3_ggplot2.html#faceting-2",
+    "title": "Week 3: Data Visualization",
+    "section": "Faceting",
+    "text": "Faceting\ntwo variables (like a matrix)\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) + \n  geom_point() +\n  geom_smooth() +\n  facet_wrap(species ~ year)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#alternative-specification---vars",
+    "href": "slides/w3_ggplot2.html#alternative-specification---vars",
+    "title": "Week 3: Data Visualization",
+    "section": "Alternative specification - vars()",
+    "text": "Alternative specification - vars()\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) + \n  geom_point() +\n  geom_smooth() +\n  facet_wrap(vars(species))\n\n\n\nggplot(penguins, aes(bill_length_mm, body_mass_g)) + \n  geom_point() +\n  geom_smooth() +\n  facet_wrap(vars(species, year))"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#example-with-correlations",
+    "href": "slides/w3_ggplot2.html#example-with-correlations",
+    "title": "Week 3: Data Visualization",
+    "section": "Example with correlations",
+    "text": "Example with correlations\n\ncorr &lt;- cor(mtcars)\n\npc &lt;- corr %&gt;% \n  as.data.frame() %&gt;% \n  mutate(row = rownames(.)) %&gt;% \n  pivot_longer(\n    cols = -row,\n    names_to = \"col\",\n    values_to = \"cor\"\n  )\n\nhead(pc)\n\n# A tibble: 6 × 3\n  row   col      cor\n  &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt;\n1 mpg   mpg    1    \n2 mpg   cyl   -0.852\n3 mpg   disp  -0.848\n4 mpg   hp    -0.776\n5 mpg   drat   0.681\n6 mpg   wt    -0.868"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-9",
+    "href": "slides/w3_ggplot2.html#section-9",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "geom_bar() default\n\nggplot(mpg, aes(class)) + \n  geom_bar()\n\n\n\n\n\ngeom_col() default\n\nggplot(summarized_mpg, aes(class, n)) + \n  geom_col()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-10",
+    "href": "slides/w3_ggplot2.html#section-10",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "geom_bar() default\n\nggplot(mpg, aes(class)) + \n  geom_bar()\n\n\n\n\n\ngeom_bar() uh-oh\n\nggplot(summarized_mpg, aes(class)) + \n  geom_bar()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#data",
+    "href": "slides/w3_ggplot2.html#data",
+    "title": "Week 3: Data Visualization",
+    "section": "Data",
+    "text": "Data\n{fivethirtyeight} package\ndataset is college_grad_students\n\ntheme_set(theme_minimal(base_size = 16))\n\n#install.packages(\"fivethirtyeight\")\nlibrary(fivethirtyeight)\n# View(college_grad_students)\ngrad &lt;- college_grad_students # simpler reference\ngrad\n\n# A tibble: 173 × 22\n   major_code major     major_category grad_total grad_sample_size grad_employed\n        &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;               &lt;int&gt;            &lt;int&gt;         &lt;int&gt;\n 1       5601 Construc… Industrial Ar…       9173              200          7098\n 2       6004 Commerci… Arts                53864              882         40492\n 3       6211 Hospital… Business            24417              437         18368\n 4       2201 Cosmetol… Industrial Ar…       5411               72          3590\n 5       2001 Communic… Computers & M…       9109              171          7512\n 6       3201 Court Re… Law & Public …       1542               22          1008\n 7       6206 Marketin… Business           190996             3738        151570\n 8       1101 Agricult… Agriculture &…      17488              386         13104\n 9       2101 Computer… Computers & M…       5611               98          4716\n10       1904 Advertis… Communication…      33928              688         28517\n# ℹ 163 more rows\n# ℹ 16 more variables: grad_employed_fulltime_yearround &lt;int&gt;,\n#   grad_unemployed &lt;int&gt;, grad_unemployment_rate &lt;dbl&gt;, grad_p25th &lt;dbl&gt;,\n#   grad_median &lt;dbl&gt;, grad_p75th &lt;int&gt;, nongrad_total &lt;int&gt;,\n#   nongrad_employed &lt;int&gt;, nongrad_employed_fulltime_yearround &lt;int&gt;,\n#   nongrad_unemployed &lt;int&gt;, nongrad_unemployment_rate &lt;dbl&gt;,\n#   nongrad_p25th &lt;dbl&gt;, nongrad_median &lt;dbl&gt;, nongrad_p75th &lt;dbl&gt;, …"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#histogram",
+    "href": "slides/w3_ggplot2.html#histogram",
+    "title": "Week 3: Data Visualization",
+    "section": "Histogram",
+    "text": "Histogram\nHistogram of “grad_total”\n\nggplot(grad, aes(x = grad_total)) +\n  geom_histogram()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#transparency---alpha",
+    "href": "slides/w3_ggplot2.html#transparency---alpha",
+    "title": "Week 3: Data Visualization",
+    "section": "Transparency - alpha",
+    "text": "Transparency - alpha\nAdd some transparency – perhaps this looks nicer\n\nggplot(grad, aes(x = grad_total)) +\n  geom_histogram(alpha = 0.7)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#color-vs.-fill",
+    "href": "slides/w3_ggplot2.html#color-vs.-fill",
+    "title": "Week 3: Data Visualization",
+    "section": "color vs. fill",
+    "text": "color vs. fill\nIn general\n\ncolor defines the color a geom is outlined\nfill defines the color a geom is filled\n\nFor example:\n\ngeom_point() default has only has a color and NO fill because they’re just points\nPoint shapes 21–24 include both a color and a fill"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#how-would-we-change-the-color-of-this-plot",
+    "href": "slides/w3_ggplot2.html#how-would-we-change-the-color-of-this-plot",
+    "title": "Week 3: Data Visualization",
+    "section": "How would we change the color of this plot?",
+    "text": "How would we change the color of this plot?\n\nggplot(grad, aes(x = grad_total)) +\n  geom_histogram(alpha = 0.7)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#how-would-we-change-the-color-of-this-plot-1",
+    "href": "slides/w3_ggplot2.html#how-would-we-change-the-color-of-this-plot-1",
+    "title": "Week 3: Data Visualization",
+    "section": "How would we change the color of this plot?",
+    "text": "How would we change the color of this plot?\n\nggplot(grad, aes(x = grad_total)) +\n  geom_histogram(alpha = 0.7, color = \"magenta\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#how-would-we-change-the-color-fill-of-this-plot",
+    "href": "slides/w3_ggplot2.html#how-would-we-change-the-color-fill-of-this-plot",
+    "title": "Week 3: Data Visualization",
+    "section": "How would we change the color fill of this plot?",
+    "text": "How would we change the color fill of this plot?\n\n\nggplot(grad, aes(x = grad_total)) +\n  geom_histogram(alpha = 0.7, fill = \"magenta\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#color-by-variable",
+    "href": "slides/w3_ggplot2.html#color-by-variable",
+    "title": "Week 3: Data Visualization",
+    "section": "Color by variable",
+    "text": "Color by variable\nWhat if we wanted different colors by a variable – major_category\n\nggplot(grad, aes(x = grad_total)) +\n  geom_histogram(aes(fill = major_category), alpha = 0.7)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#density-plot",
+    "href": "slides/w3_ggplot2.html#density-plot",
+    "title": "Week 3: Data Visualization",
+    "section": "Density plot",
+    "text": "Density plot\nAlternative representation of distribution\n\nThink of it as a smoothed histogram (uses kernel smoothing)\nThe depiction of the distribution is NOT determined by the number of the bins you use, as are histograms"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#density-plot-1",
+    "href": "slides/w3_ggplot2.html#density-plot-1",
+    "title": "Week 3: Data Visualization",
+    "section": "Density plot",
+    "text": "Density plot\ngeom_density()\n\nggplot(grad, aes(x = grad_total)) +\n  geom_density()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#density-plot-2",
+    "href": "slides/w3_ggplot2.html#density-plot-2",
+    "title": "Week 3: Data Visualization",
+    "section": "Density plot",
+    "text": "Density plot\nNow let’s fill by major_category\n\nggplot(grad, aes(x = grad_total)) +\n  geom_density(aes(fill = major_category), alpha = 0.2)\n\n\n\nNot a good plot, just an example"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#possible-alternative-facet_wrap",
+    "href": "slides/w3_ggplot2.html#possible-alternative-facet_wrap",
+    "title": "Week 3: Data Visualization",
+    "section": "Possible alternative? facet_wrap",
+    "text": "Possible alternative? facet_wrap\n\nggplot(grad, aes(x = grad_total)) +\n  geom_density(alpha = 0.2) +\n  facet_wrap(~major_category) #&lt;&lt;"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#even-better",
+    "href": "slides/w3_ggplot2.html#even-better",
+    "title": "Week 3: Data Visualization",
+    "section": "Even better",
+    "text": "Even better\ndensity ridges {ggridges}\n\nlibrary(ggridges)\n\nggplot(grad, aes(x = grad_total, y = major_category)) +\n  geom_density_ridges()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#density-ridges",
+    "href": "slides/w3_ggplot2.html#density-ridges",
+    "title": "Week 3: Data Visualization",
+    "section": "Density Ridges",
+    "text": "Density Ridges\n\nggplot(penguins, aes(bill_length_mm , species)) +\n  geom_density_ridges()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#fill",
+    "href": "slides/w3_ggplot2.html#fill",
+    "title": "Week 3: Data Visualization",
+    "section": "fill",
+    "text": "fill\n\nggplot(penguins, aes(bill_length_mm , species)) +\n  geom_density_ridges(aes(fill = factor(year)))"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#add-transparency-for-clarity",
+    "href": "slides/w3_ggplot2.html#add-transparency-for-clarity",
+    "title": "Week 3: Data Visualization",
+    "section": "Add transparency for clarity",
+    "text": "Add transparency for clarity\n\nggplot(penguins, aes(bill_length_mm , species)) +\n  geom_density_ridges(aes(fill = factor(year)), alpha = 0.5)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#viridis",
+    "href": "slides/w3_ggplot2.html#viridis",
+    "title": "Week 3: Data Visualization",
+    "section": "Viridis",
+    "text": "Viridis\n\nggplot(pc, aes(row, col, fill = cor)) +\n  geom_tile() +\n  scale_fill_viridis_c()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#same-fill-function-different-option",
+    "href": "slides/w3_ggplot2.html#same-fill-function-different-option",
+    "title": "Week 3: Data Visualization",
+    "section": "Same fill function, different “option”",
+    "text": "Same fill function, different “option”\n\nggplot(penguins, aes(bill_length_mm , species)) +\n  geom_density_ridges(aes(fill = factor(year)), alpha = 0.7) +\n  scale_fill_viridis_d(option = \"plasma\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#candy-rankings-fivethirtyeight",
+    "href": "slides/w3_ggplot2.html#candy-rankings-fivethirtyeight",
+    "title": "Week 3: Data Visualization",
+    "section": "Candy rankings {fivethirtyeight}",
+    "text": "Candy rankings {fivethirtyeight}\n\ncandy &lt;- candy_rankings %&gt;% \n  pivot_longer(\n    cols = chocolate:pluribus,\n    names_to = \"type\",\n    values_to = \"foo\") %&gt;% \n  filter(foo) %&gt;% \n  select(-foo)\n\ncandy\n\n# A tibble: 197 × 5\n   competitorname sugarpercent pricepercent winpercent type            \n   &lt;chr&gt;                 &lt;dbl&gt;        &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;           \n 1 100 Grand             0.732        0.860       67.0 chocolate       \n 2 100 Grand             0.732        0.860       67.0 caramel         \n 3 100 Grand             0.732        0.860       67.0 crispedricewafer\n 4 100 Grand             0.732        0.860       67.0 bar             \n 5 3 Musketeers          0.604        0.511       67.6 chocolate       \n 6 3 Musketeers          0.604        0.511       67.6 nougat          \n 7 3 Musketeers          0.604        0.511       67.6 bar             \n 8 Air Heads             0.906        0.511       52.3 fruity          \n 9 Almond Joy            0.465        0.767       50.3 chocolate       \n10 Almond Joy            0.465        0.767       50.3 peanutyalmondy  \n# ℹ 187 more rows"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#boxplot",
+    "href": "slides/w3_ggplot2.html#boxplot",
+    "title": "Week 3: Data Visualization",
+    "section": "Boxplot",
+    "text": "Boxplot\n\nggplot(candy, aes(type, sugarpercent)) +\n  geom_boxplot()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#violin-plots",
+    "href": "slides/w3_ggplot2.html#violin-plots",
+    "title": "Week 3: Data Visualization",
+    "section": "Violin plots",
+    "text": "Violin plots\n\nggplot(candy, aes(type, sugarpercent)) +\n  geom_violin()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#bar-charts",
+    "href": "slides/w3_ggplot2.html#bar-charts",
+    "title": "Week 3: Data Visualization",
+    "section": "Bar Charts",
+    "text": "Bar Charts\n\nhead(mpg)\n\n# A tibble: 6 × 11\n  manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class \n  &lt;chr&gt;        &lt;chr&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;      &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; \n1 audi         a4      1.8  1999     4 auto(l5)   f        18    29 p     compa…\n2 audi         a4      1.8  1999     4 manual(m5) f        21    29 p     compa…\n3 audi         a4      2    2008     4 manual(m6) f        20    31 p     compa…\n4 audi         a4      2    2008     4 auto(av)   f        21    30 p     compa…\n5 audi         a4      2.8  1999     6 auto(l5)   f        16    26 p     compa…\n6 audi         a4      2.8  1999     6 manual(m5) f        18    26 p     compa…"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#barcol-charts",
+    "href": "slides/w3_ggplot2.html#barcol-charts",
+    "title": "Week 3: Data Visualization",
+    "section": "Bar/Col Charts",
+    "text": "Bar/Col Charts\n\n\ngeom_bar()\n\nexpects x OR y\ncounts rows\nif you want to count the number of cases at each x or y position\nmakes the height of the bar proportional to the number of cases in each group\nuses stat_count() by default\n\n\ngeom_col()\n\nexpects x AND y\nexpects numbers in your data\nif you want the heights of the bars to represent values in the data\nleaves the data as is\nuses stat_identity() by default"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#geom_bar",
+    "href": "slides/w3_ggplot2.html#geom_bar",
+    "title": "Week 3: Data Visualization",
+    "section": "geom_bar()",
+    "text": "geom_bar()\nmpg data\n\nggplot(mpg, aes(class)) + # one variable in the `aes()`\n  geom_bar() # counts the rows per class"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#summarized_mpg-data",
+    "href": "slides/w3_ggplot2.html#summarized_mpg-data",
+    "title": "Week 3: Data Visualization",
+    "section": "summarized_mpg data",
+    "text": "summarized_mpg data\n\nsummarized_mpg &lt;- mpg %&gt;% \n  group_by(class) %&gt;% \n  count()\n\nhead(summarized_mpg)\n\n# A tibble: 6 × 2\n# Groups:   class [6]\n  class          n\n  &lt;chr&gt;      &lt;int&gt;\n1 2seater        5\n2 compact       47\n3 midsize       41\n4 minivan       11\n5 pickup        33\n6 subcompact    35"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#geom_col",
+    "href": "slides/w3_ggplot2.html#geom_col",
+    "title": "Week 3: Data Visualization",
+    "section": "geom_col()",
+    "text": "geom_col()\nsummarized_mpg data\n\nggplot(summarized_mpg, aes(class, n)) + # two variables in the `aes()`\n  geom_col() # data has the rows per class in \"n\""
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-11",
+    "href": "slides/w3_ggplot2.html#section-11",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "mean_hmiles %&gt;%\n  ggplot(aes(class, mean_hwy)) + \n  geom_col()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-12",
+    "href": "slides/w3_ggplot2.html#section-12",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "mean_hmiles %&gt;%\n  mutate(class = factor(class,\n                        levels = c(\"pickup\",\n                                   \"suv\",\n                                   \"minivan\",\n                                   \"2seater\",\n                                   \"midsize\",\n                                   \"subcompact\",\n                                   \"compact\"))) %&gt;%\n  ggplot(aes(class, mean_hwy)) + \n  geom_col()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-13",
+    "href": "slides/w3_ggplot2.html#section-13",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "mean_hmiles %&gt;%\n  ggplot(aes(class, mean_hwy)) + \n  geom_col()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#what-happened",
+    "href": "slides/w3_ggplot2.html#what-happened",
+    "title": "Week 3: Data Visualization",
+    "section": "What happened?",
+    "text": "What happened?\nLet’s look at our data again\n\n\n\nsummarized_mpg\n\n# A tibble: 7 × 2\n# Groups:   class [7]\n  class          n\n  &lt;chr&gt;      &lt;int&gt;\n1 2seater        5\n2 compact       47\n3 midsize       41\n4 minivan       11\n5 pickup        33\n6 subcompact    35\n7 suv           62\n\n\n\n\nggplot(summarized_mpg, aes(class)) + \n  geom_bar()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#change-the-order-of-the-x-axis",
+    "href": "slides/w3_ggplot2.html#change-the-order-of-the-x-axis",
+    "title": "Week 3: Data Visualization",
+    "section": "Change the order of the x-axis",
+    "text": "Change the order of the x-axis\n\nWe’ll talk about betters methods for this when we talk about factors in Week 9\nBasically - define x-axis variable as a factor with levels in the order you want\n\n\n\n(mean_hmiles &lt;- mpg %&gt;% \n  group_by(class) %&gt;% \n  summarize(mean_hwy = mean(hwy)))\n\n# A tibble: 7 × 2\n  class      mean_hwy\n  &lt;chr&gt;         &lt;dbl&gt;\n1 2seater        24.8\n2 compact        28.3\n3 midsize        27.3\n4 minivan        22.4\n5 pickup         16.9\n6 subcompact     28.1\n7 suv            18.1"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-14",
+    "href": "slides/w3_ggplot2.html#section-14",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "mean_hmiles %&gt;%\n  mutate(class = factor(class,\n                        levels = c(\"pickup\",\n                                   \"suv\",\n                                   \"minivan\",\n                                   \"2seater\",\n                                   \"midsize\",\n                                   \"subcompact\",\n                                   \"compact\"))) %&gt;%\n  ggplot(aes(class, mean_hwy)) + \n  geom_col()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-15",
+    "href": "slides/w3_ggplot2.html#section-15",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "mean_hmiles %&gt;%\n  mutate(class = factor(class,\n                        levels = c(\"pickup\",\n                                   \"suv\",\n                                   \"minivan\",\n                                   \"2seater\",\n                                   \"midsize\",\n                                   \"subcompact\",\n                                   \"compact\"))) %&gt;%\n  ggplot(aes(class, mean_hwy)) + \n  geom_col()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#more-bar-plot-options",
+    "href": "slides/w3_ggplot2.html#more-bar-plot-options",
+    "title": "Week 3: Data Visualization",
+    "section": "More bar plot options",
+    "text": "More bar plot options\nData\n\neclsk &lt;- haven::read_sav(here::here(\"data\", \"ecls-k_samp.sav\")) %&gt;% \n  rio::characterize() %&gt;% \n  janitor::clean_names()\n\necls_smry &lt;- eclsk %&gt;%\n    group_by(k_type, ethnic) %&gt;%\n    summarize(t1r_mean = mean(t1rscale))\n\necls_smry\n\n# A tibble: 16 × 3\n# Groups:   k_type [2]\n   k_type   ethnic                                  t1r_mean\n   &lt;chr&gt;    &lt;chr&gt;                                      &lt;dbl&gt;\n 1 full-day AMERICAN INDIAN OR ALASKA NATIVE            17.5\n 2 full-day ASIAN                                       31.8\n 3 full-day BLACK OR AFRICAN AMERICAN, NON-HISPANIC     21.1\n 4 full-day HISPANIC, RACE NOT SPECIFIED                20.3\n 5 full-day HISPANIC, RACE SPECIFIED                    22.3\n 6 full-day MORE THAN ONE RACE, NON HISPANIC            20.8\n 7 full-day NATIVE HAWAIIAN, OTHER PACIFIC ISLANDER     23.2\n 8 full-day WHITE, NON-HISPANIC                         25.5\n 9 half-day AMERICAN INDIAN OR ALASKA NATIVE            30.0\n10 half-day ASIAN                                       25.1\n11 half-day BLACK OR AFRICAN AMERICAN, NON-HISPANIC     18.6\n12 half-day HISPANIC, RACE NOT SPECIFIED                18.7\n13 half-day HISPANIC, RACE SPECIFIED                    20.0\n14 half-day MORE THAN ONE RACE, NON HISPANIC            20.3\n15 half-day NATIVE HAWAIIAN, OTHER PACIFIC ISLANDER     19.7\n16 half-day WHITE, NON-HISPANIC                         23.7"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#stacked-bar-plot",
+    "href": "slides/w3_ggplot2.html#stacked-bar-plot",
+    "title": "Week 3: Data Visualization",
+    "section": "Stacked bar plot",
+    "text": "Stacked bar plot\nLook for effects in “ethnicity” by “k_type” (full/half day K)\n\nggplot(ecls_smry, aes(ethnic, t1r_mean)) +\n    geom_col(aes(fill = k_type))"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#grouped-bar-plot",
+    "href": "slides/w3_ggplot2.html#grouped-bar-plot",
+    "title": "Week 3: Data Visualization",
+    "section": "Grouped bar plot",
+    "text": "Grouped bar plot\n\nggplot(ecls_smry, aes(ethnic, t1r_mean)) +\n    geom_col(aes(fill = k_type),\n             position = \"dodge\")"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#rotating-labels",
+    "href": "slides/w3_ggplot2.html#rotating-labels",
+    "title": "Week 3: Data Visualization",
+    "section": "Rotating Labels",
+    "text": "Rotating Labels\nI have to look this up every time\n\nggplot(ecls_smry, aes(ethnic, t1r_mean)) +\n  geom_col(aes(fill = k_type),\n           position = \"dodge\") +\n  theme(axis.text.x = element_text(angle = 90, hjust = 1)) #&lt;&lt;"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#flip-the-coordinates",
+    "href": "slides/w3_ggplot2.html#flip-the-coordinates",
+    "title": "Week 3: Data Visualization",
+    "section": "Flip the coordinates",
+    "text": "Flip the coordinates\ncoord_flip()\n\nggplot(ecls_smry, aes(ethnic, t1r_mean)) +\n  geom_col(aes(fill = k_type),\n           position = \"dodge\") +\n  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +\n  coord_flip() #&lt;&lt;"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#alternatively",
+    "href": "slides/w3_ggplot2.html#alternatively",
+    "title": "Week 3: Data Visualization",
+    "section": "Alternatively",
+    "text": "Alternatively\nfacet_wrap()\n\nggplot(ecls_smry, aes(k_type, t1r_mean)) +\n    geom_col(alpha = 0.8) +\n    facet_wrap(~ethnic)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#sometimes-some-redundancy-works-well",
+    "href": "slides/w3_ggplot2.html#sometimes-some-redundancy-works-well",
+    "title": "Week 3: Data Visualization",
+    "section": "Sometimes some redundancy works well",
+    "text": "Sometimes some redundancy works well\n\nggplot(ecls_smry, aes(k_type, t1r_mean, fill = k_type)) +\n    geom_col(alpha = 0.8) +\n    facet_wrap(~ethnic)"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#geom_-review",
+    "href": "slides/w3_ggplot2.html#geom_-review",
+    "title": "Week 3: Data Visualization",
+    "section": "geom_*() Review",
+    "text": "geom_*() Review\n\ngeom_point()\ngeom_smooth()\ngeom_line()\ngeom_tile()\ngeom_histogram()\ngeom_density()\nggridges::geom_density_ridges()\ngeom_boxplot()\ngeom_violin()\ngeom_bar()\ngeom_col()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#challenge",
+    "href": "slides/w3_ggplot2.html#challenge",
+    "title": "Week 3: Data Visualization",
+    "section": "Challenge",
+    "text": "Challenge\n\nStart a new R project\nCreate a new script, save it as “practice-plots.R”\nLoad the {tidyverse}\nPrint the msleep dataset to see it’s structure (it’s from {ggplot2})\n\nFor each of the following, produce a separate plot\n\nPlot the relation between “sleep_total” and “brainwt” (with “brainwt” as the DV) - scatter plot\nOverlay a smooth on the previous plot\nColor the points by “vore”, but fit a single smooth\nFit separate smooths by “vore”, but with all points being gray\nOmit the standard error of the smooths\nUse ylim() as an additional layer to restrict the y-axis to range from 0 to 5"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#before-next-class",
+    "href": "slides/w3_ggplot2.html#before-next-class",
+    "title": "Week 3: Data Visualization",
+    "section": "Before next class",
+    "text": "Before next class\n\nReading\n\nR4DS(2e) 4\n\nSupplemental Learning\n\nRStudio Primer: Working with Tibbles\nRbootcamp: Ch 3\nCodecademy: Aggregates in R\n\nHomework\n\nHomework 2\nHomework 3"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#section-3",
+    "href": "slides/w3_ggplot2.html#section-3",
+    "title": "Week 3: Data Visualization",
+    "section": "",
+    "text": "ggplot(penguins, aes(bill_length_mm, body_mass_g)) +\n  geom_point(aes(color = species))"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#some-data-for-today",
+    "href": "slides/w3_ggplot2.html#some-data-for-today",
+    "title": "Week 3: Data Visualization",
+    "section": "Some data for today ",
+    "text": "Some data for today \nrun the following\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#heatmap",
+    "href": "slides/w3_ggplot2.html#heatmap",
+    "title": "Week 3: Data Visualization",
+    "section": "Heatmap",
+    "text": "Heatmap\n\nggplot(pc, aes(row, col, fill = cor)) +\n  geom_tile()"
+  },
+  {
+    "objectID": "slides/w3_ggplot2.html#viridis-1",
+    "href": "slides/w3_ggplot2.html#viridis-1",
+    "title": "Week 3: Data Visualization",
+    "section": "Viridis",
+    "text": "Viridis\n\neasier to read by those with colorblindness\nprints well in gray scale\n\n\nggplot(penguins, aes(bill_length_mm , species)) +\n  geom_density_ridges(aes(fill = factor(year)), alpha = 0.5) +\n  scale_fill_viridis_d()"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "Before Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\n\n\n1\nA Quick Tour of the RStudio IDE2\nInstalls\n\n    \nR4DS(2e) 3\n\n\n3\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: c+mzu9yt\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n    \n      3 Passcode: GP&8Grs8\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\n\n1\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\n\n1\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\n\n1\nMarkdown Tutorial\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nHomework 4\n\nRbootcamp: Ch 3\n\n    \n\n\n\n\nCodecademy: Aggregates in R\n\n    \n\n\n\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 5: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nR4DS(2e) 30\n\n\n1\nDownload GitKraken\n\nMarkdown Tutorial\n\n    \n\n\n\nWatch What is a Git repository?\n\nHomework 4\n\n    \n\n\n\nWatch What is a remote repository?\n\nFinal Project: Outline\n\n    \n\n\n\nHomework 5\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 6: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nBryan 2017\n\n\n1\nRStudio Primer: Join Data Sets\n\nDownload GitKraken\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nWatch What is a Git repository?\n\n    \n\n\n\nHomework 6\n\nWatch What is a remote repository?\n\n    \n\n\n\nHomework 7\n\nHomework 5\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n1\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n1\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n1\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n1\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "As outlined in the Syllabus, most class meetings will include a homework assignment. Supplemental Learning platforms (RStudio Primers, R-Bootcamp, and Codecademy) will also be used as additional homework assignments, and the course will conclude with a final project. More detail about each is provided below.\nAssignments\n      Points\n    \n  \n  \n    Homeworks\n100\n    Supplementals\n100\n    Final Project\n200\n    Total\n400"
+  },
+  {
+    "objectID": "assignments.html#homework-assignments",
+    "href": "assignments.html#homework-assignments",
+    "title": "Assignments",
+    "section": "Homework Assignments",
+    "text": "Homework Assignments\nEach homework assignment is worth 10 points, and require your “best honest effort”, which includes contact me me if you need help. Please do not turn in partial work. Instead, please ask for help and, if needed, an extension on the deadline.  \n\n\n\n\n\n\n  \n    \n    \n      Date Assigned\n      Date Due\n      Assigned\n      Key\n      Points\n    \n  \n  \n    Oct-04\nOct-11\nHomework 1\n\nKey HW_1\n\n10\n    Oct-11\nOct-18\nHomework 2\n\nKey HW_2\n\n10\n    Oct-11\nOct-18\nHomework 3\n\nKey HW_3\n\n10\n    Oct-18\nOct-25\nHomework 4\n\nKey HW_4\n\n10\n    Oct-25\nNov-01\nHomework 5\n\nKey HW_5\n\n10\n    Nov-01\nNov-08\nHomework 6\n\nKey HW_6\n\n10\n    Nov-01\nNov-08\nHomework 7\n\nKey HW_7\n\n10\n    Nov-08\nNov-15\nHomework 8\n\nKey HW_8\n\n10\n    Nov-15\nNov-22\nHomework 9\n\nKey HW_9\n\n10\n    Nov-22\nNov-29\nHomework 10\n\nKey HW_10\n\n10"
+  },
+  {
+    "objectID": "assignments.html#supplemental-learning-assignments",
+    "href": "assignments.html#supplemental-learning-assignments",
+    "title": "Assignments",
+    "section": "Supplemental Learning Assignments",
+    "text": "Supplemental Learning Assignments\n\n\n\n\n\n\n  \n    \n    \n      Date Assigned\n      Date Due\n      Assigned\n      Screenshot\n      Points\n    \n  \n  \n    Sep-27\nOct-04\nRStudio Primer: Programming basics\n\nTypes &gt; Character or object?\n\n10\n    Sep-27\nOct-04\nCodecademy: Introduction to R Syntax\n\n(example)\n\n10\n    Oct-04\nOct-11\nRStudio Primer: Data Visualization Basics\n\nA code template &gt; A graphing template\n\n10\n    Oct-04\nOct-11\nRbootcamp: Ch 2\n\npart 13\n\n10\n    Oct-04\nOct-11\nCodecademy: Introduction to Visualization with R\n\n(example)\n\n10\n    Oct-11\nOct-18\nRStudio Primer: Working with Tibbles\n\ntidyverse &gt; Quiz\n\n10\n    Oct-11\nOct-18\nRbootcamp: Ch 3\n\npart 21\n\n10\n    Oct-11\nOct-18\nCodecademy: Aggregates in R\n\n(example)\n\n10\n    Nov-01\nNov-08\nRStudio Primer: Join Data Sets\n\nMutating Joins &gt; Test your comprehension\n\n10\n    Nov-01\nNov-08\nCodecademy: Joining Tables in R\n\n(example)\n\n10"
+  },
+  {
+    "objectID": "assignments.html#final-project",
+    "href": "assignments.html#final-project",
+    "title": "Assignments",
+    "section": "Final Project",
+    "text": "Final Project\n\n\n\n\n\n\n  \n    \n    \n      Date Assigned\n      Date Due\n      Assigned\n      Points\n    \n  \n  \n    Sep-27\nOct-25\nOutline\n15\n    Sep-27\nNov-22\nDraft Data Prep Script\n25\n    Sep-27\nNov-29\nPeer Review of Script\n25\n    Sep-27\nNov-29\nPresentation\n25\n    Sep-27\nDec-06\nPaper\n110\n  \n  \n  \n\n\n\n\n\nFinal Project\nThe final project in this class is a group project, requiring students use a “real world” dataset to write, essentially, a miniature manuscript, including an introduction (paragraph or two), methods, results, and discussion (again, maybe 2-3 paragraphs). Ideally, students would work with a dataset that includes variables they are interested in using beyond just this class; however, if students do not have access to a dataset, the instructor will provide one. Students who do not have access to data should plan to meet with the instructor as soon as possible so a dataset can be provided. Additionally, the dataset must be able to be shared publicly, as the full project will be required to be housed on GitHub and be fully reproducible. If making your data publicly available is a problem for you, please contact the instructor as soon as possible. We can work together to either find a dataset that will work for you, or simulate a dataset that is similar to the data you’d like to work with in reality (and then all your code should work for the real dataset, but you can share the simulated data with your classmates). Students are required to work in groups of 2-4 people. The final assignment is assigned during the first class, and groups must be finalized by the end of Week 2 (at which point students who have not self-selected into groups will be randomly assigned).\nI will investigate the commits made by different authors when evaluating the final project. If it is obvious that one person did not utilize GitHub, and instead added all of their contributions through a single or only a few commits, I will dock points from that individual. There should be numerous commits by each author, and they should be roughly even in terms of contribution activity (which GitHub has metrics to track, both in terms of the number of commits as well as the number of lines modified).  \n\n\nOutline (15 points)\nA basic outline of the final project is due at the end of Week 5. The outline should include a description of the data to be used, a discussion of what preparatory work will need to be done, and how the requirements of the final project will be met. The outline is intended to be low-stakes and is primarily designed to be a means for you to obtain feedback on the feasibility of the project and areas to consider.  \n\n\nDraft Data Preparation Script (25 points)\nAt the end of Week 8, you must have a draft of the data preparation complete, including moving the data from its raw to tidy form and a variety of exploratory data visualizations. Final project must use the following functions: pivot_longer(), select(), filter(), mutate(), pivot_wider(), group_by(), and summarize().  \n\n\nPeer Review of Data Preparation Script (25 points)\nFollowing the submission of the data preparation scripts, you will be assigned to review your peers’ code. The purpose of this exercise is to learn from each other. Programming is an immensely open-ended enterprise and there are lots of winding paths that all ultimately end up at the same destination. During your peer review, you must note (a) at least three areas of strength, (b) at least one thing you learned from reviewing their script, and (c) at least one and no more than three areas for improvement. Making your code publicly available can feel daunting. The purpose of this portion of the final project is to help us all learn from each other, not to denigrate. Under no circumstances will negative comments be tolerated. Any comments that could be perceived as negative, and outside the scope of the code, will result in an immediate score of zero. Be constructive in your feedback. Be kind. We are all learning.  \n\n\nFinal Project Presentation (25 points)\nEach group will present on their final project during Week 10, which is expected to still be in progress. These presentations are expected to be informal, and emphasize what learning occurred during the project. Specifically, the presentations are to commiserate with each other about the failures and challenges experienced along the way, while also celebrating the successes. Learning R is a difficult task, and we should all take solace knowing that others are struggling along with us. The final presentation should be equal parts “journey” and substantive findings/conclusions/results. Students are expected to present for approximately 10 minutes each (20-40 minutes per group), although the time may change depending on the enrollment of the class.  \n\n\n\n\n\n\n  \n    \n      Presentation Rubric\n    \n    \n    \n      Criteria\n      Points possible\n    \n  \n  \n    Challenges faced along the way\n5\n    Victories and things to celebrate\n5\n    Challenges you are still facing\n5\n    Substantive findings/interpretations\n5\n    Next R hurdle to tackle\n5\n    Total\n25\n  \n  \n  \n\n\n\n\n\n\nFinal Paper (110)\nThe purpose of the final project is to allow students an opportunity to demonstrate all the skills they have learned throughout the course. The final project must (a) be a reproducible and dynamic R Markdown document with references to the extant literature; (b) be housed on GitHub, with contributions from all authors obvious; (c) demonstrate moving data from its raw “messy” format to a tidy data format through the R Markdown file, but not in the final document; (d) include at least two exploratory data visualizations, and (e) include at least summary statistics of the data in tables, although fitted models of any sort are an added bonus (not literally, there are not extra points for fitting a model). The points for the final project are broken down as follows.  \n\n\n\n\n\n\n  \n    \n      Final Paper Rubric\n    \n    \n    \n      Criteria\n      Points Possible\n    \n  \n  \n    Writing\n\n\n    Abstract\n\n5\n    Introduction\n\n5\n    Methods\n\n5\n    Results\n\n5\n    Discussion\n\n5\n    References\n\n5\n    Code\n\n\n    Document is fully reproducible\n\n25\n    Demonstrate use of inline code\n\n5\n    At least two data visualizations\n\n10 (5 pts each)\n    Demonstrate tidying messy data using:\n\n\n    pivot_longer()\n\n5\n    mutate()\n\n5\n    select() and filter()\n\n5\n    pivot_wider()\n\n5\n    At least one table of descriptive statistics\n\n10\n    group_by()\n\n5\n    summarize()\n\n5\n    Total\n\n110"
+  },
+  {
+    "objectID": "slides/w2_workflow.html#housekeeping-1",
+    "href": "slides/w2_workflow.html#housekeeping-1",
+    "title": "Week 2: Workflow",
+    "section": "Housekeeping",
+    "text": "Housekeeping\nScreenshots\n\nRStudio Primer: Programming basics\n\nTypes &gt; Character or object?\n\nCodecademy: Introduction to R Syntax\n\nsomething to show you completed the module in its entirety\n\nRbootcamp: Ch 2\n\npart 13"
   }
 ]
