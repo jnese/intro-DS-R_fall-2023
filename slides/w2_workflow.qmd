@@ -102,13 +102,15 @@ Where you're at on your computer
 -   the folder location
 -   *Quick check-in*: does this make sense?
 
+. . .
+
 You *can* change your working directory with `setwd("path/to/files")`...
 
 ...**BUT** I strongly urge you to avoid that
 
-Instead, we're going to use RStudio Projects and the `{here}` package
+. . .
 
-You can `list.files("path/to/files")` to see the contents of your project directory (i.e., what your computer "sees")
+Instead, we're going to use RStudio Projects and the `{here}` package
 
 . . .
 
@@ -257,6 +259,8 @@ Let's save the following data files into our project "data" folder
 
 ## Let's see files are in our "data" folder
 
+You can `list.files("path/to/files")` to see the contents of your project directory (i.e., what your computer "sees")
+
 `list.files(here("data"))`
 
 You can also use the *Files* tab in RStudio
@@ -357,20 +361,20 @@ here()
 . . .
 
 ```{r}
-# eval: false
+#| eval: false
 here("data")
 ```
 
 . . .
 
 ```{r}
-# echo: false
+#| echo: false
 here("data")
 ```
 
 This is the path to the "data" folder in our project directory
 
-## [`{here}`](https://here.r-lib.org/)
+## [`{here}`](https://here.r-lib.org/) {.smaller}
 
 Think of `here()` simply as a function to print a path
 
@@ -399,6 +403,8 @@ here("data", "ecls-k_samp.sav")
 here("data", "ecls-k_samp.sav")
 ```
 
+# Reading Data
+
 ## `{rio}`
 
 -   `{rio}` is a wrapper around many different packages that import/export data in different formats
@@ -410,7 +416,7 @@ here("data", "ecls-k_samp.sav")
     -   this might not impress you, but it really should!
     -   any package that turns a complex task into a simple procedure that "just works" is invaluable
 
-## [`import()`](https://cran.r-project.org/web/packages/rio/vignettes/rio.html) {.smaller}
+## [`rio::`import()`](https://cran.r-project.org/web/packages/rio/vignettes/rio.html) {.smaller}
 
 <p>
 
@@ -431,7 +437,7 @@ here("data", "ecls-k_samp.sav")
 Try it!
 
 ```{r}
-#| code-line-numbers: "|3|10,14"
+#| code-line-numbers: "|4|10,14"
 
 library(rio)
 
@@ -459,9 +465,9 @@ import("https://raw.githubusercontent.com/jnese/intro-DS-R_fall-2023/master/data
        setclass = "tbl_df")
 ```
 
-## [`export()`](https://cran.r-project.org/web/packages/rio/vignettes/rio.html) {.smaller}
+## Write data {.smaller}
 
-Save data just as easily with `export()`
+Save data just as easily with [`rio::export()`](https://cran.r-project.org/web/packages/rio/vignettes/rio.html)
 
 . . .
 
@@ -502,11 +508,19 @@ Just run one line of code!
 
 <p>
 
+. . .
+
 [convert]{style="color:#0072B2"}([in_file]{style="color:#009E73"}, [out_file]{style="color:#CC79A7"}, ...)
+
+. . .
 
 [in_file]{style="color:#009E73"} = character string naming an input file
 
+. . .
+
 [out_file]{style="color:#CC79A7"} = character string naming an output file
+
+. . .
 
 [convert]{style="color:#0072B2"}(here("data", [ecls-k_samp.sav]{style="color:#009E73"})), (here("data", [ecls-k_samp.dta]{style="color:#CC79A7"}))
 
@@ -524,7 +538,7 @@ Just run one line of code!
 
 . . .
 
--   again, "just works"
+Again, `import()` "just works"
 
 ## Maintaining data "labels" {.smaller}
 
@@ -539,6 +553,8 @@ In SPSS, numeric data are often encoded with labels
 `{rio}` and `{haven}` allow you to transform the data into the character/factor version
 
 `{rio}` and `{haven}` store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function
+
+. . .
 
 -   `rio::characterize()` converts a single variable or all variables in the data that have *label* attributes into character vectors
 -   `rio::factorize()` does the same but returns factor variables
@@ -555,6 +571,7 @@ eclsk %>%
 
 ```{r}
 #| code-line-numbers: "|2"
+#| output-location: fragment
 
 eclsk %>%
   characterize() %>%
@@ -622,7 +639,7 @@ web <- read_csv("https://github.com/datalorax/ncme_18/raw/master/data/pubschls.c
 
 ```
 
-## [`write_*()`](https://readr.tidyverse.org/reference/index.html)
+## [`write_*()`](https://readr.tidyverse.org/reference/index.html) {.smaller}
 
 Save data just as easily with `write_*()`
 
@@ -651,7 +668,7 @@ write_csv(exam1, here("data", "exam1.csv"))
 
 # Scripts
 
-## .R
+## .R {.smaller}
 
 .R is `R` script (code) file
 
@@ -672,21 +689,15 @@ Run code
 
 ## Quick Peek {.smaller}
 
-What is Quarto?
+**What is Quarto?**
 
--   an open-source scientific and technical publishing system
-
--   create dynamic content with Python, R, Julia, and Observable.
-
--   publish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.
-
--   include equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.
-
--   a multi-language, next generation version of R Markdown (from Posit)
-
--   includes many built in output formats (and options for customizing each)
-
--   has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages).
+- an open-source scientific and technical publishing system
+- create dynamic content with Python, R, Julia, and Observable.
+- publish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.
+- include equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.
+- a multi-language, next generation version of R Markdown (from Posit)
+- includes many built in output formats (and options for customizing each)
+- has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages).
 
 ## Why Quarto?
 
@@ -701,7 +712,7 @@ What is Quarto?
 
 .qmd is a document format file that combines code **AND** prose
 
--   *File* \> *New File* \> *R Markdown...*
+-   *File* \> *New File* \> *Quarto document...*
 
 . . .
 
@@ -733,7 +744,7 @@ Prose goes outside the code chunks
 
 Organization tip
 
--   .Rmd with headers
+-   .qmd with headers
 -   .R with `# Header ----`
 
 [demo]{style="color:#D55E00;"}
@@ -751,8 +762,8 @@ Organization tip
 . . .
 
 -   you will only need to do this the first time you want to use the package
--   **never** keep this code line (you can run it in the console, or delete it from your script)
--   notices the quotes
+-   **never** keep this code line (just run it in the console!)
+-   notices the quotes around the package name
 -   **never keep this code line**
 
 . . .
@@ -764,7 +775,7 @@ Any time you want to use a package it should be *loaded*
 . . .
 
 -   you will do this each time you use the package in your scripts
--   notices no quotes
+-   notices no quotes around the package name
 
 ## [`{janitor}`](https://github.com/sfirke/janitor) ![](https://raw.githubusercontent.com/sfirke/janitor/main/man/figures/logo_small.png){fig-align="right" width="10%"} {.smaller}
 
@@ -798,17 +809,19 @@ Let's work within the "my_first_project" .RProj
 Let's work within the "my_first_project" .RProj
 
 (2) Clean it up
-
--   Modify the YAML
--   Save the file as "practice.qmd" in the **scripts** folder
--   Render!
+    i) Modify the YAML
+    ii) Save the file as "practice.qmd" in the **scripts** folder
+    iii) Render!
 
 [demo]{style="color:#D55E00;"}
 
-## EDIT THIS!!!!
+## New script {.smaller}
 
--   Let's remove all chunks after the first (`setup`)
--   This is what you will do with .Rmd going forward
+- Opens with a template
+- Going forward with .qmd...
+    + you can delete everything in the template, **or**
+    + you can open an empty .qmd docu
+    + **but** do one of these
 
 ## Working with data
 
@@ -816,8 +829,8 @@ Let's work within the "my_first_project" .RProj
 
 -   `library(here)` - where the data is located
 -   `library(rio)` - read the data into `R`
--   `library(janitor)` - clean the variable names in the data
--   `library(tidyverse)` - clean the data
+-   `library(janitor)` - clean the **variable names** in the data
+-   `library(tidyverse)` - clean the **data**
 
 ## Working with data
 
@@ -855,9 +868,7 @@ Or use `View()` to take a look at the full data in RStudio
 View(penguins)
 ```
 
-. . .
-
-Or click on the object name in your RStudio *Environment*
+or click on the object name in your RStudio *Environment*
 
 ## `janitor::clean_names()`
 
@@ -908,6 +919,8 @@ head(penguins)
 ```
 
 . . .
+
+<br>
 
 ```{r}
 # first six elements of the column
@@ -991,7 +1004,7 @@ arrange(select(filter(penguins, species == "Adelie", bill_length_mm > 40), islan
 
 ## `%>%` {.smaller}
 
-The `%>%` works so well in the `{tidyverse}` because <mark>the first argument in (nearly) all functions is the data (tibble)</mark>
+The `%>%` works so well in the `{tidyverse}` because <mark>the first argument in (nearly) all functions is the dataframe (tibble)</mark>
 
 <br>
 
@@ -1040,10 +1053,6 @@ Submit a rendered .html file to Canvas
     -   [Rbootcamp: Ch 2](https://r-bootcamp.netlify.app/chapter2)
     -   [Codecademy: Introduction to Visualization with R](https://www.codecademy.com/courses/learn-r/lessons/intro-visualization-ggplot2-r/exercises/layers-and-geoms)
 -   Homework
-    -   **Homework 1**
+    -   Homework 1
 -   Final project
-    -   <p style="color:red;">
-
-        Finalize Groups
-
-        </p>
+    -   [Finalize Groups]{style="color:#FF0000"}

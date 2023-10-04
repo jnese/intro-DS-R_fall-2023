@@ -498,10 +498,13 @@ Joe Nese
 <li>the folder location</li>
 <li><em>Quick check-in</em>: does this make sense?</li>
 </ul>
+<div class="fragment">
 <p>You <em>can</em> change your working directory with <code>setwd("path/to/files")</code>…</p>
 <p>…<strong>BUT</strong> I strongly urge you to avoid that</p>
+</div>
+<div class="fragment">
 <p>Instead, we’re going to use RStudio Projects and the <code>{here}</code> package</p>
-<p>You can <code>list.files("path/to/files")</code> to see the contents of your project directory (i.e., what your computer “sees”)</p>
+</div>
 <div class="fragment">
 <ul>
 <li>See where you’re currently at by looking at the top of the console</li>
@@ -658,6 +661,7 @@ Joe Nese
 </section>
 <section id="lets-see-files-are-in-our-data-folder" class="slide level2">
 <h2>Let’s see files are in our “data” folder</h2>
+<p>You can <code>list.files("path/to/files")</code> to see the contents of your project directory (i.e., what your computer “sees”)</p>
 <p><code>list.files(here("data"))</code></p>
 <p>You can also use the <em>Files</em> tab in RStudio</p>
 <div class="fragment">
@@ -744,17 +748,11 @@ Joe Nese
 <p><strong>This is the path to the project directory</strong></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># eval: false</span></span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="fu">here</span>(<span class="st">"data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data"</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">here</span>(<span class="st">"data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># echo: false</span></span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">here</span>(<span class="st">"data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data"</code></pre>
 </div>
@@ -762,17 +760,17 @@ Joe Nese
 <p>This is the path to the “data” folder in our project directory</p>
 </div>
 </section>
-<section id="here-3" class="slide level2">
+<section id="here-3" class="slide level2 smaller">
 <h2><a href="https://here.r-lib.org/"><code>{here}</code></a></h2>
 <p>Think of <code>here()</code> simply as a function to print a path</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">here</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">here</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023"</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">here</span>(<span class="st">"data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">here</span>(<span class="st">"data"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "C:/Users/jnese/Desktop/BRT/Teaching/1_Intro-Data-Science/intro-DS-R_fall-2023/data"</code></pre>
 </div>
@@ -781,7 +779,7 @@ Joe Nese
 <div class="fragment">
 <p><strong>Question:</strong> What will the following produce?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -791,6 +789,11 @@ Joe Nese
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="reading-data-1" class="title-slide slide level1 center">
+<h1>Reading Data</h1>
+
 </section>
 <section id="rio" class="slide level2">
 <h2><code>{rio}</code></h2>
@@ -804,8 +807,8 @@ Joe Nese
 </ul></li>
 </ul>
 </section>
-<section id="import" class="slide level2 smaller">
-<h2><a href="https://cran.r-project.org/web/packages/rio/vignettes/rio.html"><code>import()</code></a></h2>
+<section id="rioimport" class="slide level2 smaller">
+<h2><a href="https://cran.r-project.org/web/packages/rio/vignettes/rio.html"><code>rio::</code>import()`</a></h2>
 <p>
 </p><p><span style="color:#0072B2">import</span>(<span style="color:#D55E00">file</span>, <span style="color:#CC79A7">format</span>, <span style="color:#009E73">setclass</span>, …)</p>
 <p><span style="color:#D55E00">file</span> = character string naming a file</p>
@@ -819,28 +822,28 @@ Joe Nese
 <h2>3a. Read in data</h2>
 <p>Try it!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="|3|10,14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">library</span>(rio)</span>
-<span id="cb16-2"><a href="#cb16-2"></a></span>
-<span id="cb16-3"><a href="#cb16-3"></a><span class="co"># .sav</span></span>
-<span id="cb16-4"><a href="#cb16-4"></a>eclsk <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>), <span class="at">setclass =</span> <span class="st">"tbl_df"</span>)</span>
-<span id="cb16-5"><a href="#cb16-5"></a></span>
-<span id="cb16-6"><a href="#cb16-6"></a><span class="co"># Use `as_tibble` instead of `setclass = "tbl_df"`</span></span>
-<span id="cb16-7"><a href="#cb16-7"></a></span>
-<span id="cb16-8"><a href="#cb16-8"></a><span class="co"># .txt</span></span>
-<span id="cb16-9"><a href="#cb16-9"></a>fatality <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Fatality.txt"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb16-10"><a href="#cb16-10"></a>  <span class="fu">as_tibble</span>()</span>
-<span id="cb16-11"><a href="#cb16-11"></a></span>
-<span id="cb16-12"><a href="#cb16-12"></a><span class="co">#.csv</span></span>
-<span id="cb16-13"><a href="#cb16-13"></a>exam1 <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Project_Reads_Scores.csv"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb16-14"><a href="#cb16-14"></a>  <span class="fu">as_tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="|4|10,14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">library</span>(rio)</span>
+<span id="cb14-2"><a href="#cb14-2"></a></span>
+<span id="cb14-3"><a href="#cb14-3"></a><span class="co"># .sav</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a>eclsk <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>), <span class="at">setclass =</span> <span class="st">"tbl_df"</span>)</span>
+<span id="cb14-5"><a href="#cb14-5"></a></span>
+<span id="cb14-6"><a href="#cb14-6"></a><span class="co"># Use `as_tibble` instead of `setclass = "tbl_df"`</span></span>
+<span id="cb14-7"><a href="#cb14-7"></a></span>
+<span id="cb14-8"><a href="#cb14-8"></a><span class="co"># .txt</span></span>
+<span id="cb14-9"><a href="#cb14-9"></a>fatality <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Fatality.txt"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-10"><a href="#cb14-10"></a>  <span class="fu">as_tibble</span>()</span>
+<span id="cb14-11"><a href="#cb14-11"></a></span>
+<span id="cb14-12"><a href="#cb14-12"></a><span class="co">#.csv</span></span>
+<span id="cb14-13"><a href="#cb14-13"></a>exam1 <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Project_Reads_Scores.csv"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-14"><a href="#cb14-14"></a>  <span class="fu">as_tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="you-can-even-read-directly-from-the-web" class="slide level2">
 <h2>You can even read directly from the web 😲</h2>
 <p>Fatality.txt</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">import</span>(<span class="st">"https://raw.githubusercontent.com/jnese/intro-DS-R_fall-2023/master/data/Fatality.txt"</span>,</span>
-<span id="cb17-2"><a href="#cb17-2"></a>       <span class="at">setclass =</span> <span class="st">"tbl_df"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">import</span>(<span class="st">"https://raw.githubusercontent.com/jnese/intro-DS-R_fall-2023/master/data/Fatality.txt"</span>,</span>
+<span id="cb15-2"><a href="#cb15-2"></a>       <span class="at">setclass =</span> <span class="st">"tbl_df"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 336 × 10
    state  year mrall beertax  mlda jaild comserd vmiles unrate perinc
@@ -859,9 +862,9 @@ Joe Nese
 </div>
 </div>
 </section>
-<section id="export" class="slide level2 smaller">
-<h2><a href="https://cran.r-project.org/web/packages/rio/vignettes/rio.html"><code>export()</code></a></h2>
-<p>Save data just as easily with <code>export()</code></p>
+<section id="write-data" class="slide level2 smaller">
+<h2>Write data</h2>
+<p>Save data just as easily with <a href="https://cran.r-project.org/web/packages/rio/vignettes/rio.html"><code>rio::export()</code></a></p>
 <div class="fragment">
 <p>You need two things:</p>
 <p>
@@ -878,11 +881,11 @@ Joe Nese
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.sav"</span>))</span>
-<span id="cb19-2"><a href="#cb19-2"></a></span>
-<span id="cb19-3"><a href="#cb19-3"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.txt"</span>))</span>
-<span id="cb19-4"><a href="#cb19-4"></a></span>
-<span id="cb19-5"><a href="#cb19-5"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.dta"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.sav"</span>))</span>
+<span id="cb17-2"><a href="#cb17-2"></a></span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.txt"</span>))</span>
+<span id="cb17-4"><a href="#cb17-4"></a></span>
+<span id="cb17-5"><a href="#cb17-5"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.dta"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -892,11 +895,19 @@ Joe Nese
 <p>Say your advisor uses SPSS 😐, but their colleague uses Stata 😐, and you use <code>R</code> 😎</p>
 <p>Just run one line of code!</p>
 <p>
-</p><p><span style="color:#0072B2">convert</span>(<span style="color:#009E73">in_file</span>, <span style="color:#CC79A7">out_file</span>, …)</p>
+</p><div class="fragment">
+<p><span style="color:#0072B2">convert</span>(<span style="color:#009E73">in_file</span>, <span style="color:#CC79A7">out_file</span>, …)</p>
+</div>
+<div class="fragment">
 <p><span style="color:#009E73">in_file</span> = character string naming an input file</p>
+</div>
+<div class="fragment">
 <p><span style="color:#CC79A7">out_file</span> = character string naming an output file</p>
+</div>
+<div class="fragment">
 <p><span style="color:#0072B2">convert</span>(here(“data”, <span style="color:#009E73">ecls-k_samp.sav</span>)), (here(“data”, <span style="color:#CC79A7">ecls-k_samp.dta</span>))</p>
 <p></p>
+</div>
 </section>
 <section id="how-is-this-all-working" class="slide level2 smaller">
 <h2>How is this all working?</h2>
@@ -911,9 +922,7 @@ Joe Nese
 </ul></li>
 </ul>
 <div class="fragment">
-<ul>
-<li>again, “just works”</li>
-</ul>
+<p>Again, <code>import()</code> “just works”</p>
 </div>
 </section>
 <section id="maintaining-data-labels" class="slide level2 smaller">
@@ -925,6 +934,8 @@ Joe Nese
 <div class="fragment">
 <p><code>{rio}</code> and <code>{haven}</code> allow you to transform the data into the character/factor version</p>
 <p><code>{rio}</code> and <code>{haven}</code> store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function</p>
+</div>
+<div class="fragment">
 <ul>
 <li><code>rio::characterize()</code> converts a single variable or all variables in the data that have <em>label</em> attributes into character vectors</li>
 <li><code>rio::factorize()</code> does the same but returns factor variables</li>
@@ -934,9 +945,9 @@ Joe Nese
 <section id="section" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>eclsk <span class="sc">%&gt;%</span></span>
-<span id="cb20-2"><a href="#cb20-2"></a>  <span class="fu">select</span>(child_id, k_type<span class="sc">:</span>sex) <span class="sc">%&gt;%</span></span>
-<span id="cb20-3"><a href="#cb20-3"></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>eclsk <span class="sc">%&gt;%</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>  <span class="fu">select</span>(child_id, k_type<span class="sc">:</span>sex) <span class="sc">%&gt;%</span></span>
+<span id="cb18-3"><a href="#cb18-3"></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 4
   child_id k_type school_type   sex
@@ -953,10 +964,12 @@ Joe Nese
 <section id="section-1" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>eclsk <span class="sc">%&gt;%</span></span>
-<span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">characterize</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb22-3"><a href="#cb22-3"></a>  <span class="fu">select</span>(child_id, k_type<span class="sc">:</span>sex) <span class="sc">%&gt;%</span></span>
-<span id="cb22-4"><a href="#cb22-4"></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>eclsk <span class="sc">%&gt;%</span></span>
+<span id="cb20-2"><a href="#cb20-2"></a>  <span class="fu">characterize</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="#cb20-3"></a>  <span class="fu">select</span>(child_id, k_type<span class="sc">:</span>sex) <span class="sc">%&gt;%</span></span>
+<span id="cb20-4"><a href="#cb20-4"></a>  <span class="fu">head</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 4
   child_id k_type   school_type sex   
@@ -1005,7 +1018,7 @@ Joe Nese
 <div class="fragment">
 <p>with the <code>here()</code> function</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"path"</span>, <span class="st">"to"</span>, <span class="st">"data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"path"</span>, <span class="st">"to"</span>, <span class="st">"data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1013,22 +1026,22 @@ Joe Nese
 <h2>3b. Read in data</h2>
 <p>Try it!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb25-2"><a href="#cb25-2"></a></span>
-<span id="cb25-3"><a href="#cb25-3"></a><span class="co"># {haven} package</span></span>
-<span id="cb25-4"><a href="#cb25-4"></a>eclsk <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>))</span>
-<span id="cb25-5"><a href="#cb25-5"></a></span>
-<span id="cb25-6"><a href="#cb25-6"></a><span class="co"># read_table() for space separated data</span></span>
-<span id="cb25-7"><a href="#cb25-7"></a>fatality <span class="ot">&lt;-</span> <span class="fu">read_table</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Fatality.txt"</span>)) </span>
-<span id="cb25-8"><a href="#cb25-8"></a></span>
-<span id="cb25-9"><a href="#cb25-9"></a><span class="co">#read_csv(), the one I most often use</span></span>
-<span id="cb25-10"><a href="#cb25-10"></a>exam1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Project_Reads_Scores.csv"</span>))</span>
-<span id="cb25-11"><a href="#cb25-11"></a></span>
-<span id="cb25-12"><a href="#cb25-12"></a><span class="co"># read directly from the web, in this case a .csv</span></span>
-<span id="cb25-13"><a href="#cb25-13"></a>web <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"https://github.com/datalorax/ncme_18/raw/master/data/pubschls.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb23-2"><a href="#cb23-2"></a></span>
+<span id="cb23-3"><a href="#cb23-3"></a><span class="co"># {haven} package</span></span>
+<span id="cb23-4"><a href="#cb23-4"></a>eclsk <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>))</span>
+<span id="cb23-5"><a href="#cb23-5"></a></span>
+<span id="cb23-6"><a href="#cb23-6"></a><span class="co"># read_table() for space separated data</span></span>
+<span id="cb23-7"><a href="#cb23-7"></a>fatality <span class="ot">&lt;-</span> <span class="fu">read_table</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Fatality.txt"</span>)) </span>
+<span id="cb23-8"><a href="#cb23-8"></a></span>
+<span id="cb23-9"><a href="#cb23-9"></a><span class="co">#read_csv(), the one I most often use</span></span>
+<span id="cb23-10"><a href="#cb23-10"></a>exam1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Project_Reads_Scores.csv"</span>))</span>
+<span id="cb23-11"><a href="#cb23-11"></a></span>
+<span id="cb23-12"><a href="#cb23-12"></a><span class="co"># read directly from the web, in this case a .csv</span></span>
+<span id="cb23-13"><a href="#cb23-13"></a>web <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"https://github.com/datalorax/ncme_18/raw/master/data/pubschls.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="write_" class="slide level2">
+<section id="write_" class="slide level2 smaller">
 <h2><a href="https://readr.tidyverse.org/reference/index.html"><code>write_*()</code></a></h2>
 <p>Save data just as easily with <code>write_*()</code></p>
 <p>You need two things:</p>
@@ -1045,7 +1058,7 @@ Joe Nese
 <p>Basically</p>
 <p><code>write_*(what, "where")</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">write_csv</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">write_csv</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section></section>
@@ -1054,7 +1067,7 @@ Joe Nese
 <h1>Scripts</h1>
 
 </section>
-<section id="r" class="slide level2">
+<section id="r" class="slide level2 smaller">
 <h2>.R</h2>
 <p>.R is <code>R</code> script (code) file</p>
 <p><em>File</em> &gt; <em>New File</em> &gt; <em>R Script</em></p>
@@ -1076,15 +1089,15 @@ Joe Nese
 </section>
 <section id="quick-peek" class="slide level2 smaller">
 <h2>Quick Peek</h2>
-<p>What is Quarto?</p>
+<p><strong>What is Quarto?</strong></p>
 <ul>
-<li><p>an open-source scientific and technical publishing system</p></li>
-<li><p>create dynamic content with Python, R, Julia, and Observable.</p></li>
-<li><p>publish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.</p></li>
-<li><p>include equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.</p></li>
-<li><p>a multi-language, next generation version of R Markdown (from Posit)</p></li>
-<li><p>includes many built in output formats (and options for customizing each)</p></li>
-<li><p>has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages).</p></li>
+<li>an open-source scientific and technical publishing system</li>
+<li>create dynamic content with Python, R, Julia, and Observable.</li>
+<li>publish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.</li>
+<li>include equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.</li>
+<li>a multi-language, next generation version of R Markdown (from Posit)</li>
+<li>includes many built in output formats (and options for customizing each)</li>
+<li>has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages).</li>
 </ul>
 </section>
 <section id="why-quarto" class="slide level2">
@@ -1104,18 +1117,18 @@ Joe Nese
 <h2>.qmd</h2>
 <p>.qmd is a document format file that combines code <strong>AND</strong> prose</p>
 <ul>
-<li><em>File</em> &gt; <em>New File</em> &gt; <em>R Markdown…</em></li>
+<li><em>File</em> &gt; <em>New File</em> &gt; <em>Quarto document…</em></li>
 </ul>
 <div class="fragment">
 <p>Code goes into <strong>“code chunks”</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1"></a><span class="in">```{r}</span></span>
-<span id="cb27-2"><a href="#cb27-2"></a><span class="co">#| eval: false</span></span>
-<span id="cb27-3"><a href="#cb27-3"></a><span class="co"># comment</span></span>
-<span id="cb27-4"><a href="#cb27-4"></a></span>
-<span id="cb27-5"><a href="#cb27-5"></a>data <span class="sc">%&gt;%</span> </span>
-<span id="cb27-6"><a href="#cb27-6"></a>  <span class="fu">select</span>(id, read, math)</span>
-<span id="cb27-7"><a href="#cb27-7"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1"></a><span class="in">```{r}</span></span>
+<span id="cb25-2"><a href="#cb25-2"></a><span class="co">#| eval: false</span></span>
+<span id="cb25-3"><a href="#cb25-3"></a><span class="co"># comment</span></span>
+<span id="cb25-4"><a href="#cb25-4"></a></span>
+<span id="cb25-5"><a href="#cb25-5"></a>data <span class="sc">%&gt;%</span> </span>
+<span id="cb25-6"><a href="#cb25-6"></a>  <span class="fu">select</span>(id, read, math)</span>
+<span id="cb25-7"><a href="#cb25-7"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -1134,7 +1147,7 @@ Joe Nese
 <div class="fragment">
 <p>Organization tip</p>
 <ul>
-<li>.Rmd with headers</li>
+<li>.qmd with headers</li>
 <li>.R with <code># Header ----</code></li>
 </ul>
 <p><span style="color:#D55E00;">demo</span></p>
@@ -1154,8 +1167,8 @@ Joe Nese
 <div class="fragment">
 <ul>
 <li>you will only need to do this the first time you want to use the package</li>
-<li><strong>never</strong> keep this code line (you can run it in the console, or delete it from your script)</li>
-<li>notices the quotes</li>
+<li><strong>never</strong> keep this code line (just run it in the console!)</li>
+<li>notices the quotes around the package name</li>
 <li><strong>never keep this code line</strong></li>
 </ul>
 </div>
@@ -1166,7 +1179,7 @@ Joe Nese
 <div class="fragment">
 <ul>
 <li>you will do this each time you use the package in your scripts</li>
-<li>notices no quotes</li>
+<li>notices no quotes around the package name</li>
 </ul>
 </div>
 </section>
@@ -1212,20 +1225,25 @@ Joe Nese
 <h2>New script</h2>
 <p>Let’s work within the “my_first_project” .RProj</p>
 <ol start="2" type="1">
-<li>Clean it up</li>
-</ol>
-<ul>
+<li>Clean it up
+<ol type="i">
 <li>Modify the YAML</li>
 <li>Save the file as “practice.qmd” in the <strong>scripts</strong> folder</li>
 <li>Render!</li>
-</ul>
+</ol></li>
+</ol>
 <p><span style="color:#D55E00;">demo</span></p>
 </section>
-<section id="edit-this" class="slide level2">
-<h2>EDIT THIS!!!!</h2>
+<section id="new-script-2" class="slide level2 smaller">
+<h2>New script</h2>
 <ul>
-<li>Let’s remove all chunks after the first (<code>setup</code>)</li>
-<li>This is what you will do with .Rmd going forward</li>
+<li>Opens with a template</li>
+<li>Going forward with .qmd…
+<ul>
+<li>you can delete everything in the template, <strong>or</strong></li>
+<li>you can open an empty .qmd docu</li>
+<li><strong>but</strong> do one of these</li>
+</ul></li>
 </ul>
 </section>
 <section id="working-with-data" class="slide level2">
@@ -1236,8 +1254,8 @@ Joe Nese
 <ul>
 <li><code>library(here)</code> - where the data is located</li>
 <li><code>library(rio)</code> - read the data into <code>R</code></li>
-<li><code>library(janitor)</code> - clean the variable names in the data</li>
-<li><code>library(tidyverse)</code> - clean the data</li>
+<li><code>library(janitor)</code> - clean the <strong>variable names</strong> in the data</li>
+<li><code>library(tidyverse)</code> - clean the <strong>data</strong></li>
 </ul>
 </section>
 <section id="working-with-data-1" class="slide level2">
@@ -1250,13 +1268,13 @@ Joe Nese
 <li>Three options, choose one</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="co"># rio::import()</span></span>
-<span id="cb28-2"><a href="#cb28-2"></a>penguins <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Penguins.csv"</span>), <span class="at">setclass =</span> <span class="st">"tbl_df"</span>)</span>
-<span id="cb28-3"><a href="#cb28-3"></a></span>
-<span id="cb28-4"><a href="#cb28-4"></a>penguins <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Penguins.csv"</span>))</span>
-<span id="cb28-5"><a href="#cb28-5"></a></span>
-<span id="cb28-6"><a href="#cb28-6"></a><span class="co"># readr::read_csv()</span></span>
-<span id="cb28-7"><a href="#cb28-7"></a>penguins <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Penguins.csv"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="co"># rio::import()</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a>penguins <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Penguins.csv"</span>), <span class="at">setclass =</span> <span class="st">"tbl_df"</span>)</span>
+<span id="cb26-3"><a href="#cb26-3"></a></span>
+<span id="cb26-4"><a href="#cb26-4"></a>penguins <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Penguins.csv"</span>))</span>
+<span id="cb26-5"><a href="#cb26-5"></a></span>
+<span id="cb26-6"><a href="#cb26-6"></a><span class="co"># readr::read_csv()</span></span>
+<span id="cb26-7"><a href="#cb26-7"></a>penguins <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Penguins.csv"</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 <aside><div>
@@ -1265,7 +1283,7 @@ Joe Nese
 <section id="what-do-our-data-look-like" class="slide level2">
 <h2>What do our data look like?</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a>penguins</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>penguins</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 344 × 8
    Species Island    `Bill Length (mm)` `Bill Depth (mm)` `Flipper Length (mm)`
@@ -1287,23 +1305,21 @@ Joe Nese
 <div class="fragment">
 <p>Or use <code>View()</code> to take a look at the full data in RStudio</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="fu">View</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">View</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<div class="fragment">
-<p>Or click on the object name in your RStudio <em>Environment</em></p>
+<p>or click on the object name in your RStudio <em>Environment</em></p>
 </div>
 </section>
 <section id="janitorclean_names" class="slide level2">
 <h2><code>janitor::clean_names()</code></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="co"># re-assign the "reads" object by reading the data in again</span></span>
-<span id="cb32-2"><a href="#cb32-2"></a>penguins <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Penguins.csv"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb32-3"><a href="#cb32-3"></a>  <span class="fu">clean_names</span>()</span>
-<span id="cb32-4"><a href="#cb32-4"></a></span>
-<span id="cb32-5"><a href="#cb32-5"></a><span class="co"># or just work with the existing "penguins" object</span></span>
-<span id="cb32-6"><a href="#cb32-6"></a>penguins <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb32-7"><a href="#cb32-7"></a>  <span class="fu">clean_names</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="co"># re-assign the "reads" object by reading the data in again</span></span>
+<span id="cb30-2"><a href="#cb30-2"></a>penguins <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Penguins.csv"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb30-3"><a href="#cb30-3"></a>  <span class="fu">clean_names</span>()</span>
+<span id="cb30-4"><a href="#cb30-4"></a></span>
+<span id="cb30-5"><a href="#cb30-5"></a><span class="co"># or just work with the existing "penguins" object</span></span>
+<span id="cb30-6"><a href="#cb30-6"></a>penguins <span class="ot">&lt;-</span> penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb30-7"><a href="#cb30-7"></a>  <span class="fu">clean_names</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/janitor_clean_names.png" class="center" width="50%" height="50%"></p>
 </section>
@@ -1311,7 +1327,7 @@ Joe Nese
 <h2>Looking at the data <code>str</code>ucture</h2>
 <p><code>str</code>ucture</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">str</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="fu">str</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>spc_tbl_ [344 × 8] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
  $ species          : chr [1:344] "Adelie" "Adelie" "Adelie" "Adelie" ...
@@ -1341,7 +1357,7 @@ Joe Nese
 <h2>Looking at the data properties</h2>
 <p><code>dim</code>ensions (rows <span class="math inline">\(\times\)</span> columns)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">dim</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">dim</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 344   8</code></pre>
 </div>
@@ -1349,11 +1365,11 @@ Joe Nese
 <div class="fragment">
 <p><code>n</code>umber of <code>row</code>s or <code>n</code>umber of <code>col</code>umns</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">nrow</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">nrow</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 344</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="fu">ncol</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">ncol</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 8</code></pre>
 </div>
@@ -1364,8 +1380,8 @@ Joe Nese
 <h2><code>head()</code></h2>
 <p>View the six first elements</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="co"># first six rows</span></span>
-<span id="cb41-2"><a href="#cb41-2"></a><span class="fu">head</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="co"># first six rows</span></span>
+<span id="cb39-2"><a href="#cb39-2"></a><span class="fu">head</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 8
   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
@@ -1380,9 +1396,10 @@ Joe Nese
 </div>
 </div>
 <div class="fragment">
+<p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="co"># first six elements of the column</span></span>
-<span id="cb43-2"><a href="#cb43-2"></a><span class="fu">head</span>(penguins<span class="sc">$</span>flipper_length_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="co"># first six elements of the column</span></span>
+<span id="cb41-2"><a href="#cb41-2"></a><span class="fu">head</span>(penguins<span class="sc">$</span>flipper_length_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 181 186 195  NA 193 190</code></pre>
 </div>
@@ -1392,9 +1409,9 @@ Joe Nese
 <section id="another-cool-package-skimr" class="slide level2 smaller">
 <h2>Another cool package <code>{skimr}</code></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">library</span>(skimr)</span>
-<span id="cb45-2"><a href="#cb45-2"></a></span>
-<span id="cb45-3"><a href="#cb45-3"></a><span class="fu">skim</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="fu">library</span>(skimr)</span>
+<span id="cb43-2"><a href="#cb43-2"></a></span>
+<span id="cb43-3"><a href="#cb43-3"></a><span class="fu">skim</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
 <table style="width: auto;" class="table table-condensed">
@@ -1824,8 +1841,8 @@ year
 <div class="column" style="width:50%;">
 <p>With the <code>{tidyverse}</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb46-2"><a href="#cb46-2"></a>  <span class="fu">count</span>(species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb44-2"><a href="#cb44-2"></a>  <span class="fu">count</span>(species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
   species       n
@@ -1838,8 +1855,8 @@ year
 </div><div class="column" style="width:50%;">
 <p>Or with <code>{janitor}</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb48-2"><a href="#cb48-2"></a>  <span class="fu">tabyl</span>(species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb46-2"><a href="#cb46-2"></a>  <span class="fu">tabyl</span>(species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   species   n   percent
     Adelie 152 0.4418605
@@ -1859,11 +1876,11 @@ year
 <p>Chaining arguments is <strong>efficient</strong> and <strong>easy to read</strong></p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb50-2"><a href="#cb50-2"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span>,</span>
-<span id="cb50-3"><a href="#cb50-3"></a>         bill_length_mm <span class="sc">&gt;</span> <span class="dv">40</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb50-4"><a href="#cb50-4"></a>  <span class="fu">select</span>(island, bill_length_mm, body_mass_g) <span class="sc">%&gt;%</span> </span>
-<span id="cb50-5"><a href="#cb50-5"></a>  <span class="fu">arrange</span>(bill_length_mm) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb48-2"><a href="#cb48-2"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span>,</span>
+<span id="cb48-3"><a href="#cb48-3"></a>         bill_length_mm <span class="sc">&gt;</span> <span class="dv">40</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb48-4"><a href="#cb48-4"></a>  <span class="fu">select</span>(island, bill_length_mm, body_mass_g) <span class="sc">%&gt;%</span> </span>
+<span id="cb48-5"><a href="#cb48-5"></a>  <span class="fu">arrange</span>(bill_length_mm) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 51 × 3
    island    bill_length_mm body_mass_g
@@ -1887,22 +1904,22 @@ year
 <h2>Why use <code>%&gt;%</code></h2>
 <p>Chaining arguments is <strong>efficient</strong> and <strong>easy to read</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb52-2"><a href="#cb52-2"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span>,</span>
-<span id="cb52-3"><a href="#cb52-3"></a>         bill_length_mm <span class="sc">&gt;</span> <span class="dv">40</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb52-4"><a href="#cb52-4"></a>  <span class="fu">select</span>(island, bill_length_mm, body_mass_g) <span class="sc">%&gt;%</span> </span>
-<span id="cb52-5"><a href="#cb52-5"></a>  <span class="fu">arrange</span>(bill_length_mm) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb50-2"><a href="#cb50-2"></a>  <span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"Adelie"</span>,</span>
+<span id="cb50-3"><a href="#cb50-3"></a>         bill_length_mm <span class="sc">&gt;</span> <span class="dv">40</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb50-4"><a href="#cb50-4"></a>  <span class="fu">select</span>(island, bill_length_mm, body_mass_g) <span class="sc">%&gt;%</span> </span>
+<span id="cb50-5"><a href="#cb50-5"></a>  <span class="fu">arrange</span>(bill_length_mm) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <p>Equivalent to:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a><span class="fu">arrange</span>(<span class="fu">select</span>(<span class="fu">filter</span>(penguins, species <span class="sc">==</span> <span class="st">"Adelie"</span>, bill_length_mm <span class="sc">&gt;</span> <span class="dv">40</span>), island, bill_length_mm, body_mass_g), bill_length_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="fu">arrange</span>(<span class="fu">select</span>(<span class="fu">filter</span>(penguins, species <span class="sc">==</span> <span class="st">"Adelie"</span>, bill_length_mm <span class="sc">&gt;</span> <span class="dv">40</span>), island, bill_length_mm, body_mass_g), bill_length_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
 <section id="section-2" class="slide level2 smaller">
 <h2><code>%&gt;%</code></h2>
-<p>The <code>%&gt;%</code> works so well in the <code>{tidyverse}</code> because <mark>the first argument in (nearly) all functions is the data (tibble)</mark></p>
+<p>The <code>%&gt;%</code> works so well in the <code>{tidyverse}</code> because <mark>the first argument in (nearly) all functions is the dataframe (tibble)</mark></p>
 <p><br></p>
 <p>So you don’t need to name the data each time</p>
 <div class="fragment">
@@ -1910,8 +1927,8 @@ year
 <div class="column" style="width:50%;">
 <p>So this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb54-2"><a href="#cb54-2"></a>  <span class="fu">count</span>(sex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb52-2"><a href="#cb52-2"></a>  <span class="fu">count</span>(sex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
   sex        n
@@ -1924,7 +1941,7 @@ year
 </div><div class="column" style="width:50%;">
 <p>Is equivalent to this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">count</span>(penguins, sex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a><span class="fu">count</span>(penguins, sex)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
   sex        n
@@ -1970,13 +1987,11 @@ year
 </ul></li>
 <li>Homework
 <ul>
-<li><strong>Homework 1</strong></li>
+<li>Homework 1</li>
 </ul></li>
 <li>Final project
 <ul>
-<li><p style="color:red;">
-</p><p>Finalize Groups</p>
-<p></p></li>
+<li><span style="color:#FF0000">Finalize Groups</span></li>
 </ul></li>
 </ul>
 
