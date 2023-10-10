@@ -823,19 +823,20 @@ Joe Nese
 <p>Try it!</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14" data-code-line-numbers="|4|10,14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">library</span>(rio)</span>
-<span id="cb14-2"><a href="#cb14-2"></a></span>
-<span id="cb14-3"><a href="#cb14-3"></a><span class="co"># .sav</span></span>
-<span id="cb14-4"><a href="#cb14-4"></a>eclsk <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>), <span class="at">setclass =</span> <span class="st">"tbl_df"</span>)</span>
-<span id="cb14-5"><a href="#cb14-5"></a></span>
-<span id="cb14-6"><a href="#cb14-6"></a><span class="co"># Use `as_tibble` instead of `setclass = "tbl_df"`</span></span>
-<span id="cb14-7"><a href="#cb14-7"></a></span>
-<span id="cb14-8"><a href="#cb14-8"></a><span class="co"># .txt</span></span>
-<span id="cb14-9"><a href="#cb14-9"></a>fatality <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Fatality.txt"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb14-10"><a href="#cb14-10"></a>  <span class="fu">as_tibble</span>()</span>
-<span id="cb14-11"><a href="#cb14-11"></a></span>
-<span id="cb14-12"><a href="#cb14-12"></a><span class="co">#.csv</span></span>
-<span id="cb14-13"><a href="#cb14-13"></a>exam1 <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Project_Reads_Scores.csv"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb14-14"><a href="#cb14-14"></a>  <span class="fu">as_tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="co">#library(tidyverse)</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a></span>
+<span id="cb14-4"><a href="#cb14-4"></a><span class="co"># .sav</span></span>
+<span id="cb14-5"><a href="#cb14-5"></a>eclsk <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>), <span class="at">setclass =</span> <span class="st">"tbl_df"</span>)</span>
+<span id="cb14-6"><a href="#cb14-6"></a></span>
+<span id="cb14-7"><a href="#cb14-7"></a><span class="co"># Use `as_tibble` instead of `setclass = "tbl_df"`</span></span>
+<span id="cb14-8"><a href="#cb14-8"></a></span>
+<span id="cb14-9"><a href="#cb14-9"></a><span class="co"># .txt</span></span>
+<span id="cb14-10"><a href="#cb14-10"></a>fatality <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Fatality.txt"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-11"><a href="#cb14-11"></a>  <span class="fu">as_tibble</span>()</span>
+<span id="cb14-12"><a href="#cb14-12"></a></span>
+<span id="cb14-13"><a href="#cb14-13"></a><span class="co">#.csv</span></span>
+<span id="cb14-14"><a href="#cb14-14"></a>exam1 <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"Project_Reads_Scores.csv"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-15"><a href="#cb14-15"></a>  <span class="fu">as_tibble</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="you-can-even-read-directly-from-the-web" class="slide level2">
@@ -881,11 +882,11 @@ Joe Nese
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.sav"</span>))</span>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">export</span>(fatality, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.sav"</span>))</span>
 <span id="cb17-2"><a href="#cb17-2"></a></span>
-<span id="cb17-3"><a href="#cb17-3"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.txt"</span>))</span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="fu">export</span>(fatality, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.txt"</span>))</span>
 <span id="cb17-4"><a href="#cb17-4"></a></span>
-<span id="cb17-5"><a href="#cb17-5"></a><span class="fu">export</span>(exam1, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.dta"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-5"><a href="#cb17-5"></a><span class="fu">export</span>(fatality, <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"exam1.dta"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -905,7 +906,7 @@ Joe Nese
 <p><span style="color:#CC79A7">out_file</span> = character string naming an output file</p>
 </div>
 <div class="fragment">
-<p><span style="color:#0072B2">convert</span>(here(“data”, <span style="color:#009E73">ecls-k_samp.sav</span>)), (here(“data”, <span style="color:#CC79A7">ecls-k_samp.dta</span>))</p>
+<p><span style="color:#0072B2">convert</span>(here(“data”, <span style="color:#009E73">ecls-k_samp.sav</span>), (here(“data”, <span style="color:#CC79A7">ecls-k_samp.txt</span>)))</p>
 <p></p>
 </div>
 </section>
@@ -914,7 +915,6 @@ Joe Nese
 <p><code>{rio}</code> wraps a variety of faster, more stream-lined packages than those provided by base <code>R</code></p>
 <ul>
 <li><code>{data.table}</code> for delimited formats</li>
-<li><code>{haven}</code> for SAS, Stata, and SPSS files</li>
 <li><code>{readxl}</code> and <code>{openxlsx}</code> for reading and writing Excel workbooks</li>
 <li><code>data.table::fread()</code> for text-delimited files to automatically determine the file format regardless of the extension
 <ul>
@@ -929,11 +929,10 @@ Joe Nese
 <h2>Maintaining data “labels”</h2>
 <p><strong>Question: How many of you or your colleagues use SPSS or Stata?</strong></p>
 <div class="fragment">
-<p>In SPSS, numeric data are often encoded with labels</p>
-</div>
-<div class="fragment">
-<p><code>{rio}</code> and <code>{haven}</code> allow you to transform the data into the character/factor version</p>
-<p><code>{rio}</code> and <code>{haven}</code> store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function</p>
+<p>In SPSS and Stata numeric data are often encoded with labels</p>
+<p>For SAS, Stata, and SPSS files use <code>{haven}``{haven}</code></p>
+<p><code>{haven}</code> allow you to transform the data into the character/factor version</p>
+<p><code>{haven}</code> store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function</p>
 </div>
 <div class="fragment">
 <ul>
@@ -1097,7 +1096,7 @@ Joe Nese
 <li>include equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.</li>
 <li>a multi-language, next generation version of R Markdown (from Posit)</li>
 <li>includes many built in output formats (and options for customizing each)</li>
-<li>has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages).</li>
+<li>has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages)</li>
 </ul>
 </section>
 <section id="why-quarto" class="slide level2">

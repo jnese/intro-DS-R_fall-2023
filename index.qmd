@@ -170,13 +170,13 @@ tbl_fx(3)
 tbl_fx(4)
 ```
 
-### Week 5: Quarto
+### Week 5: GitHub
 
 ```{r}
 tbl_fx(5)
 ```
 
-### Week 6: GitHub
+### Week 6: Quarto
 
 ```{r}
 tbl_fx(6)

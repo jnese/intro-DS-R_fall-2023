@@ -440,6 +440,7 @@ Try it!
 #| code-line-numbers: "|4|10,14"
 
 library(rio)
+#library(tidyverse)
 
 # .sav
 eclsk <- import(here("data", "ecls-k_samp.sav"), setclass = "tbl_df")
@@ -491,11 +492,11 @@ You need two things:
 . . .
 
 ```{r, eval=FALSE}
-export(exam1, here("data", "exam1.sav"))
+export(fatality, here("data", "exam1.sav"))
 
-export(exam1, here("data", "exam1.txt"))
+export(fatality, here("data", "exam1.txt"))
 
-export(exam1, here("data", "exam1.dta"))
+export(fatality, here("data", "exam1.dta"))
 ```
 
 ## `convert()` {.smaller}
@@ -522,7 +523,7 @@ Just run one line of code!
 
 . . .
 
-[convert]{style="color:#0072B2"}(here("data", [ecls-k_samp.sav]{style="color:#009E73"})), (here("data", [ecls-k_samp.dta]{style="color:#CC79A7"}))
+[convert]{style="color:#0072B2"}(here("data", [ecls-k_samp.sav]{style="color:#009E73"}), (here("data", [ecls-k_samp.txt]{style="color:#CC79A7"})))
 
 </p>
 
@@ -531,7 +532,6 @@ Just run one line of code!
 `{rio}` wraps a variety of faster, more stream-lined packages than those provided by base `R`
 
 -   `{data.table}` for delimited formats
--   `{haven}` for SAS, Stata, and SPSS files
 -   `{readxl}` and `{openxlsx}` for reading and writing Excel workbooks
 -   `data.table::fread()` for text-delimited files to automatically determine the file format regardless of the extension
     -   also *very* fast
@@ -546,13 +546,13 @@ Again, `import()` "just works"
 
 . . .
 
-In SPSS, numeric data are often encoded with labels
+In SPSS and Stata numeric data are often encoded with labels
 
-. . .
+For SAS, Stata, and SPSS files use `{haven}``{haven}`
 
-`{rio}` and `{haven}` allow you to transform the data into the character/factor version
+`{haven}` allow you to transform the data into the character/factor version
 
-`{rio}` and `{haven}` store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function
+`{haven}` store metadata from rich file formats (SPSS, Stata, etc.) in variable-level attributes in a consistent form regardless of file type or underlying import function
 
 . . .
 
@@ -697,7 +697,7 @@ Run code
 - include equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.
 - a multi-language, next generation version of R Markdown (from Posit)
 - includes many built in output formats (and options for customizing each)
-- has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages).
+- has native features for special project types like Websites, Books, and Blogs (rather than relying on external packages)
 
 ## Why Quarto?
 

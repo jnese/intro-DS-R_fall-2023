@@ -44,6 +44,15 @@ library(countdown)
 
 Week 4
 
+##
+
+![](https://www.ltd.org/files/library/bus-with-rainbow_lb.jpg)
+
+##
+
+
+![](https://images.unsplash.com/photo-1572013343866-dfdb9b416810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGF4aXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60)
+
 ## Agenda {.smaller}
 
 - Introduce common `{dplyr}` functions
@@ -679,42 +688,42 @@ Note the lovely indentations and line breaks to help keep things straight
 
 # mutate()
 
----
-# Some new data
+## Some new data
 
-```{r, show_col_types = FALSE}
+```{r}
+
 (prepost <- reads %>% 
   select(student_id, test_site, pre_test_score, post_test_score))
 ```
 
----
-# `mutate()`
+## `mutate()`
 
 **Add** a variable
 
 ```{r}
+#| code-line-numbers: "|2"
+
 prepost %>% 
-  mutate(gain = post_test_score - pre_test_score) #<<
+  mutate(gain = post_test_score - pre_test_score)
 ```
 
----
+## 
 
 ```{r}
 names(prepost)
 ```
 
---
-
-
+. . .
 
 Why do we not see the new *gain* column?
 
----
-# `mutate()`
+## `mutate()`
 
 **Add** *multiple* variables
 
-```{r, tidy=TRUE}
+```{r}
+#| tidy: true
+
 prepost <- prepost %>%
   mutate(
     gain = post_test_score - pre_test_score,
@@ -724,8 +733,7 @@ prepost <- prepost %>%
 prepost
 ```
 
----
-# `mutate()`
+## `mutate()`
 
 **Change** a variable
 
@@ -736,56 +744,46 @@ prepost <- prepost %>%
 prepost
 ```
 
----
-class: inverse, left, middle
-
 # arrange()
 
----
-# `arrange()`
+## `arrange()`
 
-#### Order the data
+Order the data
 
-* Order by *gain*, ascending [default]
+- Order by *gain*, ascending [default]
 
 ```{r}
 prepost %>% 
   arrange(gain)
 ```
 
----
-# `arrange()`
+## `arrange()`
 
-#### Order the data
+Order the data
 
-* Order by *pre_test_score* and *gain*, ascending
+- Order by *pre_test_score* and *gain*, ascending
 
 ```{r}
 prepost %>% 
   arrange(pre_test_score, gain)
 ```
 
----
-# `arrange()`
+## `arrange()`
 
-#### Order the data
+Order the data
 
-* Order by *gain*, `desc`ending
+- Order by *gain*, `desc`ending
 
 ```{r}
 prepost %>% 
   arrange(desc(gain))
 ```
 
----
-class: inverse, left, middle
-
 # summarize()
 
----
-# `summarize()`
+## `summarize()`
 
-#### or `summarise()`
+or `summarise()`
 
 * Here: compute the `mean` and `standard deviation` of the gain scores
 * What are we looking at?
@@ -796,39 +794,35 @@ prepost %>%
             sd_gain = sd(gain, na.rm = TRUE))
 ```
 
---
-
-.footnote[
+::: {aside .fragment}
 This is a good start for a descriptive table!
-]
-
----
-class: inverse, left, middle
+:::
 
 # group_by()
 
----
-.pull-left[
+## 
+
+:::: {.columns}
+
+:::
 ```{r, echo=FALSE}
 knitr::include_graphics("https://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig2.png")
 ```
+:::
 
-]
-
---
-
-.pull-right[
+::: {.fragment}
 ```{r, echo=FALSE}
 knitr::include_graphics("https://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig3.png") 
 ```
-]
+:::
 
-.footnote[
+::::
+
+::: aside
 Image from [Software Carpentry](https://swcarpentry.github.io/r-novice-gapminder/13-dplyr/)
-]
+:::
 
----
-# `group_by()`
+## `group_by()`
 
 <b>Conduct an operation for each level of a grouping factor</b>
 
@@ -840,35 +834,37 @@ prepost %>%
   summarize(mean_gain = mean(gain))
 ```
 
----
-# `group_by()`
+## `group_by()`
 
-#### When you use `group_by()` and `summarize()`
+When you use `group_by()` and `summarize()`
 
-.pull-left[
+:::: {.columns}
+
+:::
 You will get a row for each unique group
+
 ```{r}
 mpg %>% 
   group_by(cyl) %>% 
   summarize(max_hwy = max(hwy))
 ```
-]
+:::
 
---
-
-.pull-right[
+::: {.fragment}
 If you have multiple grouping variables, you will get a row for each unique combination of groups
+
 ```{r}
 mpg %>% 
   group_by(cyl, drv) %>% 
   summarize(max_hwy = max(hwy))
 ```
-]
+:::
 
----
-# Add summarized column to full data
+::::
 
-#### Use `mutate()`!
+## Add summarized column to full data
+
+Use `mutate()`!
 
 ```{r}
 prepost %>% 
@@ -876,10 +872,9 @@ prepost %>%
   mutate(mean_gain = mean(gain))
 ```
 
----
-# Retain only summarized columns
+## Retain only summarized columns
 
-#### Use `summarize()`!
+Use `summarize()`!
 
 ```{r}
 prepost %>% 
@@ -887,8 +882,7 @@ prepost %>%
   summarize(mean_gain = mean(gain))
 ```
 
----
-# Pipe to `{ggplot}`!
+## Pipe to `{ggplot}`!
 
 ```{r}
 prepost %>% 
@@ -898,16 +892,13 @@ prepost %>%
   geom_col(fill = "cornflowerblue", alpha = .7) #<<
 ```
 
----
+## 
 
-background-size: contain
+![](./images/kd.gif)
 
-background-image: url("./images/kd.gif")
+## Summarizing and Plotting
 
----
-# Summarizing and Plotting
-
-* Calculate mean *post_test_score* by test site
+- Calculate mean *post_test_score* by test site
 
 ```{r}
 students_only %>%
@@ -915,10 +906,11 @@ students_only %>%
     summarize(mean = mean(post_test_score))
 ```
 
----
-# Plot it
+## Plot it
 
-```{r, fig.height=2.5}
+```{r}
+#| fig-height: 2.5
+
 theme_set(theme_minimal(base_size = 18))
 
 students_only %>%
@@ -928,14 +920,11 @@ students_only %>%
   geom_col(alpha = 0.8)
 ```
 
----
-class: inverse, left, middle
-
 # A couple more
-## recode() and rename()
 
----
-# Recode with `ifelse()`
+`recode()` and `rename()`
+
+## Recode with `ifelse()`
 
 Recoding into dichotomous variable with `ifelse()`
 
@@ -945,20 +934,18 @@ Recoding into dichotomous variable with `ifelse()`
 
 `ifelse(`logical statement, Do this `if` TRUE, `else` do this`)`
 
----
-# Recode with `ifelse()`
+## Recode with `ifelse()`
 
 Recoding into dichotomous variable with `ifelse()`
 
-**Remember to pair with `mutate()`**
+**Remember to pair with `mutate()`!**
 
 ```{r}
 students_only %>% 
   mutate(test_site = ifelse(test_site == "JONES", "district 1", "district 2"))
 ```
 
----
-# Recode with `recode()`
+## Recode with `recode()`
 
 Recoding into multinomial variable
 
@@ -971,8 +958,7 @@ recode(variable,
 )
 ```
 
----
-# Recode with `recode()`
+## Recode with `recode()`
 
 Recoding into multinomial variable
 
@@ -987,8 +973,7 @@ students_only %>%
          )
 ```
 
----
-# Recode with `recode()`
+## Recode with `recode()`
 
 Remember to use backticks for special characters
 
@@ -1000,15 +985,13 @@ mtcars %>%
                       `8` = "cylinders8"))
 ```
 
----
-# Recode with `case_when()`
+## Recode with `case_when()` {.smaller}
 
 Recoding across several variables, or if you find yourself using nested `ifelse()` statements
 
 **Remember to pair with `mutate()`**
 
-
-```{r, echo=FALSE}
+```{r, echo=TRUE}
 library(palmerpenguins)
 ```
 
@@ -1019,16 +1002,15 @@ penguins %>%
              body_mass_g > 4500 & species == "Adelie" ~ "adelie_big",
              body_mass_g > 4600 & species == "Chinstrap" ~ "chinstrap_big",
              body_mass_g > 6000 & species == "Gentoo" ~ "gentoo_big",
-             TRUE ~ "other"
+             .default ~ "other"
            ))
 ```
 
---
+. . .
 
-* `TRUE` equivalent to `else` statement 
+`.default` equivalent to `all else`
 
----
-# `rename()`
+## `rename()`
 
 `rename(new_name = old_name)`
 
@@ -1040,57 +1022,41 @@ penguins %>%
   )
 ```
 
---
+. . .
 
 **NOT paired with `mutate()`**
 
----
-# rename with `select()`
+## rename with `select()`
 
 ```{r}
 penguins %>% 
   select(species, home = island, bill_length = bill_length_mm, year) #<<
 ```
 
----
-# Final notes on `{dplyr}`
+## Final notes on `{dplyr}`
 
 * We could spend weeks on this
-
-
 * We'll be using it all term long
-
-
 * Verbs can help you gain fluency
-
-
 * There are also conditional and all-inclusive versions of `mutate`, `select`, and `summarize`
-  + [`across()`](https://dplyr.tidyverse.org/reference/across.html)
+    + [`across()`](https://dplyr.tidyverse.org/reference/across.html)
 
----
-class: inverse, left, middle
 
 # Next time
 
----
-# Before next class
+## Before next class
 
-* Final Project
-  + .red[Final Project: Outline]
-* Reading
-  + [R4DS 13](https://r4ds.had.co.nz/relational-data.html)
-* Supplemental Learning
-  + [RStudio Primer: Join Data Sets](https://rstudio.cloud/learn/primers/4.3)
-  + [Codecademy: Joining Tables in R](https://www.codecademy.com/courses/learn-r/lessons/r-multiple-tables/exercises/introduction)
-* Homework
-  + **Homework 4**
+- Final Project
+    + [Final Project: Outline]{style="color:#FF0000"}
+- Reading
+    + [R4DS(2e) 30](https://r4ds.hadley.nz/quarto-formats)
+- Supplemental Learning
+    + [RStudio Primer: Working with Tibbles](https://posit.cloud/learn/primers/2.1)
+    + [Rbootcamp: Ch 3](https://r-bootcamp.netlify.app/chapter3)
+    + [Codecademy: Aggregates in R](https://www.codecademy.com/courses/learn-r/lessons/r-aggregates/exercises/introduction)
+- Homework
+    + Homework 2
+    + Homework 3
 
----
-class: inverse, left, middle
 
----
-
-```{r, echo=FALSE, eval=FALSE}
-renderthis::to_pdf(here::here("slides", "w4_dplyr.Rmd"), complex_slides = TRUE)
-```
 

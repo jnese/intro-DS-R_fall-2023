@@ -89,5 +89,8 @@
   },
   "slides/w3_ggplot2.qmd": {
     "w3_ggplot2.html": "ea7d4e6f"
+  },
+  "slides/w4_dplyr.qmd": {
+    "w4_dplyr.html": "a34d13c4"
   }
 }

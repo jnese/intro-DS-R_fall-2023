@@ -468,16 +468,11 @@ Joe Nese
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
+<p><img data-src="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b467ee99-87e3-4663-ae27-aaf027f940ce_rw_1920.png?h=0573cb8b960ba2f2c8486188761f03e0" style="width:70.0%"></p>
 
-<img data-src="https://www.ltd.org/files/library/bus-with-rainbow_lb.jpg" class="r-stretch"></section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-
-<img data-src="https://images.unsplash.com/photo-1572013343866-dfdb9b416810?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGF4aXxlbnwwfHwwfHx8MA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="r-stretch"></section>
-<section id="section-2" class="slide level2">
-<h2></h2>
-
-<img data-src="https://www.tidyverse.org/images/tidyverse-default.png" class="r-stretch"></section>
+<aside><div>
+<p>Credit <a href="https://allisonhorst.com/data-science-art">Allison Horst</a></p>
+</div></aside></section>
 <section id="providing-grammar-for" class="slide level2 smaller">
 <h2>Providing grammar for:</h2>
 <ul>
@@ -530,7 +525,7 @@ Joe Nese
 <p><code>gg</code> stands for the “grammar of graphics”</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="https://ggplot2-book.org/cover.jpg"></p>
+<p><img data-src="https://ggplot2-book.org/cover.jpg" style="width:50.0%"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="https://images-us.bookshop.org/ingram/9780387245447.jpg?height=500&amp;v=v2"></p>
 </div>
@@ -541,7 +536,7 @@ Joe Nese
 <p>The <code>{ggplot2}</code> package is one of the most popular <code>R</code> packages, and there are many resources to learn the syntax</p>
 <ul>
 <li>ggplot2 book (email me for digital copy)</li>
-<li>RStudio <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/master/data-visualization.pdf">cheat sheet</a>
+<li>Posit <a href="https://rstudio.github.io/cheatsheets/html/data-visualization.html?_gl=1*1j49xha*_ga*MTM2MTAwMDI2MS4xNjk2OTY0NDAy*_ga_2C0WZ1JHG0*MTY5Njk2NDQwMi4xLjAuMTY5Njk2NDQwMi4wLjAuMA..">cheat sheet</a>
 <ul>
 <li>Can be helpful, perhaps more so after a little experience</li>
 </ul></li>
@@ -552,7 +547,7 @@ Joe Nese
 </ul></li>
 </ul>
 </section>
-<section id="components" class="slide level2">
+<section id="components" class="slide level2 smaller">
 <h2>Components</h2>
 <p>Every <code>ggplot</code> plot has three components</p>
 <ol type="1">
@@ -573,7 +568,7 @@ Joe Nese
 <p><strong><code>ggplot()</code> always takes a data frame (tibble) as the first argument</strong></p>
 </div>
 </section>
-<section id="basic-syntax" class="slide level2">
+<section id="basic-syntax" class="slide level2 smaller">
 <h2>Basic syntax</h2>
 <p><span style="color:#D55E00">ggplot(</span><span style="color:#0072B2">data</span>, <span style="color:#009E73">aes(</span>x = xvar, y = yvar<span style="color:#009E73">)</span><span style="color:#D55E00">)</span> <span style="color:#CC79A7">+</span> <br> <span style="color:#E69f00">geom_function()</span></p>
 <div class="fragment">
@@ -652,7 +647,7 @@ Joe Nese
 </div>
 </div></section><section id="setting-up-a-plot-1" class="slide level2">
 <h2>Setting up a plot</h2>
-<p>layering</p>
+<p>We have to add some layers!</p>
 
 <img data-src="./images/owl.PNG" class="r-stretch"></section>
 <section id="setting-up-a-plot-2" class="slide level2">
@@ -704,24 +699,34 @@ or
 <section id="add-another-layer" class="slide level2">
 <h2>Add another layer</h2>
 <p>Let’s add a smoothed line with <code>geom_smooth()</code></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/peng-3_ad0c604f558e062c3d097c6f31bb43bb">
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-5_e444cd356324412569ee4c1a04fa7b3d">
 <div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
 <span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
 <span id="cb8-3"><a href="#cb8-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/peng-3_ad0c604f558e062c3d097c6f31bb43bb">
+<div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-5_e444cd356324412569ee4c1a04fa7b3d">
 <div class="cell-output-display">
-<p><img data-src="w3_ggplot2_files/figure-revealjs/peng-3-1.png" width="864"></p>
+<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-5-1.png" width="864"></p>
 </div>
 </div>
+</section>
+<section id="add-another-layer-1" class="slide level2">
+<h2>Add another layer</h2>
+<p>Let’s add a smoothed line with <code>geom_smooth()</code></p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-6_3e1209f5b7dd40ab6da814ed88b1ea48">
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
+<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><em>Note</em>: This is <strong>not</strong> the same as <code>geom_line()</code>. We are fitting a line of best fit with <code>geom_smooth()</code></p>
 </section>
 <section id="you-try" class="slide level2">
 <h2>You try</h2>
 <p>You probably got the <span style="color:#CC79A7;">message</span> below when you ran (defaults)</p>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/peng-4_3c909709115f40740cdf4f2e03089897">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
-<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
+<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>`geom_smooth()` using method = 'loess' and formula = 'y ~ x'</code></pre>
 </div>
@@ -735,8 +740,8 @@ or
 <h2>Let’s do this one together</h2>
 <p>Look at the help page – <code>?geom_smooth</code></p>
 <ol type="1">
-<li><p>Remove the confidence interval around the line</p></li>
-<li><p>Now change the <em>SE</em> band to reflect a 68% confidence interval</p></li>
+<li><p>Remove the <code>confidence</code> interval around the line</p></li>
+<li><p>Now change the <code>*SE*</code> band to reflect a 68% confidence interval</p></li>
 </ol>
 </section>
 <section id="color-global-vs.-conditional" class="slide level2">
@@ -760,11 +765,11 @@ or
 <p><span style="color:#D55E00;">let’s do this together</span></p>
 </div>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/peng-5_effa48f4d55555c879fc34b57dc191a5">
-<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/peng-5_effa48f4d55555c879fc34b57dc191a5">
 <div class="cell-output-display">
@@ -774,9 +779,9 @@ or
 </section>
 <section id="color-global-vs.-conditional-1" class="slide level2">
 <h2><code>color</code>: global vs.&nbsp;conditional</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-5_a3d852d599ccb4c7b05fb3cb71446c77">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-7_7e28554f20b185f3edda808e06bac791">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>When we did <code>geom_point(color = "magenta")</code> we put quotes around the color</li>
@@ -794,25 +799,25 @@ or
 <h2>Conditional flow through layers</h2>
 <p>If we use something like <code>color = “x”</code> in the first <code>aes</code>thetic, it will carry on through all additional layers</p>
 <p>These two codes are the same:</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-6_01f69c6ab61012d9923b40ec3b47a2a1">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-8_bddf774a9102b242e128d7e46c233441">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-7_a5edca4a52bbda533e724e9edc6ec116">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g, <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb14-2"><a href="#cb14-2"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-9_f463d99adcfd826f105aab830b10d9f0">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">
 <p>But these two are not…why? <span style="color:#D55E00;">run to find out</span></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-8_831b2aabb2cc317a1240aa23b899d0b8">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species)) <span class="sc">+</span> </span>
-<span id="cb15-3"><a href="#cb15-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-9_b840e249ad55da28acdb3a8c828edf70">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g, <span class="at">color =</span> species)) <span class="sc">+</span></span>
-<span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-10_541f320cf425ea44d0e10d8f9bb63431">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species)) <span class="sc">+</span> </span>
 <span id="cb16-3"><a href="#cb16-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-11_813d7da6bd9e8a2db62a106ae603ce39">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g, <span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb17-3"><a href="#cb17-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -820,21 +825,21 @@ or
 <h2>Be mindful with <code>aes()</code></h2>
 <p>Using <code>aes()</code> when you <strong>don’t</strong> need it</p>
 <p>What is happening here?</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-10_3da0a5997a39dfff20196390c4c188a4">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="st">"blue"</span>)) <span class="sc">+</span> </span>
-<span id="cb17-3"><a href="#cb17-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-12_722ef8e83396f3eaef2aa8f8bf8faf23">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> <span class="st">"blue"</span>)) <span class="sc">+</span> </span>
+<span id="cb18-3"><a href="#cb18-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-10-1.png" width="864" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-12-1.png" width="864" class="r-stretch"></section>
 <section id="be-mindful-with-aes-1" class="slide level2">
 <h2>Be mindful with <code>aes()</code></h2>
 <p><strong>Not</strong> using <code>aes()</code> when you need it</p>
 <p>What is happening here?</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-11_50dfadfff97232fc721c2d4b4790ec11">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb18-2"><a href="#cb18-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> species) <span class="sc">+</span> </span>
-<span id="cb18-3"><a href="#cb18-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-13_745225898af5fae8dd2fa3b73d7d1dab">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> species) <span class="sc">+</span> </span>
+<span id="cb19-3"><a href="#cb19-3"></a>  <span class="fu">geom_smooth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in list2(na.rm = na.rm, ...): object 'species' not found</code></pre>
 </div>
@@ -851,13 +856,13 @@ or
 <section id="lets-talk-themes" class="slide level2">
 <h2>Let’s talk themes</h2>
 <ul>
-<li>The default is <code>theme_gray</code>
+<li>The default is <code>theme_gray()</code>
 <ul>
 <li>I don’t like it</li>
 </ul></li>
 <li>But there are a lot of build-in alternative in <code>{ggplot2}</code>
 <ul>
-<li><code>theme_minimal</code> is my favorite</li>
+<li><code>theme_minimal()</code> is my favorite</li>
 </ul></li>
 <li>Check out the <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/"><code>{ggthemes}</code></a> package for a lot of alternatives
 <ul>
@@ -878,13 +883,10 @@ or
 <ul>
 <li>Set the theme globally
 <ul>
-<li>One of the first lines in your .Rmd file could be:</li>
+<li>One of the first lines in your .qmd file (after you load packages) could be:</li>
 </ul></li>
 </ul>
 <p><code>theme_set(theme_minimal())</code></p>
-<ul>
-<li>I often put this in the <code>setup</code> chunk</li>
-</ul>
 </div>
 </section>
 <section id="get-a-little-fancy" class="slide level2">
@@ -898,55 +900,55 @@ or
 </ul></li>
 </ul>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-2" class="slide level2">
 <h2></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-12_c05ecd14f6fa7d901daa19210e61f86b">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb20-2"><a href="#cb20-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-12-1.png" width="864" class="r-stretch"></section>
-<section id="section-5" class="slide level2">
-<h2></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-13_8638a97e1aad97450de76c322f0e2662">
-<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb21-2"><a href="#cb21-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span> </span>
-<span id="cb21-3"><a href="#cb21-3"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Torgersen"</span>), <span class="at">color =</span> <span class="st">"magenta"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-13-1.png" width="864" class="r-stretch"></section>
-<section id="section-6" class="slide level2">
-<h2></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-14_231f21ba2b7fdb9cac0ca77a3461495f">
-<div class="sourceCode cell-code" id="cb22" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span> </span>
-<span id="cb22-3"><a href="#cb22-3"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Torgersen"</span>), <span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
-<span id="cb22-4"><a href="#cb22-4"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-14_81ebb7c5d087c3f0fe62bb9701abebff">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-14-1.png" width="864" class="r-stretch"></section>
-<section id="section-7" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-15_2ab06ca270057e2d15f16fb089e04d3a">
-<div class="sourceCode cell-code" id="cb23" data-code-line-numbers="|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb23-2"><a href="#cb23-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span> </span>
-<span id="cb23-3"><a href="#cb23-3"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Torgersen"</span>), <span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
-<span id="cb23-4"><a href="#cb23-4"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
-<span id="cb23-5"><a href="#cb23-5"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-15_58b809d775ac141681751a9064594067">
+<div class="sourceCode cell-code" id="cb22" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span> </span>
+<span id="cb22-3"><a href="#cb22-3"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Torgersen"</span>), <span class="at">color =</span> <span class="st">"magenta"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-15-1.png" width="864" class="r-stretch"></section>
-<section id="another-option" class="slide level2">
-<h2>Another option</h2>
-<p><code>{gghighlight}</code> varying flexibility</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-16_2f57dcc59f115fdce78d7b92a58fc3cd">
-<div class="sourceCode cell-code" id="cb24" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
-<span id="cb24-2"><a href="#cb24-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
-<span id="cb24-3"><a href="#cb24-3"></a>  gghighlight<span class="sc">::</span><span class="fu">gghighlight</span>(island <span class="sc">==</span> <span class="st">"Torgersen"</span>) <span class="sc">+</span> </span>
-<span id="cb24-4"><a href="#cb24-4"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-16_3b7346b75c9fe6acf08756e4494c42d0">
+<div class="sourceCode cell-code" id="cb23" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span> </span>
+<span id="cb23-3"><a href="#cb23-3"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Torgersen"</span>), <span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
+<span id="cb23-4"><a href="#cb23-4"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-16-1.png" width="864" class="r-stretch"></section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-17_0d13d92c61b182f261895588abc095b4">
+<div class="sourceCode cell-code" id="cb24" data-code-line-numbers="5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb24-2"><a href="#cb24-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span> </span>
+<span id="cb24-3"><a href="#cb24-3"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> dplyr<span class="sc">::</span><span class="fu">filter</span>(penguins, island <span class="sc">==</span> <span class="st">"Torgersen"</span>), <span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
+<span id="cb24-4"><a href="#cb24-4"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb24-5"><a href="#cb24-5"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-17-1.png" width="864" class="r-stretch"></section>
+<section id="another-option" class="slide level2">
+<h2>Another option</h2>
+<p><code>{gghighlight}</code> varying flexibility</p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-18_e9a19ac71b129b8786bb7ed39af391fb">
+<div class="sourceCode cell-code" id="cb25" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span></span>
+<span id="cb25-2"><a href="#cb25-2"></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"magenta"</span>) <span class="sc">+</span> </span>
+<span id="cb25-3"><a href="#cb25-3"></a>  gghighlight<span class="sc">::</span><span class="fu">gghighlight</span>(island <span class="sc">==</span> <span class="st">"Torgersen"</span>) <span class="sc">+</span> </span>
+<span id="cb25-4"><a href="#cb25-4"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-18-1.png" width="864" class="r-stretch"></section>
 <section id="line-plots" class="slide level2">
 <h2>Line plots</h2>
 <ul>
@@ -968,8 +970,8 @@ or
 <h2><code>geom_line()</code></h2>
 <p>Classic time series example</p>
 <p><code>economics</code> data from <code>{ggplot2}</code></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-17_15515530c08212132a0909776d67aa44">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>economics</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-19_b058da58fc79f05206f618ebe856b873">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>economics</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 574 × 6
    date         pce    pop psavert uempmed unemploy
@@ -992,11 +994,11 @@ or
 <h2>Let’s try it</h2>
 <p>How do you think we’d fit a line plot to these data, showing unemployment (“<em>unemploy</em>”) over time?</p>
 <div class="fragment">
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-18_0d64130164b9c817574317f5ff317c08">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
-<span id="cb29-2"><a href="#cb29-2"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-20_32c85b29de99ef7487882db353fcd3e2">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
+<span id="cb30-2"><a href="#cb30-2"></a>  <span class="fu">geom_line</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-18-1.png" width="768"></p>
+<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-20-1.png" width="768"></p>
 </div>
 </div>
 </div>
@@ -1004,10 +1006,10 @@ or
 <section id="layers" class="slide level2">
 <h2>Layers</h2>
 <p>What happens when we layer geom_line and geom_point?</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-19_31e10920bfee0b1935ef4805b1759dce">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
-<span id="cb30-2"><a href="#cb30-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb30-3"><a href="#cb30-3"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-21_4018acbbf800887a0626c9d39132f4ca">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb31-3"><a href="#cb31-3"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><span style="color:#D55E00;">try it!</span></p>
 <div class="fragment">
@@ -1023,11 +1025,11 @@ or
 <section id="axis-labels" class="slide level2">
 <h2>Axis Labels</h2>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/axes-1_55d5f3b8a80e2e1090ad20e886cafb91">
-<div class="sourceCode cell-code" id="cb31" data-code-line-numbers="|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
-<span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb31-3"><a href="#cb31-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb31-4"><a href="#cb31-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>,</span>
-<span id="cb31-5"><a href="#cb31-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32" data-code-line-numbers="|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
+<span id="cb32-2"><a href="#cb32-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb32-3"><a href="#cb32-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb32-4"><a href="#cb32-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>,</span>
+<span id="cb32-5"><a href="#cb32-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/axes-1_55d5f3b8a80e2e1090ad20e886cafb91">
 <div class="cell-output-display">
@@ -1038,12 +1040,12 @@ or
 <section id="title" class="slide level2">
 <h2>Title</h2>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/axes-2_7bc33ac2f55c83fb2a36d7a5b96ce5e1">
-<div class="sourceCode cell-code" id="cb32" data-code-line-numbers="|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
-<span id="cb32-2"><a href="#cb32-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb32-3"><a href="#cb32-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb32-4"><a href="#cb32-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, </span>
-<span id="cb32-5"><a href="#cb32-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>,</span>
-<span id="cb32-6"><a href="#cb32-6"></a>       <span class="at">title =</span> <span class="st">"Unemployment Over Time"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33" data-code-line-numbers="|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
+<span id="cb33-2"><a href="#cb33-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb33-3"><a href="#cb33-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb33-4"><a href="#cb33-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, </span>
+<span id="cb33-5"><a href="#cb33-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>,</span>
+<span id="cb33-6"><a href="#cb33-6"></a>       <span class="at">title =</span> <span class="st">"Unemployment Over Time"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/axes-2_7bc33ac2f55c83fb2a36d7a5b96ce5e1">
 <div class="cell-output-display">
@@ -1054,13 +1056,13 @@ or
 <section id="subtitle" class="slide level2">
 <h2>Subtitle</h2>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/axes-3_8e69d968b0c42c4e54349bc491c24d7e">
-<div class="sourceCode cell-code" id="cb33" data-code-line-numbers="|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
-<span id="cb33-2"><a href="#cb33-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb33-3"><a href="#cb33-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb33-4"><a href="#cb33-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, </span>
-<span id="cb33-5"><a href="#cb33-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>,</span>
-<span id="cb33-6"><a href="#cb33-6"></a>       <span class="at">title =</span> <span class="st">"Unemployment Over Time"</span>,</span>
-<span id="cb33-7"><a href="#cb33-7"></a>       <span class="at">subtitle =</span> <span class="st">"This is the subtitle"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34" data-code-line-numbers="|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
+<span id="cb34-2"><a href="#cb34-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb34-3"><a href="#cb34-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb34-4"><a href="#cb34-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, </span>
+<span id="cb34-5"><a href="#cb34-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>,</span>
+<span id="cb34-6"><a href="#cb34-6"></a>       <span class="at">title =</span> <span class="st">"Unemployment Over Time"</span>,</span>
+<span id="cb34-7"><a href="#cb34-7"></a>       <span class="at">subtitle =</span> <span class="st">"This is the subtitle"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/axes-3_8e69d968b0c42c4e54349bc491c24d7e">
 <div class="cell-output-display">
@@ -1071,14 +1073,14 @@ or
 <section id="caption" class="slide level2">
 <h2>Caption</h2>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/axes-4_327d4c155bbb6a8e919e361894b6d6f8">
-<div class="sourceCode cell-code" id="cb34" data-code-line-numbers="|8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
-<span id="cb34-2"><a href="#cb34-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb34-3"><a href="#cb34-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb34-4"><a href="#cb34-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, </span>
-<span id="cb34-5"><a href="#cb34-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>,</span>
-<span id="cb34-6"><a href="#cb34-6"></a>       <span class="at">title =</span> <span class="st">"Unemployment Over Time"</span>,</span>
-<span id="cb34-7"><a href="#cb34-7"></a>       <span class="at">subtitle =</span> <span class="st">"This is the subtitle"</span>,</span>
-<span id="cb34-8"><a href="#cb34-8"></a>       <span class="at">caption =</span> <span class="st">"Created by Joe Nese"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35" data-code-line-numbers="|8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
+<span id="cb35-2"><a href="#cb35-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb35-3"><a href="#cb35-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb35-4"><a href="#cb35-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, </span>
+<span id="cb35-5"><a href="#cb35-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>,</span>
+<span id="cb35-6"><a href="#cb35-6"></a>       <span class="at">title =</span> <span class="st">"Unemployment Over Time"</span>,</span>
+<span id="cb35-7"><a href="#cb35-7"></a>       <span class="at">subtitle =</span> <span class="st">"This is the subtitle"</span>,</span>
+<span id="cb35-8"><a href="#cb35-8"></a>       <span class="at">caption =</span> <span class="st">"Created by Joe Nese"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/axes-4_327d4c155bbb6a8e919e361894b6d6f8">
 <div class="cell-output-display">
@@ -1089,15 +1091,15 @@ or
 <section id="tag" class="slide level2">
 <h2>Tag</h2>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/axes-5_e7f15f6d7ad4e951e47858d5e0ef8b47">
-<div class="sourceCode cell-code" id="cb35" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
-<span id="cb35-2"><a href="#cb35-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb35-3"><a href="#cb35-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb35-4"><a href="#cb35-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, </span>
-<span id="cb35-5"><a href="#cb35-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>,</span>
-<span id="cb35-6"><a href="#cb35-6"></a>       <span class="at">title =</span> <span class="st">"Unemployment Over Time"</span>,</span>
-<span id="cb35-7"><a href="#cb35-7"></a>       <span class="at">subtitle =</span> <span class="st">"This is the subtitle"</span>,</span>
-<span id="cb35-8"><a href="#cb35-8"></a>       <span class="at">caption =</span> <span class="st">"Created by Joe Nese"</span>,</span>
-<span id="cb35-9"><a href="#cb35-9"></a>       <span class="at">tag =</span> <span class="st">"(A)"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36" data-code-line-numbers="|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">ggplot</span>(economics, <span class="fu">aes</span>(date, unemploy)) <span class="sc">+</span></span>
+<span id="cb36-2"><a href="#cb36-2"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb36-3"><a href="#cb36-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb36-4"><a href="#cb36-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Date"</span>, </span>
+<span id="cb36-5"><a href="#cb36-5"></a>       <span class="at">y =</span> <span class="st">"Unemployment"</span>,</span>
+<span id="cb36-6"><a href="#cb36-6"></a>       <span class="at">title =</span> <span class="st">"Unemployment Over Time"</span>,</span>
+<span id="cb36-7"><a href="#cb36-7"></a>       <span class="at">subtitle =</span> <span class="st">"This is the subtitle"</span>,</span>
+<span id="cb36-8"><a href="#cb36-8"></a>       <span class="at">caption =</span> <span class="st">"Created by Joe Nese"</span>,</span>
+<span id="cb36-9"><a href="#cb36-9"></a>       <span class="at">tag =</span> <span class="st">"(A)"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/axes-5_e7f15f6d7ad4e951e47858d5e0ef8b47">
 <div class="cell-output-display">
@@ -1107,15 +1109,15 @@ or
 </section>
 <section id="legend-one-way" class="slide level2">
 <h2>Legend (one way)</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/axes-6_e9938c2d95a4d2a985eddfdc5db3dd55">
-<div class="sourceCode cell-code" id="cb36" data-code-line-numbers="|1, 6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g, <span class="at">color =</span> species)) <span class="sc">+</span> <span class="co"># 'color = '</span></span>
-<span id="cb36-2"><a href="#cb36-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb36-3"><a href="#cb36-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb36-4"><a href="#cb36-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Bill Length (mm)"</span>,</span>
-<span id="cb36-5"><a href="#cb36-5"></a>       <span class="at">y =</span> <span class="st">"Body Mass (g)"</span>,</span>
-<span id="cb36-6"><a href="#cb36-6"></a>       <span class="at">color =</span> <span class="st">"Species!"</span>) <span class="co"># 'color = '</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/axes-6_180dcbf466bf9f847a88ee6a717fe807">
+<div class="sourceCode cell-code" id="cb37" data-code-line-numbers="|1,6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g, <span class="at">color =</span> species)) <span class="sc">+</span> <span class="co"># 'color = '</span></span>
+<span id="cb37-2"><a href="#cb37-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb37-3"><a href="#cb37-3"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb37-4"><a href="#cb37-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Bill Length (mm)"</span>,</span>
+<span id="cb37-5"><a href="#cb37-5"></a>       <span class="at">y =</span> <span class="st">"Body Mass (g)"</span>,</span>
+<span id="cb37-6"><a href="#cb37-6"></a>       <span class="at">color =</span> <span class="st">"Species!"</span>) <span class="co"># 'color = '</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/axes-6_e9938c2d95a4d2a985eddfdc5db3dd55">
+<div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/axes-6_180dcbf466bf9f847a88ee6a717fe807">
 <div class="cell-output-display">
 <p><img data-src="w3_ggplot2_files/figure-revealjs/axes-6-1.png" width="864"></p>
 </div>
@@ -1141,10 +1143,10 @@ or
 <section id="faceting-1" class="slide level2">
 <h2>Faceting</h2>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/facet-1_3c9f6e068e497ac76bf42acc2e5f6cde">
-<div class="sourceCode cell-code" id="cb37" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span> </span>
-<span id="cb37-2"><a href="#cb37-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb37-3"><a href="#cb37-3"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
-<span id="cb37-4"><a href="#cb37-4"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span> </span>
+<span id="cb38-2"><a href="#cb38-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb38-3"><a href="#cb38-3"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
+<span id="cb38-4"><a href="#cb38-4"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/facet-1_3c9f6e068e497ac76bf42acc2e5f6cde">
 <div class="cell-output-display">
@@ -1154,11 +1156,11 @@ or
 </section>
 <section id="careful-about-the" class="slide level2">
 <h2>Careful about the <code>~</code></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-20_8525f3101824592b7f888ae3854e3ca1">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span> </span>
-<span id="cb38-2"><a href="#cb38-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb38-3"><a href="#cb38-3"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
-<span id="cb38-4"><a href="#cb38-4"></a>  <span class="fu">facet_wrap</span>(species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-22_2f062f028f54d07b3b001a49f415d10b">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span> </span>
+<span id="cb39-2"><a href="#cb39-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb39-3"><a href="#cb39-3"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
+<span id="cb39-4"><a href="#cb39-4"></a>  <span class="fu">facet_wrap</span>(species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in validate_facets(x): object 'species' not found</code></pre>
 </div>
@@ -1167,35 +1169,35 @@ or
 <section id="faceting-2" class="slide level2">
 <h2>Faceting</h2>
 <p>two variables (like a matrix)</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-21_b548dcde260aa5ad24c30b008651ce35">
-<div class="sourceCode cell-code" id="cb40" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span> </span>
-<span id="cb40-2"><a href="#cb40-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb40-3"><a href="#cb40-3"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
-<span id="cb40-4"><a href="#cb40-4"></a>  <span class="fu">facet_wrap</span>(species <span class="sc">~</span> year) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-21-1.png" width="864" class="r-stretch"></section>
-<section id="alternative-specification---vars" class="slide level2">
-<h2>Alternative specification - <code>vars()</code></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-22_11d02dd442485bc862eeeb4f29699b26">
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-23_3f268a54b2a48c62e271b22bdd7b45bc">
 <div class="sourceCode cell-code" id="cb41" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span> </span>
 <span id="cb41-2"><a href="#cb41-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb41-3"><a href="#cb41-3"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
-<span id="cb41-4"><a href="#cb41-4"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb41-4"><a href="#cb41-4"></a>  <span class="fu">facet_wrap</span>(species <span class="sc">~</span> year) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
 </div>
-<p><br></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-23_806b4616c9a49208a93f1d2efcc2a10a">
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-23-1.png" width="864" class="r-stretch"></section>
+<section id="alternative-specification---vars" class="slide level2">
+<h2>Alternative specification - <code>vars()</code></h2>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-24_6e655d2d3e58a85430cbbad508a791b4">
 <div class="sourceCode cell-code" id="cb42" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span> </span>
 <span id="cb42-2"><a href="#cb42-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb42-3"><a href="#cb42-3"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
-<span id="cb42-4"><a href="#cb42-4"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(species, year))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb42-4"><a href="#cb42-4"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-25_fa82fef2af579b571a6007c37527ca20">
+<div class="sourceCode cell-code" id="cb43" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm, body_mass_g)) <span class="sc">+</span> </span>
+<span id="cb43-2"><a href="#cb43-2"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb43-3"><a href="#cb43-3"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
+<span id="cb43-4"><a href="#cb43-4"></a>  <span class="fu">facet_wrap</span>(<span class="fu">vars</span>(species, year))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
 <section id="heatmaps" class="title-slide slide level1 center">
 <h1>Heatmaps</h1>
 <blockquote>
-<p>A heatmap is a literal way of visualizing a table of numbers, where you substitute the numbers with colored cells. – Nathan Yau</p>
+<p>A heatmap is a literal way of visualizing a table of numbers, where you substitute the numbers with colored cells. <br> - Nathan Yau</p>
 </blockquote>
 <ul>
 <li>Useful for finding highs and lows - and sometimes patterns</li>
@@ -1204,19 +1206,19 @@ or
 </section>
 <section id="example-with-correlations" class="slide level2">
 <h2>Example with correlations</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-24_7ab784c37f6a19e94ad8a93ad2783954">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a>corr <span class="ot">&lt;-</span> <span class="fu">cor</span>(mtcars)</span>
-<span id="cb43-2"><a href="#cb43-2"></a></span>
-<span id="cb43-3"><a href="#cb43-3"></a>pc <span class="ot">&lt;-</span> corr <span class="sc">%&gt;%</span> </span>
-<span id="cb43-4"><a href="#cb43-4"></a>  <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb43-5"><a href="#cb43-5"></a>  <span class="fu">mutate</span>(<span class="at">row =</span> <span class="fu">rownames</span>(.)) <span class="sc">%&gt;%</span> </span>
-<span id="cb43-6"><a href="#cb43-6"></a>  <span class="fu">pivot_longer</span>(</span>
-<span id="cb43-7"><a href="#cb43-7"></a>    <span class="at">cols =</span> <span class="sc">-</span>row,</span>
-<span id="cb43-8"><a href="#cb43-8"></a>    <span class="at">names_to =</span> <span class="st">"col"</span>,</span>
-<span id="cb43-9"><a href="#cb43-9"></a>    <span class="at">values_to =</span> <span class="st">"cor"</span></span>
-<span id="cb43-10"><a href="#cb43-10"></a>  )</span>
-<span id="cb43-11"><a href="#cb43-11"></a></span>
-<span id="cb43-12"><a href="#cb43-12"></a><span class="fu">head</span>(pc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-26_fa3c3fded1585bf2fa54fb7ed26aca66">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a>corr <span class="ot">&lt;-</span> <span class="fu">cor</span>(mtcars)</span>
+<span id="cb44-2"><a href="#cb44-2"></a></span>
+<span id="cb44-3"><a href="#cb44-3"></a>pc <span class="ot">&lt;-</span> corr <span class="sc">%&gt;%</span> </span>
+<span id="cb44-4"><a href="#cb44-4"></a>  <span class="fu">as.data.frame</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb44-5"><a href="#cb44-5"></a>  <span class="fu">mutate</span>(<span class="at">row =</span> <span class="fu">rownames</span>(.)) <span class="sc">%&gt;%</span> </span>
+<span id="cb44-6"><a href="#cb44-6"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb44-7"><a href="#cb44-7"></a>    <span class="at">cols =</span> <span class="sc">-</span>row,</span>
+<span id="cb44-8"><a href="#cb44-8"></a>    <span class="at">names_to =</span> <span class="st">"col"</span>,</span>
+<span id="cb44-9"><a href="#cb44-9"></a>    <span class="at">values_to =</span> <span class="st">"cor"</span></span>
+<span id="cb44-10"><a href="#cb44-10"></a>  )</span>
+<span id="cb44-11"><a href="#cb44-11"></a></span>
+<span id="cb44-12"><a href="#cb44-12"></a><span class="fu">head</span>(pc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 3
   row   col      cor
@@ -1232,21 +1234,21 @@ or
 </section>
 <section id="heatmap" class="slide level2">
 <h2>Heatmap</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-25_e9f3590e0fa924f537d058e1d0f5ec04">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">ggplot</span>(pc, <span class="fu">aes</span>(row, col, <span class="at">fill =</span> cor)) <span class="sc">+</span></span>
-<span id="cb45-2"><a href="#cb45-2"></a>  <span class="fu">geom_tile</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-27_14b6c2b78de16d71762f365f8fb263e2">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a><span class="fu">ggplot</span>(pc, <span class="fu">aes</span>(row, col, <span class="at">fill =</span> cor)) <span class="sc">+</span></span>
+<span id="cb46-2"><a href="#cb46-2"></a>  <span class="fu">geom_tile</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-25-1.png" width="864" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-27-1.png" width="864" class="r-stretch"></section>
 <section id="viridis" class="slide level2">
 <h2>Viridis</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-26_df10ef63c17d01f8ba9a35898716832d">
-<div class="sourceCode cell-code" id="cb46" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a><span class="fu">ggplot</span>(pc, <span class="fu">aes</span>(row, col, <span class="at">fill =</span> cor)) <span class="sc">+</span></span>
-<span id="cb46-2"><a href="#cb46-2"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
-<span id="cb46-3"><a href="#cb46-3"></a>  <span class="fu">scale_fill_viridis_c</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-28_21d7963216137222f3cde3846fb09402">
+<div class="sourceCode cell-code" id="cb47" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="fu">ggplot</span>(pc, <span class="fu">aes</span>(row, col, <span class="at">fill =</span> cor)) <span class="sc">+</span></span>
+<span id="cb47-2"><a href="#cb47-2"></a>  <span class="fu">geom_tile</span>() <span class="sc">+</span></span>
+<span id="cb47-3"><a href="#cb47-3"></a>  <span class="fu">scale_fill_viridis_c</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-26-1.png" width="864" class="r-stretch"></section></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-28-1.png" width="864" class="r-stretch"></section></section>
 <section>
 <section id="categorical-data" class="title-slide slide level1 center">
 <h1>Categorical Data</h1>
@@ -1256,14 +1258,16 @@ or
 <h2>Data</h2>
 <p><code>{fivethirtyeight}</code> package</p>
 <p>dataset is <code>college_grad_students</code></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-27_462811ac306aab81d9963b6f56d89ed3">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">16</span>))</span>
-<span id="cb47-2"><a href="#cb47-2"></a></span>
-<span id="cb47-3"><a href="#cb47-3"></a><span class="co">#install.packages("fivethirtyeight")</span></span>
-<span id="cb47-4"><a href="#cb47-4"></a><span class="fu">library</span>(fivethirtyeight)</span>
-<span id="cb47-5"><a href="#cb47-5"></a><span class="co"># View(college_grad_students)</span></span>
-<span id="cb47-6"><a href="#cb47-6"></a>grad <span class="ot">&lt;-</span> college_grad_students <span class="co"># simpler reference</span></span>
-<span id="cb47-7"><a href="#cb47-7"></a>grad</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-29_31ff27b2b18e51e156c8f0035ab037c3">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">16</span>))</span>
+<span id="cb48-2"><a href="#cb48-2"></a></span>
+<span id="cb48-3"><a href="#cb48-3"></a><span class="co">#install.packages("fivethirtyeight")</span></span>
+<span id="cb48-4"><a href="#cb48-4"></a><span class="fu">library</span>(fivethirtyeight)</span>
+<span id="cb48-5"><a href="#cb48-5"></a><span class="co"># View(college_grad_students)</span></span>
+<span id="cb48-6"><a href="#cb48-6"></a>grad <span class="ot">&lt;-</span> college_grad_students <span class="co"># simpler reference</span></span>
+<span id="cb48-7"><a href="#cb48-7"></a>grad</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-29_31ff27b2b18e51e156c8f0035ab037c3">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 173 × 22
    major_code major     major_category grad_total grad_sample_size grad_employed
@@ -1291,21 +1295,21 @@ or
 <section id="histogram" class="slide level2">
 <h2>Histogram</h2>
 <p>Histogram of “grad_total”</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-28_0e05d63b637a3134b09cd5ed48b80a28">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb49-2"><a href="#cb49-2"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-30_c3c40dfe6d312727b35a62d7a61e4e25">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb50-2"><a href="#cb50-2"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-28-1.png" width="768" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-30-1.png" width="768" class="r-stretch"></section>
 <section id="transparency---alpha" class="slide level2">
 <h2>Transparency - <code>alpha</code></h2>
 <p>Add some transparency – perhaps this looks nicer</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-29_d95a439cb3a3c5ceef577e5eef809f2e">
-<div class="sourceCode cell-code" id="cb50" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb50-2"><a href="#cb50-2"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-31_59c96b8c054c2dbe310f6efbee98a91d">
+<div class="sourceCode cell-code" id="cb51" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb51-2"><a href="#cb51-2"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-29-1.png" width="768" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-31-1.png" width="768" class="r-stretch"></section>
 <section id="color-vs.-fill" class="slide level2">
 <h2><code>color</code> vs.&nbsp;<code>fill</code></h2>
 <p><strong>In general</strong></p>
@@ -1313,36 +1317,39 @@ or
 <li><code>color</code> defines the color a geom is <em>outlined</em></li>
 <li><code>fill</code> defines the color a geom is <em>filled</em></li>
 </ul>
+</section>
+<section id="color-vs.-fill-1" class="slide level2">
+<h2><code>color</code> vs.&nbsp;<code>fill</code></h2>
 <p>For example:</p>
 <ul>
 <li><code>geom_point()</code> default has only has a color and <strong>NO</strong> fill because they’re just points</li>
 <li>Point shapes 21–24 include both a color and a fill</li>
 </ul>
 
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-30-1.png" width="768" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-32-1.png" width="864" class="r-stretch"></section>
 <section id="how-would-we-change-the-color-of-this-plot" class="slide level2">
 <h2>How would we change the color of this plot?</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-31_5fe80f47db384a69d8abb6640a8955d3">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb51-2"><a href="#cb51-2"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-33_97394a3a133228b733fc7e2262ff6180">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb52-2"><a href="#cb52-2"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="how-would-we-change-the-color-of-this-plot-1" class="slide level2">
 <h2>How would we change the color of this plot?</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-32_d1d089749168b5a783a1722a8a09155d">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb52-2"><a href="#cb52-2"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">color =</span> <span class="st">"magenta"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-34_9eb8c339bb2f57a222868beb64f7d1eb">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb53-2"><a href="#cb53-2"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">color =</span> <span class="st">"magenta"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-32-1.png" width="768" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-34-1.png" width="768" class="r-stretch"></section>
 <section id="how-would-we-change-the-color-fill-of-this-plot" class="slide level2">
 <h2>How would we change the <del>color</del> fill of this plot?</h2>
 <div class="fragment">
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-33_345d6d3db43ac01dcb3708a5ed85d3f5">
-<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb53-2"><a href="#cb53-2"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">fill =</span> <span class="st">"magenta"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-35_90cdd4b53ea2557301ee8edcd89fc7a1">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb54-2"><a href="#cb54-2"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">fill =</span> <span class="st">"magenta"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-33-1.png" width="768"></p>
+<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-35-1.png" width="768"></p>
 </div>
 </div>
 </div>
@@ -1350,12 +1357,12 @@ or
 <section id="color-by-variable" class="slide level2">
 <h2>Color by variable</h2>
 <p>What if we wanted different colors by a variable – <em>major_category</em></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-34_e2b15cd682f2af66b553e85d346da76a">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb54-2"><a href="#cb54-2"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">fill =</span> major_category), <span class="at">alpha =</span> <span class="fl">0.7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-36_ca3c16ae9d8043d289ff4caf10513da4">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb55-2"><a href="#cb55-2"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">fill =</span> major_category), <span class="at">alpha =</span> <span class="fl">0.7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-34-1.png" width="768" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-36-1.png" width="768" class="r-stretch"></section>
 <section id="density-plot" class="slide level2">
 <h2>Density plot</h2>
 <p>Alternative representation of distribution</p>
@@ -1367,102 +1374,104 @@ or
 <section id="density-plot-1" class="slide level2">
 <h2>Density plot</h2>
 <p><code>geom_density()</code></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-35_74f486208e9519c2bdfa661723cfc234">
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb55-2"><a href="#cb55-2"></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-37_3b3e196ed3bd13c5419457d2836fd313">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb56-2"><a href="#cb56-2"></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-35-1.png" width="768" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-37-1.png" width="768" class="r-stretch"></section>
 <section id="density-plot-2" class="slide level2">
 <h2>Density plot</h2>
 <p>Now let’s fill by <em>major_category</em></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-36_332c4a284302ddbd8c389d629c9fbddd">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb56-2"><a href="#cb56-2"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">fill =</span> major_category), <span class="at">alpha =</span> <span class="fl">0.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-38_27204ce5107a5aa7aab7e34b4ea55a03">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb57-2"><a href="#cb57-2"></a>  <span class="fu">geom_density</span>(<span class="fu">aes</span>(<span class="at">fill =</span> major_category), <span class="at">alpha =</span> <span class="fl">0.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-36-1.png" width="768" class="r-stretch"><div class="fragment">
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-38-1.png" width="768" class="r-stretch"><div class="fragment">
 <p>Not a good plot, just an example</p>
 </div>
 </section>
 <section id="possible-alternative-facet_wrap" class="slide level2">
 <h2>Possible alternative? <code>facet_wrap</code></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-37_090638c4218bab1366ea8d0e9944c9da">
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
-<span id="cb57-2"><a href="#cb57-2"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="cb57-3"><a href="#cb57-3"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>major_category) <span class="co">#&lt;&lt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-39_22f5faaf28a5cfeaf5dc9feb37f853ef">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total)) <span class="sc">+</span></span>
+<span id="cb58-2"><a href="#cb58-2"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb58-3"><a href="#cb58-3"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>major_category) <span class="co">#&lt;&lt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-37-1.png" width="960" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-39-1.png" width="960" class="r-stretch"></section>
 <section id="even-better" class="slide level2">
 <h2>Even better</h2>
 <p>density ridges <code>{ggridges}</code></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-38_c5d861eb98cddb6f7bd0ae8cc04608f9">
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a><span class="fu">library</span>(ggridges)</span>
-<span id="cb58-2"><a href="#cb58-2"></a></span>
-<span id="cb58-3"><a href="#cb58-3"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total, <span class="at">y =</span> major_category)) <span class="sc">+</span></span>
-<span id="cb58-4"><a href="#cb58-4"></a>  <span class="fu">geom_density_ridges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-40_b2acfbeb70f84c7014ad5c21edb8a28b">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a><span class="fu">library</span>(ggridges)</span>
+<span id="cb59-2"><a href="#cb59-2"></a></span>
+<span id="cb59-3"><a href="#cb59-3"></a><span class="fu">ggplot</span>(grad, <span class="fu">aes</span>(<span class="at">x =</span> grad_total, <span class="at">y =</span> major_category)) <span class="sc">+</span></span>
+<span id="cb59-4"><a href="#cb59-4"></a>  <span class="fu">geom_density_ridges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-38-1.png" width="768" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-40-1.png" width="768" class="r-stretch"></section>
 <section id="density-ridges" class="slide level2">
 <h2>Density Ridges</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-39_f122c4c0264346d85913b67231a9aea2">
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
-<span id="cb59-2"><a href="#cb59-2"></a>  <span class="fu">geom_density_ridges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-39-1.png" width="864" class="r-stretch"></section>
-<section id="fill" class="slide level2">
-<h2><code>fill</code></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-40_10baa5b9e6c49b4c9013b3e7c0ab60dd">
-<div class="sourceCode cell-code" id="cb60" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
-<span id="cb60-2"><a href="#cb60-2"></a>  <span class="fu">geom_density_ridges</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(year)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-40-1.png" width="864" class="r-stretch"></section>
-<section id="add-transparency-for-clarity" class="slide level2">
-<h2>Add transparency for clarity</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-41_d5d6205abc821c0ae89347fbd6a47900">
-<div class="sourceCode cell-code" id="cb61" data-code-line-numbers="|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
-<span id="cb61-2"><a href="#cb61-2"></a>  <span class="fu">geom_density_ridges</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(year)), <span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-41_22285e860301791bae93966386a2ebd8">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
+<span id="cb60-2"><a href="#cb60-2"></a>  <span class="fu">geom_density_ridges</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-41-1.png" width="864" class="r-stretch"></section>
+<section id="fill" class="slide level2">
+<h2><code>fill</code></h2>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-42_068fd10a35cc37925324f195fc0787a2">
+<div class="sourceCode cell-code" id="cb61" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
+<span id="cb61-2"><a href="#cb61-2"></a>  <span class="fu">geom_density_ridges</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(year)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-42-1.png" width="864" class="r-stretch"></section>
+<section id="add-transparency-for-clarity" class="slide level2">
+<h2>Add transparency for clarity</h2>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-43_1b725f995adb848afd7145bcb625bd66">
+<div class="sourceCode cell-code" id="cb62" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
+<span id="cb62-2"><a href="#cb62-2"></a>  <span class="fu">geom_density_ridges</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(year)), <span class="at">alpha =</span> <span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-43-1.png" width="864" class="r-stretch"></section>
 <section id="viridis-1" class="slide level2">
 <h2>Viridis</h2>
 <ul>
 <li>easier to read by those with colorblindness</li>
 <li>prints well in gray scale</li>
 </ul>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-42_45c5a84d27411bf0a0074ebc7ec1b2b3">
-<div class="sourceCode cell-code" id="cb62" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
-<span id="cb62-2"><a href="#cb62-2"></a>  <span class="fu">geom_density_ridges</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(year)), <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
-<span id="cb62-3"><a href="#cb62-3"></a>  <span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-44_ff620541f35440622973efa37afeac7e">
+<div class="sourceCode cell-code" id="cb63" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
+<span id="cb63-2"><a href="#cb63-2"></a>  <span class="fu">geom_density_ridges</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(year)), <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb63-3"><a href="#cb63-3"></a>  <span class="fu">scale_fill_viridis_d</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-42-1.png" width="864" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-44-1.png" width="864" class="r-stretch"></section>
 <section id="same-fill-function-different-option" class="slide level2">
 <h2>Same fill function, different “<code>option</code>”</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-43_80d4bdaeef5d12c41d15edc2b4573e65">
-<div class="sourceCode cell-code" id="cb63" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
-<span id="cb63-2"><a href="#cb63-2"></a>  <span class="fu">geom_density_ridges</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(year)), <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
-<span id="cb63-3"><a href="#cb63-3"></a>  <span class="fu">scale_fill_viridis_d</span>(<span class="at">option =</span> <span class="st">"plasma"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-45_77023565427503d3081cd929990fac63">
+<div class="sourceCode cell-code" id="cb64" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(bill_length_mm , species)) <span class="sc">+</span></span>
+<span id="cb64-2"><a href="#cb64-2"></a>  <span class="fu">geom_density_ridges</span>(<span class="fu">aes</span>(<span class="at">fill =</span> <span class="fu">factor</span>(year)), <span class="at">alpha =</span> <span class="fl">0.7</span>) <span class="sc">+</span></span>
+<span id="cb64-3"><a href="#cb64-3"></a>  <span class="fu">scale_fill_viridis_d</span>(<span class="at">option =</span> <span class="st">"plasma"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-43-1.png" width="768" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-45-1.png" width="768" class="r-stretch"></section>
 <section id="candy-rankings-fivethirtyeight" class="slide level2">
 <h2>Candy rankings <code>{fivethirtyeight}</code></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-44_c0a8a10524e3120b1323886345bbba54">
-<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1"></a>candy <span class="ot">&lt;-</span> candy_rankings <span class="sc">%&gt;%</span> </span>
-<span id="cb64-2"><a href="#cb64-2"></a>  <span class="fu">pivot_longer</span>(</span>
-<span id="cb64-3"><a href="#cb64-3"></a>    <span class="at">cols =</span> chocolate<span class="sc">:</span>pluribus,</span>
-<span id="cb64-4"><a href="#cb64-4"></a>    <span class="at">names_to =</span> <span class="st">"type"</span>,</span>
-<span id="cb64-5"><a href="#cb64-5"></a>    <span class="at">values_to =</span> <span class="st">"foo"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb64-6"><a href="#cb64-6"></a>  <span class="fu">filter</span>(foo) <span class="sc">%&gt;%</span> </span>
-<span id="cb64-7"><a href="#cb64-7"></a>  <span class="fu">select</span>(<span class="sc">-</span>foo)</span>
-<span id="cb64-8"><a href="#cb64-8"></a></span>
-<span id="cb64-9"><a href="#cb64-9"></a>candy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-46_dd9ef9ca9073b273bccb8d2a7eb647d7">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1"></a>candy <span class="ot">&lt;-</span> candy_rankings <span class="sc">%&gt;%</span> </span>
+<span id="cb65-2"><a href="#cb65-2"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb65-3"><a href="#cb65-3"></a>    <span class="at">cols =</span> chocolate<span class="sc">:</span>pluribus,</span>
+<span id="cb65-4"><a href="#cb65-4"></a>    <span class="at">names_to =</span> <span class="st">"type"</span>,</span>
+<span id="cb65-5"><a href="#cb65-5"></a>    <span class="at">values_to =</span> <span class="st">"foo"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb65-6"><a href="#cb65-6"></a>  <span class="fu">filter</span>(foo) <span class="sc">%&gt;%</span> </span>
+<span id="cb65-7"><a href="#cb65-7"></a>  <span class="fu">select</span>(<span class="sc">-</span>foo)</span>
+<span id="cb65-8"><a href="#cb65-8"></a></span>
+<span id="cb65-9"><a href="#cb65-9"></a>candy</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-46_dd9ef9ca9073b273bccb8d2a7eb647d7">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 197 × 5
    competitorname sugarpercent pricepercent winpercent type            
@@ -1483,24 +1492,24 @@ or
 </section>
 <section id="boxplot" class="slide level2">
 <h2>Boxplot</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-45_05842581dc8f4de64bd49f58d6454230">
-<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1"></a><span class="fu">ggplot</span>(candy, <span class="fu">aes</span>(type, sugarpercent)) <span class="sc">+</span></span>
-<span id="cb66-2"><a href="#cb66-2"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-47_1c6710839ecf97a48d3ee84a86af963b">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1"></a><span class="fu">ggplot</span>(candy, <span class="fu">aes</span>(type, sugarpercent)) <span class="sc">+</span></span>
+<span id="cb67-2"><a href="#cb67-2"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-45-1.png" width="864" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-47-1.png" width="864" class="r-stretch"></section>
 <section id="violin-plots" class="slide level2">
 <h2>Violin plots</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-46_890585e619443d2ad90975a13235e3e0">
-<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1"></a><span class="fu">ggplot</span>(candy, <span class="fu">aes</span>(type, sugarpercent)) <span class="sc">+</span></span>
-<span id="cb67-2"><a href="#cb67-2"></a>  <span class="fu">geom_violin</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-48_4f63a416031ab1dd31ba6a97d0e3a0de">
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1"></a><span class="fu">ggplot</span>(candy, <span class="fu">aes</span>(type, sugarpercent)) <span class="sc">+</span></span>
+<span id="cb68-2"><a href="#cb68-2"></a>  <span class="fu">geom_violin</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-46-1.png" width="864" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-48-1.png" width="864" class="r-stretch"></section>
 <section id="bar-charts" class="slide level2">
 <h2>Bar Charts</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-47_e15920d13c2b3d7c683453605d714d37">
-<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1"></a><span class="fu">head</span>(mpg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-49_f47fe77f7fce9e3a64d3fc0ad452128c">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1"></a><span class="fu">head</span>(mpg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 11
   manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class 
@@ -1541,20 +1550,20 @@ or
 <section id="geom_bar" class="slide level2">
 <h2><code>geom_bar()</code></h2>
 <p><em>mpg</em> data</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-48_ff544b4f52b66488191d102c6691a047">
-<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> <span class="co"># one variable in the `aes()`</span></span>
-<span id="cb70-2"><a href="#cb70-2"></a>  <span class="fu">geom_bar</span>() <span class="co"># counts the rows per class</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-50_737a4220386a0916645d4e29a6e47d0a">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> <span class="co"># one variable in the `aes()`</span></span>
+<span id="cb71-2"><a href="#cb71-2"></a>  <span class="fu">geom_bar</span>() <span class="co"># counts the rows per class</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-48-1.png" width="960" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-50-1.png" width="960" class="r-stretch"></section>
 <section id="summarized_mpg-data" class="slide level2">
 <h2><em>summarized_mpg</em> data</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-49_f6a491b7eecbc665d357da1d3aaeb4bb">
-<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1"></a>summarized_mpg <span class="ot">&lt;-</span> mpg <span class="sc">%&gt;%</span> </span>
-<span id="cb71-2"><a href="#cb71-2"></a>  <span class="fu">group_by</span>(class) <span class="sc">%&gt;%</span> </span>
-<span id="cb71-3"><a href="#cb71-3"></a>  <span class="fu">count</span>()</span>
-<span id="cb71-4"><a href="#cb71-4"></a></span>
-<span id="cb71-5"><a href="#cb71-5"></a><span class="fu">head</span>(summarized_mpg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-51_de12435c4d9636ee09dbd5d7a9e17f41">
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1"></a>summarized_mpg <span class="ot">&lt;-</span> mpg <span class="sc">%&gt;%</span> </span>
+<span id="cb72-2"><a href="#cb72-2"></a>  <span class="fu">group_by</span>(class) <span class="sc">%&gt;%</span> </span>
+<span id="cb72-3"><a href="#cb72-3"></a>  <span class="fu">count</span>()</span>
+<span id="cb72-4"><a href="#cb72-4"></a></span>
+<span id="cb72-5"><a href="#cb72-5"></a><span class="fu">head</span>(summarized_mpg)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 2
 # Groups:   class [6]
@@ -1572,53 +1581,29 @@ or
 <section id="geom_col" class="slide level2">
 <h2><code>geom_col()</code></h2>
 <p><em>summarized_mpg</em> data</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-50_be7301980cd39f0d127c5486425b78bd">
-<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class, n)) <span class="sc">+</span> <span class="co"># two variables in the `aes()`</span></span>
-<span id="cb73-2"><a href="#cb73-2"></a>  <span class="fu">geom_col</span>() <span class="co"># data has the rows per class in "n"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-52_8f1bbe51c23ddeef11c173f8eac15401">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class, n)) <span class="sc">+</span> <span class="co"># two variables in the `aes()`</span></span>
+<span id="cb74-2"><a href="#cb74-2"></a>  <span class="fu">geom_col</span>() <span class="co"># data has the rows per class in "n"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-50-1.png" width="960" class="r-stretch"></section>
-<section id="section-8" class="slide level2">
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-52-1.png" width="960" class="r-stretch"></section>
+<section id="section-6" class="slide level2">
 <h2></h2>
 <div class="columns">
-<div class="column" style="width:35%;">
-<p><code>geom_bar()</code> default</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-51_81e74618f7bb48a858f96a47d88c207c">
-<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
-<span id="cb74-2"><a href="#cb74-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-51-1.png" width="864"></p>
-</div>
-</div>
-</div><div class="column fragment" style="width:65%;">
-<p><code>geom_bar(stat = "identity")</code></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-52_1f9eda30e03f833fb4ab8c97c12dfc6f">
-<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class, n)) <span class="sc">+</span> </span>
-<span id="cb75-2"><a href="#cb75-2"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-52-1.png" width="864"></p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="section-9" class="slide level2">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:40%;">
 <p><code>geom_bar()</code> default</p>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-53_ee1b5b35e9be1d67af3d67bb8560ff1b">
-<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
-<span id="cb76-2"><a href="#cb76-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
+<span id="cb75-2"><a href="#cb75-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-53-1.png" width="864"></p>
 </div>
 </div>
-</div><div class="column fragment" style="width:50%;">
-<p><code>geom_col()</code> default</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-54_400ce988a0252dfb4e7da4943e119adc">
-<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class, n)) <span class="sc">+</span> </span>
-<span id="cb77-2"><a href="#cb77-2"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:60%;">
+<p><code>geom_bar(stat = "identity")</code></p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-54_34ac4a61bd95c1010c81072a618e4214">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class, n)) <span class="sc">+</span> </span>
+<span id="cb76-2"><a href="#cb76-2"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-54-1.png" width="864"></p>
 </div>
@@ -1626,25 +1611,49 @@ or
 </div>
 </div>
 </section>
-<section id="section-10" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
 <div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:40%;">
 <p><code>geom_bar()</code> default</p>
 <div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-55_0f924623b4c15f498c6c96d2005870f4">
-<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
-<span id="cb78-2"><a href="#cb78-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
+<span id="cb77-2"><a href="#cb77-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-55-1.png" width="864"></p>
 </div>
 </div>
-</div><div class="column fragment" style="width:50%;">
-<p><code>geom_bar()</code> uh-oh</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-56_41fa5e1aa14dc65e3c18fc123810370e">
-<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
-<span id="cb79-2"><a href="#cb79-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:60%;">
+<p><code>geom_col()</code> default</p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-56_d0853b203054cd25aa9718a2f88419ef">
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class, n)) <span class="sc">+</span> </span>
+<span id="cb78-2"><a href="#cb78-2"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-56-1.png" width="864"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><code>geom_bar()</code> default</p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-57_eee56c252fb2dca43e1eacd81430abe8">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1"></a><span class="fu">ggplot</span>(mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
+<span id="cb79-2"><a href="#cb79-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-57-1.png" width="864"></p>
+</div>
+</div>
+</div><div class="column fragment" style="width:60%;">
+<p><code>geom_bar()</code> uh-oh</p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-58_b36e783968541227503c423e1ac3dce3">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
+<span id="cb80-2"><a href="#cb80-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-58-1.png" width="864"></p>
 </div>
 </div>
 </div>
@@ -1655,8 +1664,8 @@ or
 <p>Let’s look at our data again</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-57_fe5227cab579b243e50d3af959696279">
-<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1"></a>summarized_mpg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-59_e3d3f0a93ca0cdc5939036ad36ca64dc">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1"></a>summarized_mpg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 7 × 2
 # Groups:   class [7]
@@ -1672,11 +1681,11 @@ or
 </div>
 </div>
 </div><div class="column fragment" style="width:50%;">
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-58_b36e783968541227503c423e1ac3dce3">
-<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
-<span id="cb82-2"><a href="#cb82-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-60_72bc010326767fa76ca85c1553c617f1">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1"></a><span class="fu">ggplot</span>(summarized_mpg, <span class="fu">aes</span>(class)) <span class="sc">+</span> </span>
+<span id="cb83-2"><a href="#cb83-2"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-58-1.png" width="864"></p>
+<p><img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-60-1.png" width="864"></p>
 </div>
 </div>
 </div>
@@ -1689,10 +1698,10 @@ or
 <li>Basically - define <em>x</em>-axis variable as a <code>factor</code> with levels in the order you want</li>
 </ul>
 <div class="fragment">
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-59_cbeb832edf39759156f4caae19191cf1">
-<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1"></a>(mean_hmiles <span class="ot">&lt;-</span> mpg <span class="sc">%&gt;%</span> </span>
-<span id="cb83-2"><a href="#cb83-2"></a>  <span class="fu">group_by</span>(class) <span class="sc">%&gt;%</span> </span>
-<span id="cb83-3"><a href="#cb83-3"></a>  <span class="fu">summarize</span>(<span class="at">mean_hwy =</span> <span class="fu">mean</span>(hwy)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-61_1b6313b6da176e6df454a8b9ef118014">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1"></a>(mean_hmiles <span class="ot">&lt;-</span> mpg <span class="sc">%&gt;%</span> </span>
+<span id="cb84-2"><a href="#cb84-2"></a>  <span class="fu">group_by</span>(class) <span class="sc">%&gt;%</span> </span>
+<span id="cb84-3"><a href="#cb84-3"></a>  <span class="fu">summarize</span>(<span class="at">mean_hwy =</span> <span class="fu">mean</span>(hwy)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 7 × 2
   class      mean_hwy
@@ -1708,45 +1717,46 @@ or
 </div>
 </div>
 </section>
-<section id="section-11" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-60_513d5c44b0af661ce90c3b3354977729">
-<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1"></a>mean_hmiles <span class="sc">%&gt;%</span></span>
-<span id="cb85-2"><a href="#cb85-2"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(class, mean_hwy)) <span class="sc">+</span> </span>
-<span id="cb85-3"><a href="#cb85-3"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-60-1.png" width="864" class="r-stretch"></section>
-<section id="section-12" class="slide level2">
-<h2></h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-61_605ad7bd33bf2597fdc144fc0f0133c7">
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-62_6a78e0b55f5d7110f1302c8b2fa5a06b">
 <div class="sourceCode cell-code" id="cb86"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1"></a>mean_hmiles <span class="sc">%&gt;%</span></span>
-<span id="cb86-2"><a href="#cb86-2"></a>  <span class="fu">mutate</span>(<span class="at">class =</span> <span class="fu">factor</span>(class,</span>
-<span id="cb86-3"><a href="#cb86-3"></a>                        <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"pickup"</span>,</span>
-<span id="cb86-4"><a href="#cb86-4"></a>                                   <span class="st">"suv"</span>,</span>
-<span id="cb86-5"><a href="#cb86-5"></a>                                   <span class="st">"minivan"</span>,</span>
-<span id="cb86-6"><a href="#cb86-6"></a>                                   <span class="st">"2seater"</span>,</span>
-<span id="cb86-7"><a href="#cb86-7"></a>                                   <span class="st">"midsize"</span>,</span>
-<span id="cb86-8"><a href="#cb86-8"></a>                                   <span class="st">"subcompact"</span>,</span>
-<span id="cb86-9"><a href="#cb86-9"></a>                                   <span class="st">"compact"</span>))) <span class="sc">%&gt;%</span></span>
-<span id="cb86-10"><a href="#cb86-10"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(class, mean_hwy)) <span class="sc">+</span> </span>
-<span id="cb86-11"><a href="#cb86-11"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb86-2"><a href="#cb86-2"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(class, mean_hwy)) <span class="sc">+</span> </span>
+<span id="cb86-3"><a href="#cb86-3"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-61-1.png" width="864" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-62-1.png" width="864" class="r-stretch"></section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-63_5b2b2884a086a13aa9291c012e379ca0">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1"></a>mean_hmiles <span class="sc">%&gt;%</span></span>
+<span id="cb87-2"><a href="#cb87-2"></a>  <span class="fu">mutate</span>(<span class="at">class =</span> <span class="fu">factor</span>(class,</span>
+<span id="cb87-3"><a href="#cb87-3"></a>                        <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"pickup"</span>,</span>
+<span id="cb87-4"><a href="#cb87-4"></a>                                   <span class="st">"suv"</span>,</span>
+<span id="cb87-5"><a href="#cb87-5"></a>                                   <span class="st">"minivan"</span>,</span>
+<span id="cb87-6"><a href="#cb87-6"></a>                                   <span class="st">"2seater"</span>,</span>
+<span id="cb87-7"><a href="#cb87-7"></a>                                   <span class="st">"midsize"</span>,</span>
+<span id="cb87-8"><a href="#cb87-8"></a>                                   <span class="st">"subcompact"</span>,</span>
+<span id="cb87-9"><a href="#cb87-9"></a>                                   <span class="st">"compact"</span>))) <span class="sc">%&gt;%</span></span>
+<span id="cb87-10"><a href="#cb87-10"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(class, mean_hwy)) <span class="sc">+</span> </span>
+<span id="cb87-11"><a href="#cb87-11"></a>  <span class="fu">geom_col</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-63-1.png" width="864" class="r-stretch"></section>
 <section id="more-bar-plot-options" class="slide level2 smaller">
 <h2>More bar plot options</h2>
-<p>Data</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-62_49f2e68947824fa46a7ca9c3ead652eb">
-<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1"></a>eclsk <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb87-2"><a href="#cb87-2"></a>  rio<span class="sc">::</span><span class="fu">characterize</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb87-3"><a href="#cb87-3"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>()</span>
-<span id="cb87-4"><a href="#cb87-4"></a></span>
-<span id="cb87-5"><a href="#cb87-5"></a>ecls_smry <span class="ot">&lt;-</span> eclsk <span class="sc">%&gt;%</span></span>
-<span id="cb87-6"><a href="#cb87-6"></a>    <span class="fu">group_by</span>(k_type, ethnic) <span class="sc">%&gt;%</span></span>
-<span id="cb87-7"><a href="#cb87-7"></a>    <span class="fu">summarize</span>(<span class="at">t1r_mean =</span> <span class="fu">mean</span>(t1rscale))</span>
-<span id="cb87-8"><a href="#cb87-8"></a></span>
-<span id="cb87-9"><a href="#cb87-9"></a>ecls_smry</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-64_130672ba046541c5dc100751a9a9e84a">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1"></a>eclsk <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb88-2"><a href="#cb88-2"></a>  rio<span class="sc">::</span><span class="fu">characterize</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb88-3"><a href="#cb88-3"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>()</span>
+<span id="cb88-4"><a href="#cb88-4"></a></span>
+<span id="cb88-5"><a href="#cb88-5"></a>ecls_smry <span class="ot">&lt;-</span> eclsk <span class="sc">%&gt;%</span></span>
+<span id="cb88-6"><a href="#cb88-6"></a>    <span class="fu">group_by</span>(k_type, ethnic) <span class="sc">%&gt;%</span></span>
+<span id="cb88-7"><a href="#cb88-7"></a>    <span class="fu">summarize</span>(<span class="at">t1r_mean =</span> <span class="fu">mean</span>(t1rscale))</span>
+<span id="cb88-8"><a href="#cb88-8"></a></span>
+<span id="cb88-9"><a href="#cb88-9"></a>ecls_smry</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-64_130672ba046541c5dc100751a9a9e84a">
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 16 × 3
 # Groups:   k_type [2]
@@ -1774,63 +1784,62 @@ or
 <section id="stacked-bar-plot" class="slide level2">
 <h2>Stacked bar plot</h2>
 <p>Look for effects in “ethnicity” by “k_type” (full/half day K)</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-63_3d50131b1a63ad191f8687535bc7d52a">
-<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(ethnic, t1r_mean)) <span class="sc">+</span></span>
-<span id="cb89-2"><a href="#cb89-2"></a>    <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> k_type))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-63-1.png" width="960" class="r-stretch"></section>
-<section id="grouped-bar-plot" class="slide level2">
-<h2>Grouped bar plot</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-64_9171083317c5cdf90d0d40a14bded7c3">
-<div class="sourceCode cell-code" id="cb90" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(ethnic, t1r_mean)) <span class="sc">+</span></span>
-<span id="cb90-2"><a href="#cb90-2"></a>    <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> k_type),</span>
-<span id="cb90-3"><a href="#cb90-3"></a>             <span class="at">position =</span> <span class="st">"dodge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-</div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-64-1.png" width="960" class="r-stretch"></section>
-<section id="rotating-labels" class="slide level2">
-<h2>Rotating Labels</h2>
-<p>I have to look <a href="https://stackoverflow.com/questions/1330989/rotating-and-spacing-axis-labels-in-ggplot2">this</a> up <em>every</em> time</p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-65_911ac41e0c8bfbe50a6ef9339c617f12">
-<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(ethnic, t1r_mean)) <span class="sc">+</span></span>
-<span id="cb91-2"><a href="#cb91-2"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> k_type),</span>
-<span id="cb91-3"><a href="#cb91-3"></a>           <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
-<span id="cb91-4"><a href="#cb91-4"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="co">#&lt;&lt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-65_336b989e232d4383de1bdca96b5b552f">
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(ethnic, t1r_mean)) <span class="sc">+</span></span>
+<span id="cb90-2"><a href="#cb90-2"></a>    <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> k_type))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-65-1.png" width="960" class="r-stretch"></section>
-<section id="flip-the-coordinates" class="slide level2">
-<h2>Flip the coordinates</h2>
-<p><code>coord_flip()</code></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-66_2fe73e59f3625c1a90d6bfbf3940c45d">
-<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(ethnic, t1r_mean)) <span class="sc">+</span></span>
-<span id="cb92-2"><a href="#cb92-2"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> k_type),</span>
-<span id="cb92-3"><a href="#cb92-3"></a>           <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
-<span id="cb92-4"><a href="#cb92-4"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb92-5"><a href="#cb92-5"></a>  <span class="fu">coord_flip</span>() <span class="co">#&lt;&lt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="grouped-bar-plot" class="slide level2">
+<h2>Grouped bar plot</h2>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-66_b53554fd4c1fbb0c949bb548a2405117">
+<div class="sourceCode cell-code" id="cb91" data-code-line-numbers="|3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(ethnic, t1r_mean)) <span class="sc">+</span></span>
+<span id="cb91-2"><a href="#cb91-2"></a>    <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> k_type),</span>
+<span id="cb91-3"><a href="#cb91-3"></a>             <span class="at">position =</span> <span class="st">"dodge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-66-1.png" width="960" class="r-stretch"></section>
-<section id="alternatively" class="slide level2">
-<h2>Alternatively</h2>
-<p><code>facet_wrap()</code></p>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-67_7d12fbd796bf1929bea5bf0d0447efc2">
-<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(k_type, t1r_mean)) <span class="sc">+</span></span>
-<span id="cb93-2"><a href="#cb93-2"></a>    <span class="fu">geom_col</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb93-3"><a href="#cb93-3"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>ethnic)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="rotating-labels" class="slide level2">
+<h2>Rotating Labels</h2>
+<p>I have to look <a href="https://stackoverflow.com/questions/1330989/rotating-and-spacing-axis-labels-in-ggplot2">this</a> up <em>every</em> time</p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-67_92ea7f814c93a03a5592985f78af4c65">
+<div class="sourceCode cell-code" id="cb92" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(ethnic, t1r_mean)) <span class="sc">+</span></span>
+<span id="cb92-2"><a href="#cb92-2"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> k_type),</span>
+<span id="cb92-3"><a href="#cb92-3"></a>           <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
+<span id="cb92-4"><a href="#cb92-4"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
 <img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-67-1.png" width="960" class="r-stretch"></section>
-<section id="sometimes-some-redundancy-works-well" class="slide level2">
-<h2>Sometimes some redundancy works well</h2>
-<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-68_2c049de743164289a1731e8e432295d3">
-<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(k_type, t1r_mean, <span class="at">fill =</span> k_type)) <span class="sc">+</span></span>
+<section id="flip-the-coordinates" class="slide level2">
+<h2>Flip the coordinates</h2>
+<p><code>coord_flip()</code></p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-68_dd772eb30c26677b05b49bff0413807d">
+<div class="sourceCode cell-code" id="cb93" data-code-line-numbers="|4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(ethnic, t1r_mean)) <span class="sc">+</span></span>
+<span id="cb93-2"><a href="#cb93-2"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">fill =</span> k_type),</span>
+<span id="cb93-3"><a href="#cb93-3"></a>           <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
+<span id="cb93-4"><a href="#cb93-4"></a>  <span class="fu">coord_flip</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-68-1.png" width="960" class="r-stretch"></section>
+<section id="alternatively" class="slide level2">
+<h2>Alternatively</h2>
+<p><code>facet_wrap()</code></p>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-69_c8e8622eb6ee6ea4ae994dc34ebceebd">
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(k_type, t1r_mean)) <span class="sc">+</span></span>
 <span id="cb94-2"><a href="#cb94-2"></a>    <span class="fu">geom_col</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
 <span id="cb94-3"><a href="#cb94-3"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>ethnic)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-68-1.png" width="960" class="r-stretch"></section>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-69-1.png" width="960" class="r-stretch"></section>
+<section id="sometimes-some-redundancy-works-well" class="slide level2">
+<h2>Sometimes some redundancy works well</h2>
+<div class="cell" data-hash="w3_ggplot2_cache/revealjs/unnamed-chunk-70_0069fc274c707620c1a48b448a42c8f0">
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1"></a><span class="fu">ggplot</span>(ecls_smry, <span class="fu">aes</span>(k_type, t1r_mean, <span class="at">fill =</span> k_type)) <span class="sc">+</span></span>
+<span id="cb95-2"><a href="#cb95-2"></a>    <span class="fu">geom_col</span>(<span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb95-3"><a href="#cb95-3"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>ethnic)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="w3_ggplot2_files/figure-revealjs/unnamed-chunk-70-1.png" width="960" class="r-stretch"></section>
 <section id="geom_-review" class="slide level2 smaller">
 <h2><code>geom_*()</code> Review</h2>
 <ul>
