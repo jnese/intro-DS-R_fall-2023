@@ -92,5 +92,17 @@
   },
   "slides/w4_dplyr.qmd": {
     "w4_dplyr.html": "a34d13c4"
+  },
+  "homeworks/hw2.qmd": {
+    "hw2.tex": "dad58956"
+  },
+  "homeworks/hw1-key.qmd": {
+    "hw1-key.html": "ef4809cf"
+  },
+  "homeworks/hw3.qmd": {
+    "hw3.html": "a034cb17"
+  },
+  "slides/w6_quarto.qmd": {
+    "w6_quarto.html": "1afbace1"
   }
 }
