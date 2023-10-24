@@ -12,6 +12,7 @@ format:
     fig-height: 3.5
     scrollable: true
     multiplex: true
+    embed-resources: true
 execute: 
   echo: true
   warning: false
@@ -29,18 +30,23 @@ library(countdown)
 
 ```
 
-## Housekeeping
+## Housekeeping {.smaller}
 
-- Assignment completion
+- Website issues
+    + look to Canvas for homeworks and slides for now
 - Midway Student Experience Survey
     + now open
     + Canvas: UO Course Surveys (left sidebar)
-- .red[ Final Project Outline]
-    + Due 10/26
+- [Final Project Outline]{style='color:#FF0000'}
+    + Due next week (10/25)
   
 > The outline should include a description of the data to be used, a discussion of what preparatory work will need to be done, and how the requirements of the final project will be met. The outline is intended to be low-stakes and is primarily designed to be a means for you to obtain feedback on the feasibility of the project and areas to consider.
 
-# Data Wrangling with {dplyr}
+## Share
+
+Ben!
+
+# Data Wrangling with `{dplyr}`
 
 Week 4
 
@@ -75,11 +81,13 @@ Week 4
     + `recode()` & `rename()`
 - Be able to pipe these functions to efficiently wrangle data
 
+## 
 
+![](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/b467ee99-87e3-4663-ae27-aaf027f940ce_rw_1920.png?h=0573cb8b960ba2f2c8486188761f03e0){width="70%"}
 
-##
-
-![](https://www.tidyverse.org/images/tidyverse-default.png)
+::: aside
+Credit [Allison Horst](https://allisonhorst.com/data-science-art)
+:::
 
 ## Providing grammar for:
 
@@ -115,6 +123,7 @@ Week 4
 A grammar for data wrangling (verbs!)
 
 Take a couple minutes with your neighbor to guess what the following functions do:
+
 * `select()`
 * `filter()`
 * `mutate()`
@@ -126,31 +135,47 @@ Take a couple minutes with your neighbor to guess what the following functions d
 countdown(minutes = 2, seconds = 00)
 ```
 
-## `{dplyr}`
+## `{dplyr}` {.smaller}
 
 A grammar for data wrangling (verbs!)
 
 `select()`
+
 ::: {.fragment}
-: a subset of **columns**
+a subset of **columns**
 :::
 
 `filter()`
-:  a subset of **rows**
+
+::: {.fragment}
+a subset of **rows**
+:::
 
 `mutate()`
-: **add** a new column or **modify** an existing column
+
+::: {.fragment}
+**add** a new column or **modify** an existing column
+:::
 
 `arrange()`
-: **sort** rows in ascending/descending order
+
+::: {.fragment}
+**sort** rows in ascending/descending order
+:::
 
 `summarize()`
-: a new column created according to other columns
-: for example: `mean()` or `sd()`
+
+::: {.fragment}
+a new column created according to other columns
+for example: `mean()` or `sd()`
     + often used with...
+:::
 
 `group_by()`
-: **grouping** column(s)
+
+::: {.fragment}
+**grouping** column(s)
+:::
 
 ## Arguments
 
@@ -162,7 +187,7 @@ A grammar for data wrangling (verbs!)
 * each function applied returns the modified data frame
 
 
-# select()
+# `select()`
 
 ## `select()`
 
@@ -170,15 +195,14 @@ choose columns
 
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
 ```{r, eval=FALSE}
-select(df, a, c)
+data.frame %>% 
+  select(a, c)
 ```
 :::
 
--or-
-
-:::
+::: {.column width="50%"}
 ![](https://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig1.png)
 :::
 
@@ -193,6 +217,8 @@ Image from [Software Carpentry](https://swcarpentry.github.io/r-novice-gapminder
 Let’s start with the presidential dataset from the `{mdsr}` package
 
 ```{r}
+#| output-location: fragment
+
 library(tidyverse)
 #install.packages("mdsr")
 library(mdsr)
@@ -265,6 +291,7 @@ presidential %>%
 ## Use `select` to order columns
 
 ```{r}
+#| output-location: fragment
 library(fivethirtyeight)
 college_grad_students
 ```
@@ -283,6 +310,8 @@ college_grad_students
 First: this code may not work for you - why?
 
 ```{r}
+#| output-location: fragment
+
 reads <- read_csv(here("data", "Project_Reads_Scores.csv")) %>% 
   clean_names()
 reads
@@ -291,9 +320,12 @@ reads
 ## Use `select` to order columns
 
 ```{r}
+#| output-location: fragment
 college_grad_students %>%
 	select(major_code, grad_total, grad_sample_size, everything())
 ```
+
+. . .
 
 `everything()` is a helper verb that includes **all** column names
 
@@ -322,43 +354,43 @@ reads %>%
 
 ```{r}
 vars <- c("pre_test_score", "pre_test_percent", "post_test_score", "post_test_percent")
-```
 
-```{r}
 reads %>% 
     select(all_of(vars))
 ```
 
 ## `all_of()`
 
-```{r, eval=FALSE}
-vars <- c("pre_test_score", "pre_test_percent", "post_test_score", "post_test_percent")
-```
-
 ```{r}
-mpg %>% #<<
+#| code-line-numbers: "|4"
+#| output-location: fragment
+vars <- c("pre_test_score", "pre_test_percent", "post_test_score", "post_test_percent")
+
+mpg %>% 
     select(all_of(vars))
 ```
 
 ## `any_of()`
 
-```{r, eval=FALSE}
-vars <- c("pre_test_score", "pre_test_percent", "post_test_score", "post_test_percent")
-```
-
 ```{r}
+#| code-line-numbers: "|4"
+#| output-location: fragment
+
+vars <- c("pre_test_score", "pre_test_percent", "post_test_score", "post_test_percent")
+
 reads %>% 
     select(any_of(vars))
 ```
 
 ## `any_of()`
 
-```{r, eval=FALSE}
-vars <- c("pre_test_score", "pre_test_percent", "post_test_score", "post_test_percent")
-```
-
 ```{r}
-mpg %>% #<<
+#| code-line-numbers: "|4"
+#| output-location: fragment
+
+vars <- c("pre_test_score", "pre_test_percent", "post_test_score", "post_test_percent")
+
+mpg %>% 
     select(any_of(vars))
 ```
 
@@ -382,17 +414,17 @@ reads %>%
 
 ## `relocate()`
 
-[relocate(]{style="color:#D55E00"}[.data]{style="color:#56B4E9"}, ... [before = NULL]{style="color:#009E73"}, [.after = NULL]{style="color:#E69f00"}[)]{style="color:#D55E00"}
+[relocate(]{style="color:#D55E00"}[.data]{style="color:#56B4E9"}, ... [.before = NULL]{style="color:#009E73"}, [.after = NULL]{style="color:#E69f00"}[)]{style="color:#D55E00"}
 
 [.data]{style="color:#56B4E9"} = dataframe/tibble
 
 ... = columns to move
 
-[before]{style="color:#009E73"} = variable to move *before*
+[.before]{style="color:#009E73"} = variable to move *before*
 
 [.after]{style="color:#E69f00"} = variable to move *after*
 
-- supplying neither [before]{style="color:#009E73"} nor [.after]{style="color:#E69f00"} move columns to the left-hand side
+- supplying neither [.before]{style="color:#009E73"} nor [.after]{style="color:#E69f00"} move columns to the left-hand side
 - specifying both is an error
 
 ## `relocate()`
@@ -428,7 +460,7 @@ presidential %>%
 moves "end" before "party"
 :::
 
-# filter()
+# `filter()`
 
 ## `filter()`
 
@@ -436,7 +468,7 @@ moves "end" before "party"
 
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
 ```{r, eval=FALSE}
 filter(df,
        type == "otter",
@@ -444,8 +476,7 @@ filter(df,
 ```
 :::
 
-:::
-.pull-right[
+::: {.column width="50%"}
 ```{r, echo=FALSE, fig.align='center'}
 knitr::include_graphics("https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/dplyr_filter.jpg")
 ```
@@ -457,54 +488,58 @@ knitr::include_graphics("https://raw.githubusercontent.com/allisonhorst/stats-il
 Illustration by [Allison Horst](https://github.com/allisonhorst/stats-illustrations/)
 :::
 
-## `filter()`
+## `filter()` {.smaller}
 
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
 Complete set of boolean operations
+
 - *x* is the left-hand circle
 - *y* is the right-hand circle
 - the shaded region show which parts each operator selects
-  + *xor* == *x* or *y* except where they overlap
+    + *xor* == *x* or *y* except where they overlap
 
-**==** - equal
+**==**
+: equal
 
-**!** - negates
+**!**
+: negates
 
-**!=** - NOT equal
+**!=**
+: NOT equal
 
-**&** - and
+**&**
+: and
 
-**|** - or
+**|**
+: or
 :::
 
-:::
+::: {.column width="50%"}
 ```{r, echo=FALSE}
 knitr::include_graphics("https://d33wubrfki0l68.cloudfront.net/01f4b6d39d2be8269740a3ad7946faa79f7243cf/8369a/diagrams/transform-logical.png")
 ```
+
 :::
 
 ::::
 
-::: aside
-Image from [Wickham & Grolemund (2017)](https://r4ds.had.co.nz/transform.html?q=filter#filter-rows-with-filter)
-:::
+
 
 ## `filter()` numeric
 
-* note the use of `==` NOT `=`
 
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
 ```{r}
 mpg %>% 
   filter(cyl == 4)
 ```
 :::
 
-:::
+::: {.column width="50%"}
 ```{r}
 mpg %>% 
   filter(hwy >= 22)
@@ -515,18 +550,18 @@ mpg %>%
 
 ## `filter` for Democrats
 
-* note the use of `==` NOT `=`
+note the use of `==` NOT `=`
 
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
 ```{r}
 presidential %>%
 	filter(party == "Democratic")
 ```
 :::
 
-:::
+::: {.column width="50%"}
 ```{r}
 presidential %>%
 	filter(party = "Democratic")
@@ -537,23 +572,22 @@ presidential %>%
 
 ## `filter` character
 
-* note the use of `==` NOT `=`
+note the use of `==` NOT `=`
 
 ```{r echo=FALSE}
 mpg_ <- select(mpg, 1:5)
 ```
 
-
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
 ```{r}
 mpg_ %>% 
   filter(manufacturer == "pontiac")
 ```
 :::
 
-:::
+::: {.column width="50%"}
 ```{r}
 presidential %>% 
   filter(party == "Democratic")
@@ -568,7 +602,7 @@ presidential %>%
 
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
 ```{r}
 presidential %>% 
   filter(party == "Democratic" & 
@@ -576,7 +610,7 @@ presidential %>%
 ```
 :::
 
-:::
+::: {.column width="50%"}
 ```{r}
 presidential %>% 
   filter(party == "Democratic", 
@@ -586,7 +620,7 @@ presidential %>%
 
 ::::
 
-## `filter()` note
+## `filter()` note {.smaller}
 
 * The order of operations doesn’t work like English
 * Can’t write: 
@@ -612,6 +646,7 @@ reads %>%
 ## Let's remove these aggregate rows
 
 ```{r}
+#| code-line-numbers: "|1|2|4|5"
 students_only <- reads %>%
   filter(student_id != "All Students (Average)") 
 
@@ -623,7 +658,7 @@ students_only %>%
 
 `!` means **NOT**
 
-`!=` means *NOT equal*
+`!=` means **NOT equal**
 
 Note:
 
@@ -637,9 +672,12 @@ What if we wanted to `select` and `filter` a data set?
 
 Select "*name*" and "*party*" of presidents who began their term after 2000
 
-(1) Two step method
+. . .
+
+(1) Two step method 😐
 
 ```{r}
+#| code-line-numbers: "|1|3"
 after_2000 <- filter(presidential, start > as.Date("2000-01-01"))
 
 select(after_2000, name, party)
@@ -647,7 +685,7 @@ select(after_2000, name, party)
 
 ## Chaining `{dplyr}` functions
 
-(2) Alternatively, we could wrap `select` around `filter`
+(2) Alternatively, we could wrap `select` around `filter` ☹️
 
 ```{r}
 select(filter(presidential, start > as.Date("2000-01-01")), name, party)
@@ -657,19 +695,19 @@ select(filter(presidential, start > as.Date("2000-01-01")), name, party)
 
 (3) Piping functions 🎉
 
-* We could use the pipe function to help increase the readability of our code: 
+We could use the pipe function to help increase the readability of our code: 
 <br>
 `%>%`
 <br>
 
-* Called the "pipe" operator and "piping functions"
+Called the "pipe" operator and "piping functions"
 
 ```{r}
 filter(presidential, start > as.Date("2000-01-01")) %>% 
   select(name, party)
 ```
 
-## Piping functions
+## Piping functions {.smaller}
 
 Even better:
 
@@ -686,12 +724,12 @@ presidential %>%
 Note the lovely indentations and line breaks to help keep things straight
 :::
 
-# mutate()
+# `mutate()`
 
 ## Some new data
 
 ```{r}
-
+#| output-location: fragment
 (prepost <- reads %>% 
   select(student_id, test_site, pre_test_score, post_test_score))
 ```
@@ -722,8 +760,7 @@ Why do we not see the new *gain* column?
 **Add** *multiple* variables
 
 ```{r}
-#| tidy: true
-
+#| output-location: fragment
 prepost <- prepost %>%
   mutate(
     gain = post_test_score - pre_test_score,
@@ -738,13 +775,14 @@ prepost
 **Change** a variable
 
 ```{r}
+#| output-location: fragment
 prepost <- prepost %>% 
   mutate(sum_tests = (sum_tests/180) * 100)
 
 prepost
 ```
 
-# arrange()
+# `arrange()`
 
 ## `arrange()`
 
@@ -779,11 +817,9 @@ prepost %>%
   arrange(desc(gain))
 ```
 
-# summarize()
+## `summarize()` {.smaller}
 
-## `summarize()`
-
-or `summarise()`
+`summarize()` or `summarise()`
 
 * Here: compute the `mean` and `standard deviation` of the gain scores
 * What are we looking at?
@@ -794,23 +830,25 @@ prepost %>%
             sd_gain = sd(gain, na.rm = TRUE))
 ```
 
-::: {aside .fragment}
+. . .
+
+::: aside
 This is a good start for a descriptive table!
 :::
 
-# group_by()
+# `group_by()`
 
 ## 
 
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
 ```{r, echo=FALSE}
 knitr::include_graphics("https://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig2.png")
 ```
 :::
 
-::: {.fragment}
+::: {.column width="50%" .fragment}
 ```{r, echo=FALSE}
 knitr::include_graphics("https://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig3.png") 
 ```
@@ -829,18 +867,21 @@ Image from [Software Carpentry](https://swcarpentry.github.io/r-novice-gapminder
 Here, compute the mean gain for each *test site*
 
 ```{r}
+#| code-line-numbers: "|1|2|3"
+#| output-location: fragment
 prepost %>% 
   group_by(test_site) %>% 
   summarize(mean_gain = mean(gain))
 ```
 
-## `group_by()`
+## `group_by()` {.smaller}
 
 When you use `group_by()` and `summarize()`
 
 :::: {.columns}
 
-:::
+::: {.column width="50%"}
+
 You will get a row for each unique group
 
 ```{r}
@@ -850,7 +891,8 @@ mpg %>%
 ```
 :::
 
-::: {.fragment}
+::: {.column width="50%" .fragment}
+
 If you have multiple grouping variables, you will get a row for each unique combination of groups
 
 ```{r}
@@ -885,11 +927,15 @@ prepost %>%
 ## Pipe to `{ggplot}`!
 
 ```{r}
+#| code-line-numbers: "|1,2,3|4|5|6"
+#| output-location: fragment
+
 prepost %>% 
   group_by(test_site) %>% 
   summarize(mean_gain = mean(gain)) %>% 
-  ggplot(aes(test_site, mean_gain)) + #<<
-  geom_col(fill = "cornflowerblue", alpha = .7) #<<
+  ggplot(aes(test_site, mean_gain)) + 
+  geom_col(fill = "cornflowerblue", alpha = .7) +
+  theme_minimal()
 ```
 
 ## 
@@ -901,6 +947,7 @@ prepost %>%
 - Calculate mean *post_test_score* by test site
 
 ```{r}
+#| code-line-numbers: "|1|2|3"
 students_only %>%
     group_by(test_site) %>%
     summarize(mean = mean(post_test_score))
@@ -909,6 +956,7 @@ students_only %>%
 ## Plot it
 
 ```{r}
+#| code-line-numbers: "|1|3|4|5|6|7"
 #| fig-height: 2.5
 
 theme_set(theme_minimal(base_size = 18))
@@ -932,7 +980,7 @@ Recoding into dichotomous variable with `ifelse()`
 
 *or*
 
-`ifelse(`logical statement, Do this `if` TRUE, `else` do this`)`
+`ifelse(`logical statement, do this `if` TRUE, `else` do this`)`
 
 ## Recode with `ifelse()`
 
@@ -941,6 +989,8 @@ Recoding into dichotomous variable with `ifelse()`
 **Remember to pair with `mutate()`!**
 
 ```{r}
+#| code-line-numbers: "|2"
+#| output-location: fragment
 students_only %>% 
   mutate(test_site = ifelse(test_site == "JONES", "district 1", "district 2"))
 ```
@@ -965,6 +1015,7 @@ Recoding into multinomial variable
 **Remember to pair with `mutate()`**
 
 ```{r}
+#| output-location: fragment
 students_only %>% 
   mutate(test_site = recode(test_site,
                             JONES = "Jones Middle",
@@ -991,18 +1042,18 @@ Recoding across several variables, or if you find yourself using nested `ifelse(
 
 **Remember to pair with `mutate()`**
 
-```{r, echo=TRUE}
-library(palmerpenguins)
-```
+```{r, echo=TRUE, eval=FALSE}
+#| code-line-numbers: "|6|7|8|9"
 
-```{r, eval=FALSE}
+library(palmerpenguins)
+
 penguins %>% 
   mutate(species_big = 
            case_when(
              body_mass_g > 4500 & species == "Adelie" ~ "adelie_big",
              body_mass_g > 4600 & species == "Chinstrap" ~ "chinstrap_big",
              body_mass_g > 6000 & species == "Gentoo" ~ "gentoo_big",
-             .default ~ "other"
+             .default = "other"
            ))
 ```
 
@@ -1010,9 +1061,11 @@ penguins %>%
 
 `.default` equivalent to `all else`
 
-## `rename()`
+## `rename()` {.smaller}
 
 `rename(new_name = old_name)`
+
+**NOT paired with `mutate()`**
 
 ```{r}
 penguins %>%
@@ -1021,10 +1074,6 @@ penguins %>%
     bill_length = bill_length_mm
   )
 ```
-
-. . .
-
-**NOT paired with `mutate()`**
 
 ## rename with `select()`
 
@@ -1044,19 +1093,18 @@ penguins %>%
 
 # Next time
 
-## Before next class
+## Before next class {.smaller}
 
 - Final Project
     + [Final Project: Outline]{style="color:#FF0000"}
 - Reading
-    + [R4DS(2e) 30](https://r4ds.hadley.nz/quarto-formats)
-- Supplemental Learning
-    + [RStudio Primer: Working with Tibbles](https://posit.cloud/learn/primers/2.1)
-    + [Rbootcamp: Ch 3](https://r-bootcamp.netlify.app/chapter3)
-    + [Codecademy: Aggregates in R](https://www.codecademy.com/courses/learn-r/lessons/r-aggregates/exercises/introduction)
+    + [Bryan (2017)](https://peerj.com/preprints/3159v2/)
+- Activities
+    + Download [GitKraken](https://www.gitkraken.com/)
+    + Watch [What is a Git repository?](https://www.youtube.com/watch?v=A-4WltCTVms&list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU&index=3)
+    + Watch [What is a remote repository?](https://www.youtube.com/watch?v=Lb4yvfrX_7I&list=PLe6EXFvnTV7-_41SpakZoTIYCgX4aMTdU&index=3)
 - Homework
-    + Homework 2
-    + Homework 3
+    + Homework 4
 
 
 

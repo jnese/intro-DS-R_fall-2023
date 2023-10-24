@@ -3,6 +3,7 @@ title: "Assignments"
 output:
   html:
     toc: true
+    embed-resources: true
 execute: 
   echo: false
   warning: false
@@ -16,6 +17,9 @@ library(here)
 library(readxl)
 library(fontawesome)
 library(gt)
+library(xfun)
+library(htmltools)
+library(mime)
 
 table_style <- function(data) {
   data %>%
@@ -67,20 +71,22 @@ tibble::tribble(
 Each homework assignment is worth 10 points, and require your **"best honest effort"**, which includes contact me me if you need help. Please do not turn in partial work. Instead, please ask for help and, if needed, an extension on the deadline. <br> <br>
 
 ```{r}
-dta %>% 
-  filter(type == "homework") %>% 
+dta %>%
+  filter(type == "homework") %>%
   mutate(
     Assigned = map2_chr(assigned_link, Assigned,
                         ~ifelse(is.na(.x),
                                 .y,
-                                paste0("\ ", xfun::embed_file(path = here::here("homeworks", .x), text = .y)))),
+                                paste0(xfun::embed_file(path = here::here("homeworks", .x), text = .y)))),
+    Assigned = str_replace_all(Assigned, "\"", "'"),
     Key = map2_chr(key_link, Key,
                         ~ifelse(is.na(.x),
                                 .y,
-                                paste0("\ ", xfun::embed_file(path = here::here("homeworks", .x), text = .y))))) %>% 
-  select(`Date Assigned`, `Date Due`, Assigned, Key, Points) %>% 
-  gt() %>% 
-  table_style() %>% 
+                                paste0(xfun::embed_file(path = here::here("homeworks", .x), text = .y)))),
+    Key = str_replace_all(Key, "\"", "'")) %>%
+  select(`Date Assigned`, `Date Due`, Assigned, Key, Points) %>%
+  gt() %>%
+  table_style() %>%
   fmt_markdown(columns = c(3, 4))
 
 ```
