@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Joe Nese">
+
+<title>EDLD 651: Fall 2023 - Week 7: Mutating Joins</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">EDLD 651: Fall 2023</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html" rel="" target="">
+ <span class="menu-text">Syllabus</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../assignments.html" rel="" target="">
+ <span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html" rel="" target="">
+ <span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../data_list.html" rel="" target="">
+ <span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../installs.html" rel="" target="">
+ <span class="menu-text">Installs</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mutating-joins" id="toc-mutating-joins" class="nav-link active" data-scroll-target="#mutating-joins">Mutating Joins</a>
+  <ul class="collapse">
+  <li><a href="#celebrate-yourself" id="toc-celebrate-yourself" class="nav-link" data-scroll-target="#celebrate-yourself"><span style="color:#FFFFFF">Celebrate yourself!</span></a></li>
+  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
+  <li><a href="#a-bit-about-joins" id="toc-a-bit-about-joins" class="nav-link" data-scroll-target="#a-bit-about-joins">A bit about joins</a></li>
+  <li><a href="#binding-rows" id="toc-binding-rows" class="nav-link" data-scroll-target="#binding-rows">Binding rows</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#bind_rows" id="toc-bind_rows" class="nav-link" data-scroll-target="#bind_rows"><code>bind_rows()</code></a></li>
+  <li><a href="#dplyrbind_rows" id="toc-dplyrbind_rows" class="nav-link" data-scroll-target="#dplyrbind_rows"><code>dplyr::bind_rows()</code></a></li>
+  <li><a href="#optional-.id-argument" id="toc-optional-.id-argument" class="nav-link" data-scroll-target="#optional-.id-argument">Optional <code>.id</code> argument</a></li>
+  <li><a href="#recode-.id-column" id="toc-recode-.id-column" class="nav-link" data-scroll-target="#recode-.id-column">Recode <code>.id</code> column</a></li>
+  <li><a href="#even-better" id="toc-even-better" class="nav-link" data-scroll-target="#even-better">Even better</a></li>
+  <li><a href="#what-if-columns-dont-match-exactly" id="toc-what-if-columns-dont-match-exactly" class="nav-link" data-scroll-target="#what-if-columns-dont-match-exactly">What if columns don’t match exactly?</a></li>
+  <li><a href="#you-can-also-bind_cols" id="toc-you-can-also-bind_cols" class="nav-link" data-scroll-target="#you-can-also-bind_cols">You can also <code>bind_cols()</code></a></li>
+  <li><a href="#bind_cols" id="toc-bind_cols" class="nav-link" data-scroll-target="#bind_cols"><code>bind_cols()</code></a></li>
+  </ul></li>
+  <li><a href="#joins" id="toc-joins" class="nav-link" data-scroll-target="#joins">Joins</a>
+  <ul class="collapse">
+  <li><a href="#keys" id="toc-keys" class="nav-link" data-scroll-target="#keys">Keys</a></li>
+  <li><a href="#whats-the-primary-key-here" id="toc-whats-the-primary-key-here" class="nav-link" data-scroll-target="#whats-the-primary-key-here">What’s the primary key here?</a></li>
+  <li><a href="#lets-verify-the-key" id="toc-lets-verify-the-key" class="nav-link" data-scroll-target="#lets-verify-the-key">Let’s verify the key</a></li>
+  <li><a href="#lets-verify-the-key-1" id="toc-lets-verify-the-key-1" class="nav-link" data-scroll-target="#lets-verify-the-key-1">Let’s verify the key</a></li>
+  <li><a href="#what-about-the-key-here" id="toc-what-about-the-key-here" class="nav-link" data-scroll-target="#what-about-the-key-here">What about the key here?</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  <li><a href="#sometimes-there-is-no-key" id="toc-sometimes-there-is-no-key" class="nav-link" data-scroll-target="#sometimes-there-is-no-key">Sometimes there is no key</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
+  <li><a href="#create-a-key" id="toc-create-a-key" class="nav-link" data-scroll-target="#create-a-key">Create a key</a></li>
+  </ul></li>
+  <li><a href="#mutating-joins-1" id="toc-mutating-joins-1" class="nav-link" data-scroll-target="#mutating-joins-1">Mutating joins</a>
+  <ul class="collapse">
+  <li><a href="#mutating-_joins" id="toc-mutating-_joins" class="nav-link" data-scroll-target="#mutating-_joins">Mutating <code>*_joins()</code></a></li>
+  <li><a href="#four-types-of-joins" id="toc-four-types-of-joins" class="nav-link" data-scroll-target="#four-types-of-joins">Four types of joins</a></li>
+  <li><a href="#four-types-of-joins-1" id="toc-four-types-of-joins-1" class="nav-link" data-scroll-target="#four-types-of-joins-1">Four types of joins</a></li>
+  <li><a href="#were-going-to-focus-on" id="toc-were-going-to-focus-on" class="nav-link" data-scroll-target="#were-going-to-focus-on">We’re going to focus on</a></li>
+  <li><a href="#using-joins-to-recode" id="toc-using-joins-to-recode" class="nav-link" data-scroll-target="#using-joins-to-recode">Using joins to recode</a></li>
+  <li><a href="#codes" id="toc-codes" class="nav-link" data-scroll-target="#codes">Codes</a></li>
+  <li><a href="#recode-method" id="toc-recode-method" class="nav-link" data-scroll-target="#recode-method">Recode method</a></li>
+  <li><a href="#join-method" id="toc-join-method" class="nav-link" data-scroll-target="#join-method">Join method</a></li>
+  <li><a href="#join-the-tables" id="toc-join-the-tables" class="nav-link" data-scroll-target="#join-the-tables">Join the tables</a></li>
+  </ul></li>
+  <li><a href="#imperfect-key-match" id="toc-imperfect-key-match" class="nav-link" data-scroll-target="#imperfect-key-match">Imperfect key match?</a>
+  <ul class="collapse">
+  <li><a href="#consider-the-following" id="toc-consider-the-following" class="nav-link" data-scroll-target="#consider-the-following">Consider the following</a></li>
+  <li><a href="#consider-the-following-1" id="toc-consider-the-following-1" class="nav-link" data-scroll-target="#consider-the-following-1">Consider the following</a></li>
+  <li><a href="#celebrate-yourself-1" id="toc-celebrate-yourself-1" class="nav-link" data-scroll-target="#celebrate-yourself-1">Celebrate yourself!</a></li>
+  <li><a href="#animations" id="toc-animations" class="nav-link" data-scroll-target="#animations">Animations</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"></a></li>
+  <li><a href="#what-if-the-key-is-not-unique" id="toc-what-if-the-key-is-not-unique" class="nav-link" data-scroll-target="#what-if-the-key-is-not-unique">What if the key is not unique?</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"></a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#one-to-many" id="toc-one-to-many" class="nav-link" data-scroll-target="#one-to-many">One to many</a></li>
+  <li><a href="#what-if-key-is-not-unique-to-either-table" id="toc-what-if-key-is-not-unique-to-either-table" class="nav-link" data-scroll-target="#what-if-key-is-not-unique-to-either-table">What if key is not unique to either table?</a></li>
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1">Example</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6"></a></li>
+  <li><a href="#how-do-we-fix-this" id="toc-how-do-we-fix-this" class="nav-link" data-scroll-target="#how-do-we-fix-this">How do we fix this?</a></li>
+  <li><a href="#in-this-case" id="toc-in-this-case" class="nav-link" data-scroll-target="#in-this-case">In this case</a></li>
+  <li><a href="#join" id="toc-join" class="nav-link" data-scroll-target="#join">Join</a></li>
+  <li><a href="#default-join-behavior" id="toc-default-join-behavior" class="nav-link" data-scroll-target="#default-join-behavior">Default join behavior</a></li>
+  <li><a href="#use-only-certain-keys" id="toc-use-only-certain-keys" class="nav-link" data-scroll-target="#use-only-certain-keys">Use only certain keys?</a></li>
+  <li><a href="#specify-_join-keys" id="toc-specify-_join-keys" class="nav-link" data-scroll-target="#specify-_join-keys">Specify <code>*_join()</code> keys</a></li>
+  </ul></li>
+  <li><a href="#specify-_join-keys-1" id="toc-specify-_join-keys-1" class="nav-link" data-scroll-target="#specify-_join-keys-1">Specify <code>*_join()</code> keys</a>
+  <ul class="collapse">
+  <li><a href="#mismatched-key-names" id="toc-mismatched-key-names" class="nav-link" data-scroll-target="#mismatched-key-names">Mismatched key names</a></li>
+  <li><a href="#join-with-mismatched-key-names" id="toc-join-with-mismatched-key-names" class="nav-link" data-scroll-target="#join-with-mismatched-key-names">Join with mismatched key names</a></li>
+  <li><a href="#join_by" id="toc-join_by" class="nav-link" data-scroll-target="#join_by"><code>join_by()</code></a></li>
+  </ul></li>
+  <li><a href="#next-time" id="toc-next-time" class="nav-link" data-scroll-target="#next-time">Next time</a>
+  <ul class="collapse">
+  <li><a href="#before-next-class" id="toc-before-next-class" class="nav-link" data-scroll-target="#before-next-class">Before next class</a></li>
+  </ul></li>
+  <li><a href="#homework-8" id="toc-homework-8" class="nav-link" data-scroll-target="#homework-8">Homework 8</a></li>
+  <li><a href="#final-project" id="toc-final-project" class="nav-link" data-scroll-target="#final-project">Final Project</a>
+  <ul class="collapse">
+  <li><a href="#final-project-1" id="toc-final-project-1" class="nav-link" data-scroll-target="#final-project-1">Final Project</a></li>
+  <li><a href="#final-project---dates" id="toc-final-project---dates" class="nav-link" data-scroll-target="#final-project---dates">Final Project - Dates</a></li>
+  <li><a href="#final-project---data-prep-script" id="toc-final-project---data-prep-script" class="nav-link" data-scroll-target="#final-project---data-prep-script">Final Project - Data Prep Script</a></li>
+  <li><a href="#final-project-presentation" id="toc-final-project-presentation" class="nav-link" data-scroll-target="#final-project-presentation">Final Project – Presentation</a></li>
+  <li><a href="#final-project-presentation-scoring-rubric" id="toc-final-project-presentation-scoring-rubric" class="nav-link" data-scroll-target="#final-project-presentation-scoring-rubric">Final Project – Presentation Scoring Rubric</a></li>
+  <li><a href="#final-project-paper" id="toc-final-project-paper" class="nav-link" data-scroll-target="#final-project-paper">Final Project – Paper</a></li>
+  <li><a href="#final-paper---scoring-rubric" id="toc-final-paper---scoring-rubric" class="nav-link" data-scroll-target="#final-paper---scoring-rubric">Final Paper - Scoring Rubric</a></li>
+  <li><a href="#final-project-2" id="toc-final-project-2" class="nav-link" data-scroll-target="#final-project-2">Final Project</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="w7_joins.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Week 7: Mutating Joins</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Joe Nese </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University of Oregon<br>Fall 2023
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="mutating-joins" class="level1">
+<h1>Mutating Joins</h1>
+<p>Week 7</p>
+<section id="celebrate-yourself" class="level2" data-background-image="https://media4.giphy.com/media/y3FzofnwM97ngxeO3o/giphy.gif?cid=ecf05e47v3d6hztnq52lqaoop57dz9eetu5kfr4xckfhp37j&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g">
+<h2 data-background-image="https://media4.giphy.com/media/y3FzofnwM97ngxeO3o/giphy.gif?cid=ecf05e47v3d6hztnq52lqaoop57dz9eetu5kfr4xckfhp37j&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" class="anchored" data-anchor-id="celebrate-yourself"><span style="color:#FFFFFF">Celebrate yourself!</span></h2>
+</section>
+<section id="agenda" class="level2">
+<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
+<ul>
+<li><code>bind_rows()</code></li>
+<li><code>*_join()</code></li>
+</ul>
+<p><strong>Overall Purpose</strong></p>
+<ul>
+<li>Understand and be able to identify keys</li>
+<li>Understand different types of mutating joins
+<ul>
+<li><code>left_join()</code></li>
+<li><code>right_join()</code></li>
+<li>one-to-one</li>
+<li>one-to-many</li>
+</ul></li>
+<li>Understand some ways joins fail</li>
+</ul>
+</section>
+<section id="a-bit-about-joins" class="level2">
+<h2 class="anchored" data-anchor-id="a-bit-about-joins">A bit about joins</h2>
+<ul>
+<li>Also data “merge”</li>
+<li>Today we’ll talk about <strong>mutating joins</strong></li>
+<li>Mutating joins add columns to a dataset</li>
+<li>Mutating joins are the most common, but <strong>filtering joins</strong> can be very powerful</li>
+</ul>
+<p>. . .</p>
+<p><strong>What if I want to add rows?</strong></p>
+<ul>
+<li>Not technically a join (no key involved)</li>
+<li>Let’s take a look</li>
+</ul>
+</section>
+<section id="binding-rows" class="level2">
+<h2 class="anchored" data-anchor-id="binding-rows">Binding rows</h2>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>g3 <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">sid =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">grade =</span> <span class="fu">rep</span>(<span class="dv">3</span>, <span class="dv">3</span>), </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">score =</span> <span class="fu">as.integer</span>(<span class="fu">rnorm</span>(<span class="dv">3</span>, <span class="dv">200</span>, <span class="dv">10</span>)))</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>g4 <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">sid =</span> <span class="dv">9</span><span class="sc">:</span><span class="dv">11</span>, </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">grade =</span> <span class="fu">rep</span>(<span class="dv">4</span>, <span class="dv">3</span>), </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">score =</span> <span class="fu">as.integer</span>(<span class="fu">rnorm</span>(<span class="dv">3</span>, <span class="dv">200</span>, <span class="dv">10</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>g3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+    sid grade score
+  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;
+1     1     3   200
+2     2     3   201
+3     3     3   203</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>g4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+    sid grade score
+  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;
+1     9     4   201
+2    10     4   193
+3    11     4   204</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="bind_rows" class="level2">
+<h2 class="anchored" data-anchor-id="bind_rows"><code>bind_rows()</code></h2>
+<ul>
+<li>In examples like the previous data sets, we just want to combine the data by <strong>stacking the rows</strong></li>
+<li>Data have same (or approximately same) columns</li>
+<li>We can do so with <code>bind_rows()</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># output-location: fragment</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_rows</span>(g3, g4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+    sid grade score
+  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;
+1     1     3   200
+2     2     3   201
+3     3     3   203
+4     9     4   201
+5    10     4   193
+6    11     4   204</code></pre>
+</div>
+</div>
+</section>
+<section id="dplyrbind_rows" class="level2">
+<h2 class="anchored" data-anchor-id="dplyrbind_rows"><code>dplyr::bind_rows()</code></h2>
+<ul>
+<li>an efficient way to bind many data frames into one, by stacking rows
+<ul>
+<li>can bind multiple datasets</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>one <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, ]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>two <span class="ot">&lt;-</span> mtcars[<span class="dv">6</span><span class="sc">:</span><span class="dv">10</span>, ]</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>three <span class="ot">&lt;-</span> mtcars[<span class="dv">12</span><span class="sc">:</span><span class="dv">14</span>, ]</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_rows</span>(one, two, three)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>like joining (merging) data frames that have the same columns</li>
+<li>columns don’t need to match when row-binding</li>
+</ul>
+</section>
+<section id="optional-.id-argument" class="level2">
+<h2 class="anchored" data-anchor-id="optional-.id-argument">Optional <code>.id</code> argument</h2>
+<ul>
+<li>What if we knew the grade, but didn’t have a variable in each dataset already?</li>
+<li>Use <code>.id</code> to add an index for each dataset</li>
+</ul>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_rows</span>(<span class="fu">select</span>(g3, <span class="sc">-</span>grade), <span class="fu">select</span>(g4, <span class="sc">-</span>grade), <span class="at">.id =</span> <span class="st">"dataset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  dataset   sid score
+  &lt;chr&gt;   &lt;int&gt; &lt;int&gt;
+1 1           1   200
+2 1           2   201
+3 1           3   203
+4 2           9   201
+5 2          10   193
+6 2          11   204</code></pre>
+</div>
+</div>
+</section>
+<section id="recode-.id-column" class="level2">
+<h2 class="anchored" data-anchor-id="recode-.id-column">Recode <code>.id</code> column</h2>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_rows</span>(<span class="fu">select</span>(g3, <span class="sc">-</span>grade), <span class="fu">select</span>(g4, <span class="sc">-</span>grade), <span class="at">.id =</span> <span class="st">"dataset"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">grade =</span> <span class="fu">ifelse</span>(dataset <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 4
+  dataset   sid score grade
+  &lt;chr&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+1 1           1   200     3
+2 1           2   201     3
+3 1           3   203     3
+4 2           9   201     4
+5 2          10   193     4
+6 2          11   204     4</code></pre>
+</div>
+</div>
+</section>
+<section id="even-better" class="level2">
+<h2 class="anchored" data-anchor-id="even-better">Even better</h2>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_rows</span>(<span class="fu">select</span>(g3, <span class="sc">-</span>grade), <span class="fu">select</span>(g4, <span class="sc">-</span>grade), <span class="at">.id =</span> <span class="st">"grade"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">grade =</span> <span class="fu">ifelse</span>(grade <span class="sc">==</span> <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  grade   sid score
+  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
+1     3     1   200
+2     3     2   201
+3     3     3   203
+4     4     9   201
+5     4    10   193
+6     4    11   204</code></pre>
+</div>
+</div>
+</section>
+<section id="what-if-columns-dont-match-exactly" class="level2">
+<h2 class="anchored" data-anchor-id="what-if-columns-dont-match-exactly">What if columns don’t match exactly?</h2>
+<p>Pads with <code>NA</code></p>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_rows</span>(g3, g4[ ,<span class="sc">-</span><span class="dv">2</span>], <span class="at">.id =</span> <span class="st">"dataset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 4
+  dataset   sid grade score
+  &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt; &lt;int&gt;
+1 1           1     3   200
+2 1           2     3   201
+3 1           3     3   203
+4 2           9    NA   201
+5 2          10    NA   193
+6 2          11    NA   204</code></pre>
+</div>
+</div>
+</section>
+<section id="you-can-also-bind_cols" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="you-can-also-bind_cols">You can also <code>bind_cols()</code></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>read <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">sid =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, </span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">read =</span> <span class="fu">as.integer</span>(<span class="fu">rnorm</span>(<span class="dv">3</span>, <span class="dv">200</span>,<span class="dv">10</span>)))</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>math <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">math =</span> <span class="fu">as.integer</span>(<span class="fu">rnorm</span>(<span class="dv">3</span>, <span class="dv">200</span>,<span class="dv">10</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="columns">
+<p>::: {.column width = 50%}</p><div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>read</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+    sid  read
+  &lt;int&gt; &lt;int&gt;
+1     1   204
+2     2   206
+3     3   214</code></pre>
+</div>
+</div>
+</div>
+<p>::: {.column width = 50%}</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>math</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 1
+   math
+  &lt;int&gt;
+1   205
+2   197
+3   202</code></pre>
+</div>
+</div>
+<p>:::</p>
+<p>::::</p>
+</section>
+<section id="bind_cols" class="level2">
+<h2 class="anchored" data-anchor-id="bind_cols"><code>bind_cols()</code></h2>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bind_cols</span>(read, math)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+    sid  read  math
+  &lt;int&gt; &lt;int&gt; &lt;int&gt;
+1     1   204   205
+2     2   206   197
+3     3   214   202</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="joins" class="level1">
+<h1>Joins</h1>
+<p>(not to be confused with row binding)</p>
+<section id="keys" class="level2">
+<h2 class="anchored" data-anchor-id="keys">Keys</h2>
+<ul>
+<li>Uniquely identify rows in a dataset</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Variable(s) in common between two datasets to be joined
+<ul>
+<li>A key can be more than one variable</li>
+</ul></li>
+</ul>
+<p>. . .</p>
+<p><strong>Types of keys</strong></p>
+<ul>
+<li>Small distinction that you probably won’t have to worry about much, but is worth mentioning:
+<ul>
+<li><strong>Primary keys</strong>: uniquely identify observations in <em>their</em> dataset</li>
+<li><strong>Foreign keys</strong>: uniquely identify observations in <em>other</em> datasets</li>
+</ul></li>
+</ul>
+</section>
+<section id="whats-the-primary-key-here" class="level2">
+<h2 class="anchored" data-anchor-id="whats-the-primary-key-here">What’s the primary key here?</h2>
+<p>First, let’s break down the code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rio)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>ecls <span class="ot">&lt;-</span> <span class="fu">import</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"ecls-k_samp.sav"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">characterize</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>. . .</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 984 × 33
+   child_id teacher_id school_id k_type school_type sex   ethnic famtype numsibs
+   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;
+ 1 0842021C 0842T02    0842      full-… public      male  BLACK… BIOLOG…       1
+ 2 0905002C 0905T01    0905      full-… private     male  ASIAN  BIOLOG…       1
+ 3 0150012C 0150T01    0150      full-… private     fema… BLACK… BIOLOG…       4
+ 4 0556009C 0556T01    0556      full-… private     fema… HISPA… BIOLOG…       0
+ 5 0089013C 0089T04    0089      full-… public      male  WHITE… BIOLOG…       4
+ 6 1217001C 1217T13    1217      half-… public      fema… NATIV… BIOLOG…       0
+ 7 1092008C 1092T01    1092      half-… public      fema… HISPA… BIOLOG…       2
+ 8 0083007C 0083T16    0083      full-… public      male  WHITE… BIOLOG…       1
+ 9 1091005C 1091T02    1091      half-… private     male  WHITE… BIOLOG…       0
+10 2006006C 2006T01    2006      full-… private     male  WHITE… BIOLOG…       1
+# ℹ 974 more rows
+# ℹ 24 more variables: SES_cont &lt;dbl&gt;, SES_cat &lt;chr&gt;, age &lt;dbl&gt;,
+#   T1RSCALE &lt;dbl&gt;, T1MSCALE &lt;dbl&gt;, T1GSCALE &lt;dbl&gt;, T2RSCALE &lt;dbl&gt;,
+#   T2MSCALE &lt;dbl&gt;, T2GSCALE &lt;dbl&gt;, IRTreadgain &lt;dbl&gt;, IRTmathgain &lt;dbl&gt;,
+#   IRTgkgain &lt;dbl&gt;, T1ARSLIT &lt;dbl&gt;, T1ARSMAT &lt;dbl&gt;, T1ARSGEN &lt;dbl&gt;,
+#   T2ARSLIT &lt;dbl&gt;, T2ARSMAT &lt;dbl&gt;, T2ARSGEN &lt;dbl&gt;, ARSlitgain &lt;dbl&gt;,
+#   ARSmathgain &lt;dbl&gt;, ARSgkgain &lt;dbl&gt;, testdate1 &lt;date&gt;, testdate2 &lt;date&gt;, …</code></pre>
+</div>
+</div>
+</section>
+<section id="lets-verify-the-key" class="level2">
+<h2 class="anchored" data-anchor-id="lets-verify-the-key">Let’s verify the key</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>ecls <span class="sc">%&gt;%</span> </span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(child_id)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 984 × 2
+   child_id     n
+   &lt;chr&gt;    &lt;int&gt;
+ 1 0001010C     1
+ 2 0002010C     1
+ 3 0009005C     1
+ 4 0009014C     1
+ 5 0009026C     1
+ 6 0013003C     1
+ 7 0016004C     1
+ 8 0016009C     1
+ 9 0022005C     1
+10 0022014C     1
+# ℹ 974 more rows</code></pre>
+</div>
+</div>
+</section>
+<section id="lets-verify-the-key-1" class="level2">
+<h2 class="anchored" data-anchor-id="lets-verify-the-key-1">Let’s verify the key</h2>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>ecls <span class="sc">%&gt;%</span> </span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(child_id) <span class="sc">%&gt;%</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">%&gt;%</span> </span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  child_id     n
+  &lt;chr&gt;    &lt;int&gt;
+1 0001010C     1
+2 0002010C     1
+3 0009005C     1</code></pre>
+</div>
+</div>
+<p><strong><span style="color:#F0E442">OR</span></strong></p>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>ecls <span class="sc">%&gt;%</span> </span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(child_id) <span class="sc">%&gt;%</span></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n <span class="sc">&gt;</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 0 × 2
+# ℹ 2 variables: child_id &lt;chr&gt;, n &lt;int&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="what-about-the-key-here" class="level2">
+<h2 class="anchored" data-anchor-id="what-about-the-key-here">What about the key here?</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>income_ineq <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"incomeInequality_tidy.csv"</span>))</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(income_ineq, <span class="at">n =</span> <span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 15 × 6
+    Year Number.thousands realGDPperCap PopulationK percentile   income
+   &lt;dbl&gt;            &lt;dbl&gt;         &lt;dbl&gt;       &lt;dbl&gt;      &lt;dbl&gt;    &lt;dbl&gt;
+ 1  1947            37237        14117.      144126       20     14243 
+ 2  1947            37237        14117.      144126       40     22984 
+ 3  1947            37237        14117.      144126       60     31166 
+ 4  1947            37237        14117.      144126       80     44223 
+ 5  1947            37237        14117.      144126       50     26764.
+ 6  1947            37237        14117.      144126       90     41477 
+ 7  1947            37237        14117.      144126       95     54172 
+ 8  1947            37237        14117.      144126       99    134415 
+ 9  1947            37237        14117.      144126       99.5  203001 
+10  1947            37237        14117.      144126       99.9  479022 
+11  1947            37237        14117.      144126      100.  1584506 
+12  1948            38624        14452.      146631       20     13779 
+13  1948            38624        14452.      146631       40     22655 
+14  1948            38624        14452.      146631       60     30248 
+15  1948            38624        14452.      146631       80     42196 </code></pre>
+</div>
+</div>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1"></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a>income_ineq <span class="sc">%&gt;%</span> </span>
+<span id="cb34-2"><a href="#cb34-2"></a>    <span class="fu">count</span>(Year, percentile) <span class="sc">%&gt;%</span> </span>
+<span id="cb34-3"><a href="#cb34-3"></a>    <span class="fu">filter</span>(n <span class="sc">&gt;</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 0 × 3
+# ℹ 3 variables: Year &lt;dbl&gt;, percentile &lt;dbl&gt;, n &lt;int&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="sometimes-there-is-no-key" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="sometimes-there-is-no-key">Sometimes there is no key</h2>
+<p>These tables have an <em>implicit</em> id - the row numbers</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"nycflights13"</span>)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(nycflights13)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(flights)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 19
+   year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
+  &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
+1  2013     1     1      517            515         2      830            819
+2  2013     1     1      533            529         4      850            830
+3  2013     1     1      542            540         2      923            850
+4  2013     1     1      544            545        -1     1004           1022
+5  2013     1     1      554            600        -6      812            837
+6  2013     1     1      554            558        -4      740            728
+# ℹ 11 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;,
+#   tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;,
+#   hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2"></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a>flights <span class="sc">%&gt;%</span> </span>
+<span id="cb39-2"><a href="#cb39-2"></a>  <span class="fu">count</span>(year, month, day, flight, tailnum) <span class="sc">%&gt;%</span> </span>
+<span id="cb39-3"><a href="#cb39-3"></a>  <span class="fu">filter</span>(n <span class="sc">&gt;</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11 × 6
+    year month   day flight tailnum     n
+   &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;int&gt; &lt;chr&gt;   &lt;int&gt;
+ 1  2013     2     9    303 &lt;NA&gt;        2
+ 2  2013     2     9    655 &lt;NA&gt;        2
+ 3  2013     2     9   1623 &lt;NA&gt;        2
+ 4  2013     6     8   2269 N487WN      2
+ 5  2013     6    15   2269 N230WN      2
+ 6  2013     6    22   2269 N440LV      2
+ 7  2013     6    29   2269 N707SA      2
+ 8  2013     7     6   2269 N259WN      2
+ 9  2013     8     3   2269 N446WN      2
+10  2013     8    10   2269 N478WN      2
+11  2013    12    15    398 &lt;NA&gt;        2</code></pre>
+</div>
+</div>
+</section>
+<section id="create-a-key" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-key">Create a key</h2>
+<p>If there is no key, it’s often helpful to add one</p>
+<p>These are called <em>surrogate</em> keys</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a>flights2 <span class="ot">&lt;-</span> flights <span class="sc">%&gt;%</span> </span>
+<span id="cb41-2"><a href="#cb41-2"></a>  <span class="fu">rowid_to_column</span>()</span>
+<span id="cb41-3"><a href="#cb41-3"></a></span>
+<span id="cb41-4"><a href="#cb41-4"></a>flights2 <span class="sc">%&gt;%</span> </span>
+<span id="cb41-5"><a href="#cb41-5"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="fu">ncol</span>(flights))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 336,776 × 4
+   rowid  year month minute
+   &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;dbl&gt;
+ 1     1  2013     1     15
+ 2     2  2013     1     29
+ 3     3  2013     1     40
+ 4     4  2013     1     45
+ 5     5  2013     1      0
+ 6     6  2013     1     58
+ 7     7  2013     1      0
+ 8     8  2013     1      0
+ 9     9  2013     1      0
+10    10  2013     1      0
+# ℹ 336,766 more rows</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="mutating-joins-1" class="level1">
+<h1>Mutating joins</h1>
+<section id="mutating-_joins" class="level2">
+<h2 class="anchored" data-anchor-id="mutating-_joins">Mutating <code>*_joins()</code></h2>
+<ul>
+<li>In <code>{tidyverse}</code>, we use <code>mutate()</code> to create new variables within a dataset</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>A mutating join works similarly, in that we’re adding new variables to the existing dataset through a join</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><strong>Join</strong>: Two tables of data merged by a common key</li>
+</ul>
+</section>
+<section id="four-types-of-joins" class="level2">
+<h2 class="anchored" data-anchor-id="four-types-of-joins">Four types of joins</h2>
+<dl>
+<dt><code>left_join</code></dt>
+<dd>
+keep all the data in the <strong>left</strong> dataset, drop any non-matching cases from the right dataset
+</dd>
+<dt><code>right_join</code></dt>
+<dd>
+keep all the data in the <strong>right</strong> dataset, drop any non-matching cases from the left dataset
+</dd>
+<dt><code>inner_join</code></dt>
+<dd>
+keep <strong>only</strong> data that matches in <b>both</b> datasets
+</dd>
+<dt><code>full_join</code></dt>
+<dd>
+keep <strong>all</strong> the data in <b>both</b> datasets (also sometimes referred to as an <em>outer</em> join)
+</dd>
+</dl>
+</section>
+<section id="four-types-of-joins-1" class="level2">
+<h2 class="anchored" data-anchor-id="four-types-of-joins-1">Four types of joins</h2>
+<p><strong>Mutating joins</strong></p>
+<dl>
+<dt><code>left_join</code></dt>
+<dd>
+keep all the data in the <strong>left</strong> dataset, drop any non-matching cases from the right dataset
+</dd>
+<dt><code>right_join</code></dt>
+<dd>
+keep all the data in the <strong>right</strong> dataset, drop any non-matching cases from the left dataset
+</dd>
+</dl>
+<p>. . .</p>
+<p><strong>Filtering joins</strong></p>
+<dl>
+<dt><code>inner_join</code></dt>
+<dd>
+keep <strong>only</strong> data that matches in <b>both</b> datasets
+</dd>
+<dt><code>full_join</code></dt>
+<dd>
+keep <strong>all</strong> the data in <b>both</b> datasets (also sometimes referred to as an <em>outer</em> join)
+</dd>
+</dl>
+</section>
+<section id="were-going-to-focus-on" class="level2">
+<h2 class="anchored" data-anchor-id="were-going-to-focus-on">We’re going to focus on</h2>
+<p><strong>Mutating joins</strong></p>
+<dl>
+<dt><code>left_join</code></dt>
+<dd>
+keep all the data in the <strong>left</strong> dataset, drop any non-matching cases from the right dataset
+</dd>
+<dt><code>right_join</code></dt>
+<dd>
+keep all the data in the <strong>right</strong> dataset, drop any non-matching cases from the left dataset
+</dd>
+</dl>
+</section>
+<section id="using-joins-to-recode" class="level2">
+<h2 class="anchored" data-anchor-id="using-joins-to-recode">Using joins to recode</h2>
+<p>Say you have a dataset like this</p>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb43-2"><a href="#cb43-2"></a>disab_codes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"00"</span>, <span class="st">"10"</span>, <span class="st">"20"</span>, <span class="st">"40"</span>, <span class="st">"43"</span>, <span class="st">"50"</span>, <span class="st">"60"</span>, </span>
+<span id="cb43-3"><a href="#cb43-3"></a>                 <span class="st">"70"</span>, <span class="st">"74"</span>, <span class="st">"80"</span>, <span class="st">"82"</span>, <span class="st">"90"</span>, <span class="st">"96"</span>, <span class="st">"98"</span>)</span>
+<span id="cb43-4"><a href="#cb43-4"></a>dis_tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb43-5"><a href="#cb43-5"></a>  <span class="at">sid =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">200</span>,</span>
+<span id="cb43-6"><a href="#cb43-6"></a>  <span class="at">dis_code =</span> <span class="fu">sample</span>(disab_codes, <span class="dv">200</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb43-7"><a href="#cb43-7"></a>  <span class="at">score =</span> <span class="fu">as.integer</span>(<span class="fu">rnorm</span>(<span class="dv">200</span>, <span class="dv">200</span>, <span class="dv">10</span>))</span>
+<span id="cb43-8"><a href="#cb43-8"></a>  )</span>
+<span id="cb43-9"><a href="#cb43-9"></a><span class="fu">head</span>(dis_tbl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+    sid dis_code score
+  &lt;int&gt; &lt;chr&gt;    &lt;int&gt;
+1     1 74         190
+2     2 40         200
+3     3 60         200
+4     4 00         183
+5     5 10         210
+6     6 96         188</code></pre>
+</div>
+</div>
+</section>
+<section id="codes" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="codes">Codes</h2>
+<p>And you want to merge it with data like this</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">Code</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Disability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">'Not Applicable'</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">'Intellectual Disability'</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">20</td>
+<td style="text-align: left;">'Hearing Impairment'</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">40</td>
+<td style="text-align: left;">'Visual Impairment'</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">43</td>
+<td style="text-align: left;">'Deaf-Blindness'</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">50</td>
+<td style="text-align: left;">'Communication Disorder'</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">60</td>
+<td style="text-align: left;">'Emotional Disturbance'</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">70</td>
+<td style="text-align: left;">'Orthopedic Impairment'</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">74</td>
+<td style="text-align: left;">'Traumatic Brain Injury'</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">80</td>
+<td style="text-align: left;">'Other Health Impairments'</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">82</td>
+<td style="text-align: left;">'Autism Spectrum Disorder'</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">90</td>
+<td style="text-align: left;">'Specific Learning Disability'</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">96</td>
+<td style="text-align: left;">'Developmental Delay 0-2yr'</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">98</td>
+<td style="text-align: left;">'Developmental Delay 3-4yr'</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+<section id="recode-method" class="level2">
+<h2 class="anchored" data-anchor-id="recode-method">Recode method</h2>
+<p>Using <code>case_when()</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>dis_tbl <span class="sc">%&gt;%</span> </span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">disability =</span> <span class="fu">case_when</span>(</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>    dis_code <span class="sc">==</span> <span class="st">"10"</span> <span class="sc">~</span> <span class="st">"Intellectual Disability"</span>,</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>    dis_code <span class="sc">==</span> <span class="st">"20"</span> <span class="sc">~</span> <span class="st">'Hearing Impairment'</span>,</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>    ...,</span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"Not Applicable"</span></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="join-method" class="level2">
+<h2 class="anchored" data-anchor-id="join-method">Join method</h2>
+<div class="cell" data-output-location="slide">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>dis_code_tbl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">dis_code =</span> <span class="fu">c</span>(</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"00"</span>, <span class="st">"10"</span>, <span class="st">"20"</span>, <span class="st">"40"</span>, <span class="st">"43"</span>, <span class="st">"50"</span>, <span class="st">"60"</span>,</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"70"</span>, <span class="st">"74"</span>, <span class="st">"80"</span>, <span class="st">"82"</span>, <span class="st">"90"</span>, <span class="st">"96"</span>, <span class="st">"98"</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">disability =</span> <span class="fu">c</span>(</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Not Applicable'</span>, <span class="st">'Intellectual Disability'</span>,</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Hearing Impairment'</span>, <span class="st">'Visual Impairment'</span>,</span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Deaf-Blindness'</span>, <span class="st">'Communication Disorder'</span>,</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Emotional Disturbance'</span>, <span class="st">'Orthopedic Impairment'</span>,</span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Traumatic Brain Injury'</span>, <span class="st">'Other Health Impairments'</span>, </span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Autism Spectrum Disorder'</span>, <span class="st">'Specific Learning Disability'</span>, </span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Developmental Delay 0-2yr'</span>, <span class="st">'Developmental Delay 3-4yr'</span></span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="join-the-tables" class="level2">
+<h2 class="anchored" data-anchor-id="join-the-tables">Join the tables</h2>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(dis_tbl, dis_code_tbl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(dis_code)`</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 200 × 4
+     sid dis_code score disability               
+   &lt;int&gt; &lt;chr&gt;    &lt;int&gt; &lt;chr&gt;                    
+ 1     1 74         190 Traumatic Brain Injury   
+ 2     2 40         200 Visual Impairment        
+ 3     3 60         200 Emotional Disturbance    
+ 4     4 00         183 Not Applicable           
+ 5     5 10         210 Intellectual Disability  
+ 6     6 96         188 Developmental Delay 0-2yr
+ 7     7 60         203 Emotional Disturbance    
+ 8     8 82         204 Autism Spectrum Disorder 
+ 9     9 98         201 Developmental Delay 3-4yr
+10    10 10         198 Intellectual Disability  
+# ℹ 190 more rows</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="imperfect-key-match" class="level1 page-columns page-full">
+<h1>Imperfect key match?</h1>
+<section id="consider-the-following" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="consider-the-following">Consider the following</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>frl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">key =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">frl =</span> <span class="fu">rbinom</span>(<span class="dv">3</span>, <span class="dv">1</span>, .<span class="dv">5</span>))</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>sped <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">key =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>), <span class="at">sped =</span> <span class="fu">rbinom</span>(<span class="dv">3</span>, <span class="dv">1</span>, .<span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="columns">
+<p>::: {.column width = 50%}</p><div class="cell" data-highlight.output="[2,6]">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>frl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+    key   frl
+  &lt;int&gt; &lt;int&gt;
+1     1     0
+2     2     1
+3     3     0</code></pre>
+</div>
+</div>
+</div>
+<p>::: {.column width = 50%}</p>
+<div class="cell" data-highlight.output="[2,6]">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>sped</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+    key  sped
+  &lt;dbl&gt; &lt;int&gt;
+1     1     0
+2     2     1
+3     4     0</code></pre>
+</div>
+</div>
+<p>:::</p>
+<p>::::</p>
+</section>
+<section id="consider-the-following-1" class="level2">
+<h2 class="anchored" data-anchor-id="consider-the-following-1">Consider the following</h2>
+<div class="columns">
+<p>::: {.column width = 50%} <code>left_join()</code>?</p><div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(frl, sped)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+    key   frl  sped
+  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
+1     1     0     0
+2     2     1     1
+3     3     0    NA</code></pre>
+</div>
+</div>
+</div>
+<p>::: {.column width = 50% .fragment} <code>right_join()</code>?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">right_join</span>(frl, sped)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+    key   frl  sped
+  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
+1     1     0     0
+2     2     1     1
+3     4    NA     0</code></pre>
+</div>
+</div>
+<p>:::</p>
+<p>::::</p>
+</section>
+<section id="celebrate-yourself-1" class="level2 page-columns page-full" data-background-image="./&quot;images/joins.png&quot;">
+<h2 data-background-image="./&quot;images/joins.png&quot;" class="anchored" data-anchor-id="celebrate-yourself-1">Celebrate yourself!</h2>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><a href="https://r4ds.had.co.nz">From R4DS</a>]</p>
+</div></div></section>
+<section id="animations" class="level2">
+<h2 class="anchored" data-anchor-id="animations">Animations</h2>
+<p>All of the following animations were created by Garrick Aden-Buie and can be found <a href="https://github.com/gadenbuie/tidyexplain">here</a></p>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3"></h2>
+<p><img src="https://raw.githubusercontent.com/gadenbuie/tidyexplain/main/images/left-join.gif" class="img-fluid"></p>
+</section>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4"></h2>
+<p><img src="https://raw.githubusercontent.com/gadenbuie/tidyexplain/main/images/right-join.gif" class="img-fluid"></p>
+</section>
+<section id="what-if-the-key-is-not-unique" class="level2">
+<h2 class="anchored" data-anchor-id="what-if-the-key-is-not-unique">What if the key is not unique?</h2>
+<ul>
+<li>Not an issue, as long as they are unique in <strong>one</strong> of the tables
+<ul>
+<li>In this case, it’s called a one-to-many join</li>
+<li>We saw this when we joined disability code with disability</li>
+</ul></li>
+</ul>
+<p><img src="./images/one_to_many.png" class="img-fluid"></p>
+</section>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5"></h2>
+<p><img src="https://raw.githubusercontent.com/gadenbuie/tidyexplain/main/images/left-join-extra.gif" class="img-fluid"></p>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<div class="colmuns">
+<p>::: {.colum width = 50%} Student-level data</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>(stu <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">sid =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>,</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">scid =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>),</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">score =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">8</span>,  <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">17</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 3
+    sid  scid score
+  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
+1     1     1    10
+2     2     1    12
+3     3     1    15
+4     4     1     8
+5     5     2     9
+6     6     2    11
+7     7     3    12
+8     8     3    15
+9     9     3    17</code></pre>
+</div>
+</div>
+</div>
+<p>::: {.colum width = 50% .fragment} School-level data</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>(schl <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">scid =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>,</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">stu_tch_ratio =</span> <span class="fu">c</span>(<span class="fl">22.05</span>, <span class="fl">31.14</span>, <span class="fl">24.87</span>),</span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">per_pupil_spending =</span> <span class="fu">c</span>(<span class="fl">15741.08</span>, <span class="fl">11732.24</span>, <span class="fl">13027.88</span>)</span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+   scid stu_tch_ratio per_pupil_spending
+  &lt;int&gt;         &lt;dbl&gt;              &lt;dbl&gt;
+1     1          22.0             15741.
+2     2          31.1             11732.
+3     3          24.9             13028.</code></pre>
+</div>
+</div>
+<p>:::</p>
+<p>::::</p>
+</section>
+<section id="one-to-many" class="level2">
+<h2 class="anchored" data-anchor-id="one-to-many">One to many</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(stu, schl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 5
+    sid  scid score stu_tch_ratio per_pupil_spending
+  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;              &lt;dbl&gt;
+1     1     1    10          22.0             15741.
+2     2     1    12          22.0             15741.
+3     3     1    15          22.0             15741.
+4     4     1     8          22.0             15741.
+5     5     2     9          31.1             11732.
+6     6     2    11          31.1             11732.
+7     7     3    12          24.9             13028.
+8     8     3    15          24.9             13028.
+9     9     3    17          24.9             13028.</code></pre>
+</div>
+</div>
+</section>
+<section id="what-if-key-is-not-unique-to-either-table" class="level2">
+<h2 class="anchored" data-anchor-id="what-if-key-is-not-unique-to-either-table">What if key is not unique to either table?</h2>
+<p>Generally this is an error</p>
+<p>Result is probably not going to be what you want</p>
+<p><img src="./images/cartesian_product.png" class="img-fluid"></p>
+</section>
+<section id="example-1" class="level2">
+<h2 class="anchored" data-anchor-id="example-1">Example</h2>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>seasonal_means <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">scid =</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>, <span class="at">each =</span> <span class="dv">3</span>),</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">season =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"fall"</span>, <span class="st">"winter"</span>, <span class="st">"spring"</span>), <span class="dv">3</span>),</span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">mean =</span> <span class="fu">rnorm</span>(<span class="dv">3</span><span class="sc">*</span><span class="dv">3</span>)</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>seasonal_means</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 3
+   scid season   mean
+  &lt;int&gt; &lt;chr&gt;   &lt;dbl&gt;
+1     1 fall    0.345
+2     1 winter  1.54 
+3     1 spring -0.330
+4     2 fall    0.948
+5     2 winter -0.479
+6     2 spring -1.51 
+7     3 fall    0.435
+8     3 winter -0.520
+9     3 spring -0.835</code></pre>
+</div>
+</div>
+</section>
+<section id="section-6" class="level2">
+<h2 class="anchored" data-anchor-id="section-6"></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(stu, seasonal_means) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 27 × 5
+     sid  scid score season   mean
+   &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;
+ 1     1     1    10 fall    0.345
+ 2     1     1    10 winter  1.54 
+ 3     1     1    10 spring -0.330
+ 4     2     1    12 fall    0.345
+ 5     2     1    12 winter  1.54 
+ 6     2     1    12 spring -0.330
+ 7     3     1    15 fall    0.345
+ 8     3     1    15 winter  1.54 
+ 9     3     1    15 spring -0.330
+10     4     1     8 fall    0.345
+# ℹ 17 more rows</code></pre>
+</div>
+</div>
+</section>
+<section id="how-do-we-fix-this" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-we-fix-this">How do we fix this?</h2>
+<p>. . .</p>
+<p><img src="https://media4.giphy.com/media/TgxSogEZU4exOupzRN/giphy.gif?cid=ecf05e4761vyz0plz2gqtplwgdbnzniwh2s2ffcxlz2gnh23&amp;rid=giphy.gif&amp;ct=g" class="img-fluid"></p>
+<p>. . .</p>
+<p>In some cases, the solution is obvious, in others it is not</p>
+<p>But <strong>you must have at least one unique key</strong> to join the datasets</p>
+</section>
+<section id="in-this-case" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="in-this-case">In this case</h2>
+<p>Move the dataset to wide before joining</p>
+<p>. . .</p>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>seasonal_means_wide <span class="ot">&lt;-</span> seasonal_means <span class="sc">%&gt;%</span> </span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> <span class="st">"season"</span>,</span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">values_from =</span> <span class="st">"mean"</span>)</span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>seasonal_means_wide</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 4
+   scid  fall winter spring
+  &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+1     1 0.345  1.54  -0.330
+2     2 0.948 -0.479 -1.51 
+3     3 0.435 -0.520 -0.835</code></pre>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>We will cover this in Week 8</p>
+</div></div></section>
+<section id="join" class="level2">
+<h2 class="anchored" data-anchor-id="join">Join</h2>
+<p>One to many join</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb71"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(stu, seasonal_means_wide)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 6
+    sid  scid score  fall winter spring
+  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+1     1     1    10 0.345  1.54  -0.330
+2     2     1    12 0.345  1.54  -0.330
+3     3     1    15 0.345  1.54  -0.330
+4     4     1     8 0.345  1.54  -0.330
+5     5     2     9 0.948 -0.479 -1.51 
+6     6     2    11 0.948 -0.479 -1.51 
+7     7     3    12 0.435 -0.520 -0.835
+8     8     3    15 0.435 -0.520 -0.835
+9     9     3    17 0.435 -0.520 -0.835</code></pre>
+</div>
+</div>
+</section>
+<section id="default-join-behavior" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="default-join-behavior">Default join behavior</h2>
+<p>By default, the <code>_join</code> functions will use all columns with common names as keys</p>
+<p>. . .</p>
+<div class="cell" data-highlight.output="2" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>flights2 <span class="ot">&lt;-</span> flights <span class="sc">%&gt;%</span> </span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(year<span class="sc">:</span>day, hour, origin, dest, tailnum, carrier)</span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>flights2[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 8
+   year month   day  hour origin dest  tailnum carrier
+  &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;  
+1  2013     1     1     5 EWR    IAH   N14228  UA     
+2  2013     1     1     5 LGA    IAH   N24211  UA     </code></pre>
+</div>
+</div>
+<p>. . .</p>
+<div class="cell" data-highlight.output="2" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>weather[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 15
+  origin  year month   day  hour  temp  dewp humid wind_dir wind_speed wind_gust
+  &lt;chr&gt;  &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;
+1 EWR     2013     1     1     1  39.0  26.1  59.4      270      10.4         NA
+2 EWR     2013     1     1     2  39.0  27.0  61.6      250       8.06        NA
+# ℹ 4 more variables: precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;,
+#   time_hour &lt;dttm&gt;</code></pre>
+</div>
+</div>
+<hr>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(flights2, weather)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Joining with `by = join_by(year, month, day, hour, origin)`</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 336,776 × 18
+    year month   day  hour origin dest  tailnum carrier  temp  dewp humid
+   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+ 1  2013     1     1     5 EWR    IAH   N14228  UA       39.0  28.0  64.4
+ 2  2013     1     1     5 LGA    IAH   N24211  UA       39.9  25.0  54.8
+ 3  2013     1     1     5 JFK    MIA   N619AA  AA       39.0  27.0  61.6
+ 4  2013     1     1     5 JFK    BQN   N804JB  B6       39.0  27.0  61.6
+ 5  2013     1     1     6 LGA    ATL   N668DN  DL       39.9  25.0  54.8
+ 6  2013     1     1     5 EWR    ORD   N39463  UA       39.0  28.0  64.4
+ 7  2013     1     1     6 EWR    FLL   N516JB  B6       37.9  28.0  67.2
+ 8  2013     1     1     6 LGA    IAD   N829AS  EV       39.9  25.0  54.8
+ 9  2013     1     1     6 JFK    MCO   N593JB  B6       37.9  27.0  64.3
+10  2013     1     1     6 LGA    ORD   N3ALAA  AA       39.9  25.0  54.8
+# ℹ 336,766 more rows
+# ℹ 7 more variables: wind_dir &lt;dbl&gt;, wind_speed &lt;dbl&gt;, wind_gust &lt;dbl&gt;,
+#   precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;, time_hour &lt;dttm&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="use-only-certain-keys" class="level2">
+<h2 class="anchored" data-anchor-id="use-only-certain-keys">Use only certain keys?</h2>
+<p>If we were joining <em>flights2</em> and <em>planes</em>, we would not want to use the <code>year</code> variable in the join, because <strong>it means different things in each dataset</strong></p>
+<p>. . .</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(planes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 9
+  tailnum  year type               manufacturer model engines seats speed engine
+  &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;              &lt;chr&gt;        &lt;chr&gt;   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; 
+1 N10156   2004 Fixed wing multi … EMBRAER      EMB-…       2    55    NA Turbo…
+2 N102UW   1998 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…
+3 N103US   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…
+4 N104UW   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…
+5 N10575   2002 Fixed wing multi … EMBRAER      EMB-…       2    55    NA Turbo…
+6 N105UW   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…</code></pre>
+</div>
+</div>
+</section>
+<section id="specify-_join-keys" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="specify-_join-keys">Specify <code>*_join()</code> keys</h2>
+<p>Specify the key variables with <code>join_by()</code> (a function <em>not</em> an argument)</p>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(flights2, planes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 336,776 × 15
+    year month   day  hour origin dest  tailnum carrier type  manufacturer model
+   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;        &lt;chr&gt;
+ 1  2013     1     1     5 EWR    IAH   N14228  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+ 2  2013     1     1     5 LGA    IAH   N24211  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+ 3  2013     1     1     5 JFK    MIA   N619AA  AA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+ 4  2013     1     1     5 JFK    BQN   N804JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+ 5  2013     1     1     6 LGA    ATL   N668DN  DL      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+ 6  2013     1     1     5 EWR    ORD   N39463  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+ 7  2013     1     1     6 EWR    FLL   N516JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+ 8  2013     1     1     6 LGA    IAD   N829AS  EV      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+ 9  2013     1     1     6 JFK    MCO   N593JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+10  2013     1     1     6 LGA    ORD   N3ALAA  AA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; 
+# ℹ 336,766 more rows
+# ℹ 4 more variables: engines &lt;int&gt;, seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb84"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(flights2, planes, <span class="fu">join_by</span>(tailnum))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 336,776 × 16
+   year.x month   day  hour origin dest  tailnum carrier year.y type            
+    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt; &lt;chr&gt;           
+ 1   2013     1     1     5 EWR    IAH   N14228  UA        1999 Fixed wing mult…
+ 2   2013     1     1     5 LGA    IAH   N24211  UA        1998 Fixed wing mult…
+ 3   2013     1     1     5 JFK    MIA   N619AA  AA        1990 Fixed wing mult…
+ 4   2013     1     1     5 JFK    BQN   N804JB  B6        2012 Fixed wing mult…
+ 5   2013     1     1     6 LGA    ATL   N668DN  DL        1991 Fixed wing mult…
+ 6   2013     1     1     5 EWR    ORD   N39463  UA        2012 Fixed wing mult…
+ 7   2013     1     1     6 EWR    FLL   N516JB  B6        2000 Fixed wing mult…
+ 8   2013     1     1     6 LGA    IAD   N829AS  EV        1998 Fixed wing mult…
+ 9   2013     1     1     6 JFK    MCO   N593JB  B6        2004 Fixed wing mult…
+10   2013     1     1     6 LGA    ORD   N3ALAA  AA          NA &lt;NA&gt;            
+# ℹ 336,766 more rows
+# ℹ 6 more variables: manufacturer &lt;chr&gt;, model &lt;chr&gt;, engines &lt;int&gt;,
+#   seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb86"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(flights2, planes, <span class="fu">join_by</span>(tailnum), <span class="at">suffix =</span> <span class="fu">c</span>(<span class="st">"_flights"</span>, <span class="st">"_planes"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 336,776 × 16
+   year_flights month   day  hour origin dest  tailnum carrier year_planes type 
+          &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;         &lt;int&gt; &lt;chr&gt;
+ 1         2013     1     1     5 EWR    IAH   N14228  UA             1999 Fixe…
+ 2         2013     1     1     5 LGA    IAH   N24211  UA             1998 Fixe…
+ 3         2013     1     1     5 JFK    MIA   N619AA  AA             1990 Fixe…
+ 4         2013     1     1     5 JFK    BQN   N804JB  B6             2012 Fixe…
+ 5         2013     1     1     6 LGA    ATL   N668DN  DL             1991 Fixe…
+ 6         2013     1     1     5 EWR    ORD   N39463  UA             2012 Fixe…
+ 7         2013     1     1     6 EWR    FLL   N516JB  B6             2000 Fixe…
+ 8         2013     1     1     6 LGA    IAD   N829AS  EV             1998 Fixe…
+ 9         2013     1     1     6 JFK    MCO   N593JB  B6             2004 Fixe…
+10         2013     1     1     6 LGA    ORD   N3ALAA  AA               NA &lt;NA&gt; 
+# ℹ 336,766 more rows
+# ℹ 6 more variables: manufacturer &lt;chr&gt;, model &lt;chr&gt;, engines &lt;int&gt;,
+#   seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="specify-_join-keys-1" class="level1">
+<h1>Specify <code>*_join()</code> keys</h1>
+<p>I like to <strong>always</strong> specify the <code>join_by()</code> variables</p>
+<p>Makes intent explicit</p>
+<p>Helps me review my own code</p>
+<section id="mismatched-key-names" class="level2">
+<h2 class="anchored" data-anchor-id="mismatched-key-names">Mismatched key names</h2>
+<p>What if you had data to merge like this?</p>
+<div class="columns">
+<p>::: {.column width = 50%}</p><div class="cell">
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(schl)[<span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="st">"school_id"</span></span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>schl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+  school_id stu_tch_ratio per_pupil_spending
+      &lt;int&gt;         &lt;dbl&gt;              &lt;dbl&gt;
+1         1          22.0             15741.
+2         2          31.1             11732.
+3         3          24.9             13028.</code></pre>
+</div>
+</div>
+</div>
+<p>::: {.column width = 50%}</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a>stu</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 3
+    sid  scid score
+  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
+1     1     1    10
+2     2     1    12
+3     3     1    15
+4     4     1     8
+5     5     2     9
+6     6     2    11
+7     7     3    12
+8     8     3    15
+9     9     3    17</code></pre>
+</div>
+</div>
+<p>:::</p>
+<p>::::</p>
+</section>
+<section id="join-with-mismatched-key-names" class="level2">
+<h2 class="anchored" data-anchor-id="join-with-mismatched-key-names">Join with mismatched key names</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(stu, schl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `left_join()`:
+! `by` must be supplied when `x` and `y` have no common variables.
+ℹ Use `cross_join()` to perform a cross-join.</code></pre>
+</div>
+</div>
+<div class="cell" data-output-location="fragment">
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(stu, schl, <span class="fu">join_by</span>(scid <span class="sc">==</span> school_id))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 5
+    sid  scid score stu_tch_ratio per_pupil_spending
+  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;              &lt;dbl&gt;
+1     1     1    10          22.0             15741.
+2     2     1    12          22.0             15741.
+3     3     1    15          22.0             15741.
+4     4     1     8          22.0             15741.
+5     5     2     9          31.1             11732.
+6     6     2    11          31.1             11732.
+7     7     3    12          24.9             13028.
+8     8     3    15          24.9             13028.
+9     9     3    17          24.9             13028.</code></pre>
+</div>
+</div>
+</section>
+<section id="join_by" class="level2">
+<h2 class="anchored" data-anchor-id="join_by"><code>join_by()</code></h2>
+<p>You can read it out loud as “where x is equal to y”, just like in other logical statements where == is pronounced as “is equal to”</p>
+</section>
+</section>
+<section id="next-time" class="level1">
+<h1>Next time</h1>
+<section id="before-next-class" class="level2">
+<h2 class="anchored" data-anchor-id="before-next-class">Before next class</h2>
+<ul>
+<li>Homework
+<ul>
+<li><strong>Homework 8</strong></li>
+</ul></li>
+<li>Reading
+<ul>
+<li><a href="https://r4ds.had.co.nz/tidy-data.html">R4DS(2e) 12</a></li>
+<li><a href="http://www.jstatsoft.org/v59/i10/paper">Wickham (2014)</a></li>
+<li><a href="https://rladiessydney.org/courses/ryouwithme/02-cleanitup-5/">R-Ladies Sydney. CleanItUp 5</a></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="homework-8" class="level1">
+<h1>Homework 8</h1>
+</section>
+<section id="final-project" class="level1">
+<h1>Final Project</h1>
+<section id="final-project-1" class="level2">
+<h2 class="anchored" data-anchor-id="final-project-1">Final Project</h2>
+<p>Final paper: Quarto document</p>
+<p><strong>Final project must:</strong> * Be fully reproducible + This implies the data are open * Be a collaborative project hosted on GitHub * Move data from its raw “messy” format to a tidy data format * Include at least two exploratory plots * Include at least summary statistics of the data in tables, although fitted models are also encouraged</p>
+</section>
+<section id="final-project---dates" class="level2">
+<h2 class="anchored" data-anchor-id="final-project---dates">Final Project - Dates</h2>
+<ul>
+<li><p><strong>Week 9 (11/22)</strong>: Data prep script due</p></li>
+<li><p><strong>Week 10 (11/29)</strong>: Peer review due</p></li>
+<li><p><strong>Week 10 (11/29)</strong>: Final project presentations</p></li>
+<li><p><strong>Week 11 (12/6)</strong>: Final Paper due</p></li>
+</ul>
+</section>
+<section id="final-project---data-prep-script" class="level2">
+<h2 class="anchored" data-anchor-id="final-project---data-prep-script">Final Project - Data Prep Script</h2>
+<ul>
+<li>Expected to be a work in progress</li>
+<li>Provided to your peers so they can learn from you as much as you can learn from their feedback</li>
+</ul>
+<p><strong>Peer Review</strong></p>
+<ul>
+<li>Understand the purpose of the exercise</li>
+<li>Conducted as a professional product</li>
+<li>Should be <strong>very</strong> encouraging</li>
+<li>Zero tolerance policy for inappropriate comments</li>
+</ul>
+</section>
+<section id="final-project-presentation" class="level2">
+<h2 class="anchored" data-anchor-id="final-project-presentation">Final Project – Presentation</h2>
+<p>Groups are expected to present for approximately 15 minutes (split evenly among members). Group order randomly assigned.</p>
+<p>Presentation cover the following:</p>
+<ul>
+<li>Share your journey (everyone, at least for a minute or two)</li>
+<li>Discuss challenges you had along the way</li>
+<li>Celebrate your successes</li>
+<li>Discuss challenges you are still facing</li>
+<li>Discuss substantive findings</li>
+<li>Show off your cool figures!</li>
+<li>Discuss next <code>R</code> hurdle you want to address</li>
+</ul>
+</section>
+<section id="final-project-presentation-scoring-rubric" class="level2">
+<h2 class="anchored" data-anchor-id="final-project-presentation-scoring-rubric">Final Project – Presentation Scoring Rubric</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-classic table table-sm table-striped small" data-quarto-postprocess="true">
+<caption><strong>Final Presentation Rubric</strong></caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Criteria</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Points possible</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Challenges faced along the way</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Victories and things to celebrate</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Challenges you are still facing</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Substantive findings/interpretations</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Next R hurdle to tackle</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; font-weight: bold;">Total</td>
+<td style="text-align: right; font-weight: bold;">25</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+<section id="final-project-paper" class="level2">
+<h2 class="anchored" data-anchor-id="final-project-paper">Final Project – Paper</h2>
+<ul>
+<li>R Markdown document
+<ul>
+<li>Abstract, Intro, Methods, Results, Discussion, References</li>
+<li>Should be brief: 3,500 words max</li>
+</ul></li>
+<li>No code displayed - should look similar to a manuscript being submitted for publication</li>
+<li>Include at least 1 table</li>
+<li>Include at least 2 plots</li>
+<li>Should be fully open, reproducible, and housed on GitHub
+<ul>
+<li>I should be able to clone your repository, open the R Studio Project, and reproduce the full manuscript (by knitting the R Markdown doc)</li>
+</ul></li>
+</ul>
+</section>
+<section id="final-paper---scoring-rubric" class="level2">
+<h2 class="anchored" data-anchor-id="final-paper---scoring-rubric">Final Paper - Scoring Rubric</h2>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="bodlewfstl" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:80%;">
+<style>#bodlewfstl table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#bodlewfstl thead, #bodlewfstl tbody, #bodlewfstl tfoot, #bodlewfstl tr, #bodlewfstl td, #bodlewfstl th {
+  border-style: none;
+}
+
+#bodlewfstl p {
+  margin: 0;
+  padding: 0;
+}
+
+#bodlewfstl .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#bodlewfstl .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#bodlewfstl .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#bodlewfstl .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_col_heading {
+  color: #FFFFFF;
+  background-color: #0072B2;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#bodlewfstl .gt_column_spanner_outer {
+  color: #FFFFFF;
+  background-color: #0072B2;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#bodlewfstl .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#bodlewfstl .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#bodlewfstl .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#bodlewfstl .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#bodlewfstl .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#bodlewfstl .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#bodlewfstl .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#bodlewfstl .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#bodlewfstl .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#bodlewfstl .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bodlewfstl .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#bodlewfstl .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#bodlewfstl .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#bodlewfstl .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bodlewfstl .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#bodlewfstl .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bodlewfstl .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#bodlewfstl .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bodlewfstl .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#bodlewfstl .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#bodlewfstl .gt_left {
+  text-align: left;
+}
+
+#bodlewfstl .gt_center {
+  text-align: center;
+}
+
+#bodlewfstl .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#bodlewfstl .gt_font_normal {
+  font-weight: normal;
+}
+
+#bodlewfstl .gt_font_bold {
+  font-weight: bold;
+}
+
+#bodlewfstl .gt_font_italic {
+  font-style: italic;
+}
+
+#bodlewfstl .gt_super {
+  font-size: 65%;
+}
+
+#bodlewfstl .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#bodlewfstl .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#bodlewfstl .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#bodlewfstl .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#bodlewfstl .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#bodlewfstl .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#bodlewfstl .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Criteria">Criteria</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="Points Possible">Points Possible</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="Criteria" class="gt_row gt_left" style="font-weight: bold; background-color: #FFFFFF;"><div data-qmd="Writing"><div class="gt_from_md"><p>Writing</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="font-weight: bold; background-color: #FFFFFF;"><div data-qmd=""><div class="gt_from_md"></div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="Abstract"><div class="gt_from_md"><p>Abstract</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="Introduction"><div class="gt_from_md"><p>Introduction</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="Methods"><div class="gt_from_md"><p>Methods</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="Results"><div class="gt_from_md"><p>Results</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="Discussion"><div class="gt_from_md"><p>Discussion</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="References"><div class="gt_from_md"><p>References</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="font-weight: bold; background-color: #FFFFFF;"><div data-qmd="Code"><div class="gt_from_md"><p>Code</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="font-weight: bold; background-color: #FFFFFF;"><div data-qmd=""><div class="gt_from_md"></div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="Document is fully reproducible"><div class="gt_from_md"><p>Document is fully reproducible</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="25"><div class="gt_from_md"><p>25</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="Demonstrate use of inline code"><div class="gt_from_md"><p>Demonstrate use of inline code</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="At least two data visualizations"><div class="gt_from_md"><p>At least two data visualizations</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="10 (5 pts each)"><div class="gt_from_md"><p>10 (5 pts each)</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="font-weight: bold; background-color: #FFFFFF;"><div data-qmd="Demonstrate tidying messy data using:"><div class="gt_from_md"><p>Demonstrate tidying messy data using:</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="font-weight: bold; background-color: #FFFFFF;"><div data-qmd=""><div class="gt_from_md"></div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="`pivot_longer()`"><div class="gt_from_md"><p><code>pivot_longer()</code></p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="`mutate()`"><div class="gt_from_md"><p><code>mutate()</code></p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="`select()`` and ``filter()`"><div class="gt_from_md"><p><code>select()`` and ``filter()</code></p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="`pivot_wider()`"><div class="gt_from_md"><p><code>pivot_wider()</code></p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="At least one table of descriptive statistics"><div class="gt_from_md"><p>At least one table of descriptive statistics</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="10"><div class="gt_from_md"><p>10</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="`group_by()`"><div class="gt_from_md"><p><code>group_by()</code></p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="`summarize()`"><div class="gt_from_md"><p><code>summarize()</code></p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="background-color: #FFFFFF;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
+</div></div></td></tr>
+    <tr><td headers="Criteria" class="gt_row gt_left" style="font-weight: bold; background-color: #FFFFFF;"><div data-qmd="Total"><div class="gt_from_md"><p>Total</p>
+</div></div></td>
+<td headers="Points Possible" class="gt_row gt_left" style="font-weight: bold; background-color: #FFFFFF;"><div data-qmd="110"><div class="gt_from_md"><p>110</p>
+</div></div></td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="final-project-2" class="level2">
+<h2 class="anchored" data-anchor-id="final-project-2">Final Project</h2>
+<p>The following functions: * <code>pivot_longer()</code> * <code>mutate()</code> * <code>select()</code> * <code>filter()</code> * <code>pivot_wider()</code> * <code>group_by()</code> * <code>summarize()</code></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

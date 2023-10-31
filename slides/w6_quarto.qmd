@@ -34,6 +34,10 @@ library(gtsummary)
 
 Week 6
 
+## Housekeeping
+
+Final projects
+
 ## Agenda {.smaller}
 
 * Quarto basics
@@ -501,7 +505,7 @@ b <- 7
 a / b
 ```
 
-## Chunk Names
+## Chunk Names {.smaller}
 
 * Use single word: `chunk1`
 * Or use hyphen (`-`) to separate words: `chunk-1` 
@@ -543,7 +547,7 @@ Note that lists require an entire blank line above the list, otherwise it will a
 
 ![](./images/qmd5.png)
 
-# More Advanced Options
+## More Advanced Options
 
 * chunk options
 * setting global options
@@ -823,7 +827,7 @@ Just execute the shortcut then type what you want to insert
 
 [demo]{style='color:#D55E00'}
 
-## Editor Toolbar
+## Editor Toolbar {.smaller}
 
 The editor toolbar includes buttons for the most commonly used formatting commands:
 
@@ -1183,7 +1187,6 @@ penguins %>%
 ```{r, results='asis', eval=FALSE}
 #| results: asis
 #| code-line-numbers: "18,19,20,21,22,23,24"
-#| output-location: fragment
 
 penguins %>%
   group_by(species, year) %>% 
@@ -1268,11 +1271,14 @@ m %>%
 ## Before next class
 
 * Homework
-    + Homework 6
-    + Homework 7
+    + Homework 6 (let's take a look)
+    + Homework 7 (let's take a look)
 * Reading
     + [R4DS(2e) 13](https://r4ds.had.co.nz/relational-data.html)
 * Supplemental Learning
     + [RStudio Primer: Join Data Sets](https://posit.cloud/learn/primers/4.3)
     + [Codecademy: Joining Tables in R](https://www.codecademy.com/courses/learn-r/lessons/r-multiple-tables/exercises/introduction)
 
+# Homework 6
+
+# Homework 7

@@ -104,5 +104,17 @@
   },
   "slides/w6_quarto.qmd": {
     "w6_quarto.html": "1afbace1"
+  },
+  "slides/w7_joins.qmd": {
+    "w7_joins.html": "43f0a64d"
+  },
+  "homeworks/hw2-key.qmd": {
+    "hw2-key.html": "5cd0cf0b"
+  },
+  "homeworks/hw3-key.qmd": {
+    "hw3-key.html": "e8e31f36"
+  },
+  "homeworks/hw4-key.qmd": {
+    "hw4-key.html": "70f9fb4a"
   }
 }
