@@ -16,7 +16,9 @@ execute:
   warning: false
 ---
 
-```{r setup, include=FALSE}
+```{r}
+#| label: setup
+#| include: false
 
 library(tidyverse)
 library(knitr)
@@ -961,7 +963,7 @@ citation("tidyverse")
 2. In your YAML, add a new line for `bibliography:` followed by the name of your bibliography file, which should be in the same directory, and should be the bare name (i.e., not quotes)
     + `bibliography: references.bib`
 3. Open a text file in RStudio, save it with a `.bib` extension
-    + name it`references.bib`
+    + name it `references.bib`
 4. Go to Google Scholar and find a reference to cite. Copy and paste the citation into your `.bib` file using Google's cite option
 5. Include a reference to the citation in your qmd file
 6. Reference Section: references are included automatically at the end of the document (*note*: not APA format)
@@ -973,7 +975,7 @@ citation("tidyverse")
 
 ## Citations in .Rmd [demo]{style='color:#D55E00'}
 
-(1) Open a new Rmd document
+(1) Open a new qmd document
 
 (2) In your YAML, add a new line for `bibliography:` followed by the name of your bibliography file, which should be in the same directory, and should be the bare name (i.e., not quotes)
   + `bibliography: references.bib`
