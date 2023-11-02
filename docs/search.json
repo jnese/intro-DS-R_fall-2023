@@ -95,7 +95,7 @@
     "href": "syllabus.html#week-6-quarto",
     "title": "Syllabus",
     "section": "Week 6: Quarto",
-    "text": "Week 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nR4DS(2e) 30\n\nQuarto\n\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nR4DS(2e) 30\n\nQuarto\n\nWeek 6\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: B53W&L1j"
   },
   {
     "objectID": "syllabus.html#week-7-mutating-joins",
@@ -1257,7 +1257,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Before Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned2\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\nIntro\n\nWeek 1a\n\nA Quick Tour of the RStudio IDE\n\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1b\n\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: 1a = c+mzu9yt and 1b = GP&8Grs8\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\nWorkflow\n\nWeek 2\n\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: BGssp@k0\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\nggplot2\n\n\n\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Posted to Canvas : Files\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\ndplyr\n\nWeek 4\n\nDownload GitKraken\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nWatch What is a Git repository?\n\nRbootcamp: Ch 3\n\n    \n\n\n\nWatch What is a remote repository?\n\nCodecademy: Aggregates in R\n\n    \n\n\n\nHomework 4\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NJ!798*3\n    \n  \n\n\n\n\n\n\nWeek 5: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nBryan 2017\n\ngit & GitHub\n\nWeek 5\n\nMarkdown Tutorial\n\nDownload GitKraken\n\n    \n\n\n\nHomework 5\n\nWatch What is a Git repository?\n\n    \n\n\n\n\nWatch What is a remote repository?\n\n    \n\n\n\n\nHomework 4\n\n    \n\n\n\n\nFinal Project: Outline\n\n  \n  \n  \n    \n      1 Passcode: 6zGuVA$b\n    \n  \n\n\n\n\n\n\nWeek 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nR4DS(2e) 30\n\nQuarto\n\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
+    "text": "Before Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned2\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\nIntro\n\nWeek 1a\n\nA Quick Tour of the RStudio IDE\n\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1b\n\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: 1a = c+mzu9yt and 1b = GP&8Grs8\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\nWorkflow\n\nWeek 2\n\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: BGssp@k0\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\nggplot2\n\n\n\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Posted to Canvas : Files\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\ndplyr\n\nWeek 4\n\nDownload GitKraken\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nWatch What is a Git repository?\n\nRbootcamp: Ch 3\n\n    \n\n\n\nWatch What is a remote repository?\n\nCodecademy: Aggregates in R\n\n    \n\n\n\nHomework 4\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NJ!798*3\n    \n  \n\n\n\n\n\n\nWeek 5: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nBryan 2017\n\ngit & GitHub\n\nWeek 5\n\nMarkdown Tutorial\n\nDownload GitKraken\n\n    \n\n\n\nHomework 5\n\nWatch What is a Git repository?\n\n    \n\n\n\n\nWatch What is a remote repository?\n\n    \n\n\n\n\nHomework 4\n\n    \n\n\n\n\nFinal Project: Outline\n\n  \n  \n  \n    \n      1 Passcode: 6zGuVA$b\n    \n  \n\n\n\n\n\n\nWeek 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nR4DS(2e) 30\n\nQuarto\n\nWeek 6\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: B53W&L1j\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
   },
   {
     "objectID": "installs.html",
@@ -2593,15 +2593,15 @@
     "objectID": "slides/w6_quarto.html#agenda",
     "href": "slides/w6_quarto.html#agenda",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Quarto basics\nYAML options\nChunk Options\nInline Code\n\nLearning Objectives\n\nUnderstand how to render Quarto documents and mix code with text\nUnderstand different chunk options\nUnderstand inline code evaluation"
+    "section": "Agenda",
+    "text": "Agenda\n\nQuarto basics\nYAML options\nChunk Options\nInline Code\n\nLearning Objectives\n\nUnderstand how to render Quarto documents and mix code with text\nUnderstand different chunk options\nUnderstand inline code evaluation"
   },
   {
     "objectID": "slides/w6_quarto.html#what-is-quarto",
     "href": "slides/w6_quarto.html#what-is-quarto",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "an open-source scientific and technical publishing system\ncreate dynamic content with Python, R, Julia, and Observable.\npublish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.\ninclude equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.\na multi-language, next generation version of R Markdown (from Posit)\nincludes many built in output formats (and options for customizing each)\nhas native features for special project types like Websites, Books, and Blogs (rather than relying on external packages)\neverything"
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\n\nan open-source scientific and technical publishing system\ncreate dynamic content with Python, R, Julia, and Observable.\npublish reproducible, production quality articles, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, etc.\ninclude equations, citations, crossrefs, figure panels, callouts, advanced layout, etc.\na multi-language, next generation version of R Markdown (from Posit)\nincludes many built in output formats (and options for customizing each)\nhas native features for special project types like Websites, Books, and Blogs (rather than relying on external packages)\neverything"
   },
   {
     "objectID": "slides/w6_quarto.html#section",
@@ -2614,190 +2614,190 @@
     "objectID": "slides/w6_quarto.html#formats",
     "href": "slides/w6_quarto.html#formats",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Quarto will render to HTML and PDF really well\nWord also supported\nYou can also create presentations (slides), websites, books, etc."
+    "section": "Formats",
+    "text": "Formats\n\nQuarto will render to HTML and PDF really well\nWord also supported\nYou can also create presentations (slides), websites, books, etc."
   },
   {
     "objectID": "slides/w6_quarto.html#pdf-engines",
     "href": "slides/w6_quarto.html#pdf-engines",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "You need a tex (pronounced tek) distribution\nPandoc supports the use of a wide range of TeX distributions (pdflatex, xelatex, lualatex, tectonic, latexmk)\nI strongly recommend the use of TinyTeX, which is a distribution of TeX Live that provides a reasonably sized initial download (~100 MB) that includes the 200 or so most commonly used TeX packages for Pandoc documents."
+    "section": "PDF Engines",
+    "text": "PDF Engines\n\nYou need a tex (pronounced tek) distribution\nPandoc supports the use of a wide range of TeX distributions (pdflatex, xelatex, lualatex, tectonic, latexmk)\nI strongly recommend the use of TinyTeX, which is a distribution of TeX Live that provides a reasonably sized initial download (~100 MB) that includes the 200 or so most commonly used TeX packages for Pandoc documents."
   },
   {
     "objectID": "slides/w6_quarto.html#pdf-engines-1",
     "href": "slides/w6_quarto.html#pdf-engines-1",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "For this class, and probably everything you’ll ever need: TinyTex\nTo install TinyTeX, use the following command in your Terminal:\nquarto install tinytex\n. . ."
+    "section": "PDF Engines",
+    "text": "PDF Engines\nFor this class, and probably everything you’ll ever need: TinyTex\nTo install TinyTeX, use the following command in your Terminal:\nquarto install tinytex"
   },
   {
     "objectID": "slides/w6_quarto.html#note",
     "href": "slides/w6_quarto.html#note",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Each year in April, TeXlive updates their remote package repository to the new year’s version of TeX. When this happens, previous year installations of TeX will not be able to download and install packages from the remote repository. When this happens, you may see an error like:\n\nYour TexLive version is not updated enough to connect to the remote repository and download packages. Please update your installation of TexLive or TinyTex.\n\nWhen this happens, you can use quarto update tinytex to download and install an updated version of tinytex"
+    "section": "Note",
+    "text": "Note\nEach year in April, TeXlive updates their remote package repository to the new year’s version of TeX. When this happens, previous year installations of TeX will not be able to download and install packages from the remote repository. When this happens, you may see an error like:\n\nYour TexLive version is not updated enough to connect to the remote repository and download packages. Please update your installation of TexLive or TinyTex.\n\nWhen this happens, you can use quarto update tinytex to download and install an updated version of tinytex"
   },
   {
     "objectID": "slides/w6_quarto.html#quarto-1",
     "href": "slides/w6_quarto.html#quarto-1",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "From within a RStudio Project, open a new Quarto file"
+    "section": "Quarto",
+    "text": "Quarto\nFrom within a RStudio Project, open a new Quarto file"
   },
   {
     "objectID": "slides/w6_quarto.html#quarto-2",
     "href": "slides/w6_quarto.html#quarto-2",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "From within a RStudio Project, open a new Quarto file"
+    "section": "Quarto",
+    "text": "Quarto\nFrom within a RStudio Project, open a new Quarto file"
   },
   {
     "objectID": "slides/w6_quarto.html#yaml-front-matter",
     "href": "slides/w6_quarto.html#yaml-front-matter",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "---\ntitle: \"World Changing Research\"\nformat: html\n---\n\n\nYet Another Markup Language?\nThree dashes --- before and after the YAML fields\n\nStart with the default YAML\n\nCase sensitive\nFormat sensitive (spaces & tab) - very sensitive\nMany other fields are possible\n\nFor example, you may want to include an argument for format: pdf, html, docx\nMust be specified as it is rendered, if not supplied\n\nFull list here (there’s a lot)"
+    "section": "YAML Front Matter",
+    "text": "YAML Front Matter\n\n---\ntitle: \"World Changing Research\"\nformat: html\n---\n\n\nYet Another Markup Language?\nThree dashes --- before and after the YAML fields\n\nStart with the default YAML\n\nCase sensitive\nFormat sensitive (spaces & tab) - very sensitive\nMany other fields are possible\n\nFor example, you may want to include an argument for format: pdf, html, docx\nMust be specified as it is rendered, if not supplied\n\nFull list here (there’s a lot)"
   },
   {
     "objectID": "slides/w6_quarto.html#authoring",
     "href": "slides/w6_quarto.html#authoring",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "---\ntitle: \"World Changing Research\"\nsubtitle: \"Seriously, it's really good research\"\nauthor: \"Joe Nese\"\ndate: \"2023-5-25\"\nabstract: \"Summary of document\"\nabstract-title: \"Lable abstract\"\ndoi: \"digitil object identifier\"\nformat: html\n---"
+    "section": "Authoring",
+    "text": "Authoring\n\n---\ntitle: \"World Changing Research\"\nsubtitle: \"Seriously, it's really good research\"\nauthor: \"Joe Nese\"\ndate: \"2023-5-25\"\nabstract: \"Summary of document\"\nabstract-title: \"Lable abstract\"\ndoi: \"digitil object identifier\"\nformat: html\n---"
   },
   {
     "objectID": "slides/w6_quarto.html#code-execution",
     "href": "slides/w6_quarto.html#code-execution",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Set the default behavior for all code chunks in the script with execute\n\n---\ntitle: \"World Changing Research\"\nauthor: \"Joe Nese\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n---"
+    "section": "Code Execution",
+    "text": "Code Execution\nSet the default behavior for all code chunks in the script with execute\n\n---\ntitle: \"World Changing Research\"\nauthor: \"Joe Nese\"\nformat: html\nexecute:\n  eval: true\n  echo: false\n---"
   },
   {
     "objectID": "slides/w6_quarto.html#execute",
     "href": "slides/w6_quarto.html#execute",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?"
+    "section": "execute",
+    "text": "execute\n\n\n\n\n\n\n  \n    \n    \n      Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?"
   },
   {
     "objectID": "slides/w6_quarto.html#eval",
     "href": "slides/w6_quarto.html#eval",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nevaluates code\nif false it just echos the code into output"
+    "section": "eval",
+    "text": "eval\n\n\n\n\n\n\n  \n    \n    \n      Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nevaluates code\nif false it just echos the code into output"
   },
   {
     "objectID": "slides/w6_quarto.html#echo",
     "href": "slides/w6_quarto.html#echo",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nshow (echo) source code in rendered output\necho: false is most useful when producing a report for somebody who doesn’t use R and has no use for, or knowledge of, the code"
+    "section": "echo",
+    "text": "echo\n\n\n\n\n\n\n  \n    \n    \n      Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nshow (echo) source code in rendered output\necho: false is most useful when producing a report for somebody who doesn’t use R and has no use for, or knowledge of, the code"
   },
   {
     "objectID": "slides/w6_quarto.html#warning",
     "href": "slides/w6_quarto.html#warning",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\ninclude warnings in rendered output"
+    "section": "warning",
+    "text": "warning\n\n\n\n\n\n\n  \n    \n    \n      Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\ninclude warnings in rendered output"
   },
   {
     "objectID": "slides/w6_quarto.html#error",
     "href": "slides/w6_quarto.html#error",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nInclude errors in the output\nIf false, then errors executing code will halt processing of the document"
+    "section": "error",
+    "text": "error\n\n\n\n\n\n\n  \n    \n    \n      Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nInclude errors in the output\nIf false, then errors executing code will halt processing of the document"
   },
   {
     "objectID": "slides/w6_quarto.html#include",
     "href": "slides/w6_quarto.html#include",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nCode will execute, but neither code or results will show in the output"
+    "section": "include",
+    "text": "include\n\n\n\n\n\n\n  \n    \n    \n      Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nCode will execute, but neither code or results will show in the output"
   },
   {
     "objectID": "slides/w6_quarto.html#output",
     "href": "slides/w6_quarto.html#output",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nInclude the results of executing the code in the output. Possible values:\n\ntrue: show results\nfalse: do not show results\nasis: output as raw markdown; use for rendering tables!"
+    "section": "output",
+    "text": "output\n\n\n\n\n\n\n  \n    \n    \n      Options\n      Arguments\n      Default\n      Effect\n    \n  \n  \n    eval\n\ntrue, false, […]\n\ntrue\n\nEvaluate the code?\n\n    echo\n\ntrue, false, fence, […]\n\ntrue\n\nShow the code?\n\n    warning\n\nlogical\n\ntrue\n\nPrint warnings?\n\n    error\n\nlogical\n\ntrue\n\nInclude errors in the output?\n\n    include\n\nlogical\n\ntrue\n\nPrevent any output (code or results)?\n\n    output\n\ntrue, false, asis\n\ntrue\n\nInclude code results?\n\n  \n  \n  \n\n\n\n\n\nInclude the results of executing the code in the output. Possible values:\n\ntrue: show results\nfalse: do not show results\nasis: output as raw markdown; use for rendering tables!"
   },
   {
     "objectID": "slides/w6_quarto.html#figures",
     "href": "slides/w6_quarto.html#figures",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "So many options for figures.\nOne is to set figure width/height\n\n---\ntitle: \"World Changing Research\"\nformat: html\nexecute:\n  eval: true\n  echo: false\nfig-width: 6.5\nfig-height: 8\n---"
+    "section": "figures",
+    "text": "figures\nSo many options for figures.\nOne is to set figure width/height\n\n---\ntitle: \"World Changing Research\"\nformat: html\nexecute:\n  eval: true\n  echo: false\nfig-width: 6.5\nfig-height: 8\n---"
   },
   {
     "objectID": "slides/w6_quarto.html#syntax-highlighting",
     "href": "slides/w6_quarto.html#syntax-highlighting",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "The YAML will control a lot of how a document looks\nFor example, if you wanted to render with a different syntax highlighter\n\n\n\nstandard \n\n---\ntitle: \"Doc Title\"\nformat: pdf\n---\n\n \n\nkate \n\n---\ntitle: \"Doc Title\"\nformat: \n  pdf:\n    highlight-style: kate\n---"
+    "section": "Syntax Highlighting",
+    "text": "Syntax Highlighting\n\nThe YAML will control a lot of how a document looks\nFor example, if you wanted to render with a different syntax highlighter\n\n\n\nstandard \n\n---\ntitle: \"Doc Title\"\nformat: pdf\n---\n\n \n\nkate \n\n---\ntitle: \"Doc Title\"\nformat: \n  pdf:\n    highlight-style: kate\n---"
   },
   {
     "objectID": "slides/w6_quarto.html#table-of-contents",
     "href": "slides/w6_quarto.html#table-of-contents",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Specify a table of contents in the YAML\nA table of contents will be automatically generated for you based on your headers\n\n# Header 1  ## Header 2\n\n---\nformat: \n  html:\n    toc: true\n---"
+    "section": "Table of Contents",
+    "text": "Table of Contents\n\nSpecify a table of contents in the YAML\nA table of contents will be automatically generated for you based on your headers\n\n# Header 1  ## Header 2\n\n---\nformat: \n  html:\n    toc: true\n---"
   },
   {
     "objectID": "slides/w6_quarto.html#toc---change-depth",
     "href": "slides/w6_quarto.html#toc---change-depth",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "By default, the TOC will only go down to 3 levels\nChange that with toc-depth:\n\n\n---\nformat: \n  html:\n    toc: true\n    toc-depth: 5\n---"
+    "section": "TOC - change depth",
+    "text": "TOC - change depth\n\nBy default, the TOC will only go down to 3 levels\nChange that with toc-depth:\n\n\n---\nformat: \n  html:\n    toc: true\n    toc-depth: 5\n---"
   },
   {
     "objectID": "slides/w6_quarto.html#toc---location",
     "href": "slides/w6_quarto.html#toc---location",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "For HTML format by default floats the table of contents to the right\nThe floating TOC can be used to navigate to sections of the document and also will automatically highlight the appropriate section as the user scrolls\nThe table of contents is responsive and will become hidden once the viewport becomes too narrow\nYou can alternatively position it at the left or in the body\n\n\n---\nformat: \n  html:\n    toc: true\n    toc-location: left\n---"
+    "section": "TOC - location",
+    "text": "TOC - location\n\nFor HTML format by default floats the table of contents to the right\nThe floating TOC can be used to navigate to sections of the document and also will automatically highlight the appropriate section as the user scrolls\nThe table of contents is responsive and will become hidden once the viewport becomes too narrow\nYou can alternatively position it at the left or in the body\n\n\n---\nformat: \n  html:\n    toc: true\n    toc-location: left\n---"
   },
   {
     "objectID": "slides/w6_quarto.html#toc---title",
     "href": "slides/w6_quarto.html#toc---title",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "You can customize the title used for the table of contents using the toc-title option\n\n---\nformat: \n  html:\n    toc: true\n    toc-title: Contents\n---"
+    "section": "TOC - title",
+    "text": "TOC - title\nYou can customize the title used for the table of contents using the toc-title option\n\n---\nformat: \n  html:\n    toc: true\n    toc-title: Contents\n---"
   },
   {
     "objectID": "slides/w6_quarto.html#code-folding",
     "href": "slides/w6_quarto.html#code-folding",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Use the code-fold option to include code but have it hidden by default\nUse custom text for the code display button (the default is just “Code”)\n\n\n---\nformat:\n  html:\n    code-fold: true\n    code-summary: \"Show the code\"\n---\n\nPopcorn Experiment"
+    "section": "Code Folding",
+    "text": "Code Folding\n\nUse the code-fold option to include code but have it hidden by default\nUse custom text for the code display button (the default is just “Code”)\n\n\n---\nformat:\n  html:\n    code-fold: true\n    code-summary: \"Show the code\"\n---\n\nPopcorn Experiment"
   },
   {
     "objectID": "slides/w6_quarto.html#code-chunks",
     "href": "slides/w6_quarto.html#code-chunks",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Start a code chunk with ```{r}\nThen produce some R code\nthen close the chunk with three additional back ticks ```\n OR \nDropdown: Code ⬇️ Insert Chunk\nShortcut: Ctrl/Command + Alt + I\n\n```{r}\na &lt;- 22\nb &lt;- 7\n\na / b\n```\n\n[1] 3.142857"
+    "section": "Code Chunks",
+    "text": "Code Chunks\nStart a code chunk with ```{r}\nThen produce some R code\nthen close the chunk with three additional back ticks ```\n OR \nDropdown: Code ⬇️ Insert Chunk\nShortcut: Ctrl/Command + Alt + I\n\n```{r}\na &lt;- 22\nb &lt;- 7\n\na / b\n```\n\n[1] 3.142857"
   },
   {
     "objectID": "slides/w6_quarto.html#chunk-names",
     "href": "slides/w6_quarto.html#chunk-names",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Use single word: chunk1\nOr use hyphen (-) to separate words: chunk-1\nDo not use spaces: chunk 1\nDo not use underscore chunk_1\nChunk names can only be used once\n\n. . .\nThink kebabs, not snakes\n\nbar-plot-1\nbar-plot-2\nhist-plot-1\nmodel-1\n\n\n\nAllison Hill"
+    "section": "Chunk Names",
+    "text": "Chunk Names\n\nUse single word: chunk1\nOr use hyphen (-) to separate words: chunk-1\nDo not use spaces: chunk 1\nDo not use underscore chunk_1\nChunk names can only be used once\n\n\nThink kebabs, not snakes\n\nbar-plot-1\nbar-plot-2\nhist-plot-1\nmodel-1\n\n\n\n\nAllison Hill"
   },
   {
     "objectID": "slides/w6_quarto.html#headers",
     "href": "slides/w6_quarto.html#headers",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Great for organizing text and code\n# Level 1  ## Level 2  ### Level 3"
+    "section": "Headers",
+    "text": "Headers\nGreat for organizing text and code\n# Level 1  ## Level 2  ### Level 3"
   },
   {
     "objectID": "slides/w6_quarto.html#lists",
     "href": "slides/w6_quarto.html#lists",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Note that lists require an entire blank line above the list, otherwise it will appear as normal text along a single line and not rendered in list form\n^ not an R vector list"
+    "section": "Lists^",
+    "text": "Lists^\nNote that lists require an entire blank line above the list, otherwise it will appear as normal text along a single line and not rendered in list form\n^ not an R vector list"
   },
   {
     "objectID": "slides/w6_quarto.html#chunk-options-1",
@@ -2881,7 +2881,7 @@
     "href": "slides/w6_quarto.html#inline-r-code",
     "title": "Week 6: Quarto",
     "section": "Inline R Code",
-    "text": "Inline R Code\nInline code is code that runs in your prose (i.e., not code chunks)\nTwo back ticks that enclose the letter ‘r’ produce inline code to be evaluated ` r code `\nThis is extremely useful in writing reports. Never have to update any numbers in text, regardless of changes to your models or data (if you are careful about it).\n. . .\n\n```{r}\na &lt;- 22\nb &lt;- 7\n```\n\nscript:\nThis is an example of inline code where I want to refer to the sum of a and b, which is `r a + b`\noutput:\nThis is an example of inline code where I want to refer to the sum of a and b, which is 29"
+    "text": "Inline R Code\nInline code is code that runs in your prose (i.e., not code chunks)\nTwo back ticks that enclose the letter ‘r’ produce inline code to be evaluated ` r code `\nThis is extremely useful in writing reports. Never have to update any numbers in text, regardless of changes to your models or data (if you are careful about it).\n\n\n```{r}\na &lt;- 22\nb &lt;- 7\n```\n\nscript:\nThis is an example of inline code where I want to refer to the sum of a and b, which is `r a + b`\noutput:\nThis is an example of inline code where I want to refer to the sum of a and b, which is 29"
   },
   {
     "objectID": "slides/w6_quarto.html#example",
@@ -2972,7 +2972,7 @@
     "href": "slides/w6_quarto.html#references-1",
     "title": "Week 6: Quarto",
     "section": "References",
-    "text": "References\nTo include references in your .qmd, you must:\n\nCreate an external .bib file using LaTeX formatting\n\nuse RStudio to open new Text File\n\nInclude bibliography: name_of_your_bib_file.bib in your YAML\n\nreferences.bib\n\nRefer to the citations in text using @\nFor parenthesis around the citation, used brackets - [@BibTex_citekey]\n\n. . .\nWhat is BibTex?\n. . .\nWhat is a BibTex citekey?\n. . .\nWhy are you doing this to us, Joe, we just want to code"
+    "text": "References\nTo include references in your .qmd, you must:\n\nCreate an external .bib file using LaTeX formatting\n\nuse RStudio to open new Text File\n\nInclude bibliography: name_of_your_bib_file.bib in your YAML\n\nreferences.bib\n\nRefer to the citations in text using @\nFor parenthesis around the citation, used brackets - [@BibTex_citekey]\n\n\nWhat is BibTex?\n\n\nWhat is a BibTex citekey?\n\n\nWhy are you doing this to us, Joe, we just want to code"
   },
   {
     "objectID": "slides/w6_quarto.html#bibtex",
@@ -3007,7 +3007,7 @@
     "href": "slides/w6_quarto.html#remember",
     "title": "Week 6: Quarto",
     "section": "Remember…",
-    "text": "Remember…\nCite R!\n\ncitation()\n\n\nTo cite R in publications use:\n\n  R Core Team (2023). R: A language and environment for statistical\n  computing. R Foundation for Statistical Computing, Vienna, Austria.\n  URL https://www.R-project.org/.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2023},\n    url = {https://www.R-project.org/},\n  }\n\nWe have invested a lot of time and effort in creating R, please cite it\nwhen using it for data analysis. See also 'citation(\"pkgname\")' for\nciting R packages.\n\n\n. . .\nAnd the packages you used!\n\ncitation(\"tidyverse\")\n\n\nTo cite package 'tidyverse' in publications use:\n\n  Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R,\n  Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller\n  E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V,\n  Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). \"Welcome to\n  the tidyverse.\" _Journal of Open Source Software_, *4*(43), 1686.\n  doi:10.21105/joss.01686 &lt;https://doi.org/10.21105/joss.01686&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Article{,\n    title = {Welcome to the {tidyverse}},\n    author = {Hadley Wickham and Mara Averick and Jennifer Bryan and Winston Chang and Lucy D'Agostino McGowan and Romain François and Garrett Grolemund and Alex Hayes and Lionel Henry and Jim Hester and Max Kuhn and Thomas Lin Pedersen and Evan Miller and Stephan Milton Bache and Kirill Müller and Jeroen Ooms and David Robinson and Dana Paige Seidel and Vitalie Spinu and Kohske Takahashi and Davis Vaughan and Claus Wilke and Kara Woo and Hiroaki Yutani},\n    year = {2019},\n    journal = {Journal of Open Source Software},\n    volume = {4},\n    number = {43},\n    pages = {1686},\n    doi = {10.21105/joss.01686},\n  }"
+    "text": "Remember…\nCite R!\n\ncitation()\n\n\nTo cite R in publications use:\n\n  R Core Team (2023). R: A language and environment for statistical\n  computing. R Foundation for Statistical Computing, Vienna, Austria.\n  URL https://www.R-project.org/.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2023},\n    url = {https://www.R-project.org/},\n  }\n\nWe have invested a lot of time and effort in creating R, please cite it\nwhen using it for data analysis. See also 'citation(\"pkgname\")' for\nciting R packages.\n\n\n\nAnd the packages you used!\n\ncitation(\"tidyverse\")\n\n\nTo cite package 'tidyverse' in publications use:\n\n  Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R,\n  Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller\n  E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V,\n  Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). \"Welcome to\n  the tidyverse.\" _Journal of Open Source Software_, *4*(43), 1686.\n  doi:10.21105/joss.01686 &lt;https://doi.org/10.21105/joss.01686&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Article{,\n    title = {Welcome to the {tidyverse}},\n    author = {Hadley Wickham and Mara Averick and Jennifer Bryan and Winston Chang and Lucy D'Agostino McGowan and Romain François and Garrett Grolemund and Alex Hayes and Lionel Henry and Jim Hester and Max Kuhn and Thomas Lin Pedersen and Evan Miller and Stephan Milton Bache and Kirill Müller and Jeroen Ooms and David Robinson and Dana Paige Seidel and Vitalie Spinu and Kohske Takahashi and Davis Vaughan and Claus Wilke and Kara Woo and Hiroaki Yutani},\n    year = {2019},\n    journal = {Journal of Open Source Software},\n    volume = {4},\n    number = {43},\n    pages = {1686},\n    doi = {10.21105/joss.01686},\n  }"
   },
   {
     "objectID": "slides/w6_quarto.html#citations-in-.qmd-demo",
@@ -3154,7 +3154,7 @@
     "href": "slides/w6_quarto.html#gtsummary-1",
     "title": "Week 6: Quarto",
     "section": "{gtsummary}",
-    "text": "{gtsummary}\n\nm &lt;- lm(body_mass_g ~ 1 + bill_length_mm + flipper_length_mm,\n        data = penguins)\n\nm %&gt;% \n  gtsummary::tbl_regression()\n\n\n\n\n\n  \n    \n    \n      Characteristic\n      Beta\n      95% CI1\n      p-value\n    \n  \n  \n    bill_length_mm\n6.0\n-4.1, 16\n0.2\n    flipper_length_mm\n48\n44, 52\n&lt;0.001\n  \n  \n  \n    \n      1 CI = Confidence Interval"
+    "text": "{gtsummary}\n\nm &lt;- lm(body_mass_g ~ 1 + bill_length_mm + flipper_length_mm,\n        data = penguins)\n\nm %&gt;% \n  gtsummary::tbl_regression()\n\n\n\n\n\n\n\n  \n    \n    \n      Characteristic\n      Beta\n      95% CI1\n      p-value\n    \n  \n  \n    bill_length_mm\n6.0\n-4.1, 16\n0.2\n    flipper_length_mm\n48\n44, 52\n&lt;0.001\n  \n  \n  \n    \n      1 CI = Confidence Interval"
   },
   {
     "objectID": "slides/w6_quarto.html#before-next-class",
@@ -3643,15 +3643,15 @@
     "objectID": "slides/w6_quarto.html#housekeeping",
     "href": "slides/w6_quarto.html#housekeeping",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "Final projects"
+    "section": "Housekeeping",
+    "text": "Housekeeping\nFinal projects"
   },
   {
     "objectID": "slides/w6_quarto.html#more-advanced-options",
     "href": "slides/w6_quarto.html#more-advanced-options",
     "title": "Week 6: Quarto",
-    "section": "",
-    "text": "chunk options\nsetting global options\ninline code evaluation"
+    "section": "More Advanced Options",
+    "text": "More Advanced Options\n\nchunk options\nsetting global options\ninline code evaluation"
   },
   {
     "objectID": "slides/w7_joins.html",
