@@ -14,6 +14,7 @@ format:
 execute: 
   echo: true
   warning: false
+embed-resources: true
 ---
 
 ```{r include=FALSE}
@@ -35,7 +36,7 @@ Week 7
 
 ## [Celebrate yourself!]{style='color:#FFFFFF'} {background-image="https://media4.giphy.com/media/y3FzofnwM97ngxeO3o/giphy.gif?cid=ecf05e47v3d6hztnq52lqaoop57dz9eetu5kfr4xckfhp37j&ep=v1_gifs_search&rid=giphy.gif&ct=g"}
 
-## Agenda
+## Agenda {.smaller}
 
 * `bind_rows()`
 * `*_join()`
@@ -67,8 +68,7 @@ Week 7
 ## Binding rows
 
 ```{r g34-datsets}
-#| output-location: fragment
- 
+
 g3 <- tibble(sid = 1:3, 
              grade = rep(3, 3), 
              score = as.integer(rnorm(3, 200, 10)))
@@ -86,6 +86,7 @@ g4 <- tibble(sid = 9:11,
 ```{r g3-print}
 g3
 ```
+
 :::
 
 
@@ -94,6 +95,7 @@ g3
 ```{r g4-print}
 g4
 ```
+
 :::
 
 ::::
@@ -171,18 +173,24 @@ read <- tibble(sid = 1:3,
 math <- tibble(math = as.integer(rnorm(3, 200,10)))
 ```
 
+## 
+
 :::: {.columns}
 
-::: {.column width = 50%}
+::: {.column width="50%"}
+
 ```{r}
 read
 ```
+
 :::
 
-::: {.column width = 50%}
+::: {.column width="50%"}
+
 ```{r}
 math
 ```
+
 :::
 
 ::::
@@ -198,7 +206,7 @@ bind_cols(read, math)
 
 (not to be confused with row binding)
 
-## Keys
+## Keys {.smaller}
 
 * Uniquely identify rows in a dataset
 
@@ -252,6 +260,8 @@ ecls %>%
   slice(1:3)
 ```
 
+. . .
+
 **[OR]{style='color:#F0E442'}**
 
 ```{r }
@@ -280,7 +290,7 @@ income_ineq %>%
 
 ## Sometimes there is no key {.smaller}
 
-These tables have an *implicit* id - the row numbers
+These tables have an **implicit** key - the row numbers
 
 ```{r eval = FALSE}
 install.packages("nycflights13")
@@ -300,7 +310,7 @@ flights %>%
   filter(n > 1)
 ```
 
-## Create a key
+## Create a key {.smaller}
 
 If there is no key, it's often helpful to add one
 
@@ -430,7 +440,7 @@ dis_tbl %>%
     dis_code == "10" ~ "Intellectual Disability",
     dis_code == "20" ~ 'Hearing Impairment',
     ...,
-    TRUE ~ "Not Applicable"
+    .default = "Not Applicable"
     )
   )
 ```
@@ -475,43 +485,39 @@ frl <- tibble(key = 1:3, frl = rbinom(3, 1, .5))
 sped <- tibble(key = c(1, 2, 4), sped = rbinom(3, 1, .5))
 ```
 
-:::: {.columns}
+. . .
 
-::: {.column width = 50%}
-```{r frl, highlight.output=c(2, 6)}
+```{r}
+#| output-location: fragment
 frl
 ```
-:::
 
-::: {.column width = 50%}
-```{r sped, highlight.output=c(2, 6)}
+. . .
+
+```{r}
+#| output-location: fragment
 sped
 ```
-:::
-
-::::
 
 ## Consider the following
 
-:::: {.columns}
-
-::: {.column width = 50%}
 `left_join()`?
-```{r left_join}
+
+```{r}
+#| output-location: fragment
 left_join(frl, sped)
 ```
-:::
 
-::: {.column width = 50% .fragment}
+. . .
+
 `right_join()`?
-```{r right_join}
+
+```{r}
+#| output-location: fragment
 right_join(frl, sped)
 ```
-:::
 
-::::
-
-## Celebrate yourself! {background-image=./"images/joins.png"}
+## ![](https://d33wubrfki0l68.cloudfront.net/9c12ca9e12ed26a7c5d2aa08e36d2ac4fb593f1e/79980/diagrams/join-outer.png)
 
 ::: aside
 [From R4DS](https://r4ds.had.co.nz)]
@@ -547,18 +553,23 @@ All of the following animations were created by Garrick Aden-Buie and can be fou
 
 :::: {.colmuns}
 
-::: {.colum width = 50%}
+::: {.colum width = "50%"}
+
 Student-level data
+
 ```{r stu_lev}
 (stu <- tibble(
   sid = 1:9,
   scid = c(1, 1, 1, 1, 2, 2, 3, 3, 3),
   score = c(10, 12, 15, 8,  9, 11, 12, 15, 17)))
 ```
+
 :::
 
-::: {.colum width = 50% .fragment}
+::: {.colum width = "50%" .fragment}
+
 School-level data
+
 ```{r }
 (schl <- tibble(
   scid = 1:3,
@@ -567,6 +578,7 @@ School-level data
   )
 )
 ```
+
 :::
 
 ::::
@@ -629,7 +641,7 @@ seasonal_means_wide
 ```
 
 ::: aside
-We will cover this in Week 8
+We will cover this next week
 :::
 
 ## Join
@@ -646,11 +658,12 @@ By default, the `_join` functions will use all columns with common names as keys
 
 . . .
 
-```{r flights2, highlight.output = c(2)}
+```{r flights2}
 #| output-location: fragment
 
 flights2 <- flights %>% 
   select(year:day, hour, origin, dest, tailnum, carrier)
+
 flights2[1:2, ]
 ```
 
@@ -662,7 +675,7 @@ flights2[1:2, ]
 weather[1:2, ]
 ```
 
----
+## 
 
 ```{r join_flights_weather, message = TRUE}
 left_join(flights2, weather)
@@ -687,6 +700,7 @@ Specify the key variables with `join_by()` (a function *not* an argument)
 left_join(flights2, planes)
 ```
 
+. . .
 
 ```{r}
 #| output-location: fragment
@@ -699,7 +713,7 @@ left_join(flights2, planes, join_by(tailnum))
 left_join(flights2, planes, join_by(tailnum), suffix = c("_flights", "_planes"))
 ```
 
-# Specify `*_join()` keys
+## Specify `*_join()` keys
 
 I like to **always** specify the `join_by()` variables
 
@@ -709,33 +723,31 @@ Helps me review my own code
 
 ## Mismatched key names
 
-What if you had data to merge like this?
-
-:::: {.columns}
-
-::: {.column width = 50%}
 ```{r}
+#| output-location: fragment
+
 names(schl)[1] <- "school_id"
 schl
 ```
-:::
 
+. . .
 
-::: {.column width = 50%}
 ```{r}
+#| output-location: fragment
 stu
 ```
-:::
 
-::::
 
 ## Join with mismatched key names
 
 ```{r join_name_mismatch}
 #| error: true
+#| output-location: fragment
+
 left_join(stu, schl)
 ```
 
+. . .
 
 ```{r}
 #| output-location: fragment
@@ -744,18 +756,18 @@ left_join(stu, schl, join_by(scid == school_id))
 
 ## `join_by()`
 
-You can read it out loud as "where x is equal to y", just like in other logical statements where == is pronounced as "is equal to"
+You can read it out loud as "where x is equal to y", just like in other logical statements where `==` is pronounced as "is equal to"
 
 # Next time
 
 ## Before next class
 
 * Homework
-  + **Homework 8**
+    + **Homework 8**
 * Reading
-  + [R4DS(2e) 12](https://r4ds.had.co.nz/tidy-data.html)
-  + [Wickham (2014)](http://www.jstatsoft.org/v59/i10/paper)
-  + [R-Ladies Sydney. CleanItUp 5](https://rladiessydney.org/courses/ryouwithme/02-cleanitup-5/)
+    + [R4DS(2e) 12](https://r4ds.had.co.nz/tidy-data.html)
+    + [Wickham (2014)](http://www.jstatsoft.org/v59/i10/paper)
+    + [R-Ladies Sydney. CleanItUp 5](https://rladiessydney.org/courses/ryouwithme/02-cleanitup-5/)
 
 # Homework 8
 
@@ -765,7 +777,6 @@ You can read it out loud as "where x is equal to y", just like in other logical 
 
 Final paper: Quarto document
 
-**Final project must:**
 * Be fully reproducible
     + This implies the data are open
 * Be a collaborative project hosted on GitHub
@@ -823,14 +834,14 @@ read_csv(here("rubrics", "final-presentation_rubric.csv")) %>%
 
 ## Final Project – Paper
 
-* R Markdown document
+* Quarto document
     + Abstract, Intro, Methods, Results, Discussion, References
     + Should be brief: 3,500 words max 
 * No code displayed - should look similar to a manuscript being submitted for publication
 * Include at least 1 table
 * Include at least 2 plots
 * Should be fully open, reproducible, and housed on GitHub
-    + I should be able to clone your repository, open the R Studio Project, and reproduce the full manuscript (by knitting the R Markdown doc)
+    + I should be able to clone your repository, open the R Studio Project, and reproduce the full manuscript (by knitting the Quarto doc)
 
 ## Final Paper - Scoring Rubric
 
@@ -863,6 +874,7 @@ read_csv(here("rubrics", "final-project_rubric.csv")) %>%
 ## Final Project
 
 The following functions: 
+
 * `pivot_longer()`
 * `mutate()`
 * `select()`

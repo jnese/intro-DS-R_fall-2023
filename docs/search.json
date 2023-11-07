@@ -60,70 +60,70 @@
     "href": "syllabus.html#week-1-introduction",
     "title": "Syllabus",
     "section": "Week 1: Introduction",
-    "text": "Week 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned2\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\nIntro\n\nWeek 1a\n\nA Quick Tour of the RStudio IDE\n\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1b\n\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: 1a = c+mzu9yt and 1b = GP&8Grs8\n    \n    \n      2 I do not rearrange my RStudio panes as he does."
+    "text": "Week 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned2\n      Due\n    \n  \n  \n    Sep-27\nR4DS(2e) 5\n\nIntro\n\nWeek 1a\n\nA Quick Tour of the RStudio IDE\n\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1b\n\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: 1a = c+mzu9yt and 1b = GP&8Grs8\n    \n    \n      2 I do not rearrange my RStudio panes as he does."
   },
   {
     "objectID": "syllabus.html#week-2-workflow",
     "href": "syllabus.html#week-2-workflow",
     "title": "Syllabus",
     "section": "Week 2: Workflow",
-    "text": "Week 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\nWorkflow\n\nWeek 2\n\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: BGssp@k0"
+    "text": "Week 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-04\nProject-oriented Workflow\n\nWorkflow\n\nWeek 2\n\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: BGssp@k0"
   },
   {
     "objectID": "syllabus.html#week-3-ggplot2",
     "href": "syllabus.html#week-3-ggplot2",
     "title": "Syllabus",
     "section": "Week 3: {ggplot2}",
-    "text": "Week 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\nggplot2\n\n\n\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Posted to Canvas : Files"
+    "text": "Week 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-11\nR4DS(2e) 2\n\nggplot2\n\n\n\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Posted to Canvas : Files"
   },
   {
     "objectID": "syllabus.html#week-4-dplyr",
     "href": "syllabus.html#week-4-dplyr",
     "title": "Syllabus",
     "section": "Week 4: {dplyr}",
-    "text": "Week 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\ndplyr\n\nWeek 4\n\nDownload GitKraken\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nWatch What is a Git repository?\n\nRbootcamp: Ch 3\n\n    \n\n\n\nWatch What is a remote repository?\n\nCodecademy: Aggregates in R\n\n    \n\n\n\nHomework 4\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NJ!798*3"
+    "text": "Week 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-18\nR4DS(2e) 4\n\ndplyr\n\nWeek 4\n\nDownload GitKraken\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nWatch What is a Git repository?\n\nRbootcamp: Ch 3\n\n    \n\n\n\nWatch What is a remote repository?\n\nCodecademy: Aggregates in R\n\n    \n\n\n\nHomework 4\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NJ!798*3"
   },
   {
     "objectID": "syllabus.html#week-5-github",
     "href": "syllabus.html#week-5-github",
     "title": "Syllabus",
     "section": "Week 5: GitHub",
-    "text": "Week 5: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nBryan 2017\n\ngit & GitHub\n\nWeek 5\n\nMarkdown Tutorial\n\nDownload GitKraken\n\n    \n\n\n\nHomework 5\n\nWatch What is a Git repository?\n\n    \n\n\n\n\nWatch What is a remote repository?\n\n    \n\n\n\n\nHomework 4\n\n    \n\n\n\n\nFinal Project: Outline\n\n  \n  \n  \n    \n      1 Passcode: 6zGuVA$b"
+    "text": "Week 5: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-25\nBryan 2017\n\ngit & GitHub\n\nWeek 5\n\nMarkdown Tutorial\n\nDownload GitKraken\n\n    \n\n\n\nHomework 5\n\nWatch What is a Git repository?\n\n    \n\n\n\n\nWatch What is a remote repository?\n\n    \n\n\n\n\nHomework 4\n\n    \n\n\n\n\nFinal Project: Outline\n\n  \n  \n  \n    \n      1 Passcode: 6zGuVA$b"
   },
   {
     "objectID": "syllabus.html#week-6-quarto",
     "href": "syllabus.html#week-6-quarto",
     "title": "Syllabus",
     "section": "Week 6: Quarto",
-    "text": "Week 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nR4DS(2e) 30\n\nQuarto\n\nWeek 6\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: B53W&L1j"
+    "text": "Week 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-01\nR4DS(2e) 30\n\nQuarto\n\nWeek 6\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: B53W&L1j"
   },
   {
     "objectID": "syllabus.html#week-7-mutating-joins",
     "href": "syllabus.html#week-7-mutating-joins",
     "title": "Syllabus",
     "section": "Week 7: Mutating Joins",
-    "text": "Week 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-08\nR4DS(2e) 13\n\njoins\n\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-8-tidy-data",
     "href": "syllabus.html#week-8-tidy-data",
     "title": "Syllabus",
     "section": "Week 8: Tidy Data",
-    "text": "Week 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-15\nR4DS(2e) 12\n\n\n\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-9-factors-pull-request",
     "href": "syllabus.html#week-9-factors-pull-request",
     "title": "Syllabus",
     "section": "Week 9: Factors & Pull Request",
-    "text": "Week 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-22\nR4DS(2e) 17\n\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-10-presentations",
     "href": "syllabus.html#week-10-presentations",
     "title": "Syllabus",
     "section": "Week 10: Presentations",
-    "text": "Week 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-29\n\n\n\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-11-no-class-final-papers-due",
@@ -1257,7 +1257,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Before Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned2\n      Due\n    \n  \n  \n    Sep-28\nR4DS(2e) 5\n\nIntro\n\nWeek 1a\n\nA Quick Tour of the RStudio IDE\n\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1b\n\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: 1a = c+mzu9yt and 1b = GP&8Grs8\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-05\nProject-oriented Workflow\n\nWorkflow\n\nWeek 2\n\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: BGssp@k0\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-12\nR4DS(2e) 2\n\nggplot2\n\n\n\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Posted to Canvas : Files\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-19\nR4DS(2e) 4\n\ndplyr\n\nWeek 4\n\nDownload GitKraken\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nWatch What is a Git repository?\n\nRbootcamp: Ch 3\n\n    \n\n\n\nWatch What is a remote repository?\n\nCodecademy: Aggregates in R\n\n    \n\n\n\nHomework 4\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NJ!798*3\n    \n  \n\n\n\n\n\n\nWeek 5: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-26\nBryan 2017\n\ngit & GitHub\n\nWeek 5\n\nMarkdown Tutorial\n\nDownload GitKraken\n\n    \n\n\n\nHomework 5\n\nWatch What is a Git repository?\n\n    \n\n\n\n\nWatch What is a remote repository?\n\n    \n\n\n\n\nHomework 4\n\n    \n\n\n\n\nFinal Project: Outline\n\n  \n  \n  \n    \n      1 Passcode: 6zGuVA$b\n    \n  \n\n\n\n\n\n\nWeek 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-02\nR4DS(2e) 30\n\nQuarto\n\nWeek 6\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: B53W&L1j\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-09\nR4DS(2e) 13\n\n\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-16\nR4DS(2e) 12\n\n\n\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-23\nR4DS(2e) 17\n\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-30\n\n\n\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
+    "text": "Before Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned2\n      Due\n    \n  \n  \n    Sep-27\nR4DS(2e) 5\n\nIntro\n\nWeek 1a\n\nA Quick Tour of the RStudio IDE\n\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1b\n\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: 1a = c+mzu9yt and 1b = GP&8Grs8\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-04\nProject-oriented Workflow\n\nWorkflow\n\nWeek 2\n\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: BGssp@k0\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-11\nR4DS(2e) 2\n\nggplot2\n\n\n\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Posted to Canvas : Files\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-18\nR4DS(2e) 4\n\ndplyr\n\nWeek 4\n\nDownload GitKraken\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nWatch What is a Git repository?\n\nRbootcamp: Ch 3\n\n    \n\n\n\nWatch What is a remote repository?\n\nCodecademy: Aggregates in R\n\n    \n\n\n\nHomework 4\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NJ!798*3\n    \n  \n\n\n\n\n\n\nWeek 5: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-25\nBryan 2017\n\ngit & GitHub\n\nWeek 5\n\nMarkdown Tutorial\n\nDownload GitKraken\n\n    \n\n\n\nHomework 5\n\nWatch What is a Git repository?\n\n    \n\n\n\n\nWatch What is a remote repository?\n\n    \n\n\n\n\nHomework 4\n\n    \n\n\n\n\nFinal Project: Outline\n\n  \n  \n  \n    \n      1 Passcode: 6zGuVA$b\n    \n  \n\n\n\n\n\n\nWeek 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-01\nR4DS(2e) 30\n\nQuarto\n\nWeek 6\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: B53W&L1j\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-08\nR4DS(2e) 13\n\njoins\n\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-15\nR4DS(2e) 12\n\n\n\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-22\nR4DS(2e) 17\n\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-29\n\n\n\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
   },
   {
     "objectID": "installs.html",
@@ -3230,99 +3230,99 @@
     "objectID": "slides/w7_joins.html#agenda",
     "href": "slides/w7_joins.html#agenda",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "bind_rows()\n*_join()\n\nOverall Purpose\n\nUnderstand and be able to identify keys\nUnderstand different types of mutating joins\n\nleft_join()\nright_join()\none-to-one\none-to-many\n\nUnderstand some ways joins fail"
+    "section": "Agenda",
+    "text": "Agenda\n\nbind_rows()\n*_join()\n\nOverall Purpose\n\nUnderstand and be able to identify keys\nUnderstand different types of mutating joins\n\nleft_join()\nright_join()\none-to-one\none-to-many\n\nUnderstand some ways joins fail"
   },
   {
     "objectID": "slides/w7_joins.html#a-bit-about-joins",
     "href": "slides/w7_joins.html#a-bit-about-joins",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "Also data “merge”\nToday we’ll talk about mutating joins\nMutating joins add columns to a dataset\nMutating joins are the most common, but filtering joins can be very powerful\n\n. . .\nWhat if I want to add rows?\n\nNot technically a join (no key involved)\nLet’s take a look"
+    "section": "A bit about joins",
+    "text": "A bit about joins\n\nAlso data “merge”\nToday we’ll talk about mutating joins\nMutating joins add columns to a dataset\nMutating joins are the most common, but filtering joins can be very powerful\n\n\nWhat if I want to add rows?\n\nNot technically a join (no key involved)\nLet’s take a look"
   },
   {
     "objectID": "slides/w7_joins.html#binding-rows",
     "href": "slides/w7_joins.html#binding-rows",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "g3 &lt;- tibble(sid = 1:3, \n             grade = rep(3, 3), \n             score = as.integer(rnorm(3, 200, 10)))\ng4 &lt;- tibble(sid = 9:11, \n             grade = rep(4, 3), \n             score = as.integer(rnorm(3, 200, 10)))"
+    "section": "Binding rows",
+    "text": "Binding rows\n\ng3 &lt;- tibble(sid = 1:3, \n             grade = rep(3, 3), \n             score = as.integer(rnorm(3, 200, 10)))\ng4 &lt;- tibble(sid = 9:11, \n             grade = rep(4, 3), \n             score = as.integer(rnorm(3, 200, 10)))"
   },
   {
     "objectID": "slides/w7_joins.html#section",
     "href": "slides/w7_joins.html#section",
     "title": "Week 7: Mutating Joins",
     "section": "",
-    "text": "g3\n\n# A tibble: 3 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     1     3   200\n2     2     3   201\n3     3     3   203\n\n\n\n\ng4\n\n# A tibble: 3 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     9     4   201\n2    10     4   193\n3    11     4   204"
+    "text": "g3\n\n# A tibble: 3 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     1     3   202\n2     2     3   197\n3     3     3   210\n\n\n\n\ng4\n\n# A tibble: 3 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     9     4   211\n2    10     4   191\n3    11     4   217"
   },
   {
     "objectID": "slides/w7_joins.html#bind_rows",
     "href": "slides/w7_joins.html#bind_rows",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "In examples like the previous data sets, we just want to combine the data by stacking the rows\nData have same (or approximately same) columns\nWe can do so with bind_rows()\n\n\n# output-location: fragment\nbind_rows(g3, g4)\n\n# A tibble: 6 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     1     3   200\n2     2     3   201\n3     3     3   203\n4     9     4   201\n5    10     4   193\n6    11     4   204"
+    "section": "bind_rows()",
+    "text": "bind_rows()\n\nIn examples like the previous data sets, we just want to combine the data by stacking the rows\nData have same (or approximately same) columns\nWe can do so with bind_rows()\n\n\n# output-location: fragment\nbind_rows(g3, g4)\n\n# A tibble: 6 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     1     3   202\n2     2     3   197\n3     3     3   210\n4     9     4   211\n5    10     4   191\n6    11     4   217"
   },
   {
     "objectID": "slides/w7_joins.html#dplyrbind_rows",
     "href": "slides/w7_joins.html#dplyrbind_rows",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "an efficient way to bind many data frames into one, by stacking rows\n\ncan bind multiple datasets\n\n\n\none &lt;- mtcars[1:4, ]\ntwo &lt;- mtcars[6:10, ]\nthree &lt;- mtcars[12:14, ]\n\nbind_rows(one, two, three)\n\n\nlike joining (merging) data frames that have the same columns\ncolumns don’t need to match when row-binding"
+    "section": "dplyr::bind_rows()",
+    "text": "dplyr::bind_rows()\n\nan efficient way to bind many data frames into one, by stacking rows\n\ncan bind multiple datasets\n\n\n\none &lt;- mtcars[1:4, ]\ntwo &lt;- mtcars[6:10, ]\nthree &lt;- mtcars[12:14, ]\n\nbind_rows(one, two, three)\n\n\nlike joining (merging) data frames that have the same columns\ncolumns don’t need to match when row-binding"
   },
   {
     "objectID": "slides/w7_joins.html#optional-.id-argument",
     "href": "slides/w7_joins.html#optional-.id-argument",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "What if we knew the grade, but didn’t have a variable in each dataset already?\nUse .id to add an index for each dataset\n\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"dataset\")\n\n# A tibble: 6 × 3\n  dataset   sid score\n  &lt;chr&gt;   &lt;int&gt; &lt;int&gt;\n1 1           1   200\n2 1           2   201\n3 1           3   203\n4 2           9   201\n5 2          10   193\n6 2          11   204"
+    "section": "Optional .id argument",
+    "text": "Optional .id argument\n\nWhat if we knew the grade, but didn’t have a variable in each dataset already?\nUse .id to add an index for each dataset\n\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"dataset\")\n\n\n\n# A tibble: 6 × 3\n  dataset   sid score\n  &lt;chr&gt;   &lt;int&gt; &lt;int&gt;\n1 1           1   202\n2 1           2   197\n3 1           3   210\n4 2           9   211\n5 2          10   191\n6 2          11   217"
   },
   {
     "objectID": "slides/w7_joins.html#recode-.id-column",
     "href": "slides/w7_joins.html#recode-.id-column",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "bind_rows(select(g3, -grade), select(g4, -grade), .id = \"dataset\") %&gt;%\n  mutate(grade = ifelse(dataset == 1, 3, 4))\n\n# A tibble: 6 × 4\n  dataset   sid score grade\n  &lt;chr&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt;\n1 1           1   200     3\n2 1           2   201     3\n3 1           3   203     3\n4 2           9   201     4\n5 2          10   193     4\n6 2          11   204     4"
+    "section": "Recode .id column",
+    "text": "Recode .id column\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"dataset\") %&gt;%\n  mutate(grade = ifelse(dataset == 1, 3, 4))\n\n\n\n# A tibble: 6 × 4\n  dataset   sid score grade\n  &lt;chr&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt;\n1 1           1   202     3\n2 1           2   197     3\n3 1           3   210     3\n4 2           9   211     4\n5 2          10   191     4\n6 2          11   217     4"
   },
   {
     "objectID": "slides/w7_joins.html#even-better",
     "href": "slides/w7_joins.html#even-better",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "bind_rows(select(g3, -grade), select(g4, -grade), .id = \"grade\") %&gt;% \n  mutate(grade = ifelse(grade == 1, 3, 4))\n\n# A tibble: 6 × 3\n  grade   sid score\n  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;\n1     3     1   200\n2     3     2   201\n3     3     3   203\n4     4     9   201\n5     4    10   193\n6     4    11   204"
+    "section": "Even better",
+    "text": "Even better\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"grade\") %&gt;% \n  mutate(grade = ifelse(grade == 1, 3, 4))\n\n\n\n# A tibble: 6 × 3\n  grade   sid score\n  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;\n1     3     1   202\n2     3     2   197\n3     3     3   210\n4     4     9   211\n5     4    10   191\n6     4    11   217"
   },
   {
     "objectID": "slides/w7_joins.html#what-if-columns-dont-match-exactly",
     "href": "slides/w7_joins.html#what-if-columns-dont-match-exactly",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "Pads with NA\n\nbind_rows(g3, g4[ ,-2], .id = \"dataset\")\n\n# A tibble: 6 × 4\n  dataset   sid grade score\n  &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1 1           1     3   200\n2 1           2     3   201\n3 1           3     3   203\n4 2           9    NA   201\n5 2          10    NA   193\n6 2          11    NA   204"
+    "section": "What if columns don’t match exactly?",
+    "text": "What if columns don’t match exactly?\nPads with NA\n\nbind_rows(g3, g4[ ,-2], .id = \"dataset\")\n\n\n\n# A tibble: 6 × 4\n  dataset   sid grade score\n  &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1 1           1     3   202\n2 1           2     3   197\n3 1           3     3   210\n4 2           9    NA   211\n5 2          10    NA   191\n6 2          11    NA   217"
   },
   {
     "objectID": "slides/w7_joins.html#you-can-also-bind_cols",
     "href": "slides/w7_joins.html#you-can-also-bind_cols",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "read &lt;- tibble(sid = 1:3, \n             read = as.integer(rnorm(3, 200,10)))\nmath &lt;- tibble(math = as.integer(rnorm(3, 200,10)))\n\n\n::: {.column width = 50%}\nread\n\n# A tibble: 3 × 2\n    sid  read\n  &lt;int&gt; &lt;int&gt;\n1     1   204\n2     2   206\n3     3   214\n\n\n\n::: {.column width = 50%}\n\nmath\n\n# A tibble: 3 × 1\n   math\n  &lt;int&gt;\n1   205\n2   197\n3   202\n\n\n:::\n::::"
+    "section": "You can also bind_cols()",
+    "text": "You can also bind_cols()\n\nread &lt;- tibble(sid = 1:3, \n             read = as.integer(rnorm(3, 200,10)))\nmath &lt;- tibble(math = as.integer(rnorm(3, 200,10)))"
   },
   {
     "objectID": "slides/w7_joins.html#bind_cols",
     "href": "slides/w7_joins.html#bind_cols",
     "title": "Week 7: Mutating Joins",
-    "section": "",
-    "text": "bind_cols(read, math)\n\n# A tibble: 3 × 3\n    sid  read  math\n  &lt;int&gt; &lt;int&gt; &lt;int&gt;\n1     1   204   205\n2     2   206   197\n3     3   214   202"
+    "section": "bind_cols()",
+    "text": "bind_cols()\n\nbind_cols(read, math)\n\n\n\n# A tibble: 3 × 3\n    sid  read  math\n  &lt;int&gt; &lt;int&gt; &lt;int&gt;\n1     1   193   207\n2     2   204   205\n3     3   189   221"
   },
   {
     "objectID": "slides/w7_joins.html#keys",
     "href": "slides/w7_joins.html#keys",
     "title": "Week 7: Mutating Joins",
     "section": "Keys",
-    "text": "Keys\n\nUniquely identify rows in a dataset\n\n. . .\n\nVariable(s) in common between two datasets to be joined\n\nA key can be more than one variable\n\n\n. . .\nTypes of keys\n\nSmall distinction that you probably won’t have to worry about much, but is worth mentioning:\n\nPrimary keys: uniquely identify observations in their dataset\nForeign keys: uniquely identify observations in other datasets"
+    "text": "Keys\n\nUniquely identify rows in a dataset\n\n\n\nVariable(s) in common between two datasets to be joined\n\nA key can be more than one variable\n\n\n\n\nTypes of keys\n\nSmall distinction that you probably won’t have to worry about much, but is worth mentioning:\n\nPrimary keys: uniquely identify observations in their dataset\nForeign keys: uniquely identify observations in other datasets"
   },
   {
     "objectID": "slides/w7_joins.html#whats-the-primary-key-here",
     "href": "slides/w7_joins.html#whats-the-primary-key-here",
     "title": "Week 7: Mutating Joins",
     "section": "What’s the primary key here?",
-    "text": "What’s the primary key here?\nFirst, let’s break down the code:\n\nlibrary(rio)\nlibrary(here)\necls &lt;- import(here(\"data\", \"ecls-k_samp.sav\")) %&gt;% \n  as_tibble() %&gt;% \n  characterize()\n\n. . .\n\n\n# A tibble: 984 × 33\n   child_id teacher_id school_id k_type school_type sex   ethnic famtype numsibs\n   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;\n 1 0842021C 0842T02    0842      full-… public      male  BLACK… BIOLOG…       1\n 2 0905002C 0905T01    0905      full-… private     male  ASIAN  BIOLOG…       1\n 3 0150012C 0150T01    0150      full-… private     fema… BLACK… BIOLOG…       4\n 4 0556009C 0556T01    0556      full-… private     fema… HISPA… BIOLOG…       0\n 5 0089013C 0089T04    0089      full-… public      male  WHITE… BIOLOG…       4\n 6 1217001C 1217T13    1217      half-… public      fema… NATIV… BIOLOG…       0\n 7 1092008C 1092T01    1092      half-… public      fema… HISPA… BIOLOG…       2\n 8 0083007C 0083T16    0083      full-… public      male  WHITE… BIOLOG…       1\n 9 1091005C 1091T02    1091      half-… private     male  WHITE… BIOLOG…       0\n10 2006006C 2006T01    2006      full-… private     male  WHITE… BIOLOG…       1\n# ℹ 974 more rows\n# ℹ 24 more variables: SES_cont &lt;dbl&gt;, SES_cat &lt;chr&gt;, age &lt;dbl&gt;,\n#   T1RSCALE &lt;dbl&gt;, T1MSCALE &lt;dbl&gt;, T1GSCALE &lt;dbl&gt;, T2RSCALE &lt;dbl&gt;,\n#   T2MSCALE &lt;dbl&gt;, T2GSCALE &lt;dbl&gt;, IRTreadgain &lt;dbl&gt;, IRTmathgain &lt;dbl&gt;,\n#   IRTgkgain &lt;dbl&gt;, T1ARSLIT &lt;dbl&gt;, T1ARSMAT &lt;dbl&gt;, T1ARSGEN &lt;dbl&gt;,\n#   T2ARSLIT &lt;dbl&gt;, T2ARSMAT &lt;dbl&gt;, T2ARSGEN &lt;dbl&gt;, ARSlitgain &lt;dbl&gt;,\n#   ARSmathgain &lt;dbl&gt;, ARSgkgain &lt;dbl&gt;, testdate1 &lt;date&gt;, testdate2 &lt;date&gt;, …"
+    "text": "What’s the primary key here?\nFirst, let’s break down the code:\n\nlibrary(rio)\nlibrary(here)\necls &lt;- import(here(\"data\", \"ecls-k_samp.sav\")) %&gt;% \n  as_tibble() %&gt;% \n  characterize()\n\n\n\n\n# A tibble: 984 × 33\n   child_id teacher_id school_id k_type school_type sex   ethnic famtype numsibs\n   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;\n 1 0842021C 0842T02    0842      full-… public      male  BLACK… BIOLOG…       1\n 2 0905002C 0905T01    0905      full-… private     male  ASIAN  BIOLOG…       1\n 3 0150012C 0150T01    0150      full-… private     fema… BLACK… BIOLOG…       4\n 4 0556009C 0556T01    0556      full-… private     fema… HISPA… BIOLOG…       0\n 5 0089013C 0089T04    0089      full-… public      male  WHITE… BIOLOG…       4\n 6 1217001C 1217T13    1217      half-… public      fema… NATIV… BIOLOG…       0\n 7 1092008C 1092T01    1092      half-… public      fema… HISPA… BIOLOG…       2\n 8 0083007C 0083T16    0083      full-… public      male  WHITE… BIOLOG…       1\n 9 1091005C 1091T02    1091      half-… private     male  WHITE… BIOLOG…       0\n10 2006006C 2006T01    2006      full-… private     male  WHITE… BIOLOG…       1\n# ℹ 974 more rows\n# ℹ 24 more variables: SES_cont &lt;dbl&gt;, SES_cat &lt;chr&gt;, age &lt;dbl&gt;,\n#   T1RSCALE &lt;dbl&gt;, T1MSCALE &lt;dbl&gt;, T1GSCALE &lt;dbl&gt;, T2RSCALE &lt;dbl&gt;,\n#   T2MSCALE &lt;dbl&gt;, T2GSCALE &lt;dbl&gt;, IRTreadgain &lt;dbl&gt;, IRTmathgain &lt;dbl&gt;,\n#   IRTgkgain &lt;dbl&gt;, T1ARSLIT &lt;dbl&gt;, T1ARSMAT &lt;dbl&gt;, T1ARSGEN &lt;dbl&gt;,\n#   T2ARSLIT &lt;dbl&gt;, T2ARSMAT &lt;dbl&gt;, T2ARSGEN &lt;dbl&gt;, ARSlitgain &lt;dbl&gt;,\n#   ARSmathgain &lt;dbl&gt;, ARSgkgain &lt;dbl&gt;, testdate1 &lt;date&gt;, testdate2 &lt;date&gt;, …"
   },
   {
     "objectID": "slides/w7_joins.html#lets-verify-the-key",
@@ -3336,7 +3336,7 @@
     "href": "slides/w7_joins.html#lets-verify-the-key-1",
     "title": "Week 7: Mutating Joins",
     "section": "Let’s verify the key",
-    "text": "Let’s verify the key\n\necls %&gt;% \n  count(child_id) %&gt;%\n  arrange(desc(n)) %&gt;% \n  slice(1:3)\n\n# A tibble: 3 × 2\n  child_id     n\n  &lt;chr&gt;    &lt;int&gt;\n1 0001010C     1\n2 0002010C     1\n3 0009005C     1\n\n\nOR\n\necls %&gt;% \n  count(child_id) %&gt;%\n  filter(n &gt; 1)\n\n# A tibble: 0 × 2\n# ℹ 2 variables: child_id &lt;chr&gt;, n &lt;int&gt;"
+    "text": "Let’s verify the key\n\necls %&gt;% \n  count(child_id) %&gt;%\n  arrange(desc(n)) %&gt;% \n  slice(1:3)\n\n\n\n# A tibble: 3 × 2\n  child_id     n\n  &lt;chr&gt;    &lt;int&gt;\n1 0001010C     1\n2 0002010C     1\n3 0009005C     1\n\n\n\nOR\n\necls %&gt;% \n  count(child_id) %&gt;%\n  filter(n &gt; 1)\n\n\n\n# A tibble: 0 × 2\n# ℹ 2 variables: child_id &lt;chr&gt;, n &lt;int&gt;"
   },
   {
     "objectID": "slides/w7_joins.html#what-about-the-key-here",
@@ -3350,21 +3350,21 @@
     "href": "slides/w7_joins.html#section-1",
     "title": "Week 7: Mutating Joins",
     "section": "",
-    "text": "income_ineq %&gt;% \n    count(Year, percentile) %&gt;% \n    filter(n &gt; 1)\n\n# A tibble: 0 × 3\n# ℹ 3 variables: Year &lt;dbl&gt;, percentile &lt;dbl&gt;, n &lt;int&gt;"
+    "text": "read\n\n# A tibble: 3 × 2\n    sid  read\n  &lt;int&gt; &lt;int&gt;\n1     1   193\n2     2   204\n3     3   189\n\n\n\n\nmath\n\n# A tibble: 3 × 1\n   math\n  &lt;int&gt;\n1   207\n2   205\n3   221"
   },
   {
     "objectID": "slides/w7_joins.html#sometimes-there-is-no-key",
     "href": "slides/w7_joins.html#sometimes-there-is-no-key",
     "title": "Week 7: Mutating Joins",
     "section": "Sometimes there is no key",
-    "text": "Sometimes there is no key\nThese tables have an implicit id - the row numbers\n\ninstall.packages(\"nycflights13\")\nlibrary(nycflights13)\n\n\nhead(flights)\n\n# A tibble: 6 × 19\n   year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time\n  &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;\n1  2013     1     1      517            515         2      830            819\n2  2013     1     1      533            529         4      850            830\n3  2013     1     1      542            540         2      923            850\n4  2013     1     1      544            545        -1     1004           1022\n5  2013     1     1      554            600        -6      812            837\n6  2013     1     1      554            558        -4      740            728\n# ℹ 11 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;,\n#   tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;,\n#   hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;"
+    "text": "Sometimes there is no key\nThese tables have an implicit key - the row numbers\n\ninstall.packages(\"nycflights13\")\nlibrary(nycflights13)\n\n\nhead(flights)\n\n# A tibble: 6 × 19\n   year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time\n  &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;\n1  2013     1     1      517            515         2      830            819\n2  2013     1     1      533            529         4      850            830\n3  2013     1     1      542            540         2      923            850\n4  2013     1     1      544            545        -1     1004           1022\n5  2013     1     1      554            600        -6      812            837\n6  2013     1     1      554            558        -4      740            728\n# ℹ 11 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;,\n#   tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;,\n#   hour &lt;dbl&gt;, minute &lt;dbl&gt;, time_hour &lt;dttm&gt;"
   },
   {
     "objectID": "slides/w7_joins.html#section-2",
     "href": "slides/w7_joins.html#section-2",
     "title": "Week 7: Mutating Joins",
     "section": "",
-    "text": "flights %&gt;% \n  count(year, month, day, flight, tailnum) %&gt;% \n  filter(n &gt; 1)\n\n# A tibble: 11 × 6\n    year month   day flight tailnum     n\n   &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;int&gt; &lt;chr&gt;   &lt;int&gt;\n 1  2013     2     9    303 &lt;NA&gt;        2\n 2  2013     2     9    655 &lt;NA&gt;        2\n 3  2013     2     9   1623 &lt;NA&gt;        2\n 4  2013     6     8   2269 N487WN      2\n 5  2013     6    15   2269 N230WN      2\n 6  2013     6    22   2269 N440LV      2\n 7  2013     6    29   2269 N707SA      2\n 8  2013     7     6   2269 N259WN      2\n 9  2013     8     3   2269 N446WN      2\n10  2013     8    10   2269 N478WN      2\n11  2013    12    15    398 &lt;NA&gt;        2"
+    "text": "income_ineq %&gt;% \n    count(Year, percentile) %&gt;% \n    filter(n &gt; 1)\n\n# A tibble: 0 × 3\n# ℹ 3 variables: Year &lt;dbl&gt;, percentile &lt;dbl&gt;, n &lt;int&gt;"
   },
   {
     "objectID": "slides/w7_joins.html#create-a-key",
@@ -3378,7 +3378,7 @@
     "href": "slides/w7_joins.html#mutating-_joins",
     "title": "Week 7: Mutating Joins",
     "section": "Mutating *_joins()",
-    "text": "Mutating *_joins()\n\nIn {tidyverse}, we use mutate() to create new variables within a dataset\n\n. . .\n\nA mutating join works similarly, in that we’re adding new variables to the existing dataset through a join\n\n. . .\n\nJoin: Two tables of data merged by a common key"
+    "text": "Mutating *_joins()\n\nIn {tidyverse}, we use mutate() to create new variables within a dataset\n\n\n\nA mutating join works similarly, in that we’re adding new variables to the existing dataset through a join\n\n\n\n\nJoin: Two tables of data merged by a common key"
   },
   {
     "objectID": "slides/w7_joins.html#four-types-of-joins",
@@ -3392,7 +3392,7 @@
     "href": "slides/w7_joins.html#four-types-of-joins-1",
     "title": "Week 7: Mutating Joins",
     "section": "Four types of joins",
-    "text": "Four types of joins\nMutating joins\n\nleft_join\n\nkeep all the data in the left dataset, drop any non-matching cases from the right dataset\n\nright_join\n\nkeep all the data in the right dataset, drop any non-matching cases from the left dataset\n\n\n. . .\nFiltering joins\n\ninner_join\n\nkeep only data that matches in both datasets\n\nfull_join\n\nkeep all the data in both datasets (also sometimes referred to as an outer join)"
+    "text": "Four types of joins\nMutating joins\n\nleft_join\n\nkeep all the data in the left dataset, drop any non-matching cases from the right dataset\n\nright_join\n\nkeep all the data in the right dataset, drop any non-matching cases from the left dataset\n\n\n\nFiltering joins\n\ninner_join\n\nkeep only data that matches in both datasets\n\nfull_join\n\nkeep all the data in both datasets (also sometimes referred to as an outer join)"
   },
   {
     "objectID": "slides/w7_joins.html#were-going-to-focus-on",
@@ -3406,7 +3406,7 @@
     "href": "slides/w7_joins.html#using-joins-to-recode",
     "title": "Week 7: Mutating Joins",
     "section": "Using joins to recode",
-    "text": "Using joins to recode\nSay you have a dataset like this\n\nset.seed(1)\ndisab_codes &lt;- c(\"00\", \"10\", \"20\", \"40\", \"43\", \"50\", \"60\", \n                 \"70\", \"74\", \"80\", \"82\", \"90\", \"96\", \"98\")\ndis_tbl &lt;- tibble(\n  sid = 1:200,\n  dis_code = sample(disab_codes, 200, replace = TRUE),\n  score = as.integer(rnorm(200, 200, 10))\n  )\nhead(dis_tbl)\n\n# A tibble: 6 × 3\n    sid dis_code score\n  &lt;int&gt; &lt;chr&gt;    &lt;int&gt;\n1     1 74         190\n2     2 40         200\n3     3 60         200\n4     4 00         183\n5     5 10         210\n6     6 96         188"
+    "text": "Using joins to recode\nSay you have a dataset like this\n\nset.seed(1)\ndisab_codes &lt;- c(\"00\", \"10\", \"20\", \"40\", \"43\", \"50\", \"60\", \n                 \"70\", \"74\", \"80\", \"82\", \"90\", \"96\", \"98\")\ndis_tbl &lt;- tibble(\n  sid = 1:200,\n  dis_code = sample(disab_codes, 200, replace = TRUE),\n  score = as.integer(rnorm(200, 200, 10))\n  )\nhead(dis_tbl)\n\n\n\n# A tibble: 6 × 3\n    sid dis_code score\n  &lt;int&gt; &lt;chr&gt;    &lt;int&gt;\n1     1 74         190\n2     2 40         200\n3     3 60         200\n4     4 00         183\n5     5 10         210\n6     6 96         188"
   },
   {
     "objectID": "slides/w7_joins.html#codes",
@@ -3420,7 +3420,7 @@
     "href": "slides/w7_joins.html#recode-method",
     "title": "Week 7: Mutating Joins",
     "section": "Recode method",
-    "text": "Recode method\nUsing case_when()\n\ndis_tbl %&gt;% \n  mutate(disability = case_when(\n    dis_code == \"10\" ~ \"Intellectual Disability\",\n    dis_code == \"20\" ~ 'Hearing Impairment',\n    ...,\n    TRUE ~ \"Not Applicable\"\n    )\n  )"
+    "text": "Recode method\nUsing case_when()\n\ndis_tbl %&gt;% \n  mutate(disability = case_when(\n    dis_code == \"10\" ~ \"Intellectual Disability\",\n    dis_code == \"20\" ~ 'Hearing Impairment',\n    ...,\n    .default = \"Not Applicable\"\n    )\n  )"
   },
   {
     "objectID": "slides/w7_joins.html#join-method",
@@ -3441,21 +3441,21 @@
     "href": "slides/w7_joins.html#join-the-tables",
     "title": "Week 7: Mutating Joins",
     "section": "Join the tables",
-    "text": "Join the tables\n\nleft_join(dis_tbl, dis_code_tbl)\n\nJoining with `by = join_by(dis_code)`\n\n\n# A tibble: 200 × 4\n     sid dis_code score disability               \n   &lt;int&gt; &lt;chr&gt;    &lt;int&gt; &lt;chr&gt;                    \n 1     1 74         190 Traumatic Brain Injury   \n 2     2 40         200 Visual Impairment        \n 3     3 60         200 Emotional Disturbance    \n 4     4 00         183 Not Applicable           \n 5     5 10         210 Intellectual Disability  \n 6     6 96         188 Developmental Delay 0-2yr\n 7     7 60         203 Emotional Disturbance    \n 8     8 82         204 Autism Spectrum Disorder \n 9     9 98         201 Developmental Delay 3-4yr\n10    10 10         198 Intellectual Disability  \n# ℹ 190 more rows"
+    "text": "Join the tables\n\nleft_join(dis_tbl, dis_code_tbl)\n\n\n\nJoining with `by = join_by(dis_code)`\n\n\n# A tibble: 200 × 4\n     sid dis_code score disability               \n   &lt;int&gt; &lt;chr&gt;    &lt;int&gt; &lt;chr&gt;                    \n 1     1 74         190 Traumatic Brain Injury   \n 2     2 40         200 Visual Impairment        \n 3     3 60         200 Emotional Disturbance    \n 4     4 00         183 Not Applicable           \n 5     5 10         210 Intellectual Disability  \n 6     6 96         188 Developmental Delay 0-2yr\n 7     7 60         203 Emotional Disturbance    \n 8     8 82         204 Autism Spectrum Disorder \n 9     9 98         201 Developmental Delay 3-4yr\n10    10 10         198 Intellectual Disability  \n# ℹ 190 more rows"
   },
   {
     "objectID": "slides/w7_joins.html#consider-the-following",
     "href": "slides/w7_joins.html#consider-the-following",
     "title": "Week 7: Mutating Joins",
     "section": "Consider the following",
-    "text": "Consider the following\n\nfrl &lt;- tibble(key = 1:3, frl = rbinom(3, 1, .5))\n\nsped &lt;- tibble(key = c(1, 2, 4), sped = rbinom(3, 1, .5))\n\n\n::: {.column width = 50%}\nfrl\n\n# A tibble: 3 × 2\n    key   frl\n  &lt;int&gt; &lt;int&gt;\n1     1     0\n2     2     1\n3     3     0\n\n\n\n::: {.column width = 50%}\n\nsped\n\n# A tibble: 3 × 2\n    key  sped\n  &lt;dbl&gt; &lt;int&gt;\n1     1     0\n2     2     1\n3     4     0\n\n\n:::\n::::"
+    "text": "Consider the following\n\nfrl &lt;- tibble(key = 1:3, frl = rbinom(3, 1, .5))\n\nsped &lt;- tibble(key = c(1, 2, 4), sped = rbinom(3, 1, .5))\n\n\n\nfrl\n\n\n\n# A tibble: 3 × 2\n    key   frl\n  &lt;int&gt; &lt;int&gt;\n1     1     0\n2     2     1\n3     3     0\n\n\n\n\n\nsped\n\n\n\n# A tibble: 3 × 2\n    key  sped\n  &lt;dbl&gt; &lt;int&gt;\n1     1     0\n2     2     1\n3     4     0"
   },
   {
     "objectID": "slides/w7_joins.html#consider-the-following-1",
     "href": "slides/w7_joins.html#consider-the-following-1",
     "title": "Week 7: Mutating Joins",
     "section": "Consider the following",
-    "text": "Consider the following\n\n::: {.column width = 50%} left_join()?\nleft_join(frl, sped)\n\n# A tibble: 3 × 3\n    key   frl  sped\n  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;\n1     1     0     0\n2     2     1     1\n3     3     0    NA\n\n\n\n::: {.column width = 50% .fragment} right_join()?\n\nright_join(frl, sped)\n\n# A tibble: 3 × 3\n    key   frl  sped\n  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;\n1     1     0     0\n2     2     1     1\n3     4    NA     0\n\n\n:::\n::::"
+    "text": "Consider the following\nleft_join()?\n\nleft_join(frl, sped)\n\n\n\n# A tibble: 3 × 3\n    key   frl  sped\n  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;\n1     1     0     0\n2     2     1     1\n3     3     0    NA\n\n\n\nright_join()?\n\nright_join(frl, sped)\n\n\n\n# A tibble: 3 × 3\n    key   frl  sped\n  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;\n1     1     0     0\n2     2     1     1\n3     4    NA     0"
   },
   {
     "objectID": "slides/w7_joins.html#celebrate-yourself-1",
@@ -3483,7 +3483,7 @@
     "href": "slides/w7_joins.html#example",
     "title": "Week 7: Mutating Joins",
     "section": "Example",
-    "text": "Example\n\n::: {.colum width = 50%} Student-level data\n\n(stu &lt;- tibble(\n  sid = 1:9,\n  scid = c(1, 1, 1, 1, 2, 2, 3, 3, 3),\n  score = c(10, 12, 15, 8,  9, 11, 12, 15, 17)))\n\n# A tibble: 9 × 3\n    sid  scid score\n  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1    10\n2     2     1    12\n3     3     1    15\n4     4     1     8\n5     5     2     9\n6     6     2    11\n7     7     3    12\n8     8     3    15\n9     9     3    17\n\n\n\n::: {.colum width = 50% .fragment} School-level data\n\n(schl &lt;- tibble(\n  scid = 1:3,\n  stu_tch_ratio = c(22.05, 31.14, 24.87),\n  per_pupil_spending = c(15741.08, 11732.24, 13027.88)\n  )\n)\n\n# A tibble: 3 × 3\n   scid stu_tch_ratio per_pupil_spending\n  &lt;int&gt;         &lt;dbl&gt;              &lt;dbl&gt;\n1     1          22.0             15741.\n2     2          31.1             11732.\n3     3          24.9             13028.\n\n\n:::\n::::"
+    "text": "Example\n\n::: {.colum width = “50%”}\nStudent-level data\n\n(stu &lt;- tibble(\n  sid = 1:9,\n  scid = c(1, 1, 1, 1, 2, 2, 3, 3, 3),\n  score = c(10, 12, 15, 8,  9, 11, 12, 15, 17)))\n\n# A tibble: 9 × 3\n    sid  scid score\n  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1    10\n2     2     1    12\n3     3     1    15\n4     4     1     8\n5     5     2     9\n6     6     2    11\n7     7     3    12\n8     8     3    15\n9     9     3    17\n\n\n\n::: {.colum width = “50%” .fragment}\nSchool-level data\n\n(schl &lt;- tibble(\n  scid = 1:3,\n  stu_tch_ratio = c(22.05, 31.14, 24.87),\n  per_pupil_spending = c(15741.08, 11732.24, 13027.88)\n  )\n)\n\n# A tibble: 3 × 3\n   scid stu_tch_ratio per_pupil_spending\n  &lt;int&gt;         &lt;dbl&gt;              &lt;dbl&gt;\n1     1          22.0             15741.\n2     2          31.1             11732.\n3     3          24.9             13028.\n\n\n:::\n::::"
   },
   {
     "objectID": "slides/w7_joins.html#one-to-many",
@@ -3504,7 +3504,7 @@
     "href": "slides/w7_joins.html#example-1",
     "title": "Week 7: Mutating Joins",
     "section": "Example",
-    "text": "Example\n\nseasonal_means &lt;- tibble(\n  scid = rep(1:3, each = 3),\n  season = rep(c(\"fall\", \"winter\", \"spring\"), 3),\n  mean = rnorm(3*3)\n)\nseasonal_means\n\n# A tibble: 9 × 3\n   scid season   mean\n  &lt;int&gt; &lt;chr&gt;   &lt;dbl&gt;\n1     1 fall    0.345\n2     1 winter  1.54 \n3     1 spring -0.330\n4     2 fall    0.948\n5     2 winter -0.479\n6     2 spring -1.51 \n7     3 fall    0.435\n8     3 winter -0.520\n9     3 spring -0.835"
+    "text": "Example\n\nseasonal_means &lt;- tibble(\n  scid = rep(1:3, each = 3),\n  season = rep(c(\"fall\", \"winter\", \"spring\"), 3),\n  mean = rnorm(3*3)\n)\nseasonal_means\n\n\n\n# A tibble: 9 × 3\n   scid season   mean\n  &lt;int&gt; &lt;chr&gt;   &lt;dbl&gt;\n1     1 fall    0.345\n2     1 winter  1.54 \n3     1 spring -0.330\n4     2 fall    0.948\n5     2 winter -0.479\n6     2 spring -1.51 \n7     3 fall    0.435\n8     3 winter -0.520\n9     3 spring -0.835"
   },
   {
     "objectID": "slides/w7_joins.html#section-6",
@@ -3518,14 +3518,14 @@
     "href": "slides/w7_joins.html#how-do-we-fix-this",
     "title": "Week 7: Mutating Joins",
     "section": "How do we fix this?",
-    "text": "How do we fix this?\n. . .\n\n. . .\nIn some cases, the solution is obvious, in others it is not\nBut you must have at least one unique key to join the datasets"
+    "text": "How do we fix this?\n\n\n\n\nIn some cases, the solution is obvious, in others it is not\nBut you must have at least one unique key to join the datasets"
   },
   {
     "objectID": "slides/w7_joins.html#in-this-case",
     "href": "slides/w7_joins.html#in-this-case",
     "title": "Week 7: Mutating Joins",
     "section": "In this case",
-    "text": "In this case\nMove the dataset to wide before joining\n. . .\n\nseasonal_means_wide &lt;- seasonal_means %&gt;% \n  pivot_wider(names_from = \"season\",\n              values_from = \"mean\")\nseasonal_means_wide\n\n# A tibble: 3 × 4\n   scid  fall winter spring\n  &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1     1 0.345  1.54  -0.330\n2     2 0.948 -0.479 -1.51 \n3     3 0.435 -0.520 -0.835\n\n\n\n\nWe will cover this in Week 8"
+    "text": "In this case\nMove the dataset to wide before joining\n\n\nseasonal_means_wide &lt;- seasonal_means %&gt;% \n  pivot_wider(names_from = \"season\",\n              values_from = \"mean\")\nseasonal_means_wide\n\n\n\n# A tibble: 3 × 4\n   scid  fall winter spring\n  &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;\n1     1 0.345  1.54  -0.330\n2     2 0.948 -0.479 -1.51 \n3     3 0.435 -0.520 -0.835\n\n\n\n\n\nWe will cover this next week"
   },
   {
     "objectID": "slides/w7_joins.html#join",
@@ -3539,35 +3539,35 @@
     "href": "slides/w7_joins.html#default-join-behavior",
     "title": "Week 7: Mutating Joins",
     "section": "Default join behavior",
-    "text": "Default join behavior\nBy default, the _join functions will use all columns with common names as keys\n. . .\n\nflights2 &lt;- flights %&gt;% \n  select(year:day, hour, origin, dest, tailnum, carrier)\nflights2[1:2, ]\n\n# A tibble: 2 × 8\n   year month   day  hour origin dest  tailnum carrier\n  &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;  \n1  2013     1     1     5 EWR    IAH   N14228  UA     \n2  2013     1     1     5 LGA    IAH   N24211  UA     \n\n\n. . .\n\nweather[1:2, ]\n\n# A tibble: 2 × 15\n  origin  year month   day  hour  temp  dewp humid wind_dir wind_speed wind_gust\n  &lt;chr&gt;  &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;\n1 EWR     2013     1     1     1  39.0  26.1  59.4      270      10.4         NA\n2 EWR     2013     1     1     2  39.0  27.0  61.6      250       8.06        NA\n# ℹ 4 more variables: precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;,\n#   time_hour &lt;dttm&gt;\n\n\n\n\nleft_join(flights2, weather)\n\nJoining with `by = join_by(year, month, day, hour, origin)`\n\n\n# A tibble: 336,776 × 18\n    year month   day  hour origin dest  tailnum carrier  temp  dewp humid\n   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n 1  2013     1     1     5 EWR    IAH   N14228  UA       39.0  28.0  64.4\n 2  2013     1     1     5 LGA    IAH   N24211  UA       39.9  25.0  54.8\n 3  2013     1     1     5 JFK    MIA   N619AA  AA       39.0  27.0  61.6\n 4  2013     1     1     5 JFK    BQN   N804JB  B6       39.0  27.0  61.6\n 5  2013     1     1     6 LGA    ATL   N668DN  DL       39.9  25.0  54.8\n 6  2013     1     1     5 EWR    ORD   N39463  UA       39.0  28.0  64.4\n 7  2013     1     1     6 EWR    FLL   N516JB  B6       37.9  28.0  67.2\n 8  2013     1     1     6 LGA    IAD   N829AS  EV       39.9  25.0  54.8\n 9  2013     1     1     6 JFK    MCO   N593JB  B6       37.9  27.0  64.3\n10  2013     1     1     6 LGA    ORD   N3ALAA  AA       39.9  25.0  54.8\n# ℹ 336,766 more rows\n# ℹ 7 more variables: wind_dir &lt;dbl&gt;, wind_speed &lt;dbl&gt;, wind_gust &lt;dbl&gt;,\n#   precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;, time_hour &lt;dttm&gt;"
+    "text": "Default join behavior\nBy default, the _join functions will use all columns with common names as keys\n\n\nflights2 &lt;- flights %&gt;% \n  select(year:day, hour, origin, dest, tailnum, carrier)\n\nflights2[1:2, ]\n\n\n\n# A tibble: 2 × 8\n   year month   day  hour origin dest  tailnum carrier\n  &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;  \n1  2013     1     1     5 EWR    IAH   N14228  UA     \n2  2013     1     1     5 LGA    IAH   N24211  UA     \n\n\n\n\n\nweather[1:2, ]\n\n\n\n# A tibble: 2 × 15\n  origin  year month   day  hour  temp  dewp humid wind_dir wind_speed wind_gust\n  &lt;chr&gt;  &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt;\n1 EWR     2013     1     1     1  39.0  26.1  59.4      270      10.4         NA\n2 EWR     2013     1     1     2  39.0  27.0  61.6      250       8.06        NA\n# ℹ 4 more variables: precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;,\n#   time_hour &lt;dttm&gt;"
   },
   {
     "objectID": "slides/w7_joins.html#use-only-certain-keys",
     "href": "slides/w7_joins.html#use-only-certain-keys",
     "title": "Week 7: Mutating Joins",
     "section": "Use only certain keys?",
-    "text": "Use only certain keys?\nIf we were joining flights2 and planes, we would not want to use the year variable in the join, because it means different things in each dataset\n. . .\n\nhead(planes)\n\n# A tibble: 6 × 9\n  tailnum  year type               manufacturer model engines seats speed engine\n  &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;              &lt;chr&gt;        &lt;chr&gt;   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; \n1 N10156   2004 Fixed wing multi … EMBRAER      EMB-…       2    55    NA Turbo…\n2 N102UW   1998 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…\n3 N103US   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…\n4 N104UW   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…\n5 N10575   2002 Fixed wing multi … EMBRAER      EMB-…       2    55    NA Turbo…\n6 N105UW   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…"
+    "text": "Use only certain keys?\nIf we were joining flights2 and planes, we would not want to use the year variable in the join, because it means different things in each dataset\n\n\nhead(planes)\n\n# A tibble: 6 × 9\n  tailnum  year type               manufacturer model engines seats speed engine\n  &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;              &lt;chr&gt;        &lt;chr&gt;   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; \n1 N10156   2004 Fixed wing multi … EMBRAER      EMB-…       2    55    NA Turbo…\n2 N102UW   1998 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…\n3 N103US   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…\n4 N104UW   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…\n5 N10575   2002 Fixed wing multi … EMBRAER      EMB-…       2    55    NA Turbo…\n6 N105UW   1999 Fixed wing multi … AIRBUS INDU… A320…       2   182    NA Turbo…"
   },
   {
     "objectID": "slides/w7_joins.html#specify-_join-keys",
     "href": "slides/w7_joins.html#specify-_join-keys",
     "title": "Week 7: Mutating Joins",
     "section": "Specify *_join() keys",
-    "text": "Specify *_join() keys\nSpecify the key variables with join_by() (a function not an argument)\n\nleft_join(flights2, planes)\n\n# A tibble: 336,776 × 15\n    year month   day  hour origin dest  tailnum carrier type  manufacturer model\n   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;        &lt;chr&gt;\n 1  2013     1     1     5 EWR    IAH   N14228  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 2  2013     1     1     5 LGA    IAH   N24211  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 3  2013     1     1     5 JFK    MIA   N619AA  AA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 4  2013     1     1     5 JFK    BQN   N804JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 5  2013     1     1     6 LGA    ATL   N668DN  DL      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 6  2013     1     1     5 EWR    ORD   N39463  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 7  2013     1     1     6 EWR    FLL   N516JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 8  2013     1     1     6 LGA    IAD   N829AS  EV      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 9  2013     1     1     6 JFK    MCO   N593JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n10  2013     1     1     6 LGA    ORD   N3ALAA  AA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n# ℹ 336,766 more rows\n# ℹ 4 more variables: engines &lt;int&gt;, seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;\n\n\n\nleft_join(flights2, planes, join_by(tailnum))\n\n# A tibble: 336,776 × 16\n   year.x month   day  hour origin dest  tailnum carrier year.y type            \n    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt; &lt;chr&gt;           \n 1   2013     1     1     5 EWR    IAH   N14228  UA        1999 Fixed wing mult…\n 2   2013     1     1     5 LGA    IAH   N24211  UA        1998 Fixed wing mult…\n 3   2013     1     1     5 JFK    MIA   N619AA  AA        1990 Fixed wing mult…\n 4   2013     1     1     5 JFK    BQN   N804JB  B6        2012 Fixed wing mult…\n 5   2013     1     1     6 LGA    ATL   N668DN  DL        1991 Fixed wing mult…\n 6   2013     1     1     5 EWR    ORD   N39463  UA        2012 Fixed wing mult…\n 7   2013     1     1     6 EWR    FLL   N516JB  B6        2000 Fixed wing mult…\n 8   2013     1     1     6 LGA    IAD   N829AS  EV        1998 Fixed wing mult…\n 9   2013     1     1     6 JFK    MCO   N593JB  B6        2004 Fixed wing mult…\n10   2013     1     1     6 LGA    ORD   N3ALAA  AA          NA &lt;NA&gt;            \n# ℹ 336,766 more rows\n# ℹ 6 more variables: manufacturer &lt;chr&gt;, model &lt;chr&gt;, engines &lt;int&gt;,\n#   seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;\n\n\n\nleft_join(flights2, planes, join_by(tailnum), suffix = c(\"_flights\", \"_planes\"))\n\n# A tibble: 336,776 × 16\n   year_flights month   day  hour origin dest  tailnum carrier year_planes type \n          &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;         &lt;int&gt; &lt;chr&gt;\n 1         2013     1     1     5 EWR    IAH   N14228  UA             1999 Fixe…\n 2         2013     1     1     5 LGA    IAH   N24211  UA             1998 Fixe…\n 3         2013     1     1     5 JFK    MIA   N619AA  AA             1990 Fixe…\n 4         2013     1     1     5 JFK    BQN   N804JB  B6             2012 Fixe…\n 5         2013     1     1     6 LGA    ATL   N668DN  DL             1991 Fixe…\n 6         2013     1     1     5 EWR    ORD   N39463  UA             2012 Fixe…\n 7         2013     1     1     6 EWR    FLL   N516JB  B6             2000 Fixe…\n 8         2013     1     1     6 LGA    IAD   N829AS  EV             1998 Fixe…\n 9         2013     1     1     6 JFK    MCO   N593JB  B6             2004 Fixe…\n10         2013     1     1     6 LGA    ORD   N3ALAA  AA               NA &lt;NA&gt; \n# ℹ 336,766 more rows\n# ℹ 6 more variables: manufacturer &lt;chr&gt;, model &lt;chr&gt;, engines &lt;int&gt;,\n#   seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;"
+    "text": "Specify *_join() keys\nSpecify the key variables with join_by() (a function not an argument)\n\nleft_join(flights2, planes)\n\n\n\n# A tibble: 336,776 × 15\n    year month   day  hour origin dest  tailnum carrier type  manufacturer model\n   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;        &lt;chr&gt;\n 1  2013     1     1     5 EWR    IAH   N14228  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 2  2013     1     1     5 LGA    IAH   N24211  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 3  2013     1     1     5 JFK    MIA   N619AA  AA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 4  2013     1     1     5 JFK    BQN   N804JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 5  2013     1     1     6 LGA    ATL   N668DN  DL      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 6  2013     1     1     5 EWR    ORD   N39463  UA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 7  2013     1     1     6 EWR    FLL   N516JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 8  2013     1     1     6 LGA    IAD   N829AS  EV      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n 9  2013     1     1     6 JFK    MCO   N593JB  B6      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n10  2013     1     1     6 LGA    ORD   N3ALAA  AA      &lt;NA&gt;  &lt;NA&gt;         &lt;NA&gt; \n# ℹ 336,766 more rows\n# ℹ 4 more variables: engines &lt;int&gt;, seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;\n\n\n\n\nleft_join(flights2, planes, join_by(tailnum))\n\n\n\n# A tibble: 336,776 × 16\n   year.x month   day  hour origin dest  tailnum carrier year.y type            \n    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;    &lt;int&gt; &lt;chr&gt;           \n 1   2013     1     1     5 EWR    IAH   N14228  UA        1999 Fixed wing mult…\n 2   2013     1     1     5 LGA    IAH   N24211  UA        1998 Fixed wing mult…\n 3   2013     1     1     5 JFK    MIA   N619AA  AA        1990 Fixed wing mult…\n 4   2013     1     1     5 JFK    BQN   N804JB  B6        2012 Fixed wing mult…\n 5   2013     1     1     6 LGA    ATL   N668DN  DL        1991 Fixed wing mult…\n 6   2013     1     1     5 EWR    ORD   N39463  UA        2012 Fixed wing mult…\n 7   2013     1     1     6 EWR    FLL   N516JB  B6        2000 Fixed wing mult…\n 8   2013     1     1     6 LGA    IAD   N829AS  EV        1998 Fixed wing mult…\n 9   2013     1     1     6 JFK    MCO   N593JB  B6        2004 Fixed wing mult…\n10   2013     1     1     6 LGA    ORD   N3ALAA  AA          NA &lt;NA&gt;            \n# ℹ 336,766 more rows\n# ℹ 6 more variables: manufacturer &lt;chr&gt;, model &lt;chr&gt;, engines &lt;int&gt;,\n#   seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;\n\n\n\nleft_join(flights2, planes, join_by(tailnum), suffix = c(\"_flights\", \"_planes\"))\n\n\n\n# A tibble: 336,776 × 16\n   year_flights month   day  hour origin dest  tailnum carrier year_planes type \n          &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;         &lt;int&gt; &lt;chr&gt;\n 1         2013     1     1     5 EWR    IAH   N14228  UA             1999 Fixe…\n 2         2013     1     1     5 LGA    IAH   N24211  UA             1998 Fixe…\n 3         2013     1     1     5 JFK    MIA   N619AA  AA             1990 Fixe…\n 4         2013     1     1     5 JFK    BQN   N804JB  B6             2012 Fixe…\n 5         2013     1     1     6 LGA    ATL   N668DN  DL             1991 Fixe…\n 6         2013     1     1     5 EWR    ORD   N39463  UA             2012 Fixe…\n 7         2013     1     1     6 EWR    FLL   N516JB  B6             2000 Fixe…\n 8         2013     1     1     6 LGA    IAD   N829AS  EV             1998 Fixe…\n 9         2013     1     1     6 JFK    MCO   N593JB  B6             2004 Fixe…\n10         2013     1     1     6 LGA    ORD   N3ALAA  AA               NA &lt;NA&gt; \n# ℹ 336,766 more rows\n# ℹ 6 more variables: manufacturer &lt;chr&gt;, model &lt;chr&gt;, engines &lt;int&gt;,\n#   seats &lt;int&gt;, speed &lt;int&gt;, engine &lt;chr&gt;"
   },
   {
     "objectID": "slides/w7_joins.html#mismatched-key-names",
     "href": "slides/w7_joins.html#mismatched-key-names",
     "title": "Week 7: Mutating Joins",
     "section": "Mismatched key names",
-    "text": "Mismatched key names\nWhat if you had data to merge like this?\n\n::: {.column width = 50%}\nnames(schl)[1] &lt;- \"school_id\"\nschl\n\n# A tibble: 3 × 3\n  school_id stu_tch_ratio per_pupil_spending\n      &lt;int&gt;         &lt;dbl&gt;              &lt;dbl&gt;\n1         1          22.0             15741.\n2         2          31.1             11732.\n3         3          24.9             13028.\n\n\n\n::: {.column width = 50%}\n\nstu\n\n# A tibble: 9 × 3\n    sid  scid score\n  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1    10\n2     2     1    12\n3     3     1    15\n4     4     1     8\n5     5     2     9\n6     6     2    11\n7     7     3    12\n8     8     3    15\n9     9     3    17\n\n\n:::\n::::"
+    "text": "Mismatched key names\n\nnames(schl)[1] &lt;- \"school_id\"\nschl\n\n\n\n# A tibble: 3 × 3\n  school_id stu_tch_ratio per_pupil_spending\n      &lt;int&gt;         &lt;dbl&gt;              &lt;dbl&gt;\n1         1          22.0             15741.\n2         2          31.1             11732.\n3         3          24.9             13028.\n\n\n\n\nstu\n\n\n\n# A tibble: 9 × 3\n    sid  scid score\n  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     1    10\n2     2     1    12\n3     3     1    15\n4     4     1     8\n5     5     2     9\n6     6     2    11\n7     7     3    12\n8     8     3    15\n9     9     3    17"
   },
   {
     "objectID": "slides/w7_joins.html#join-with-mismatched-key-names",
     "href": "slides/w7_joins.html#join-with-mismatched-key-names",
     "title": "Week 7: Mutating Joins",
     "section": "Join with mismatched key names",
-    "text": "Join with mismatched key names\n\nleft_join(stu, schl)\n\nError in `left_join()`:\n! `by` must be supplied when `x` and `y` have no common variables.\nℹ Use `cross_join()` to perform a cross-join.\n\n\n\nleft_join(stu, schl, join_by(scid == school_id))\n\n# A tibble: 9 × 5\n    sid  scid score stu_tch_ratio per_pupil_spending\n  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;              &lt;dbl&gt;\n1     1     1    10          22.0             15741.\n2     2     1    12          22.0             15741.\n3     3     1    15          22.0             15741.\n4     4     1     8          22.0             15741.\n5     5     2     9          31.1             11732.\n6     6     2    11          31.1             11732.\n7     7     3    12          24.9             13028.\n8     8     3    15          24.9             13028.\n9     9     3    17          24.9             13028."
+    "text": "Join with mismatched key names\n\nleft_join(stu, schl)\n\n\n\nError in `left_join()`:\n! `by` must be supplied when `x` and `y` have no common variables.\nℹ Use `cross_join()` to perform a cross-join.\n\n\n\n\nleft_join(stu, schl, join_by(scid == school_id))\n\n\n\n# A tibble: 9 × 5\n    sid  scid score stu_tch_ratio per_pupil_spending\n  &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;         &lt;dbl&gt;              &lt;dbl&gt;\n1     1     1    10          22.0             15741.\n2     2     1    12          22.0             15741.\n3     3     1    15          22.0             15741.\n4     4     1     8          22.0             15741.\n5     5     2     9          31.1             11732.\n6     6     2    11          31.1             11732.\n7     7     3    12          24.9             13028.\n8     8     3    15          24.9             13028.\n9     9     3    17          24.9             13028."
   },
   {
     "objectID": "slides/w7_joins.html#join_by",
@@ -3588,7 +3588,7 @@
     "href": "slides/w7_joins.html#final-project-1",
     "title": "Week 7: Mutating Joins",
     "section": "Final Project",
-    "text": "Final Project\nFinal paper: Quarto document\nFinal project must: * Be fully reproducible + This implies the data are open * Be a collaborative project hosted on GitHub * Move data from its raw “messy” format to a tidy data format * Include at least two exploratory plots * Include at least summary statistics of the data in tables, although fitted models are also encouraged"
+    "text": "Final Project\nFinal paper: Quarto document\n\nBe fully reproducible\n\nThis implies the data are open\n\nBe a collaborative project hosted on GitHub\nMove data from its raw “messy” format to a tidy data format\nInclude at least two exploratory plots\nInclude at least summary statistics of the data in tables, although fitted models are also encouraged"
   },
   {
     "objectID": "slides/w7_joins.html#final-project---dates",
@@ -3623,7 +3623,7 @@
     "href": "slides/w7_joins.html#final-project-paper",
     "title": "Week 7: Mutating Joins",
     "section": "Final Project – Paper",
-    "text": "Final Project – Paper\n\nR Markdown document\n\nAbstract, Intro, Methods, Results, Discussion, References\nShould be brief: 3,500 words max\n\nNo code displayed - should look similar to a manuscript being submitted for publication\nInclude at least 1 table\nInclude at least 2 plots\nShould be fully open, reproducible, and housed on GitHub\n\nI should be able to clone your repository, open the R Studio Project, and reproduce the full manuscript (by knitting the R Markdown doc)"
+    "text": "Final Project – Paper\n\nQuarto document\n\nAbstract, Intro, Methods, Results, Discussion, References\nShould be brief: 3,500 words max\n\nNo code displayed - should look similar to a manuscript being submitted for publication\nInclude at least 1 table\nInclude at least 2 plots\nShould be fully open, reproducible, and housed on GitHub\n\nI should be able to clone your repository, open the R Studio Project, and reproduce the full manuscript (by knitting the Quarto doc)"
   },
   {
     "objectID": "slides/w7_joins.html#final-paper---scoring-rubric",
@@ -3637,7 +3637,7 @@
     "href": "slides/w7_joins.html#final-project-2",
     "title": "Week 7: Mutating Joins",
     "section": "Final Project",
-    "text": "Final Project\nThe following functions: * pivot_longer() * mutate() * select() * filter() * pivot_wider() * group_by() * summarize()"
+    "text": "Final Project\nThe following functions:\n\npivot_longer()\nmutate()\nselect()\nfilter()\npivot_wider()\ngroup_by()\nsummarize()"
   },
   {
     "objectID": "slides/w6_quarto.html#housekeeping",
@@ -3680,5 +3680,61 @@
     "title": "Homework 4",
     "section": "",
     "text": "Create a RStudio Project on your machine\n\nName the Project “hw_4”\nWithin the Project create a folder for data and scripts.\nDownload the following three datasets into the project data folder.\n\nsesame13.sav\nstar.csv\nais.xlsx\n\nSave a hw_4.qmd file in your scripts folder\n\n\n\nPart 1\nInstall and load the package {Lahman}, which will give you access to the Teams data.\n\n1. Produce a subset of the data (as a new object) that has the following characteristics:\n\nonly one team (your choice)\n\n(try to you select a team that is currently still around, or it probably won’t be interesting; see a list of current teams).\n\ndata from 1980 to present (or as current as the dataset allows)\nincludes 5 columns: name, yearID, W, L, R, RA. These 5 variables correspond to the team name, the year, wins, losses, runs scored, and runs allowed).\n\n\n\n2. Create a new variable corresponding to the winning percentage for the team you chose over time:\n\\[w_{pct} = \\frac{wins}{wins + losses}\\]\n\nOrder by winning percentage: Least to greatest\nOrder by winning percentage: Greatest to least\nCompute the mean and standard deviation of winning percentage\n\n\n\n3. With the full Teams data:\n\nCompute the mean and standard deviation of winning percentage for each team\nOrder by winning percentage, greatest to least\n\n\n\n4. Use the full data to reproduce the plot below\n\n\n\n\n\n\n\n\nPart 2\n\n1. Read in the following three datasets, using {here} and the package of your choice ({rio}, {readr}, {haven}, {readxl})\n\nsesame13.sav\nstar.csv\nais.xlsx\n\nHint: For the ais.xlsx data, look at the skip argument within the {readxl} help documentation.\n\n\n2. Using the ais data, compute the average red blood cell count and average bmi by sport. Output these data as SPSS (.sav) and EXCEL files.\n\n\n3. Use the sesame data to answer the following question: Was the average female age higher in schools or at home?\n\n\n4. First, how many rows and columns are in the star data? Next, remove outliers using a really poor method, just for practice, by eliminating students whose math (tmathss) scores were more than three standard deviations above or below the corresponding mean. How many rows are in the data now?\n\n\n5. Use the star data to compute standardized math and reading scores; name these variables tmathss_z and treadss_z. To create standardized scores, for each variable (math and reading), subtract the mean from each observation and divide by the standard deviation: \\(x_s = \\frac{x_i - \\bar{X}}{sd(X)}\\).\n\nCheck that your computations were correct by computing the mean and standard deviation of each variable (they should be 0 and 1, respectively).\nCompute the mean of the standardized variable for all sex/frl combinations. (I’m asking you to extend what you know here. We haven’t talked explicitly about how to do this yet, but you have seen examples).\nWhat do you make of these findings? Do you see an effect by sex? An frl effect (frl stands for free/reduced lunch, and is a rough proxy for household income)? Is there evidence of an interaction (i.e., that the effect of frl is greater for boys versus girls)?\n\n\n\nPlease submit you .qmd file, as well as the rendered .html file."
+  },
+  {
+    "objectID": "slides/w7_joins.html#section-7",
+    "href": "slides/w7_joins.html#section-7",
+    "title": "Week 7: Mutating Joins",
+    "section": "",
+    "text": "left_join(flights2, weather)\n\nJoining with `by = join_by(year, month, day, hour, origin)`\n\n\n# A tibble: 336,776 × 18\n    year month   day  hour origin dest  tailnum carrier  temp  dewp humid\n   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n 1  2013     1     1     5 EWR    IAH   N14228  UA       39.0  28.0  64.4\n 2  2013     1     1     5 LGA    IAH   N24211  UA       39.9  25.0  54.8\n 3  2013     1     1     5 JFK    MIA   N619AA  AA       39.0  27.0  61.6\n 4  2013     1     1     5 JFK    BQN   N804JB  B6       39.0  27.0  61.6\n 5  2013     1     1     6 LGA    ATL   N668DN  DL       39.9  25.0  54.8\n 6  2013     1     1     5 EWR    ORD   N39463  UA       39.0  28.0  64.4\n 7  2013     1     1     6 EWR    FLL   N516JB  B6       37.9  28.0  67.2\n 8  2013     1     1     6 LGA    IAD   N829AS  EV       39.9  25.0  54.8\n 9  2013     1     1     6 JFK    MCO   N593JB  B6       37.9  27.0  64.3\n10  2013     1     1     6 LGA    ORD   N3ALAA  AA       39.9  25.0  54.8\n# ℹ 336,766 more rows\n# ℹ 7 more variables: wind_dir &lt;dbl&gt;, wind_speed &lt;dbl&gt;, wind_gust &lt;dbl&gt;,\n#   precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;, time_hour &lt;dttm&gt;"
+  },
+  {
+    "objectID": "slides/w7_joins.html#section-3",
+    "href": "slides/w7_joins.html#section-3",
+    "title": "Week 7: Mutating Joins",
+    "section": "",
+    "text": "flights %&gt;% \n  count(year, month, day, flight, tailnum) %&gt;% \n  filter(n &gt; 1)\n\n# A tibble: 11 × 6\n    year month   day flight tailnum     n\n   &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;int&gt; &lt;chr&gt;   &lt;int&gt;\n 1  2013     2     9    303 &lt;NA&gt;        2\n 2  2013     2     9    655 &lt;NA&gt;        2\n 3  2013     2     9   1623 &lt;NA&gt;        2\n 4  2013     6     8   2269 N487WN      2\n 5  2013     6    15   2269 N230WN      2\n 6  2013     6    22   2269 N440LV      2\n 7  2013     6    29   2269 N707SA      2\n 8  2013     7     6   2269 N259WN      2\n 9  2013     8     3   2269 N446WN      2\n10  2013     8    10   2269 N478WN      2\n11  2013    12    15    398 &lt;NA&gt;        2"
+  },
+  {
+    "objectID": "slides/w7_joins.html#section-4",
+    "href": "slides/w7_joins.html#section-4",
+    "title": "Week 7: Mutating Joins",
+    "section": "",
+    "text": "From R4DS]"
+  },
+  {
+    "objectID": "slides/w7_joins.html#section-8",
+    "href": "slides/w7_joins.html#section-8",
+    "title": "Week 7: Mutating Joins",
+    "section": "",
+    "text": "left_join(stu, seasonal_means) \n\n# A tibble: 27 × 5\n     sid  scid score season   mean\n   &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;\n 1     1     1    10 fall    0.345\n 2     1     1    10 winter  1.54 \n 3     1     1    10 spring -0.330\n 4     2     1    12 fall    0.345\n 5     2     1    12 winter  1.54 \n 6     2     1    12 spring -0.330\n 7     3     1    15 fall    0.345\n 8     3     1    15 winter  1.54 \n 9     3     1    15 spring -0.330\n10     4     1     8 fall    0.345\n# ℹ 17 more rows"
+  },
+  {
+    "objectID": "slides/w7_joins.html#section-9",
+    "href": "slides/w7_joins.html#section-9",
+    "title": "Week 7: Mutating Joins",
+    "section": "",
+    "text": "left_join(flights2, weather)\n\nJoining with `by = join_by(year, month, day, hour, origin)`\n\n\n# A tibble: 336,776 × 18\n    year month   day  hour origin dest  tailnum carrier  temp  dewp humid\n   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n 1  2013     1     1     5 EWR    IAH   N14228  UA       39.0  28.0  64.4\n 2  2013     1     1     5 LGA    IAH   N24211  UA       39.9  25.0  54.8\n 3  2013     1     1     5 JFK    MIA   N619AA  AA       39.0  27.0  61.6\n 4  2013     1     1     5 JFK    BQN   N804JB  B6       39.0  27.0  61.6\n 5  2013     1     1     6 LGA    ATL   N668DN  DL       39.9  25.0  54.8\n 6  2013     1     1     5 EWR    ORD   N39463  UA       39.0  28.0  64.4\n 7  2013     1     1     6 EWR    FLL   N516JB  B6       37.9  28.0  67.2\n 8  2013     1     1     6 LGA    IAD   N829AS  EV       39.9  25.0  54.8\n 9  2013     1     1     6 JFK    MCO   N593JB  B6       37.9  27.0  64.3\n10  2013     1     1     6 LGA    ORD   N3ALAA  AA       39.9  25.0  54.8\n# ℹ 336,766 more rows\n# ℹ 7 more variables: wind_dir &lt;dbl&gt;, wind_speed &lt;dbl&gt;, wind_gust &lt;dbl&gt;,\n#   precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;, time_hour &lt;dttm&gt;"
+  },
+  {
+    "objectID": "slides/w7_joins.html#section-5",
+    "href": "slides/w7_joins.html#section-5",
+    "title": "Week 7: Mutating Joins",
+    "section": "",
+    "text": "From R4DS]"
+  },
+  {
+    "objectID": "slides/w7_joins.html#section-10",
+    "href": "slides/w7_joins.html#section-10",
+    "title": "Week 7: Mutating Joins",
+    "section": "",
+    "text": "left_join(flights2, weather)\n\nJoining with `by = join_by(year, month, day, hour, origin)`\n\n\n# A tibble: 336,776 × 18\n    year month   day  hour origin dest  tailnum carrier  temp  dewp humid\n   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n 1  2013     1     1     5 EWR    IAH   N14228  UA       39.0  28.0  64.4\n 2  2013     1     1     5 LGA    IAH   N24211  UA       39.9  25.0  54.8\n 3  2013     1     1     5 JFK    MIA   N619AA  AA       39.0  27.0  61.6\n 4  2013     1     1     5 JFK    BQN   N804JB  B6       39.0  27.0  61.6\n 5  2013     1     1     6 LGA    ATL   N668DN  DL       39.9  25.0  54.8\n 6  2013     1     1     5 EWR    ORD   N39463  UA       39.0  28.0  64.4\n 7  2013     1     1     6 EWR    FLL   N516JB  B6       37.9  28.0  67.2\n 8  2013     1     1     6 LGA    IAD   N829AS  EV       39.9  25.0  54.8\n 9  2013     1     1     6 JFK    MCO   N593JB  B6       37.9  27.0  64.3\n10  2013     1     1     6 LGA    ORD   N3ALAA  AA       39.9  25.0  54.8\n# ℹ 336,766 more rows\n# ℹ 7 more variables: wind_dir &lt;dbl&gt;, wind_speed &lt;dbl&gt;, wind_gust &lt;dbl&gt;,\n#   precip &lt;dbl&gt;, pressure &lt;dbl&gt;, visib &lt;dbl&gt;, time_hour &lt;dttm&gt;"
+  },
+  {
+    "objectID": "slides/w7_joins.html#specify-_join-keys-1",
+    "href": "slides/w7_joins.html#specify-_join-keys-1",
+    "title": "Week 7: Mutating Joins",
+    "section": "Specify *_join() keys",
+    "text": "Specify *_join() keys\nI like to always specify the join_by() variables\nMakes intent explicit\nHelps me review my own code"
   }
 ]
