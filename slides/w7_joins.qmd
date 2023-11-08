@@ -30,6 +30,8 @@ theme_set(theme_minimal(24))
 
 ```
 
+# Share!
+
 # Mutating Joins
 
 Week 7
@@ -232,6 +234,7 @@ First, let's break down the code:
 ```{r load_ecls-k}
 library(rio)
 library(here)
+library(tidyverse)
 ecls <- import(here("data", "ecls-k_samp.sav")) %>% 
   as_tibble() %>% 
   characterize()

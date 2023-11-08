@@ -102,7 +102,7 @@
     "href": "syllabus.html#week-7-mutating-joins",
     "title": "Syllabus",
     "section": "Week 7: Mutating Joins",
-    "text": "Week 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-08\nR4DS(2e) 13\n\njoins\n\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-08\nR4DS(2e) 13\n\njoins\n\nWeek 7\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NdkX7$!9"
   },
   {
     "objectID": "syllabus.html#week-8-tidy-data",
@@ -3252,14 +3252,14 @@
     "href": "slides/w7_joins.html#section",
     "title": "Week 7: Mutating Joins",
     "section": "",
-    "text": "g3\n\n# A tibble: 3 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     1     3   202\n2     2     3   197\n3     3     3   210\n\n\n\n\ng4\n\n# A tibble: 3 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     9     4   211\n2    10     4   191\n3    11     4   217"
+    "text": "g3\n\n# A tibble: 3 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     1     3   227\n2     2     3   217\n3     3     3   211\n\n\n\n\ng4\n\n# A tibble: 3 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     9     4   223\n2    10     4   181\n3    11     4   185"
   },
   {
     "objectID": "slides/w7_joins.html#bind_rows",
     "href": "slides/w7_joins.html#bind_rows",
     "title": "Week 7: Mutating Joins",
     "section": "bind_rows()",
-    "text": "bind_rows()\n\nIn examples like the previous data sets, we just want to combine the data by stacking the rows\nData have same (or approximately same) columns\nWe can do so with bind_rows()\n\n\n# output-location: fragment\nbind_rows(g3, g4)\n\n# A tibble: 6 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     1     3   202\n2     2     3   197\n3     3     3   210\n4     9     4   211\n5    10     4   191\n6    11     4   217"
+    "text": "bind_rows()\n\nIn examples like the previous data sets, we just want to combine the data by stacking the rows\nData have same (or approximately same) columns\nWe can do so with bind_rows()\n\n\n# output-location: fragment\nbind_rows(g3, g4)\n\n# A tibble: 6 × 3\n    sid grade score\n  &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1     1     3   227\n2     2     3   217\n3     3     3   211\n4     9     4   223\n5    10     4   181\n6    11     4   185"
   },
   {
     "objectID": "slides/w7_joins.html#dplyrbind_rows",
@@ -3273,28 +3273,28 @@
     "href": "slides/w7_joins.html#optional-.id-argument",
     "title": "Week 7: Mutating Joins",
     "section": "Optional .id argument",
-    "text": "Optional .id argument\n\nWhat if we knew the grade, but didn’t have a variable in each dataset already?\nUse .id to add an index for each dataset\n\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"dataset\")\n\n\n\n# A tibble: 6 × 3\n  dataset   sid score\n  &lt;chr&gt;   &lt;int&gt; &lt;int&gt;\n1 1           1   202\n2 1           2   197\n3 1           3   210\n4 2           9   211\n5 2          10   191\n6 2          11   217"
+    "text": "Optional .id argument\n\nWhat if we knew the grade, but didn’t have a variable in each dataset already?\nUse .id to add an index for each dataset\n\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"dataset\")\n\n\n\n# A tibble: 6 × 3\n  dataset   sid score\n  &lt;chr&gt;   &lt;int&gt; &lt;int&gt;\n1 1           1   227\n2 1           2   217\n3 1           3   211\n4 2           9   223\n5 2          10   181\n6 2          11   185"
   },
   {
     "objectID": "slides/w7_joins.html#recode-.id-column",
     "href": "slides/w7_joins.html#recode-.id-column",
     "title": "Week 7: Mutating Joins",
     "section": "Recode .id column",
-    "text": "Recode .id column\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"dataset\") %&gt;%\n  mutate(grade = ifelse(dataset == 1, 3, 4))\n\n\n\n# A tibble: 6 × 4\n  dataset   sid score grade\n  &lt;chr&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt;\n1 1           1   202     3\n2 1           2   197     3\n3 1           3   210     3\n4 2           9   211     4\n5 2          10   191     4\n6 2          11   217     4"
+    "text": "Recode .id column\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"dataset\") %&gt;%\n  mutate(grade = ifelse(dataset == 1, 3, 4))\n\n\n\n# A tibble: 6 × 4\n  dataset   sid score grade\n  &lt;chr&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt;\n1 1           1   227     3\n2 1           2   217     3\n3 1           3   211     3\n4 2           9   223     4\n5 2          10   181     4\n6 2          11   185     4"
   },
   {
     "objectID": "slides/w7_joins.html#even-better",
     "href": "slides/w7_joins.html#even-better",
     "title": "Week 7: Mutating Joins",
     "section": "Even better",
-    "text": "Even better\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"grade\") %&gt;% \n  mutate(grade = ifelse(grade == 1, 3, 4))\n\n\n\n# A tibble: 6 × 3\n  grade   sid score\n  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;\n1     3     1   202\n2     3     2   197\n3     3     3   210\n4     4     9   211\n5     4    10   191\n6     4    11   217"
+    "text": "Even better\n\nbind_rows(select(g3, -grade), select(g4, -grade), .id = \"grade\") %&gt;% \n  mutate(grade = ifelse(grade == 1, 3, 4))\n\n\n\n# A tibble: 6 × 3\n  grade   sid score\n  &lt;dbl&gt; &lt;int&gt; &lt;int&gt;\n1     3     1   227\n2     3     2   217\n3     3     3   211\n4     4     9   223\n5     4    10   181\n6     4    11   185"
   },
   {
     "objectID": "slides/w7_joins.html#what-if-columns-dont-match-exactly",
     "href": "slides/w7_joins.html#what-if-columns-dont-match-exactly",
     "title": "Week 7: Mutating Joins",
     "section": "What if columns don’t match exactly?",
-    "text": "What if columns don’t match exactly?\nPads with NA\n\nbind_rows(g3, g4[ ,-2], .id = \"dataset\")\n\n\n\n# A tibble: 6 × 4\n  dataset   sid grade score\n  &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1 1           1     3   202\n2 1           2     3   197\n3 1           3     3   210\n4 2           9    NA   211\n5 2          10    NA   191\n6 2          11    NA   217"
+    "text": "What if columns don’t match exactly?\nPads with NA\n\nbind_rows(g3, g4[ ,-2], .id = \"dataset\")\n\n\n\n# A tibble: 6 × 4\n  dataset   sid grade score\n  &lt;chr&gt;   &lt;int&gt; &lt;dbl&gt; &lt;int&gt;\n1 1           1     3   227\n2 1           2     3   217\n3 1           3     3   211\n4 2           9    NA   223\n5 2          10    NA   181\n6 2          11    NA   185"
   },
   {
     "objectID": "slides/w7_joins.html#you-can-also-bind_cols",
@@ -3308,7 +3308,7 @@
     "href": "slides/w7_joins.html#bind_cols",
     "title": "Week 7: Mutating Joins",
     "section": "bind_cols()",
-    "text": "bind_cols()\n\nbind_cols(read, math)\n\n\n\n# A tibble: 3 × 3\n    sid  read  math\n  &lt;int&gt; &lt;int&gt; &lt;int&gt;\n1     1   193   207\n2     2   204   205\n3     3   189   221"
+    "text": "bind_cols()\n\nbind_cols(read, math)\n\n\n\n# A tibble: 3 × 3\n    sid  read  math\n  &lt;int&gt; &lt;int&gt; &lt;int&gt;\n1     1   190   193\n2     2   208   188\n3     3   203   213"
   },
   {
     "objectID": "slides/w7_joins.html#keys",
@@ -3322,7 +3322,7 @@
     "href": "slides/w7_joins.html#whats-the-primary-key-here",
     "title": "Week 7: Mutating Joins",
     "section": "What’s the primary key here?",
-    "text": "What’s the primary key here?\nFirst, let’s break down the code:\n\nlibrary(rio)\nlibrary(here)\necls &lt;- import(here(\"data\", \"ecls-k_samp.sav\")) %&gt;% \n  as_tibble() %&gt;% \n  characterize()\n\n\n\n\n# A tibble: 984 × 33\n   child_id teacher_id school_id k_type school_type sex   ethnic famtype numsibs\n   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;\n 1 0842021C 0842T02    0842      full-… public      male  BLACK… BIOLOG…       1\n 2 0905002C 0905T01    0905      full-… private     male  ASIAN  BIOLOG…       1\n 3 0150012C 0150T01    0150      full-… private     fema… BLACK… BIOLOG…       4\n 4 0556009C 0556T01    0556      full-… private     fema… HISPA… BIOLOG…       0\n 5 0089013C 0089T04    0089      full-… public      male  WHITE… BIOLOG…       4\n 6 1217001C 1217T13    1217      half-… public      fema… NATIV… BIOLOG…       0\n 7 1092008C 1092T01    1092      half-… public      fema… HISPA… BIOLOG…       2\n 8 0083007C 0083T16    0083      full-… public      male  WHITE… BIOLOG…       1\n 9 1091005C 1091T02    1091      half-… private     male  WHITE… BIOLOG…       0\n10 2006006C 2006T01    2006      full-… private     male  WHITE… BIOLOG…       1\n# ℹ 974 more rows\n# ℹ 24 more variables: SES_cont &lt;dbl&gt;, SES_cat &lt;chr&gt;, age &lt;dbl&gt;,\n#   T1RSCALE &lt;dbl&gt;, T1MSCALE &lt;dbl&gt;, T1GSCALE &lt;dbl&gt;, T2RSCALE &lt;dbl&gt;,\n#   T2MSCALE &lt;dbl&gt;, T2GSCALE &lt;dbl&gt;, IRTreadgain &lt;dbl&gt;, IRTmathgain &lt;dbl&gt;,\n#   IRTgkgain &lt;dbl&gt;, T1ARSLIT &lt;dbl&gt;, T1ARSMAT &lt;dbl&gt;, T1ARSGEN &lt;dbl&gt;,\n#   T2ARSLIT &lt;dbl&gt;, T2ARSMAT &lt;dbl&gt;, T2ARSGEN &lt;dbl&gt;, ARSlitgain &lt;dbl&gt;,\n#   ARSmathgain &lt;dbl&gt;, ARSgkgain &lt;dbl&gt;, testdate1 &lt;date&gt;, testdate2 &lt;date&gt;, …"
+    "text": "What’s the primary key here?\nFirst, let’s break down the code:\n\nlibrary(rio)\nlibrary(here)\nlibrary(tidyverse)\necls &lt;- import(here(\"data\", \"ecls-k_samp.sav\")) %&gt;% \n  as_tibble() %&gt;% \n  characterize()\n\n\n\n\n# A tibble: 984 × 33\n   child_id teacher_id school_id k_type school_type sex   ethnic famtype numsibs\n   &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt;  &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;\n 1 0842021C 0842T02    0842      full-… public      male  BLACK… BIOLOG…       1\n 2 0905002C 0905T01    0905      full-… private     male  ASIAN  BIOLOG…       1\n 3 0150012C 0150T01    0150      full-… private     fema… BLACK… BIOLOG…       4\n 4 0556009C 0556T01    0556      full-… private     fema… HISPA… BIOLOG…       0\n 5 0089013C 0089T04    0089      full-… public      male  WHITE… BIOLOG…       4\n 6 1217001C 1217T13    1217      half-… public      fema… NATIV… BIOLOG…       0\n 7 1092008C 1092T01    1092      half-… public      fema… HISPA… BIOLOG…       2\n 8 0083007C 0083T16    0083      full-… public      male  WHITE… BIOLOG…       1\n 9 1091005C 1091T02    1091      half-… private     male  WHITE… BIOLOG…       0\n10 2006006C 2006T01    2006      full-… private     male  WHITE… BIOLOG…       1\n# ℹ 974 more rows\n# ℹ 24 more variables: SES_cont &lt;dbl&gt;, SES_cat &lt;chr&gt;, age &lt;dbl&gt;,\n#   T1RSCALE &lt;dbl&gt;, T1MSCALE &lt;dbl&gt;, T1GSCALE &lt;dbl&gt;, T2RSCALE &lt;dbl&gt;,\n#   T2MSCALE &lt;dbl&gt;, T2GSCALE &lt;dbl&gt;, IRTreadgain &lt;dbl&gt;, IRTmathgain &lt;dbl&gt;,\n#   IRTgkgain &lt;dbl&gt;, T1ARSLIT &lt;dbl&gt;, T1ARSMAT &lt;dbl&gt;, T1ARSGEN &lt;dbl&gt;,\n#   T2ARSLIT &lt;dbl&gt;, T2ARSMAT &lt;dbl&gt;, T2ARSGEN &lt;dbl&gt;, ARSlitgain &lt;dbl&gt;,\n#   ARSmathgain &lt;dbl&gt;, ARSgkgain &lt;dbl&gt;, testdate1 &lt;date&gt;, testdate2 &lt;date&gt;, …"
   },
   {
     "objectID": "slides/w7_joins.html#lets-verify-the-key",
@@ -3350,7 +3350,7 @@
     "href": "slides/w7_joins.html#section-1",
     "title": "Week 7: Mutating Joins",
     "section": "",
-    "text": "read\n\n# A tibble: 3 × 2\n    sid  read\n  &lt;int&gt; &lt;int&gt;\n1     1   193\n2     2   204\n3     3   189\n\n\n\n\nmath\n\n# A tibble: 3 × 1\n   math\n  &lt;int&gt;\n1   207\n2   205\n3   221"
+    "text": "read\n\n# A tibble: 3 × 2\n    sid  read\n  &lt;int&gt; &lt;int&gt;\n1     1   190\n2     2   208\n3     3   203\n\n\n\n\nmath\n\n# A tibble: 3 × 1\n   math\n  &lt;int&gt;\n1   193\n2   188\n3   213"
   },
   {
     "objectID": "slides/w7_joins.html#sometimes-there-is-no-key",
@@ -3736,5 +3736,12 @@
     "title": "Week 7: Mutating Joins",
     "section": "Specify *_join() keys",
     "text": "Specify *_join() keys\nI like to always specify the join_by() variables\nMakes intent explicit\nHelps me review my own code"
+  },
+  {
+    "objectID": "homeworks/hw7-key.html",
+    "href": "homeworks/hw7-key.html",
+    "title": "Homework 5",
+    "section": "",
+    "text": "Please submit Homework 5 as a .qmd file AND as a rendered document (.pdf or .html)\n\n \n\n\n1. Create a new Quarto document and modify the YAML to\n\nInclude your name\nChange the syntax highlighting to any scheme but the default. The options are default, tango, pygments, kate, monochrome, espresso, zenburn, haddock, and textmate. You can also use NULL if you want no highlighting.   \nSet the global chunk option to make all figures 9” wide and the height to a value that makes sense to you, and does not display the code, or any warnings or messages from the code, but evaluates every function/line of the code.\n\n\n\n2. Create a code chunk that:\n\nLoads all the packages you decide to use for the lab.\nSets the theme for your visualizations.\n\n  \n\n\n3. Import the ecls-k_samp.sav dataset (found here), and produce the plot below. Do not show the code you used (colors, themes, etc. don’t matter here).\n\n\n\n\n\n  \n\n\n4. Run The following lines of code to store the mean and standard deviation of t1mscale. Extend this code to calculate (in the same code chunk) the mean and standard deviation of t2mscale. Note this code assumes you read the ecls-k dataset in as an object called eclsk - you should substitute in whatever the name is for your data object. The code below also assumes you have used clean_names and one more thing about the data we talked about in class.\n\nt1mean &lt;- mean(eclsk$t1mscale, na.rm = TRUE)\nt1sd &lt;- sd(eclsk$t1mscale, na.rm = TRUE)\n\nt2mean &lt;- mean(eclsk$t2mscale, na.rm = TRUE)\nt2sd &lt;- sd(eclsk$t2mscale, na.rm = TRUE)\n\n  \n\n\n5. Using the values you calculated above, use an inline code evaluation below to report the means and SDs for each of the two time points (t1mscale and t2mscale). Also report the difference between the means (i.e., the average gain).\n\nThe mean for time point one was 20.51, with a standard deviation of 7.37. At time point two, the mean was 28.57, with a standard deviation of 8.78. The difference between the means was between the time points was thus 8.06 points.\n \n\n\n6. Pretend you are trying to teach somebody how to load data. Describe the process below that we’ve discussed in class, including why it helps reproducibility, and echo chunks of code as necessary without actually evaluating any of it.\n\nInclude some text that is bold and some that is italics.\n\n\nCreate and RStudio project. This will serve as the root directory. Create empty data and scripts folders. Place any data you have in the data folder.\nTo import the data, create a new script, then load the following packages:\n\nlibrary(rio)\nlibrary(here)\n\nIf you don’t have these packages installed, you’ll need to install them first, using install.packages(c(\"rio\", \"here\")).\nFinally, use the {here} library to navigate file paths, and rio::import() to import data of basically any type. For example, assuming you have created an RStudio project and you are working from that project, and you’ve put the data you want to load in at folder called data, any of the following should work\n\nd &lt;- import(here(\"data\", \"data_to_load.sav\"),\n            setclass = \"tbl_df\")\n\nd &lt;- import(here(\"data\", \"data_to_load.xlsx\"),\n            setclass = \"tbl_df\")\n\nd &lt;- import(here(\"data\", \"data_to_load.dta\"),\n            setclass = \"tbl_df\")\n\nNote that the setclass argument is optional, and changes the import to a tibble instead of a standard data frame."
   }
 ]
