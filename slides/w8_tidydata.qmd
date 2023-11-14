@@ -19,6 +19,7 @@ embed-resources: true
 
 ```{r setup, include=FALSE}
 library(tidyverse)
+library(rio)
 library(knitr)
 library(here)
 library(janitor)
@@ -35,7 +36,7 @@ library(gt)
 Week 8
 
 
-# Share
+## Share
 
 [`{tidylog}`](https://github.com/elbersb/tidylog)
 
@@ -147,11 +148,76 @@ countdown(minutes = 1, seconds = 30, bottom = 0, warn_when = 30)
 * Persistent and varied challenge
 * Little research on how to do it well
 
-# [Activity]{style='color:#0072B2'}
+## [Activity]{style='color:#0072B2'}
 
-!!!!!!!!!!!!!!!!!!!!!!!!!
+Run this code
 
-## Tidy Data (.smaller)
+```{r}
+#| eval: false
+library(rio)
+library(here)
+library(tidyverse)
+
+star <- import(here("data", "star.csv")) %>% 
+  as_tibble()
+```
+
+. . .
+
+```{r}
+#| echo: false
+(star <- import(here("data", "star.csv")) %>% 
+  as_tibble())
+```
+
+## [Produce this plot]{style='color:#0072B2'}
+
+What do we need here?
+
+```{r}
+#| echo: false
+star %>% 
+  ggplot(aes(treadss, tmathss)) +
+  geom_point() +
+  theme_minimal()
+```
+
+## [Great! Now produce this plot]{style='color:#0072B2'}
+
+What's different?
+
+```{r}
+#| echo: false
+star %>% 
+  ggplot(aes(treadss, tmathss, color = frl)) +
+  geom_point() +
+  theme_minimal()
+```
+
+## [Awesome! Now this one]{style='color:#0072B2'}
+
+```{r}
+#| echo: false
+star %>% 
+  pivot_longer(
+    cols = c(white, black),
+    names_to = "foo",
+    values_to = "race"
+  ) %>% 
+  mutate(race = ifelse(race == 1, "white", "black")) %>% 
+  ggplot(aes(treadss, tmathss, color = race)) +
+  geom_point() +
+  theme_minimal() +
+  labs(color = "")
+```
+
+##
+
+![](https://media1.giphy.com/media/nTfdeBvfgzV26zjoFP/giphy.gif?cid=ecf05e47ss10hzpu9f3yca3n0kgavkxygbxncmuh2hww3vpz&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+
+
+## Tidy Data {.smaller}
 
 * Each variable is a column
 * Each observation is a row
@@ -261,7 +327,8 @@ The combination of rows and columns make each observational unit (row) unique, e
 
 `nest()`
 : creates a list-column of data frames; you get one row for each group defined by the non-nested columns. This is useful in conjunction with other summaries that work with whole datasets, like models
-    + **so** powerful
+
+* **so** powerful
 
 # `pivot_longer()`
 
@@ -469,10 +536,8 @@ relig_income
 
 ## Let's `pivot_longer()`
 
-:::: {.columns}
-
-::: {.column width="50%"}
-```{r, eval=FALSE}
+```{r}
+#| output-location: fragment
 relig_income %>% 
   pivot_longer(
     cols = -religion,
@@ -480,20 +545,6 @@ relig_income %>%
     values_to = "frequency"
   )
 ```
-:::
-
-::: {.column width="50%" .fragment}
-```{r, echo=FALSE}
-relig_income %>% 
-  pivot_longer(
-    cols = -religion,
-    names_to = "income",
-    values_to = "frequency"
-  )
-```
-:::
-
-::::
 
 ## Why are tidy data useful? {.smaller}
 
@@ -557,7 +608,7 @@ relig_long %>%
   facet_wrap(~religion)
 ```
 
-## Messy data
+## Messy data {.smaller}
 
 Many variables in column names
 
@@ -969,6 +1020,8 @@ Let's make some manipulations to get a sample of the data
   select(country, `1979`, `1989`, `1999`, `2009`))
 ```
 
+. . .
+
 * Are these data tidy?
 * How would you add a new variable - say, *percent HIV*?
 * Discuss how you would transform these data, if at all
@@ -1047,7 +1100,7 @@ hiv_tidy %>%
   geom_line(size = 2)
 ```
 
-# pivot_wider()
+# `pivot_wider()`
 
 ## [`pivot_wider()`](https://tidyr.tidyverse.org/reference/pivot_wider.html)
 
@@ -1356,7 +1409,7 @@ Credit [Allison Horst](https://allisonhorst.com/data-science-art)
 ## Before next class
 
 * Final Project
-    + .red[Final Project: Draft Data Script]
+    + [Final Project: Draft Data Script]{style='color:#FF0000'}
 * Reading
     + [R4DS(2e) 17](https://r4ds.hadley.nz/factors)
 * Homework

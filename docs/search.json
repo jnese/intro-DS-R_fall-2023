@@ -3854,7 +3854,7 @@
     "href": "slides/w8_tidydata.html#tidyr-verbs",
     "title": "Week 8: Tidy Data",
     "section": "{tidyr} verbs",
-    "text": "{tidyr} verbs\n\npivot_longer()\n\n“lengthens” data, increasing the number of rows and decreasing the number of columns\n\n\n\n\npivot_wider()\n\n“widens” data, increasing the number of columns and decreasing the number of rows\n\n\n\n\n\nseparate_wider_position() and separate_wider_delim()\n\nturns a single character column into multiple columns\n\n\n\n\n\nseparate_wider_regex()\n\ngiven a regular expression for capturing groups, turns each group into a new column\n\n\n\n\n\nunite()\n\npaste together multiple columns into one\n\n\n\n\n\nnest()\n\ncreates a list-column of data frames; you get one row for each group defined by the non-nested columns. This is useful in conjunction with other summaries that work with whole datasets, like models + so powerful"
+    "text": "{tidyr} verbs\n\npivot_longer()\n\n“lengthens” data, increasing the number of rows and decreasing the number of columns\n\n\n\n\npivot_wider()\n\n“widens” data, increasing the number of columns and decreasing the number of rows\n\n\n\n\n\nseparate_wider_position() and separate_wider_delim()\n\nturns a single character column into multiple columns\n\n\n\n\n\nseparate_wider_regex()\n\ngiven a regular expression for capturing groups, turns each group into a new column\n\n\n\n\n\nunite()\n\npaste together multiple columns into one\n\n\n\n\n\nnest()\n\ncreates a list-column of data frames; you get one row for each group defined by the non-nested columns. This is useful in conjunction with other summaries that work with whole datasets, like models\n\n\n\nso powerful"
   },
   {
     "objectID": "slides/w8_tidydata.html#pivot_longer-1",
@@ -3931,7 +3931,7 @@
     "href": "slides/w8_tidydata.html#lets-pivot_longer-2",
     "title": "Week 8: Tidy Data",
     "section": "Let’s pivot_longer()",
-    "text": "Let’s pivot_longer()\n\n\n\nrelig_income %&gt;% \n  pivot_longer(\n    cols = -religion,\n    names_to = \"income\",\n    values_to = \"frequency\"\n  )\n\n\n\n\n# A tibble: 180 × 3\n   religion income             frequency\n   &lt;chr&gt;    &lt;chr&gt;                  &lt;dbl&gt;\n 1 Agnostic &lt;$10k                     27\n 2 Agnostic $10-20k                   34\n 3 Agnostic $20-30k                   60\n 4 Agnostic $30-40k                   81\n 5 Agnostic $40-50k                   76\n 6 Agnostic $50-75k                  137\n 7 Agnostic $75-100k                 122\n 8 Agnostic $100-150k                109\n 9 Agnostic &gt;150k                     84\n10 Agnostic Don't know/refused        96\n# ℹ 170 more rows"
+    "text": "Let’s pivot_longer()\n\nrelig_income %&gt;% \n  pivot_longer(\n    cols = -religion,\n    names_to = \"income\",\n    values_to = \"frequency\"\n  )\n\n\n\n# A tibble: 180 × 3\n   religion income             frequency\n   &lt;chr&gt;    &lt;chr&gt;                  &lt;dbl&gt;\n 1 Agnostic &lt;$10k                     27\n 2 Agnostic $10-20k                   34\n 3 Agnostic $20-30k                   60\n 4 Agnostic $30-40k                   81\n 5 Agnostic $40-50k                   76\n 6 Agnostic $50-75k                  137\n 7 Agnostic $75-100k                 122\n 8 Agnostic $100-150k                109\n 9 Agnostic &gt;150k                     84\n10 Agnostic Don't know/refused        96\n# ℹ 170 more rows"
   },
   {
     "objectID": "slides/w8_tidydata.html#why-are-tidy-data-useful",
@@ -4141,7 +4141,7 @@
     "href": "slides/w8_tidydata.html#other-possible-issues-1",
     "title": "Week 8: Tidy Data",
     "section": "Other possible issues",
-    "text": "Other possible issues\nLet’s make some manipulations to get a sample of the data\n\n(just {dplyr} variety filter() and select())\n\n\n(hiv_r &lt;- hiv %&gt;% \n  filter(country == \"France\" |\n          country == \"South Africa\" |\n            country == \"United States\") %&gt;% \n  select(country, `1979`, `1989`, `1999`, `2009`))\n\n# A tibble: 3 × 5\n  country        `1979` `1989` `1999` `2009`\n  &lt;chr&gt;           &lt;dbl&gt; &lt;lgl&gt;   &lt;dbl&gt;  &lt;dbl&gt;\n1 France        NA      NA        0.3    0.4\n2 South Africa  NA      NA       14.8   17.2\n3 United States  0.0318 NA        0.5    0.6\n\n\n\nAre these data tidy?\nHow would you add a new variable - say, percent HIV?\nDiscuss how you would transform these data, if at all"
+    "text": "Other possible issues\nLet’s make some manipulations to get a sample of the data\n\n(just {dplyr} variety filter() and select())\n\n\n(hiv_r &lt;- hiv %&gt;% \n  filter(country == \"France\" |\n          country == \"South Africa\" |\n            country == \"United States\") %&gt;% \n  select(country, `1979`, `1989`, `1999`, `2009`))\n\n# A tibble: 3 × 5\n  country        `1979` `1989` `1999` `2009`\n  &lt;chr&gt;           &lt;dbl&gt; &lt;lgl&gt;   &lt;dbl&gt;  &lt;dbl&gt;\n1 France        NA      NA        0.3    0.4\n2 South Africa  NA      NA       14.8   17.2\n3 United States  0.0318 NA        0.5    0.6\n\n\n\n\nAre these data tidy?\nHow would you add a new variable - say, percent HIV?\nDiscuss how you would transform these data, if at all"
   },
   {
     "objectID": "slides/w8_tidydata.html#tidy-the-data",
@@ -4309,14 +4309,14 @@
     "href": "slides/w8_tidydata.html#before-next-class",
     "title": "Week 8: Tidy Data",
     "section": "Before next class",
-    "text": "Before next class\n\nFinal Project\n\n.red[Final Project: Draft Data Script]\n\nReading\n\nR4DS(2e) 17\n\nHomework\n\nHomework 9"
+    "text": "Before next class\n\nFinal Project\n\nFinal Project: Draft Data Script\n\nReading\n\nR4DS(2e) 17\n\nHomework\n\nHomework 9"
   },
   {
     "objectID": "slides/w8_tidydata.html#section-4",
     "href": "slides/w8_tidydata.html#section-4",
     "title": "Week 8: Tidy Data",
     "section": "",
-    "text": "R4DS"
+    "text": "Allison Horst"
   },
   {
     "objectID": "slides/w8_tidydata.html#pivot_longer-4",
@@ -4344,7 +4344,7 @@
     "href": "slides/w8_tidydata.html#section-5",
     "title": "Week 8: Tidy Data",
     "section": "",
-    "text": "Credit Allison Horst"
+    "text": "R4DS"
   },
   {
     "objectID": "slides/w8_tidydata.html#tidy-data-.smaller",
@@ -4352,5 +4352,47 @@
     "title": "Week 8: Tidy Data",
     "section": "Tidy Data (.smaller)",
     "text": "Tidy Data (.smaller)\n\nEach variable is a column\nEach observation is a row\nEach type of observational unit forms a table\n\nWe won’t talk much about this point\n\n\n\n\n\nR4DS"
+  },
+  {
+    "objectID": "slides/w8_tidydata.html#activity",
+    "href": "slides/w8_tidydata.html#activity",
+    "title": "Week 8: Tidy Data",
+    "section": "Activity",
+    "text": "Activity\nRun this code\n\nlibrary(rio)\nlibrary(here)\nlibrary(tidyverse)\n\nstar &lt;- import(here(\"data\", \"star.csv\")) %&gt;% \n  as_tibble()\n\n\n\n\n# A tibble: 5,748 × 12\n   schidkn sex   frl   reg_size reg_size_aid small_size white black other totexp\n     &lt;int&gt; &lt;chr&gt; &lt;chr&gt;    &lt;int&gt;        &lt;int&gt;      &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;int&gt;\n 1      63 girl  no           0            0          1     1     0     0      7\n 2      20 girl  no           0            0          1     0     1     0     21\n 3      19 boy   yes          0            1          0     0     1     0      0\n 4      69 boy   no           1            0          0     1     0     0     16\n 5      79 boy   yes          0            0          1     1     0     0      5\n 6       5 boy   yes          1            0          0     1     0     0      8\n 7      16 girl  yes          0            1          0     0     1     0     17\n 8      56 girl  no           1            0          0     1     0     0      3\n 9      11 girl  no           0            0          1     0     1     0     11\n10      66 girl  no           0            0          1     1     0     0     10\n# ℹ 5,738 more rows\n# ℹ 2 more variables: tmathss &lt;int&gt;, treadss &lt;int&gt;"
+  },
+  {
+    "objectID": "slides/w8_tidydata.html#produce-this-plot",
+    "href": "slides/w8_tidydata.html#produce-this-plot",
+    "title": "Week 8: Tidy Data",
+    "section": "Produce this plot",
+    "text": "Produce this plot\nWhat do we need here?"
+  },
+  {
+    "objectID": "slides/w8_tidydata.html#great-now-produce-this-plot",
+    "href": "slides/w8_tidydata.html#great-now-produce-this-plot",
+    "title": "Week 8: Tidy Data",
+    "section": "Great! Now produce this plot",
+    "text": "Great! Now produce this plot\nWhat’s different?"
+  },
+  {
+    "objectID": "slides/w8_tidydata.html#awesome-now-this-one",
+    "href": "slides/w8_tidydata.html#awesome-now-this-one",
+    "title": "Week 8: Tidy Data",
+    "section": "Awesome! Now this one",
+    "text": "Awesome! Now this one"
+  },
+  {
+    "objectID": "slides/w8_tidydata.html#section-6",
+    "href": "slides/w8_tidydata.html#section-6",
+    "title": "Week 8: Tidy Data",
+    "section": "",
+    "text": "Credit Allison Horst"
+  },
+  {
+    "objectID": "slides/w8_tidydata.html#share",
+    "href": "slides/w8_tidydata.html#share",
+    "title": "Week 8: Tidy Data",
+    "section": "Share",
+    "text": "Share\n{tidylog}\n\nProvides feedback about {dplyr} and {tidyr} operations\n\nview link"
   }
 ]
