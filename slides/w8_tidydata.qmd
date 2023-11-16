@@ -543,7 +543,7 @@ relig_income %>%
     cols = -religion,
     names_to = "income",
     values_to = "frequency"
-  )
+  ) %>% View()
 ```
 
 ## Why are tidy data useful? {.smaller}
@@ -933,7 +933,8 @@ Load the `year-end_scores.csv` data from the course website or from your cloned 
 Name the data `scores`
 
 ```{r}
-scores <- read_csv(here("data", "year-end_scores.csv"))
+#| output-location: fragment
+(scores <- read_csv(here("data", "year-end_scores.csv")))
 ```
 
 ## Talk as a class
@@ -1414,6 +1415,7 @@ Credit [Allison Horst](https://allisonhorst.com/data-science-art)
     + [R4DS(2e) 17](https://r4ds.hadley.nz/factors)
 * Homework
     + **Homework 9**
+* AMA
 
 # Homework 9
 
