@@ -116,7 +116,7 @@
     "href": "syllabus.html#week-9-factors-pull-request",
     "title": "Syllabus",
     "section": "Week 9: Factors & Pull Request",
-    "text": "Week 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-22\nR4DS(2e) 17\n\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA"
+    "text": "Week 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-22\nR4DS(2e) 17\n\nfactors & pull requests\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA"
   },
   {
     "objectID": "syllabus.html#week-10-presentations",
@@ -1257,7 +1257,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Before Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned2\n      Due\n    \n  \n  \n    Sep-27\nR4DS(2e) 5\n\nIntro\n\nWeek 1a\n\nA Quick Tour of the RStudio IDE\n\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1b\n\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: 1a = c+mzu9yt and 1b = GP&8Grs8\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-04\nProject-oriented Workflow\n\nWorkflow\n\nWeek 2\n\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: BGssp@k0\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-11\nR4DS(2e) 2\n\nggplot2\n\n\n\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Posted to Canvas : Files\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-18\nR4DS(2e) 4\n\ndplyr\n\nWeek 4\n\nDownload GitKraken\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nWatch What is a Git repository?\n\nRbootcamp: Ch 3\n\n    \n\n\n\nWatch What is a remote repository?\n\nCodecademy: Aggregates in R\n\n    \n\n\n\nHomework 4\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NJ!798*3\n    \n  \n\n\n\n\n\n\nWeek 5: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-25\nBryan 2017\n\ngit & GitHub\n\nWeek 5\n\nMarkdown Tutorial\n\nDownload GitKraken\n\n    \n\n\n\nHomework 5\n\nWatch What is a Git repository?\n\n    \n\n\n\n\nWatch What is a remote repository?\n\n    \n\n\n\n\nHomework 4\n\n    \n\n\n\n\nFinal Project: Outline\n\n  \n  \n  \n    \n      1 Passcode: 6zGuVA$b\n    \n  \n\n\n\n\n\n\nWeek 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-01\nR4DS(2e) 30\n\nQuarto\n\nWeek 6\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: B53W&L1j\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-08\nR4DS(2e) 13\n\njoins\n\nWeek 7\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NdkX7$!9\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-15\nR4DS(2e) 12\n\ntidy data\n\nWeek 8\n\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: 3j3M9&Rj\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-22\nR4DS(2e) 17\n\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-29\n\n\n\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
+    "text": "Before Week 1\nPlease complete the following five installs before our first class.\nInstructions for each are on the Installs page.\n\nInstall R\nInstall RStudio\nRegister a GitHub account\nInstall Git\nInstall GitKraken\n\n\n\nWeek 1: Introduction\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned2\n      Due\n    \n  \n  \n    Sep-27\nR4DS(2e) 5\n\nIntro\n\nWeek 1a\n\nA Quick Tour of the RStudio IDE\n\nInstalls\n\n    \nR4DS(2e) 3\n\n\nWeek 1b\n\nRStudio Primer: Programming basics\n\n\n    \nR4DS(2e) 7\n\n\n\nCodecademy: Introduction to R Syntax\n\n\n    \nOptional: MD 1.1\n\n\n\nFinal Project\n\n\n  \n  \n  \n    \n      1 Passcode: 1a = c+mzu9yt and 1b = GP&8Grs8\n    \n    \n      2 I do not rearrange my RStudio panes as he does.\n    \n  \n\n\n\n\n\n\nWeek 2: Workflow\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-04\nProject-oriented Workflow\n\nWorkflow\n\nWeek 2\n\nRStudio Primer: Data Visualization Basics\n\nA Quick Tour of the RStudio IDE\n\n    \nR4DS(2e) 29\n\n\n\nRbootcamp: Ch 2\n\nRStudio Primer: Programming basics\n\n    \nhere::here() Jenny Bryan\n\n\n\nCodecademy: Introduction to Visualization with R\n\nCodecademy: Introduction to R Syntax\n\n    \n{rio} vignette\n\n\n\nHomework 1\n\n\n  \n  \n  \n    \n      1 Passcode: BGssp@k0\n    \n  \n\n\n\n\n\n\nWeek 3: {ggplot2}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-11\nR4DS(2e) 2\n\nggplot2\n\n\n\nRStudio Primer: Working with Tibbles\n\nRStudio Primer: Data Visualization Basics\n\n    \nOptional: MD 2.0 to 2.9\n\n\n\nRbootcamp: Ch 3\n\nRbootcamp: Ch 2\n\n    \nOptional: Healy Ch 3\n\n\n\nCodecademy: Aggregates in R\n\nCodecademy: Introduction to Visualization with R\n\n    \n\n\n\nHomework 2\n\nHomework 1\n\n    \n\n\n\nHomework 3\n\nFinal Project: Finalize Groups\n\n  \n  \n  \n    \n      1 Posted to Canvas : Files\n    \n  \n\n\n\n\n\n\nWeek 4: {dplyr}\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-18\nR4DS(2e) 4\n\ndplyr\n\nWeek 4\n\nDownload GitKraken\n\nRStudio Primer: Working with Tibbles\n\n    \nOptional: MD 3.1 to 3.6, 3.8\n\n\n\nWatch What is a Git repository?\n\nRbootcamp: Ch 3\n\n    \n\n\n\nWatch What is a remote repository?\n\nCodecademy: Aggregates in R\n\n    \n\n\n\nHomework 4\n\nHomework 2\n\n    \n\n\n\n\nHomework 3\n\n  \n  \n  \n    \n      1 Passcode: NJ!798*3\n    \n  \n\n\n\n\n\n\nWeek 5: GitHub\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Oct-25\nBryan 2017\n\ngit & GitHub\n\nWeek 5\n\nMarkdown Tutorial\n\nDownload GitKraken\n\n    \n\n\n\nHomework 5\n\nWatch What is a Git repository?\n\n    \n\n\n\n\nWatch What is a remote repository?\n\n    \n\n\n\n\nHomework 4\n\n    \n\n\n\n\nFinal Project: Outline\n\n  \n  \n  \n    \n      1 Passcode: 6zGuVA$b\n    \n  \n\n\n\n\n\n\nWeek 6: Quarto\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-01\nR4DS(2e) 30\n\nQuarto\n\nWeek 6\n\nRStudio Primer: Join Data Sets\n\nMarkdown Tutorial\n\n    \n\n\n\nCodecademy: Joining Tables in R\n\nHomework 5\n\n    \n\n\n\nHomework 6\n\n\n    \n\n\n\nHomework 7\n\n\n  \n  \n  \n    \n      1 Passcode: B53W&L1j\n    \n  \n\n\n\n\n\n\nWeek 7: Mutating Joins\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-08\nR4DS(2e) 13\n\njoins\n\nWeek 7\n\nHomework 8\n\nRStudio Primer: Join Data Sets\n\n    \n\n\n\n\nCodecademy: Joining Tables in R\n\n    \n\n\n\n\nHomework 6\n\n    \n\n\n\n\nHomework 7\n\n  \n  \n  \n    \n      1 Passcode: NdkX7$!9\n    \n  \n\n\n\n\n\n\nWeek 8: Tidy Data\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-15\nR4DS(2e) 12\n\ntidy data\n\nWeek 8\n\nHomework 9\n\nHomework 8\n\n    \nWickham 2014\n\n\n\nFinal Project: Draft Data Script\n\n\n    \nR-Ladies Sydney CleanItUp 5\n\n\n\n\n\n    \nOptional: MD 4.2 - 4.4\n\n\n\n\n\n  \n  \n  \n    \n      1 Passcode: 3j3M9&Rj\n    \n  \n\n\n\n\n\n\nWeek 9: Factors & Pull Request\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-22\nR4DS(2e) 17\n\nfactors & pull requests\n\n\nHomework 10\n\nHomework 9\n\n    \n\n\n\nFinal Project: Peer Review of Script\n\nFinal Project: Draft Data Script\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 10: Presentations\n\n\n\n\n\n\n  \n    \n    \n      \n      Reading\n      Slides\n      Lecture1\n      Assigned\n      Due\n    \n  \n  \n    Nov-29\n\n\n\n\nHomework 10\n\n    \n\n\n\n\nFinal Project: Peer Review of Script\n\n    \n\n\n\n\nFinal Project: Presentation\n\n  \n  \n  \n    \n      1 Passcode: NA\n    \n  \n\n\n\n\n\n\nWeek 11: No class: Final papers due"
   },
   {
     "objectID": "installs.html",
@@ -3755,8 +3755,8 @@
     "objectID": "slides/w8_tidydata.html#agenda",
     "href": "slides/w8_tidydata.html#agenda",
     "title": "Week 8: Tidy Data",
-    "section": "Agenda",
-    "text": "Agenda\n\nIntroduce the concept of tidy data\nTidy a simple dataset together with {tidyr}\nSummarize and transform tidy data with {dplyr}\n\nLearning Objectives\n\nUnderstand that the concept of tidy data is useful\nUnderstand and be able to apply the pivot_longer() and pivot_wider() functions"
+    "section": "",
+    "text": "Introduce the concept of tidy data\nTidy a simple dataset together with {tidyr}\nSummarize and transform tidy data with {dplyr}\n\nLearning Objectives\n\nUnderstand that the concept of tidy data is useful\nUnderstand and be able to apply the pivot_longer() and pivot_wider() functions"
   },
   {
     "objectID": "slides/w8_tidydata.html#section",
@@ -3769,15 +3769,15 @@
     "objectID": "slides/w8_tidydata.html#providing-grammar-for",
     "href": "slides/w8_tidydata.html#providing-grammar-for",
     "title": "Week 8: Tidy Data",
-    "section": "Providing grammar for:",
-    "text": "Providing grammar for:\n\nGraphics\n\n{ggplot2}\n\nData manipulations\n\n{dplyr}\n{tidyr}\n\nExpanding area of specialized topics\n\n{lubridate}\n{glue}\n{tidymodels}\n\nMany more…"
+    "section": "",
+    "text": "Graphics\n\n{ggplot2}\n\nData manipulations\n\n{dplyr}\n{tidyr}\n\nExpanding area of specialized topics\n\n{lubridate}\n{glue}\n{tidymodels}\n\nMany more…"
   },
   {
     "objectID": "slides/w8_tidydata.html#providing-grammar-for-1",
     "href": "slides/w8_tidydata.html#providing-grammar-for-1",
     "title": "Week 8: Tidy Data",
-    "section": "Providing grammar for:",
-    "text": "Providing grammar for:\n\nGraphics\n\n{ggplot2}\n\nData manipulations\n\n{dplyr}\n{tidyr}\n\nExpanding area of specialized topics\n\n{lubridate}\n{glue}\n{tidymodels}\n\nMany more…"
+    "section": "",
+    "text": "Graphics\n\n{ggplot2}\n\nData manipulations\n\n{dplyr}\n{tidyr}\n\nExpanding area of specialized topics\n\n{lubridate}\n{glue}\n{tidymodels}\n\nMany more…"
   },
   {
     "objectID": "slides/w8_tidydata.html#dplyr-vs-tidyr",
@@ -3798,7 +3798,7 @@
     "href": "slides/w8_tidydata.html#data-cleaning",
     "title": "Week 8: Tidy Data",
     "section": "Data cleaning",
-    "text": "Data cleaning\n\n“It is often said that 80% of data analysis is spent on the process of cleaning and preparing the data (Dasu & Johnson, 2003).” - Hadley Wickham (Tidy Data)\n\n\n\nPersistent and varied challenge\nLittle research on how to do it well"
+    "text": "Data cleaning\n\n“It is often said that 80% of data analysis is spent on the process of cleaning and preparing the data (Dasu & Johnson, 2003).” - Hadley Wickham (Tidy Data)\n\n. . .\n\nPersistent and varied challenge\nLittle research on how to do it well"
   },
   {
     "objectID": "slides/w8_tidydata.html#tidy-data-1",
@@ -3826,14 +3826,14 @@
     "href": "slides/w8_tidydata.html#defining-tidy-data",
     "title": "Week 8: Tidy Data",
     "section": "Defining tidy data",
-    "text": "Defining tidy data\nEssentially, two rules define tidy data 1\n\nEach row is a case representing the same underlying attribute\nEach column is a variable containing the same type of value for each case\n\nThe combination of rows and columns make each observational unit (row) unique, even though cells may be repeated many times (e.g., student identifier)\nModern Data Science with R"
+    "text": "Defining tidy data\nEssentially, two rules define tidy data 1\n\nEach row is a case representing the same underlying attribute\nEach column is a variable containing the same type of value for each case\n\nThe combination of rows and columns make each observational unit (row) unique, even though cells may be repeated many times (e.g., student identifier)"
   },
   {
     "objectID": "slides/w8_tidydata.html#why-tidy",
     "href": "slides/w8_tidydata.html#why-tidy",
     "title": "Week 8: Tidy Data",
     "section": "Why tidy?",
-    "text": "Why tidy?\n\nThere are many reasons why you might want to have “messy” data\n\ne.g., for other software or specific modeling purposes\n\n\n\n\nHowever, tidy data is an extremely useful format generally, and particularly useful when applying tools within the {tidyverse}\n\n\n\n\nAll packages within the {tidyverse} are designed to either help you get your data in a tidy format, or assume your data are already in a tidy format\n\n\n\n\nAssuming a common data format leads to large jumps in efficiency, as the output from certain functions can be directly input into others"
+    "text": "Why tidy?\n\nThere are many reasons why you might want to have “messy” data\n\ne.g., for other software or specific modeling purposes\n\n\n. . .\n\nHowever, tidy data is an extremely useful format generally, and particularly useful when applying tools within the {tidyverse}\n\n. . .\n\nAll packages within the {tidyverse} are designed to either help you get your data in a tidy format, or assume your data are already in a tidy format\n\n. . .\n\nAssuming a common data format leads to large jumps in efficiency, as the output from certain functions can be directly input into others"
   },
   {
     "objectID": "slides/w8_tidydata.html#section-2",
@@ -3854,7 +3854,7 @@
     "href": "slides/w8_tidydata.html#tidyr-verbs",
     "title": "Week 8: Tidy Data",
     "section": "{tidyr} verbs",
-    "text": "{tidyr} verbs\n\npivot_longer()\n\n“lengthens” data, increasing the number of rows and decreasing the number of columns\n\n\n\n\npivot_wider()\n\n“widens” data, increasing the number of columns and decreasing the number of rows\n\n\n\n\n\nseparate_wider_position() and separate_wider_delim()\n\nturns a single character column into multiple columns\n\n\n\n\n\nseparate_wider_regex()\n\ngiven a regular expression for capturing groups, turns each group into a new column\n\n\n\n\n\nunite()\n\npaste together multiple columns into one\n\n\n\n\n\nnest()\n\ncreates a list-column of data frames; you get one row for each group defined by the non-nested columns. This is useful in conjunction with other summaries that work with whole datasets, like models\n\n\n\nso powerful"
+    "text": "{tidyr} verbs\n\npivot_longer()\n\n“lengthens” data, increasing the number of rows and decreasing the number of columns\n\n\n. . .\n\npivot_wider()\n\n“widens” data, increasing the number of columns and decreasing the number of rows\n\n\n. . .\n\nseparate_wider_position() and separate_wider_delim()\n\nturns a single character column into multiple columns\n\n\n. . .\n\nseparate_wider_regex()\n\ngiven a regular expression for capturing groups, turns each group into a new column\n\n\n. . .\n\nunite()\n\npaste together multiple columns into one\n\n\n. . .\n\nnest()\n\ncreates a list-column of data frames; you get one row for each group defined by the non-nested columns. This is useful in conjunction with other summaries that work with whole datasets, like models\n\n\n\nso powerful"
   },
   {
     "objectID": "slides/w8_tidydata.html#pivot_longer-1",
@@ -3924,21 +3924,21 @@
     "href": "slides/w8_tidydata.html#lets-pivot_longer-1",
     "title": "Week 8: Tidy Data",
     "section": "Let’s pivot_longer()",
-    "text": "Let’s pivot_longer()\n\nrelig_income %&gt;% \n pivot_longer(\n  cols = _____,\n  names_to = \"_____\",\n  values_to = \"_____\"\n )\n\n\n\n\n# A tibble: 18 × 11\n   religion `&lt;$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`\n   &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;\n 1 Agnostic      27        34        60        81        76       137        122\n 2 Atheist       12        27        37        52        35        70         73\n 3 Buddhist      27        21        30        34        33        58         62\n 4 Catholic     418       617       732       670       638      1116        949\n 5 Don’t k…      15        14        15        11        10        35         21\n 6 Evangel…     575       869      1064       982       881      1486        949\n 7 Hindu          1         9         7         9        11        34         47\n 8 Histori…     228       244       236       238       197       223        131\n 9 Jehovah…      20        27        24        24        21        30         15\n10 Jewish        19        19        25        25        30        95         69\n11 Mainlin…     289       495       619       655       651      1107        939\n12 Mormon        29        40        48        51        56       112         85\n13 Muslim         6         7         9        10         9        23         16\n14 Orthodox      13        17        23        32        32        47         38\n15 Other C…       9         7        11        13        13        14         18\n16 Other F…      20        33        40        46        49        63         46\n17 Other W…       5         2         3         4         2         7          3\n18 Unaffil…     217       299       374       365       341       528        407\n# ℹ 3 more variables: `$100-150k` &lt;dbl&gt;, `&gt;150k` &lt;dbl&gt;,\n#   `Don't know/refused` &lt;dbl&gt;"
+    "text": "Let’s pivot_longer()\n\nrelig_income %&gt;% \n pivot_longer(\n  cols = _____,\n  names_to = \"_____\",\n  values_to = \"_____\"\n )\n\n. . .\n\n\n# A tibble: 18 × 11\n   religion `&lt;$10k` `$10-20k` `$20-30k` `$30-40k` `$40-50k` `$50-75k` `$75-100k`\n   &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt;\n 1 Agnostic      27        34        60        81        76       137        122\n 2 Atheist       12        27        37        52        35        70         73\n 3 Buddhist      27        21        30        34        33        58         62\n 4 Catholic     418       617       732       670       638      1116        949\n 5 Don’t k…      15        14        15        11        10        35         21\n 6 Evangel…     575       869      1064       982       881      1486        949\n 7 Hindu          1         9         7         9        11        34         47\n 8 Histori…     228       244       236       238       197       223        131\n 9 Jehovah…      20        27        24        24        21        30         15\n10 Jewish        19        19        25        25        30        95         69\n11 Mainlin…     289       495       619       655       651      1107        939\n12 Mormon        29        40        48        51        56       112         85\n13 Muslim         6         7         9        10         9        23         16\n14 Orthodox      13        17        23        32        32        47         38\n15 Other C…       9         7        11        13        13        14         18\n16 Other F…      20        33        40        46        49        63         46\n17 Other W…       5         2         3         4         2         7          3\n18 Unaffil…     217       299       374       365       341       528        407\n# ℹ 3 more variables: `$100-150k` &lt;dbl&gt;, `&gt;150k` &lt;dbl&gt;,\n#   `Don't know/refused` &lt;dbl&gt;"
   },
   {
     "objectID": "slides/w8_tidydata.html#lets-pivot_longer-2",
     "href": "slides/w8_tidydata.html#lets-pivot_longer-2",
     "title": "Week 8: Tidy Data",
     "section": "Let’s pivot_longer()",
-    "text": "Let’s pivot_longer()\n\nrelig_income %&gt;% \n  pivot_longer(\n    cols = -religion,\n    names_to = \"income\",\n    values_to = \"frequency\"\n  )\n\n\n\n# A tibble: 180 × 3\n   religion income             frequency\n   &lt;chr&gt;    &lt;chr&gt;                  &lt;dbl&gt;\n 1 Agnostic &lt;$10k                     27\n 2 Agnostic $10-20k                   34\n 3 Agnostic $20-30k                   60\n 4 Agnostic $30-40k                   81\n 5 Agnostic $40-50k                   76\n 6 Agnostic $50-75k                  137\n 7 Agnostic $75-100k                 122\n 8 Agnostic $100-150k                109\n 9 Agnostic &gt;150k                     84\n10 Agnostic Don't know/refused        96\n# ℹ 170 more rows"
+    "text": "Let’s pivot_longer()\n\nrelig_income %&gt;% \n  pivot_longer(\n    cols = -religion,\n    names_to = \"income\",\n    values_to = \"frequency\"\n  ) %&gt;% View()"
   },
   {
     "objectID": "slides/w8_tidydata.html#why-are-tidy-data-useful",
     "href": "slides/w8_tidydata.html#why-are-tidy-data-useful",
     "title": "Week 8: Tidy Data",
     "section": "Why are tidy data useful?",
-    "text": "Why are tidy data useful?\nWhen used with {dplyr}, tidy data can result in large gains in efficiency\nFor example, suppose we want to calculate the percent of respondents in each income category by religion\n\nFirst let’s save our pivoted data\n\nrelig_long &lt;- relig_income %&gt;% \n  pivot_longer(\n    cols = -religion,\n    names_to = \"income\",\n    values_to = \"frequency\"\n  )"
+    "text": "Why are tidy data useful?\nWhen used with {dplyr}, tidy data can result in large gains in efficiency\nFor example, suppose we want to calculate the percent of respondents in each income category by religion\n. . .\nFirst let’s save our pivoted data\n\nrelig_long &lt;- relig_income %&gt;% \n  pivot_longer(\n    cols = -religion,\n    names_to = \"income\",\n    values_to = \"frequency\"\n  )"
   },
   {
     "objectID": "slides/w8_tidydata.html#why-are-tidy-data-useful-1",
@@ -3973,14 +3973,14 @@
     "href": "slides/w8_tidydata.html#messy-data-3",
     "title": "Week 8: Tidy Data",
     "section": "Messy data",
-    "text": "Messy data\nMany variables in column names\n\n\nExample column names\nnew_sp_m_014\nnew_rel_f_65\n\nall col names start with new_, which we don’t need\nfollowed by a diagnosis category: “sp_” “sn_” “ep_” “rel_”\nthen gender, which in these data are limited to “m_” or “f_”\nand last an age range\nand these are separated by underscores _ which is quite convenient, as we’ll see\n\n\n\nThat’s a lot of information in the column names!"
+    "text": "Messy data\nMany variables in column names\n\n\nExample column names\nnew_sp_m_014\nnew_rel_f_65\n\nall col names start with new_, which we don’t need\nfollowed by a diagnosis category: “sp_” “sn_” “ep_” “rel_”\nthen gender, which in these data are limited to “m_” or “f_”\nand last an age range\nand these are separated by underscores _ which is quite convenient, as we’ll see\n\n\n. . .\nThat’s a lot of information in the column names!"
   },
   {
     "objectID": "slides/w8_tidydata.html#messy-data-4",
     "href": "slides/w8_tidydata.html#messy-data-4",
     "title": "Week 8: Tidy Data",
     "section": "Messy data",
-    "text": "Messy data\nMany variables in column names\nNecessary arguments\n\ndata - of course\ncols – which columns you will pivot longer\nnames_to – new variable names (in quotes) for those cols\nvalues_to – new variable name (in quotes) for the cell values\n\n\n\nnames_separate – how to separate those cols names"
+    "text": "Messy data\nMany variables in column names\nNecessary arguments\n\ndata - of course\ncols – which columns you will pivot longer\nnames_to – new variable names (in quotes) for those cols\nvalues_to – new variable name (in quotes) for the cell values\n\n. . .\n\nnames_separate – how to separate those cols names"
   },
   {
     "objectID": "slides/w8_tidydata.html#messy-data-5",
@@ -4029,7 +4029,7 @@
     "href": "slides/w8_tidydata.html#exam1-data-1",
     "title": "Week 8: Tidy Data",
     "section": "exam1 data",
-    "text": "exam1 data\nWhat do we want?\n\nLet’s change all item variables into two variables: item and score\n\n\n\n\n# A tibble: 630 × 4\n   stu_name gender item    score\n   &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;\n 1 Adam     M      item_1      1\n 2 Adam     M      item_2      1\n 3 Adam     M      item_3      1\n 4 Adam     M      item_4      1\n 5 Adam     M      item_5      1\n 6 Adam     M      item_6      1\n 7 Adam     M      item_7      1\n 8 Adam     M      item_8      0\n 9 Adam     M      item_9      0\n10 Adam     M      item_10     0\n# ℹ 620 more rows"
+    "text": "exam1 data\nWhat do we want?\n. . .\nLet’s change all item variables into two variables: item and score\n. . .\n\n\n# A tibble: 630 × 4\n   stu_name gender item    score\n   &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;   &lt;dbl&gt;\n 1 Adam     M      item_1      1\n 2 Adam     M      item_2      1\n 3 Adam     M      item_3      1\n 4 Adam     M      item_4      1\n 5 Adam     M      item_5      1\n 6 Adam     M      item_6      1\n 7 Adam     M      item_7      1\n 8 Adam     M      item_8      0\n 9 Adam     M      item_9      0\n10 Adam     M      item_10     0\n# ℹ 620 more rows"
   },
   {
     "objectID": "slides/w8_tidydata.html#try-to-tidy",
@@ -4057,7 +4057,7 @@
     "href": "slides/w8_tidydata.html#exam1-tidy-2",
     "title": "Week 8: Tidy Data",
     "section": "exam1 tidy",
-    "text": "exam1 tidy\nAnd another step\n\n(exam_tidy &lt;- exam %&gt;% \n  pivot_longer(\n    cols = starts_with(\"item\"),\n    names_to = \"item\",\n    names_prefix = \"item_\",\n    names_transform = list(item = as.integer),\n    values_to = \"score\"\n  ))\n\n# A tibble: 630 × 4\n   stu_name gender  item score\n   &lt;chr&gt;    &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt;\n 1 Adam     M          1     1\n 2 Adam     M          2     1\n 3 Adam     M          3     1\n 4 Adam     M          4     1\n 5 Adam     M          5     1\n 6 Adam     M          6     1\n 7 Adam     M          7     1\n 8 Adam     M          8     0\n 9 Adam     M          9     0\n10 Adam     M         10     0\n# ℹ 620 more rows\n\n\n\nWhy not quotes around item here, but quotes as it appears in names_to?"
+    "text": "exam1 tidy\nAnd another step\n\n(exam_tidy &lt;- exam %&gt;% \n  pivot_longer(\n    cols = starts_with(\"item\"),\n    names_to = \"item\",\n    names_prefix = \"item_\",\n    names_transform = list(item = as.integer),\n    values_to = \"score\"\n  ))\n\n# A tibble: 630 × 4\n   stu_name gender  item score\n   &lt;chr&gt;    &lt;chr&gt;  &lt;int&gt; &lt;dbl&gt;\n 1 Adam     M          1     1\n 2 Adam     M          2     1\n 3 Adam     M          3     1\n 4 Adam     M          4     1\n 5 Adam     M          5     1\n 6 Adam     M          6     1\n 7 Adam     M          7     1\n 8 Adam     M          8     0\n 9 Adam     M          9     0\n10 Adam     M         10     0\n# ℹ 620 more rows\n\n\n. . .\nWhy not quotes around item here, but quotes as it appears in names_to?"
   },
   {
     "objectID": "slides/w8_tidydata.html#one-more-look-at-names_prefix",
@@ -4106,14 +4106,14 @@
     "href": "slides/w8_tidydata.html#more-data",
     "title": "Week 8: Tidy Data",
     "section": "More data",
-    "text": "More data\nLoad the year-end_scores.csv data from the course website or from your cloned course repo\nName the data scores\n\nscores &lt;- read_csv(here(\"data\", \"year-end_scores.csv\"))"
+    "text": "More data\nLoad the year-end_scores.csv data from the course website or from your cloned course repo\nName the data scores\n\n(scores &lt;- read_csv(here(\"data\", \"year-end_scores.csv\")))\n\n# A tibble: 10 × 7\n      id   sex ethnicity  sped frl    math  read\n   &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;lgl&gt; &lt;dbl&gt; &lt;dbl&gt;\n 1     1     0         5     0 NA      101    99\n 2     2     1         2     0 NA       96    NA\n 3     3     1         5     0 NA      131   119\n 4     4     1         4     0 NA       84    93\n 5     5     0         1     0 NA      110   118\n 6     6     0         5     1 NA       NA   105\n 7     7     1         5     1 NA       93    99\n 8     8     0         3     0 NA       81    77\n 9     9     1         2     0 NA      129   135\n10    10     0         1     0 NA      117   122"
   },
   {
     "objectID": "slides/w8_tidydata.html#talk-as-a-class",
     "href": "slides/w8_tidydata.html#talk-as-a-class",
     "title": "Week 8: Tidy Data",
     "section": "Talk as a class",
-    "text": "Talk as a class\n\nAre these data tidy?\n\nIf you wanted to summarize scores, or plot and use facet, what would you use to group_by() or facet_wrap()?\n\nWhat do we need to do to make these tidy?\n\nWhat pivot_longer() arguments do we need?\n\n\n\nWork as a class to tidy, name new data scores_tidy\n\n\n\n−+\n03:00"
+    "text": "Talk as a class\n\nAre these data tidy?\n\nIf you wanted to summarize scores, or plot and use facet, what would you use to group_by() or facet_wrap()?\n\nWhat do we need to do to make these tidy?\n\nWhat pivot_longer() arguments do we need?\n\n\n. . .\nWork as a class to tidy, name new data scores_tidy\n\n\n\n−+\n03:00"
   },
   {
     "objectID": "slides/w8_tidydata.html#lets-try-another",
@@ -4127,7 +4127,7 @@
     "href": "slides/w8_tidydata.html#talk-with-a-neighbor-1",
     "title": "Week 8: Tidy Data",
     "section": "Talk with a neighbor",
-    "text": "Talk with a neighbor\n\nAre these data tidy?\n\nIf you wanted to summarize scores, or plot and use facet, what would you use to group_by() or facet_wrap()?\n\nWhat do we need to do to make these tidy?\n\nWhat pivot_longer() arguments do we need?\n\n\n\nWork with your neighbor to tidy, name new data tidy_sim\n\n\n\n−+\n05:00\n\n\n\nTell me your solutions demo a couple"
+    "text": "Talk with a neighbor\n\nAre these data tidy?\n\nIf you wanted to summarize scores, or plot and use facet, what would you use to group_by() or facet_wrap()?\n\nWhat do we need to do to make these tidy?\n\nWhat pivot_longer() arguments do we need?\n\n\n. . .\nWork with your neighbor to tidy, name new data tidy_sim\n\n\n\n−+\n05:00\n\n\n\nTell me your solutions demo a couple"
   },
   {
     "objectID": "slides/w8_tidydata.html#other-possible-issues",
@@ -4141,7 +4141,7 @@
     "href": "slides/w8_tidydata.html#other-possible-issues-1",
     "title": "Week 8: Tidy Data",
     "section": "Other possible issues",
-    "text": "Other possible issues\nLet’s make some manipulations to get a sample of the data\n\n(just {dplyr} variety filter() and select())\n\n\n(hiv_r &lt;- hiv %&gt;% \n  filter(country == \"France\" |\n          country == \"South Africa\" |\n            country == \"United States\") %&gt;% \n  select(country, `1979`, `1989`, `1999`, `2009`))\n\n# A tibble: 3 × 5\n  country        `1979` `1989` `1999` `2009`\n  &lt;chr&gt;           &lt;dbl&gt; &lt;lgl&gt;   &lt;dbl&gt;  &lt;dbl&gt;\n1 France        NA      NA        0.3    0.4\n2 South Africa  NA      NA       14.8   17.2\n3 United States  0.0318 NA        0.5    0.6\n\n\n\n\nAre these data tidy?\nHow would you add a new variable - say, percent HIV?\nDiscuss how you would transform these data, if at all"
+    "text": "Other possible issues\nLet’s make some manipulations to get a sample of the data\n\n(just {dplyr} variety filter() and select())\n\n\n(hiv_r &lt;- hiv %&gt;% \n  filter(country == \"France\" |\n          country == \"South Africa\" |\n            country == \"United States\") %&gt;% \n  select(country, `1979`, `1989`, `1999`, `2009`))\n\n# A tibble: 3 × 5\n  country        `1979` `1989` `1999` `2009`\n  &lt;chr&gt;           &lt;dbl&gt; &lt;lgl&gt;   &lt;dbl&gt;  &lt;dbl&gt;\n1 France        NA      NA        0.3    0.4\n2 South Africa  NA      NA       14.8   17.2\n3 United States  0.0318 NA        0.5    0.6\n\n\n. . .\n\nAre these data tidy?\nHow would you add a new variable - say, percent HIV?\nDiscuss how you would transform these data, if at all"
   },
   {
     "objectID": "slides/w8_tidydata.html#tidy-the-data",
@@ -4162,7 +4162,7 @@
     "href": "slides/w8_tidydata.html#lets-plot-it-1",
     "title": "Week 8: Tidy Data",
     "section": "Let’s plot it",
-    "text": "Let’s plot it\nThere is a problem with the data – what is it?\n\n\nWhy aren’t lines connecting for the United States?"
+    "text": "Let’s plot it\nThere is a problem with the data – what is it?\n\n\n\n\n\n. . .\nWhy aren’t lines connecting for the United States?"
   },
   {
     "objectID": "slides/w8_tidydata.html#missing-data",
@@ -4246,7 +4246,7 @@
     "href": "slides/w8_tidydata.html#an-example-2",
     "title": "Week 8: Tidy Data",
     "section": "An example",
-    "text": "An example\nSo tidy, so nice…let’s muck it up\n\nfish_encounters %&gt;% \n  pivot_wider(\n    names_from = station, \n    values_from = seen,\n    values_fill = list(seen = 0)\n)\n\n\n\n# A tibble: 19 × 12\n   fish  Release I80_1 Lisbon  Rstr Base_TD   BCE   BCW  BCE2  BCW2   MAE   MAW\n   &lt;fct&gt;   &lt;int&gt; &lt;int&gt;  &lt;int&gt; &lt;int&gt;   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;\n 1 4842        1     1      1     1       1     1     1     1     1     1     1\n 2 4843        1     1      1     1       1     1     1     1     1     1     1\n 3 4844        1     1      1     1       1     1     1     1     1     1     1\n 4 4845        1     1      1     1       1     0     0     0     0     0     0\n 5 4847        1     1      1     0       0     0     0     0     0     0     0\n 6 4848        1     1      1     1       0     0     0     0     0     0     0\n 7 4849        1     1      0     0       0     0     0     0     0     0     0\n 8 4850        1     1      0     1       1     1     1     0     0     0     0\n 9 4851        1     1      0     0       0     0     0     0     0     0     0\n10 4854        1     1      0     0       0     0     0     0     0     0     0\n11 4855        1     1      1     1       1     0     0     0     0     0     0\n12 4857        1     1      1     1       1     1     1     1     1     0     0\n13 4858        1     1      1     1       1     1     1     1     1     1     1\n14 4859        1     1      1     1       1     0     0     0     0     0     0\n15 4861        1     1      1     1       1     1     1     1     1     1     1\n16 4862        1     1      1     1       1     1     1     1     1     0     0\n17 4863        1     1      0     0       0     0     0     0     0     0     0\n18 4864        1     1      0     0       0     0     0     0     0     0     0\n19 4865        1     1      1     0       0     0     0     0     0     0     0"
+    "text": "An example\nSo tidy, so nice…let’s muck it up\n\nfish_encounters %&gt;% \n  pivot_wider(\n    names_from = station, \n    values_from = seen,\n    values_fill = list(seen = 0)\n)\n\n# A tibble: 19 × 12\n   fish  Release I80_1 Lisbon  Rstr Base_TD   BCE   BCW  BCE2  BCW2   MAE   MAW\n   &lt;fct&gt;   &lt;int&gt; &lt;int&gt;  &lt;int&gt; &lt;int&gt;   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;\n 1 4842        1     1      1     1       1     1     1     1     1     1     1\n 2 4843        1     1      1     1       1     1     1     1     1     1     1\n 3 4844        1     1      1     1       1     1     1     1     1     1     1\n 4 4845        1     1      1     1       1     0     0     0     0     0     0\n 5 4847        1     1      1     0       0     0     0     0     0     0     0\n 6 4848        1     1      1     1       0     0     0     0     0     0     0\n 7 4849        1     1      0     0       0     0     0     0     0     0     0\n 8 4850        1     1      0     1       1     1     1     0     0     0     0\n 9 4851        1     1      0     0       0     0     0     0     0     0     0\n10 4854        1     1      0     0       0     0     0     0     0     0     0\n11 4855        1     1      1     1       1     0     0     0     0     0     0\n12 4857        1     1      1     1       1     1     1     1     1     0     0\n13 4858        1     1      1     1       1     1     1     1     1     1     1\n14 4859        1     1      1     1       1     0     0     0     0     0     0\n15 4861        1     1      1     1       1     1     1     1     1     1     1\n16 4862        1     1      1     1       1     1     1     1     1     0     0\n17 4863        1     1      0     0       0     0     0     0     0     0     0\n18 4864        1     1      0     0       0     0     0     0     0     0     0\n19 4865        1     1      1     0       0     0     0     0     0     0     0"
   },
   {
     "objectID": "slides/w8_tidydata.html#remember-scores_tidy",
@@ -4274,7 +4274,7 @@
     "href": "slides/w8_tidydata.html#longer-then-wider",
     "title": "Week 8: Tidy Data",
     "section": "Longer then wider",
-    "text": "Longer then wider\nSome problems can’t be solved by pivoting in a single direction\nHere is an example of how you might combine pivot_longer() and pivot_wider() to solve more complex problems\n\n\nsim2 &lt;- read_csv(here(\"data\", \"longitudinal_sim2.csv\"))\nsim2\n\n# A tibble: 100 × 19\n     SID male_g6 male_g7 male_g8 ell_g6 ell_g7 ell_g8 sped_g6 sped_g7 sped_g8\n   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;\n 1     1       1       1       1      0      0      0       0       0       0\n 2     2       0       0       0      0      0      0       0       0       0\n 3     3       1       1       1      0      0      0       0       0       0\n 4     4       1       1       1      0      0      0       0       0       0\n 5     5       0       0       0      0      0      0       1       1       1\n 6     6       0       0       0      0      0      0       0       0       0\n 7     7       1       1       1      0      0      0       0       0       0\n 8     8       1       1       1      1      1      1       0       0       0\n 9     9       0       0       0      0      0      0       0       0       0\n10    10       0       0       0      0      0      0       0       0       0\n# ℹ 90 more rows\n# ℹ 9 more variables: pullouts_g6 &lt;dbl&gt;, pullouts_g7 &lt;dbl&gt;, pullouts_g8 &lt;dbl&gt;,\n#   disability_g6 &lt;chr&gt;, disability_g7 &lt;chr&gt;, disability_g8 &lt;chr&gt;,\n#   score_g6 &lt;dbl&gt;, score_g7 &lt;dbl&gt;, score_g8 &lt;dbl&gt;\n\n\n\n\nView() data"
+    "text": "Longer then wider\nSome problems can’t be solved by pivoting in a single direction\nHere is an example of how you might combine pivot_longer() and pivot_wider() to solve more complex problems\n. . .\n\nsim2 &lt;- read_csv(here(\"data\", \"longitudinal_sim2.csv\"))\nsim2\n\n# A tibble: 100 × 19\n     SID male_g6 male_g7 male_g8 ell_g6 ell_g7 ell_g8 sped_g6 sped_g7 sped_g8\n   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;\n 1     1       1       1       1      0      0      0       0       0       0\n 2     2       0       0       0      0      0      0       0       0       0\n 3     3       1       1       1      0      0      0       0       0       0\n 4     4       1       1       1      0      0      0       0       0       0\n 5     5       0       0       0      0      0      0       1       1       1\n 6     6       0       0       0      0      0      0       0       0       0\n 7     7       1       1       1      0      0      0       0       0       0\n 8     8       1       1       1      1      1      1       0       0       0\n 9     9       0       0       0      0      0      0       0       0       0\n10    10       0       0       0      0      0      0       0       0       0\n# ℹ 90 more rows\n# ℹ 9 more variables: pullouts_g6 &lt;dbl&gt;, pullouts_g7 &lt;dbl&gt;, pullouts_g8 &lt;dbl&gt;,\n#   disability_g6 &lt;chr&gt;, disability_g7 &lt;chr&gt;, disability_g8 &lt;chr&gt;,\n#   score_g6 &lt;dbl&gt;, score_g7 &lt;dbl&gt;, score_g8 &lt;dbl&gt;\n\n\n. . .\nView() data"
   },
   {
     "objectID": "slides/w8_tidydata.html#first-pivot_longer",
@@ -4302,7 +4302,7 @@
     "href": "slides/w8_tidydata.html#then-pivot_wider",
     "title": "Week 8: Tidy Data",
     "section": "Then pivot_wider()",
-    "text": "Then pivot_wider()\n\nsim2 %&gt;% \n  pivot_longer(\n    cols = -1,\n    names_to = c(\"variable\", \"grade\"),\n    values_to = \"values\",\n    names_sep = \"_\",\n    values_transform = list(values = as.character)) %&gt;% \n  mutate(grade = parse_number(grade)) %&gt;% \n  pivot_wider( \n    names_from = variable, \n    values_from = values \n  )\n\n\n\n# A tibble: 300 × 8\n     SID grade male  ell   sped  pullouts disability score           \n   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;           \n 1     1     6 1     0     0     0        none       204.711224219096\n 2     1     7 1     0     0     0        none       207.641655929138\n 3     1     8 1     0     0     0        none       211.468672710232\n 4     2     6 0     0     0     1        none       212.343498534668\n 5     2     7 0     0     0     1        none       217.565910013073\n 6     2     8 0     0     0     1        none       227.036910872597\n 7     3     6 1     0     0     0        none       215.436668173264\n 8     3     7 1     0     0     0        none       217.029498660224\n 9     3     8 1     0     0     0        none       222.232373013961\n10     4     6 1     0     0     0        none       219.182457533654\n# ℹ 290 more rows"
+    "text": "Then pivot_wider()\n\nsim2 %&gt;% \n  pivot_longer(\n    cols = -1,\n    names_to = c(\"variable\", \"grade\"),\n    values_to = \"values\",\n    names_sep = \"_\",\n    values_transform = list(values = as.character)) %&gt;% \n  mutate(grade = parse_number(grade)) %&gt;% \n  pivot_wider( \n    names_from = variable, \n    values_from = values \n  )\n\n# A tibble: 300 × 8\n     SID grade male  ell   sped  pullouts disability score           \n   &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt;           \n 1     1     6 1     0     0     0        none       204.711224219096\n 2     1     7 1     0     0     0        none       207.641655929138\n 3     1     8 1     0     0     0        none       211.468672710232\n 4     2     6 0     0     0     1        none       212.343498534668\n 5     2     7 0     0     0     1        none       217.565910013073\n 6     2     8 0     0     0     1        none       227.036910872597\n 7     3     6 1     0     0     0        none       215.436668173264\n 8     3     7 1     0     0     0        none       217.029498660224\n 9     3     8 1     0     0     0        none       222.232373013961\n10     4     6 1     0     0     0        none       219.182457533654\n# ℹ 290 more rows"
   },
   {
     "objectID": "slides/w8_tidydata.html#before-next-class",
@@ -4358,7 +4358,7 @@
     "href": "slides/w8_tidydata.html#activity",
     "title": "Week 8: Tidy Data",
     "section": "Activity",
-    "text": "Activity\nRun this code\n\nlibrary(rio)\nlibrary(here)\nlibrary(tidyverse)\n\nstar &lt;- import(here(\"data\", \"star.csv\")) %&gt;% \n  as_tibble()\n\n\n\n\n# A tibble: 5,748 × 12\n   schidkn sex   frl   reg_size reg_size_aid small_size white black other totexp\n     &lt;int&gt; &lt;chr&gt; &lt;chr&gt;    &lt;int&gt;        &lt;int&gt;      &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;int&gt;\n 1      63 girl  no           0            0          1     1     0     0      7\n 2      20 girl  no           0            0          1     0     1     0     21\n 3      19 boy   yes          0            1          0     0     1     0      0\n 4      69 boy   no           1            0          0     1     0     0     16\n 5      79 boy   yes          0            0          1     1     0     0      5\n 6       5 boy   yes          1            0          0     1     0     0      8\n 7      16 girl  yes          0            1          0     0     1     0     17\n 8      56 girl  no           1            0          0     1     0     0      3\n 9      11 girl  no           0            0          1     0     1     0     11\n10      66 girl  no           0            0          1     1     0     0     10\n# ℹ 5,738 more rows\n# ℹ 2 more variables: tmathss &lt;int&gt;, treadss &lt;int&gt;"
+    "text": "Activity\nRun this code\n\nlibrary(rio)\nlibrary(here)\nlibrary(tidyverse)\n\nstar &lt;- import(here(\"data\", \"star.csv\")) %&gt;% \n  as_tibble()\n\n. . .\n\n\n# A tibble: 5,748 × 12\n   schidkn sex   frl   reg_size reg_size_aid small_size white black other totexp\n     &lt;int&gt; &lt;chr&gt; &lt;chr&gt;    &lt;int&gt;        &lt;int&gt;      &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;int&gt;\n 1      63 girl  no           0            0          1     1     0     0      7\n 2      20 girl  no           0            0          1     0     1     0     21\n 3      19 boy   yes          0            1          0     0     1     0      0\n 4      69 boy   no           1            0          0     1     0     0     16\n 5      79 boy   yes          0            0          1     1     0     0      5\n 6       5 boy   yes          1            0          0     1     0     0      8\n 7      16 girl  yes          0            1          0     0     1     0     17\n 8      56 girl  no           1            0          0     1     0     0      3\n 9      11 girl  no           0            0          1     0     1     0     11\n10      66 girl  no           0            0          1     1     0     0     10\n# ℹ 5,738 more rows\n# ℹ 2 more variables: tmathss &lt;int&gt;, treadss &lt;int&gt;"
   },
   {
     "objectID": "slides/w8_tidydata.html#produce-this-plot",
@@ -4392,7 +4392,476 @@
     "objectID": "slides/w8_tidydata.html#share",
     "href": "slides/w8_tidydata.html#share",
     "title": "Week 8: Tidy Data",
-    "section": "Share",
-    "text": "Share\n{tidylog}\n\nProvides feedback about {dplyr} and {tidyr} operations\n\nview link"
+    "section": "",
+    "text": "{tidylog}\n\nProvides feedback about {dplyr} and {tidyr} operations\n\nview link"
+  },
+  {
+    "objectID": "slides/w9_factors.html#agenda",
+    "href": "slides/w9_factors.html#agenda",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Agenda",
+    "text": "Agenda\n\nQuick note on ggplot(): group =\nFinal Project Review\nDiscuss factors and factor re-leveling\nWalk through a pull request (PR)\nAMA\n\nOverall Purpose\n\nUnderstand factors and how to manipulate them\nUnderstand how to complete a pull request (PR)"
+  },
+  {
+    "objectID": "slides/w9_factors.html#homework-8",
+    "href": "slides/w9_factors.html#homework-8",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Homework 8",
+    "text": "Homework 8"
+  },
+  {
+    "objectID": "slides/w9_factors.html#final-project---data-prep-script",
+    "href": "slides/w9_factors.html#final-project---data-prep-script",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Final Project - Data Prep Script",
+    "text": "Final Project - Data Prep Script\n\nExpected to be a work in progress\nProvided to your peers so they can learn from you as much as you can learn from their feedback\n\nPeer Review\n\nUnderstand the purpose of the exercise\nConducted as a professional product\nShould be very encouraging\nZero tolerance policy for inappropriate comments"
+  },
+  {
+    "objectID": "slides/w9_factors.html#final-project-presentation",
+    "href": "slides/w9_factors.html#final-project-presentation",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Final Project – Presentation",
+    "text": "Final Project – Presentation\n\nGroups are expected to present for about 15 minutes (split evenly among members). Group order randomly assigned.\nEmail me your presentation by midnight 11/28 so I can share through my machine."
+  },
+  {
+    "objectID": "slides/w9_factors.html#final-project-presentation-1",
+    "href": "slides/w9_factors.html#final-project-presentation-1",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Final Project – Presentation",
+    "text": "Final Project – Presentation\nPresentation cover the following:\n\nShare your journey (everyone, at least for a minute or two)\nDiscuss challenges you had along the way\nCelebrate your successes\nDiscuss challenges you are still facing\nDiscuss substantive findings\nShow off your cool figures!\nDiscuss next R hurdle you want to address"
+  },
+  {
+    "objectID": "slides/w9_factors.html#final-project-paper",
+    "href": "slides/w9_factors.html#final-project-paper",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Final Project – Paper",
+    "text": "Final Project – Paper\n\nQuarto document\n\nAbstract, Intro, Methods, Results, Discussion, References\nShould be brief: 3,500 words max\n\nNo code displayed - should look similar to a manuscript being submitted for publication\nInclude at least 1 table\nInclude at least 2 plots\nShould be fully open, reproducible, and housed on GitHub\n\nI should be able to clone your repository, open the R Studio Project, and reproduce the full manuscript (by rendering the quarto doc)"
+  },
+  {
+    "objectID": "slides/w9_factors.html#final-project-1",
+    "href": "slides/w9_factors.html#final-project-1",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Final Project",
+    "text": "Final Project\nThe following functions:\n\npivot_longer()\nmutate()\nselect()\nfilter()\npivot_wider()\ngroup_by()\nsummarize()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#scoring-rubric",
+    "href": "slides/w9_factors.html#scoring-rubric",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Scoring Rubric",
+    "text": "Scoring Rubric\nCheck the syllabus for Presentation and Final Paper scoring rubrics"
+  },
+  {
+    "objectID": "slides/w9_factors.html#when-do-we-really-want-factors",
+    "href": "slides/w9_factors.html#when-do-we-really-want-factors",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "When do we really want factors?",
+    "text": "When do we really want factors?\nGenerally two reasons to declare a factor\n\nOnly finite number of categories\n\ntreatment/control\nincome categories\nperformance levels\netc.\n\nUse in modeling"
+  },
+  {
+    "objectID": "slides/w9_factors.html#creating-factors",
+    "href": "slides/w9_factors.html#creating-factors",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Creating factors",
+    "text": "Creating factors\nImagine you have a vector of months\n\nmonths_4 &lt;- c(\"Dec\", \"Apr\", \"Jan\", \"Mar\")\n\n\nWe could store this as a string, but there are issues with this:\n\nThere are only 12 possible months\n\nfactors will help us weed out values that don’t conform to our predefined levels, which helps safeguard against typos, etc.\n\nYou can’t sort this vector in a meaningful way\n\ndefault is alphabetic sorting\n\n\n\n\n\nsort(months_4)\n\n[1] \"Apr\" \"Dec\" \"Jan\" \"Mar\""
+  },
+  {
+    "objectID": "slides/w9_factors.html#define-it-as-a-factor",
+    "href": "slides/w9_factors.html#define-it-as-a-factor",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Define it as a factor",
+    "text": "Define it as a factor\n\nmonths_4 &lt;- factor(months_4, levels = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"))\nmonths_4\n\n[1] Dec Apr Jan Mar\nLevels: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec\n\n\n\nNow we can sort\n\nsort(months_4)\n\n[1] Jan Mar Apr Dec\nLevels: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec"
+  },
+  {
+    "objectID": "slides/w9_factors.html#accessing-and-modifying-levels",
+    "href": "slides/w9_factors.html#accessing-and-modifying-levels",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Accessing and modifying levels",
+    "text": "Accessing and modifying levels\nUse the levels() function\n\n\nlevels(months_4)\n\n [1] \"Jan\" \"Feb\" \"Mar\" \"Apr\" \"May\" \"Jun\" \"Jul\" \"Aug\" \"Sep\" \"Oct\" \"Nov\" \"Dec\""
+  },
+  {
+    "objectID": "slides/w9_factors.html#provides-an-error-check-of-sorts",
+    "href": "slides/w9_factors.html#provides-an-error-check-of-sorts",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Provides an error check of sorts",
+    "text": "Provides an error check of sorts\n\nmonths_4[5] &lt;- \"Jam\"\n\nWarning in `[&lt;-.factor`(`*tmp*`, 5, value = \"Jam\"): invalid factor level, NA\ngenerated\n\n\n\n\nmonths_4\n\n[1] Dec  Apr  Jan  Mar  &lt;NA&gt;\nLevels: Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec"
+  },
+  {
+    "objectID": "slides/w9_factors.html#what-if-we-dont-specify-levels",
+    "href": "slides/w9_factors.html#what-if-we-dont-specify-levels",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "What if we don’t specify levels?",
+    "text": "What if we don’t specify levels?\nIf you define a factor without specifying the levels, it will assign them alphabetically\n\nmnths &lt;- factor(c(\"Dec\", \"Apr\", \"Jan\", \"Mar\"))\n\n\n\n\n[1] Dec Apr Jan Mar\nLevels: Apr Dec Jan Mar"
+  },
+  {
+    "objectID": "slides/w9_factors.html#forcats",
+    "href": "slides/w9_factors.html#forcats",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "{forcats} ",
+    "text": "{forcats} \n\nWhen working with factors, we can use the {forcats} package\n\nfor categorical variables\nanagram of factors\n\n\n\n\nPart of the {tidyverse} so should be good to go\n\n\n\n\nAll functions start with fct_\n\nuse the autofill in RStudio"
+  },
+  {
+    "objectID": "slides/w9_factors.html#change-level-order-fct_inorder",
+    "href": "slides/w9_factors.html#change-level-order-fct_inorder",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Change level order – fct_inorder()",
+    "text": "Change level order – fct_inorder()\nBy the order in which they first appear\n\n(mnths &lt;- factor(c(\"Dec\", \"Apr\", \"Jan\", \"Mar\")))\n\n[1] Dec Apr Jan Mar\nLevels: Apr Dec Jan Mar\n\n\n\n\nmnths %&gt;% \n  factor(., levels = c(\"Jan\", \"Mar\", \"Apr\", \"Dec\")) %&gt;% \n  sort(.)\n\n[1] Jan Mar Apr Dec\nLevels: Jan Mar Apr Dec"
+  },
+  {
+    "objectID": "slides/w9_factors.html#change-level-order-fct_inorder-1",
+    "href": "slides/w9_factors.html#change-level-order-fct_inorder-1",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Change level order – fct_inorder()",
+    "text": "Change level order – fct_inorder()\nBy the order in which they first appear\n\n(mnths &lt;- factor(c(\"Dec\", \"Apr\", \"Jan\", \"Mar\")))\n\n[1] Dec Apr Jan Mar\nLevels: Apr Dec Jan Mar\n\n\n\n\nmnths %&gt;% \n  factor(., levels = c(\"Jan\", \"Mar\", \"Apr\", \"Dec\")) %&gt;% \n  fct_inorder() %&gt;%\n  sort(.)\n\n[1] Dec Apr Jan Mar\nLevels: Dec Apr Jan Mar"
+  },
+  {
+    "objectID": "slides/w9_factors.html#change-level-order-fct_infreq",
+    "href": "slides/w9_factors.html#change-level-order-fct_infreq",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Change level order – fct_infreq()",
+    "text": "Change level order – fct_infreq()\nBy number of observations with each level (largest first)\n\nc(\"b\", \"b\", \"c\", \"a\", \"a\", \"a\") %&gt;% \n    fct_infreq() #&lt;&lt;\n\n[1] b b c a a a\nLevels: a b c\n\n\n\nThis can be especially useful for plotting\n\nggplot(aes(x, fct_infreq(y))"
+  },
+  {
+    "objectID": "slides/w9_factors.html#investigate-factors",
+    "href": "slides/w9_factors.html#investigate-factors",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Investigate factors",
+    "text": "Investigate factors\n\n{tidyverse} gives you convenient way to evaluate factors\n\ncount()\ngeom_bar() or geom_col()) with {ggplot2}\n\nBut don’t forget about the base function unique()\n\ne.g., unique(df$factor_variable)"
+  },
+  {
+    "objectID": "slides/w9_factors.html#general-social-survey-gss",
+    "href": "slides/w9_factors.html#general-social-survey-gss",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "General Social Survey (GSS)",
+    "text": "General Social Survey (GSS)\n\nforcats::gss_cat\n\n# A tibble: 21,483 × 9\n    year marital         age race  rincome        partyid    relig denom tvhours\n   &lt;int&gt; &lt;fct&gt;         &lt;int&gt; &lt;fct&gt; &lt;fct&gt;          &lt;fct&gt;      &lt;fct&gt; &lt;fct&gt;   &lt;int&gt;\n 1  2000 Never married    26 White $8000 to 9999  Ind,near … Prot… Sout…      12\n 2  2000 Divorced         48 White $8000 to 9999  Not str r… Prot… Bapt…      NA\n 3  2000 Widowed          67 White Not applicable Independe… Prot… No d…       2\n 4  2000 Never married    39 White Not applicable Ind,near … Orth… Not …       4\n 5  2000 Divorced         25 White Not applicable Not str d… None  Not …       1\n 6  2000 Married          25 White $20000 - 24999 Strong de… Prot… Sout…      NA\n 7  2000 Never married    36 White $25000 or more Not str r… Chri… Not …       3\n 8  2000 Divorced         44 White $7000 to 7999  Ind,near … Prot… Luth…      NA\n 9  2000 Married          44 White $25000 or more Not str d… Prot… Other       0\n10  2000 Married          47 White $25000 or more Strong re… Prot… Sout…       3\n# ℹ 21,473 more rows"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section",
+    "href": "slides/w9_factors.html#section",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "gss_cat %&gt;% \n  count(partyid)\n\n# A tibble: 10 × 2\n   partyid                n\n   &lt;fct&gt;              &lt;int&gt;\n 1 No answer            154\n 2 Don't know             1\n 3 Other party          393\n 4 Strong republican   2314\n 5 Not str republican  3032\n 6 Ind,near rep        1791\n 7 Independent         4119\n 8 Ind,near dem        2499\n 9 Not str democrat    3690\n10 Strong democrat     3490\n\n\n\n\nlevels(gss_cat$partyid)\n\n [1] \"No answer\"          \"Don't know\"         \"Other party\"       \n [4] \"Strong republican\"  \"Not str republican\" \"Ind,near rep\"      \n [7] \"Independent\"        \"Ind,near dem\"       \"Not str democrat\"  \n[10] \"Strong democrat\""
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-1",
+    "href": "slides/w9_factors.html#section-1",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "unique(gss_cat$partyid)\n\n [1] Ind,near rep       Not str republican Independent        Not str democrat  \n [5] Strong democrat    Ind,near dem       Strong republican  Other party       \n [9] No answer          Don't know        \n10 Levels: No answer Don't know Other party ... Strong democrat\n\n\n\nHow many unique categories are there (if you have a lot)?\n\nlength(unique(gss_cat$partyid))\n\n[1] 10"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-2",
+    "href": "slides/w9_factors.html#section-2",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "ggplot(gss_cat, aes(partyid)) +\n    geom_bar()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-3",
+    "href": "slides/w9_factors.html#section-3",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "ggplot(gss_cat, aes(fct_infreq(partyid))) +\n    geom_bar()\n\nggplot(gss_cat, aes(fct_infreq(partyid))) + geom_bar()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#change-level-order-fct_relevel",
+    "href": "slides/w9_factors.html#change-level-order-fct_relevel",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Change level order – fct_relevel()",
+    "text": "Change level order – fct_relevel()\nChange level order by hand, or move any number of levels to any location + probably one I use most\n\nfct_relevel(variable_name, \n            \"first_level\", \n            \"second_level\", \n            \"third_level\", \n            ...)\n\n\n\nfct_relevel(variable_name, \n            \"fourth_level\", \n            after = 3)"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-4",
+    "href": "slides/w9_factors.html#section-4",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "set.seed(3000)\ntibble(\n month = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"),\n suspensions = sample(c(5:75), size = 10)\n)\n\n# A tibble: 10 × 2\n   month suspensions\n   &lt;chr&gt;       &lt;int&gt;\n 1 Jan            19\n 2 Feb            51\n 3 Mar            61\n 4 Apr            14\n 5 May            25\n 6 Jun            27\n 7 Sep            15\n 8 Oct            21\n 9 Nov             7\n10 Dec            59"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-5",
+    "href": "slides/w9_factors.html#section-5",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "set.seed(3000)\ntibble(\n month = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"),\n suspensions = sample(c(5:75), size = 10)\n) %&gt;% \n  ggplot(aes(month, suspensions)) +\n  geom_col()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-6",
+    "href": "slides/w9_factors.html#section-6",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "set.seed(3000)\ntibble(\n month = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"),\n suspensions = sample(c(5:75), size = 10)\n) %&gt;% \n  mutate(month = fct_relevel(month, \n                    \"Sep\", \"Oct\", \"Nov\", \"Dec\", \"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\"))"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-7",
+    "href": "slides/w9_factors.html#section-7",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "set.seed(3000)\ntibble(\n month = c(\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"),\n suspensions = sample(c(5:75), size = 10)\n) %&gt;% \n  mutate(month = fct_relevel(month,\n                    \"Sep\", \"Oct\", \"Nov\", \"Dec\", \"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\")) %&gt;% \n  ggplot(aes(month, suspensions)) + \n  geom_col()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#change-level-order-fct_reorder",
+    "href": "slides/w9_factors.html#change-level-order-fct_reorder",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Change level order – fct_reorder()",
+    "text": "Change level order – fct_reorder()\nReorder according to another variable\n\n(relig_summary &lt;- gss_cat %&gt;%\n  group_by(relig) %&gt;%\n  summarise(tvhours = mean(tvhours, na.rm = TRUE),\n            n = n()))\n\n# A tibble: 15 × 3\n   relig                   tvhours     n\n   &lt;fct&gt;                     &lt;dbl&gt; &lt;int&gt;\n 1 No answer                  2.72    93\n 2 Don't know                 4.62    15\n 3 Inter-nondenominational    2.87   109\n 4 Native american            3.46    23\n 5 Christian                  2.79   689\n 6 Orthodox-christian         2.42    95\n 7 Moslem/islam               2.44   104\n 8 Other eastern              1.67    32\n 9 Hinduism                   1.89    71\n10 Buddhism                   2.38   147\n11 Other                      2.73   224\n12 None                       2.71  3523\n13 Jewish                     2.52   388\n14 Catholic                   2.96  5124\n15 Protestant                 3.15 10846"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-8",
+    "href": "slides/w9_factors.html#section-8",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "ggplot(relig_summary, aes(tvhours, relig)) + \n  geom_point()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-9",
+    "href": "slides/w9_factors.html#section-9",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "ggplot(relig_summary, aes(tvhours, fct_reorder(relig, tvhours))) + \n  geom_point()\n\nggplot(relig_summary, aes(tvhours, fct_reorder(relig, tvhours))) + geom_point()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#or-mutate-the-factor-reorder",
+    "href": "slides/w9_factors.html#or-mutate-the-factor-reorder",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Or mutate() the factor reorder",
+    "text": "Or mutate() the factor reorder\n\nrelig_summary %&gt;% \n  mutate(relig = fct_reorder(relig, tvhours)) %&gt;% \n  ggplot(aes(tvhours, relig)) + \n  geom_point()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#quick-aside-for-error-bars",
+    "href": "slides/w9_factors.html#quick-aside-for-error-bars",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Quick aside for error bars",
+    "text": "Quick aside for error bars\n\n(relig_summary_eb &lt;- gss_cat %&gt;%\n  group_by(relig) %&gt;%\n  summarise(tvhours_mean = mean(tvhours, na.rm = TRUE),\n            tvhours_se   = sqrt(var(tvhours, na.rm = TRUE) / \n                                  length(na.omit(tvhours))),\n            n = n()))\n\n# A tibble: 15 × 4\n   relig                   tvhours_mean tvhours_se     n\n   &lt;fct&gt;                          &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt;\n 1 No answer                       2.72     0.326     93\n 2 Don't know                      4.62     3.01      15\n 3 Inter-nondenominational         2.87     0.363    109\n 4 Native american                 3.46     1.13      23\n 5 Christian                       2.79     0.126    689\n 6 Orthodox-christian              2.42     0.355     95\n 7 Moslem/islam                    2.44     0.269    104\n 8 Other eastern                   1.67     0.449     32\n 9 Hinduism                        1.89     0.197     71\n10 Buddhism                        2.38     0.235    147\n11 Other                           2.73     0.203    224\n12 None                            2.71     0.0590  3523\n13 Jewish                          2.52     0.151    388\n14 Catholic                        2.96     0.0453  5124\n15 Protestant                      3.15     0.0360 10846"
+  },
+  {
+    "objectID": "slides/w9_factors.html#quick-aside-for-error-bars-1",
+    "href": "slides/w9_factors.html#quick-aside-for-error-bars-1",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Quick aside for error bars",
+    "text": "Quick aside for error bars\n\nggplot(relig_summary_eb, \n       aes(tvhours_mean, fct_reorder(relig, tvhours_mean))) + \n  geom_errorbarh(aes(xmin = tvhours_mean - 1.96 * tvhours_se,\n                     xmax = tvhours_mean + 1.96 * tvhours_se),\n                 color = \"cornflowerblue\") +\n  geom_point()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#modifying-factor-levels-fct_recode",
+    "href": "slides/w9_factors.html#modifying-factor-levels-fct_recode",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Modifying factor levels – fct_recode()",
+    "text": "Modifying factor levels – fct_recode()\nMake modifying factors more explicit\nfct_recode(var_name, \"new level\" = \"old level\"...\n\ngss_cat %&gt;%\n  mutate(partyid = fct_recode(partyid,\n    \"Republican, strong\" = \"Strong republican\", \n    \"Republican, weak\" = \"Not str republican\", \n    \"Independent, near rep\" = \"Ind, near rep\", \n    \"Independent, near dem\" = \"Ind, near dem\", \n    \"Democrat, weak\" = \"Not str democrat\", \n    \"Democrat, strong\" = \"Strong democrat\")) %&gt;% \n  count(partyid)"
+  },
+  {
+    "objectID": "slides/w9_factors.html#collapsing-levels-fct_recode",
+    "href": "slides/w9_factors.html#collapsing-levels-fct_recode",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Collapsing levels – fct_recode()",
+    "text": "Collapsing levels – fct_recode()\nfct_recode() can also be used to collapse levels easily\n\ngss_cat %&gt;%\n  mutate(partyid = fct_recode(partyid,\n    \"Republican, strong\"    = \"Strong republican\",\n    \"Republican, weak\"      = \"Not str republican\",\n    \"Independent, near rep\" = \"Ind,near rep\",\n    \"Independent, near dem\" = \"Ind,near dem\",\n    \"Democrat, weak\"        = \"Not str democrat\",\n    \"Democrat, strong\"      = \"Strong democrat\",\n    \"Other\"                 = \"No answer\", \n    \"Other\"                 = \"Don't know\", \n    \"Other\"                 = \"Other party\")) %&gt;% \n  count(partyid)\n\n\n\n# A tibble: 8 × 2\n  partyid                   n\n  &lt;fct&gt;                 &lt;int&gt;\n1 Other                   548\n2 Republican, strong     2314\n3 Republican, weak       3032\n4 Independent, near rep  1791\n5 Independent            4119\n6 Independent, near dem  2499\n7 Democrat, weak         3690\n8 Democrat, strong       3490"
+  },
+  {
+    "objectID": "slides/w9_factors.html#collapsing-levels-fct_collapse",
+    "href": "slides/w9_factors.html#collapsing-levels-fct_collapse",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Collapsing levels – fct_collapse()",
+    "text": "Collapsing levels – fct_collapse()\nfct_collapse() is one of the more useful functions in {forcats}\n\nCollapse all categories into Republican, Democrat, Independent, or Other\n\n\ngss_cat %&gt;%\n  mutate(partyid = fct_collapse(partyid, \n        Other = c(\"No answer\", \"Don't know\", \"Other party\"),\n        Rep = c(\"Strong republican\", \"Not str republican\"),\n        Ind = c(\"Ind,near rep\", \"Independent\", \"Ind,near dem\"),\n        Dem = c(\"Not str democrat\", \"Strong democrat\")\n  )) %&gt;%\n  count(partyid)\n\n# A tibble: 4 × 2\n  partyid     n\n  &lt;fct&gt;   &lt;int&gt;\n1 Other     548\n2 Rep      5346\n3 Ind      8409\n4 Dem      7180"
+  },
+  {
+    "objectID": "slides/w9_factors.html#collapsing-levels-fct_lump_",
+    "href": "slides/w9_factors.html#collapsing-levels-fct_lump_",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Collapsing levels – fct_lump_?()",
+    "text": "Collapsing levels – fct_lump_?()\nfct_lump_?() – “lump” a bunch of categories together\n\nfct_lump_n(factor_variable, n)\n\nlumps all levels except for the n most frequent (or least frequent if n &lt; 0) into “Other” level\n\n\n\n\nfct_lump_min(factor_variable, min)\n\nlumps levels that appear fewer than min times\n\n\n\n\n\nfct_lump_prop(factor_variable, prop)\n\nlumps levels that appear in fewer prop \\(\\times\\) n times"
+  },
+  {
+    "objectID": "slides/w9_factors.html#collapsing-levels-fct_lump_n",
+    "href": "slides/w9_factors.html#collapsing-levels-fct_lump_n",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Collapsing levels – fct_lump_n()",
+    "text": "Collapsing levels – fct_lump_n()\nCollapse to n = 9 religious groups: top 8 groups plus “Other”\n\ngss_cat %&gt;% \n  mutate(rel = fct_lump_n(relig, 9)) %&gt;% \n  count(rel)\n\n# A tibble: 9 × 2\n  rel                         n\n  &lt;fct&gt;                   &lt;int&gt;\n1 Inter-nondenominational   109\n2 Christian                 689\n3 Moslem/islam              104\n4 Buddhism                  147\n5 None                     3523\n6 Jewish                    388\n7 Catholic                 5124\n8 Protestant              10846\n9 Other                     553"
+  },
+  {
+    "objectID": "slides/w9_factors.html#collapsing-levels-fct_lump_min",
+    "href": "slides/w9_factors.html#collapsing-levels-fct_lump_min",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Collapsing levels – fct_lump_min()",
+    "text": "Collapsing levels – fct_lump_min()\nCollapse to all religious groups that appear less than min = 200 into “Other”\n\ngss_cat %&gt;% \n  mutate(rel = fct_lump_min(relig, min = 200)) %&gt;% \n  count(rel) \n\n# A tibble: 6 × 2\n  rel            n\n  &lt;fct&gt;      &lt;int&gt;\n1 Christian    689\n2 None        3523\n3 Jewish       388\n4 Catholic    5124\n5 Protestant 10846\n6 Other        913"
+  },
+  {
+    "objectID": "slides/w9_factors.html#collapsing-levels-fct_lump_prop",
+    "href": "slides/w9_factors.html#collapsing-levels-fct_lump_prop",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Collapsing levels – fct_lump_prop()",
+    "text": "Collapsing levels – fct_lump_prop()\nCollapse to all religious groups that appear less than prop = 10% into “Other”\n\ngss_cat %&gt;% \n  mutate(rel = fct_lump_prop(relig, prop = .10)) %&gt;% \n  count(rel) \n\n# A tibble: 4 × 2\n  rel            n\n  &lt;fct&gt;      &lt;int&gt;\n1 None        3523\n2 Catholic    5124\n3 Protestant 10846\n4 Other       1990"
+  },
+  {
+    "objectID": "slides/w9_factors.html#missing-levels",
+    "href": "slides/w9_factors.html#missing-levels",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Missing levels",
+    "text": "Missing levels\n\nlevels(gss_cat$race)\n\n[1] \"Other\"          \"Black\"          \"White\"          \"Not applicable\"\n\n\n\n\ngss_cat %&gt;% \n  count(race)\n\n# A tibble: 3 × 2\n  race      n\n  &lt;fct&gt; &lt;int&gt;\n1 Other  1959\n2 Black  3129\n3 White 16395\n\n\n\n\n\ntable(gss_cat$race)\n\n\n         Other          Black          White Not applicable \n          1959           3129          16395              0"
+  },
+  {
+    "objectID": "slides/w9_factors.html#missing-levels-1",
+    "href": "slides/w9_factors.html#missing-levels-1",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Missing levels",
+    "text": "Missing levels\n\nggplot(gss_cat, aes(race)) +\n    geom_bar()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#missing-levels-2",
+    "href": "slides/w9_factors.html#missing-levels-2",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Missing levels",
+    "text": "Missing levels\n\nggplot(gss_cat, aes(race)) +\n    geom_bar() +\n    scale_x_discrete(drop = FALSE)"
+  },
+  {
+    "objectID": "slides/w9_factors.html#review",
+    "href": "slides/w9_factors.html#review",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Review",
+    "text": "Review\n\nfct_inorder()\n\nBy the order in which they first appear\n\n\n\n\nfct_infreq()\n\nBy number of observations with each level (largest first)\n\n\n\n\n\nfct_relevel()\n\nChange level order by hand, or move any number of levels to any location\n\n\n\n\n\nfct_reorder()\n\nChange level order according to another variable\n\n\n\n\n\nfct_recode()\n\nRecode levels into new named levels\n\n\n\n\n\nfct_collapse()\n\nCollapse many levels into fewer levels\n\n\n\n\n\nfct_lump_?()\n\nRecode all levels into “Other”:\n\n\n\nexcept for the n most frequent - fct_lump_n()\nthat appear fewer than min times - fct_lump_min()\nthat appear less than prop% - fct_lump_prop()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#before-we-jump-in",
+    "href": "slides/w9_factors.html#before-we-jump-in",
+    "title": "Week 9: Factors & Pull Requests",
+    "section": "Before we jump in…",
+    "text": "Before we jump in…\n…let’s revisit git\nTalk with neighbor. What do these terms mean?\nTalk about them in the order you would encounter them in your workflow\n\nclone\npull\nstage\ncommit\npush\nrepo\nremote\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "slides/w9_factors.html#peer-review-of-data-prep-script",
+    "href": "slides/w9_factors.html#peer-review-of-data-prep-script",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Peer Review of Data Prep Script",
+    "text": "Peer Review of Data Prep Script\nExpectations\nFeedback:\n\nNote at least three areas of strength\nNote at least one thing you learned from reviewing their script\nNote at least one and no more than three areas for improvement\n\n\nMaking your code publicly available can feel daunting\n\nThe purpose of this portion of the final project is to help us all learn from each other\nWe are all learning\n\nBe constructive in your feedback\nBe kind\n\nUnder no circumstances will negative comments be tolerated\n\nAny comments that could be perceived as negative, and outside the scope of the code, will result in an immediate score of zero"
+  },
+  {
+    "objectID": "slides/w9_factors.html#peer-review-github-process",
+    "href": "slides/w9_factors.html#peer-review-github-process",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Peer Review GitHub Process",
+    "text": "Peer Review GitHub Process\n\nLocate GitHub repo of assigned peer to review\nFork the repo\nClone the repo\nProvide script feedback\n\nedit the .qmd file directly\nedit code\nprovide comments in code and/or text (Ctrl/Command + Shift + C)\ncommit & push\n\nCreate Pull Request (PR)\n\n\nWrite brief summary of the PR that includes\n\n&gt;= 3 strengths\n&gt;= 1 thing you learned\n1 to 3 three areas of improvement"
+  },
+  {
+    "objectID": "slides/w9_factors.html#locate-github-repo-of-assigned-peer-to-review",
+    "href": "slides/w9_factors.html#locate-github-repo-of-assigned-peer-to-review",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "1. Locate GitHub repo of assigned peer to review",
+    "text": "1. Locate GitHub repo of assigned peer to review\n\n\n\n\n\nStudent\nRepo to Review\nFile to Review\n\n\n\n\nAudrey Sileci\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nAvery Turner\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nTracy Zehner\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nXiaoqi Ma\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nDanielle Jones\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nKatie Perez\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nAlejandra Pedraza\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nJamie Yang\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nShannan Stoll\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nAlexus Rock\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nBen Pfingston\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nLeah Peterson\nhttps://github.com/ddjones-slp/651_final_project.git\nFinal Project DJ.qmd\n\n\nElyse Calhoun\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nEunji Kong\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nFrances Pinkham\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nYitong Jiang\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nFaria Shaikh\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nNafisul Huq\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nBen Bunquin\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nAndrew Castillo\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nAnia Grudzien\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nKayla McComb\nhttps://github.com/ddjones-slp/651_final_project.git\nFinal Project DJ.qmd\n\n\n\n\n\n\n\n\npeer_review %&gt;% \n  select(Student, group = samp) %&gt;% \n  left_join(\n    roster %&gt;% \n      select(group, git_page, file) %&gt;% \n      distinct()\n  ) %&gt;% \n  select(Student, `Repo to Review` = git_page, `File to Review` = file) %&gt;% \n  DT::datatable()"
+  },
+  {
+    "objectID": "slides/w9_factors.html#fork-the-repo",
+    "href": "slides/w9_factors.html#fork-the-repo",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "2. Fork the repo",
+    "text": "2. Fork the repo\n\nNavigate to the (host) GitHub repo\nClick Fork in the upper right corner\nWhere to fork? – your GitHub account"
+  },
+  {
+    "objectID": "slides/w9_factors.html#clone-the-repo",
+    "href": "slides/w9_factors.html#clone-the-repo",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "3. Clone the repo",
+    "text": "3. Clone the repo\n\nClone the repo\n\n\ncopy the URL"
+  },
+  {
+    "objectID": "slides/w9_factors.html#provide-script-feedback",
+    "href": "slides/w9_factors.html#provide-script-feedback",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "4. Provide script feedback",
+    "text": "4. Provide script feedback\n\nOpen RProj in your local (i.e., on your machine)\nFind the .Rmd document you will be reviewing\n\nit should be an.q md document\n\nMake your edits/comments\n\nedit code as you like\ninclude a comment for each edit!\nProvide comments in code and/or text (Ctrl/Command + Shift + C)\n\nCommit as you go (if you are working on this across sessions/days)\n.green[Push] only when you are finished"
+  },
+  {
+    "objectID": "slides/w9_factors.html#create-pull-request-pr",
+    "href": "slides/w9_factors.html#create-pull-request-pr",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "5. Create Pull Request (PR)",
+    "text": "5. Create Pull Request (PR)\n\nNavigate back to the (host) GitHub repo\n\n\n\nClick “Pull requests”\n\n\n\n\n\nClick “New pull request”"
+  },
+  {
+    "objectID": "slides/w9_factors.html#create-pull-request-pr-1",
+    "href": "slides/w9_factors.html#create-pull-request-pr-1",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "5. Create Pull Request (PR)",
+    "text": "5. Create Pull Request (PR)\n\nClick “Compare across forks”\n\n\n\nUse drop-downs so that:\n\nleft = host repo\nright = your repo\n\n . . .\nYou will be able view the changes you made to the .qmd document"
+  },
+  {
+    "objectID": "slides/w9_factors.html#create-pull-request-pr-2",
+    "href": "slides/w9_factors.html#create-pull-request-pr-2",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "5. Create Pull Request (PR)",
+    "text": "5. Create Pull Request (PR)\n\nClick “Create pull request”"
+  },
+  {
+    "objectID": "slides/w9_factors.html#create-pull-request-pr-3",
+    "href": "slides/w9_factors.html#create-pull-request-pr-3",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "5. Create Pull Request (PR)",
+    "text": "5. Create Pull Request (PR)\nWrite a brief summary list of the PR that includes\n\n&gt;= 3 strengths\n&gt;= 1 thing you learned\n1 to 3 three areas of improvement\nUse markdown formatting, headers or list!"
+  },
+  {
+    "objectID": "slides/w9_factors.html#create-pull-request-pr-4",
+    "href": "slides/w9_factors.html#create-pull-request-pr-4",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "5. Create Pull Request (PR)",
+    "text": "5. Create Pull Request (PR)\n\nClick “Create pull request” when you’re done"
+  },
+  {
+    "objectID": "slides/w9_factors.html#reviewing-your-prs",
+    "href": "slides/w9_factors.html#reviewing-your-prs",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Reviewing your PRs",
+    "text": "Reviewing your PRs\nYou will get an email from GitHub\n\nClick on first link, for PR\nClick “Commits” tab\nClick on “File changes” to see changes\nCopy/paste all desired changes\nDon’t close “Close PR” just yet; I want to review"
+  },
+  {
+    "objectID": "slides/w9_factors.html#before-next-class",
+    "href": "slides/w9_factors.html#before-next-class",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Before next class",
+    "text": "Before next class\n\nFinal Project\n\nFinal Project: Peer Review of Script\nFinal Project: Presentations - email me your content before class\n\nHomework\n\nHomework 10"
+  },
+  {
+    "objectID": "slides/w9_factors.html#group",
+    "href": "slides/w9_factors.html#group",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "group =",
+    "text": "group =\n\nYou saw my code where geom_line(group = 1)\nThe group argument expects a column from your data not a number\nuse the group aesthetic to map a different geom for each level in a factor\n\nsimilar to color and fill but without the physicla characteristic"
+  },
+  {
+    "objectID": "slides/w9_factors.html#lets-revisit-git",
+    "href": "slides/w9_factors.html#lets-revisit-git",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "Let’s revisit git",
+    "text": "Let’s revisit git\nTalk with neighbor. What do these terms mean?\nTalk about them in the order you would encounter them in your workflow\n\nclone\npull\nstage\ncommit\npush\nrepo\nremote\n\n\n\n\n−+\n03:00"
+  },
+  {
+    "objectID": "slides/w9_factors.html#clone-the-repo-1",
+    "href": "slides/w9_factors.html#clone-the-repo-1",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "3. Clone the repo",
+    "text": "3. Clone the repo\n\nOpen GitKraken\n\n\nClone with URL\nWhere will it live on your local machine?\n\nit’s own folder, with no other RProjects"
+  },
+  {
+    "objectID": "slides/w9_factors.html#create-pull-request-pr-5",
+    "href": "slides/w9_factors.html#create-pull-request-pr-5",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "5. Create Pull Request (PR)",
+    "text": "5. Create Pull Request (PR)\nRecap\n\nNavigate back to the (host) GitHub repo\nClick “Pull requests”\nClick “New pull request”\nClick “Compare across forks”\n\n\nUse drop-downs so that:\n\nHost .green[repo] is on the left, your .green[repo] is on the right\n\nView changes\n\n\nClick “Create pull request”\n\n\nWrite brief summary list of the .green[PR] that includes\n\n&gt;= 3 strengths\n&gt;= 1 thing you learned\n1 to 3 three areas of improvement\nUse markdown formatting, headers, or list!\n\n\n\nClick “Create pull request”"
+  },
+  {
+    "objectID": "slides/w8_tidydata.html",
+    "href": "slides/w8_tidydata.html",
+    "title": "Week 8: Tidy Data",
+    "section": "",
+    "text": "Week 8\n\n\n{tidylog}\n\nProvides feedback about {dplyr} and {tidyr} operations\n\nview link\n\n\n\n\n\n\n\n\nIntroduce the concept of tidy data\nTidy a simple dataset together with {tidyr}\nSummarize and transform tidy data with {dplyr}\n\nLearning Objectives\n\nUnderstand that the concept of tidy data is useful\nUnderstand and be able to apply the pivot_longer() and pivot_wider() functions\n\n\n\n\n\n\n\nCredit Allison Horst\n\n\n\n\nGraphics\n\n{ggplot2}\n\nData manipulations\n\n{dplyr}\n{tidyr}\n\nExpanding area of specialized topics\n\n{lubridate}\n{glue}\n{tidymodels}\n\nMany more…\n\n\n\n\n\nGraphics\n\n{ggplot2}\n\nData manipulations\n\n{dplyr}\n{tidyr}\n\nExpanding area of specialized topics\n\n{lubridate}\n{glue}\n{tidymodels}\n\nMany more…"
+  },
+  {
+    "objectID": "slides/w8_tidydata.html#footnotes",
+    "href": "slides/w8_tidydata.html#footnotes",
+    "title": "Week 8: Tidy Data",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nModern Data Science with R↩︎"
+  },
+  {
+    "objectID": "homeworks/hw8.html",
+    "href": "homeworks/hw8.html",
+    "title": "Homework 8",
+    "section": "",
+    "text": "Getting Started\nThe data for this homework comes from the Open University Learning Analytics Dataset (OULAD). It contains data about courses, students, and their interactions with Virtual Learning Environment (VLE) for seven selected courses (called modules). Presentations of courses start in February and October - they are marked by “B” and “J” respectively. The dataset (tables) are connected using unique identifiers. All datasets are stored in the .csv format. Please check out the OULAD site to learn more about the data and understand the keys.\n\n1. Start a new RStudio Project\n\n1.1. Be sure to add a folder for “data” and “scripts”.\n\n\n\n2. Data\n\n2.1. Download the studentInfo.csv, studentAssessment.csv, and assessments.csv data from the course website.\n\n\n2.2. Place the files in the “data” folder in your project.\n\n\n2.3. Read in the data.\n\n\n\n3. Join\n\n3.1. Join the studentassessment data and the assessments data, keeping all rows in studentassessment. Specify to join by id_assessment and date. Note that the date column has a different name in studentassessment (date_submitted). Name the joined data assess_full. Filter assess_full to remove NA values in the code_module column.\n\n\n3.2. Join the studentinfo data with the newly created assess_full data, keeping all rows in the assess_full data. Name the joined data student.\n\n\n3.3. What key(s) were used in the join?\n\n\n3.4. How many rows are in the newly created student data? If that is different than the number of rows in the studentInfo data, why?\n\n\n3.5. What new variables were added with this join?\n\n\n\n4. Wrangle\n\n4.1. From the student data, create a new dataset named student_tma that consists only of TMA (Tutor Marked Assessment) assessments.\n\n\n4.2. Create a new dataset named student_tma_max. First, remove NA values in the score column. Then keep only the maximum (max()) TMA score for each student (note: Use mutate() and filter() so that all columns are retained)\n\n\n4.3. How many rows are in this filtered data? What does each row represent?\n\n\n4.4. From student_tma_max, reate a dataset named agg_tma_max that contains the mean TMA score by highest_education, disability, and final_result.\n\n\n\n5. Plot\n\n5.1. Reproduce the following plot, using any theme and colors you want except for the defaults."
   }
 ]

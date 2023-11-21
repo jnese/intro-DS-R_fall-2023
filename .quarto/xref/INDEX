@@ -122,5 +122,11 @@
   },
   "slides/w8_tidydata.qmd": {
     "w8_tidydata.html": "38028533"
+  },
+  "slides/w9_factors.qmd": {
+    "w9_factors.html": "3997b67f"
+  },
+  "homeworks/hw8.qmd": {
+    "hw8.html": "a398ad56"
   }
 }

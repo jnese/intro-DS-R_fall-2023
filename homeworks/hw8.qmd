@@ -46,7 +46,7 @@ assessments <- read_csv(here("data", "assessments.csv"))
 
 ### 3. Join
 
-#### 3.1. Join the *studentassessment* data and the *assessments* data. Specify to join by `id_assessment` and `date`. *Note* that the `date` column has a different name in *studentassessment* (`date_submitted`). Name the joined data *assess_full*. Filter *assess_full* to remove `NA` values in the `code_module` column. 
+#### 3.1. Join the *studentassessment* data and the *assessments* data, keeping all rows in *studentassessment*. Specify to join by `id_assessment` and `date`. *Note* that the `date` column has a different name in *studentassessment* (`date_submitted`). Name the joined data *assess_full*. Filter *assess_full* to remove `NA` values in the `code_module` column. 
 
 ```{r}
 #| label: join-1
@@ -56,7 +56,7 @@ assess_full <- studentassessment %>%
   filter(!is.na(code_module))
 ```
 
-#### 3.2. Join the *studentinfo* data with the newly created *assess_full* data. Name the joined data *student*.
+#### 3.2. Join the *studentinfo* data with the newly created *assess_full* data, keeping all rows in the *assess_full* data. Name the joined data *student*.
 
 ```{r}
 #| label: join-2
