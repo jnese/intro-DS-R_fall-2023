@@ -773,10 +773,13 @@ peer_review %>%
   ) %>% 
   select(Student, `Repo to Review` = git_page, `File to Review` = file) %>% 
   kable() %>% 
-  kable_styling(font_size = 10)
+  kable_styling(font_size = 12)
 ```
 
+## 
+
 ```{r}
+#| echo: false
 peer_review %>% 
   select(Student, group = samp) %>% 
   left_join(
@@ -795,24 +798,23 @@ peer_review %>%
 2. Click Fork in the upper right corner
 3. Where to fork? – **your GitHub account**
 
-
-![](./images/gh_fork.pnk)
+![](./images/gh_fork.png)
 
 ## 3. Clone the repo 
 
-(1) Clone the repo
+(@) Clone the repo
 
-* copy the URL
+copy the URL
 
 ![](./images/gh_clone.png)
 
 ## 3. Clone the repo 
 
-(2) Open GitKraken
+(@) Open GitKraken
 
-* *Clone with URL*
-* Where will it live on your local machine?
-    + it's own folder, with no other RProjects
+*Clone with URL*
+
+Where will it live on your local machine? It's own folder, with no other RProjects
 
 ![](./images/gh_clone2.png)  
 
@@ -826,7 +828,7 @@ peer_review %>%
     + include a comment for each edit!
     + Provide comments in code **and/or** text (`Ctrl/Command + Shift + C`)
 * Commit as you go (if you are working on this across sessions/days)
-* **.green[Push] only when you are finished**
+* [Push]{style='color:#009E73'} only when you are finished**
 
 ## 5. Create Pull Request (PR) {.smaller}
 
@@ -889,22 +891,23 @@ Write a brief summary list of the PR that includes
 
 Recap
 
-(1) Navigate back to the (host) GitHub repo
-(2) Click *"Pull requests"*
-(3) Click *"New pull request"*
-(4) Click *"Compare across forks"*
+(@) Navigate back to the (host) GitHub repo
+(@) Click *"Pull requests"*
+(@) Click *"New pull request"*
+(@) Click *"Compare across forks"*
 
 * Use drop-downs so that:
-    + Host .green[repo] is on the left, your .green[repo] is on the right
+    + Host [repo]{style='color:#009E73'} is on the left, your [repo]{style='color:#009E73'} is on the right
 * View changes
 
-(5) Click *"Create pull request"*
-* Write brief summary list of the .green[PR] that includes
+(@) Click *"Create pull request"*
+* Write brief summary list of the [PR]{style='color:#009E73'} that includes
     + \>= 3 strengths
     + \>= 1 thing you learned
     + 1 to 3 three areas of improvement
     + **Use markdown formatting, headers, or list!**
-(6) Click *"Create pull request"*
+
+(@) Click *"Create pull request"*
 
 ## Reviewing your PRs
 

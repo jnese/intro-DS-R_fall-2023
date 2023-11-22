@@ -4743,7 +4743,7 @@
     "href": "slides/w9_factors.html#locate-github-repo-of-assigned-peer-to-review",
     "title": "Week 9: Factors &Pull Requests",
     "section": "1. Locate GitHub repo of assigned peer to review",
-    "text": "1. Locate GitHub repo of assigned peer to review\n\n\n\n\n\nStudent\nRepo to Review\nFile to Review\n\n\n\n\nAudrey Sileci\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nAvery Turner\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nTracy Zehner\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nXiaoqi Ma\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nDanielle Jones\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nKatie Perez\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nAlejandra Pedraza\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nJamie Yang\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nShannan Stoll\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nAlexus Rock\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nBen Pfingston\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nLeah Peterson\nhttps://github.com/ddjones-slp/651_final_project.git\nFinal Project DJ.qmd\n\n\nElyse Calhoun\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nEunji Kong\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nFrances Pinkham\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nYitong Jiang\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nFaria Shaikh\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nNafisul Huq\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nBen Bunquin\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nAndrew Castillo\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nAnia Grudzien\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nKayla McComb\nhttps://github.com/ddjones-slp/651_final_project.git\nFinal Project DJ.qmd\n\n\n\n\n\n\n\n\npeer_review %&gt;% \n  select(Student, group = samp) %&gt;% \n  left_join(\n    roster %&gt;% \n      select(group, git_page, file) %&gt;% \n      distinct()\n  ) %&gt;% \n  select(Student, `Repo to Review` = git_page, `File to Review` = file) %&gt;% \n  DT::datatable()"
+    "text": "1. Locate GitHub repo of assigned peer to review\n\n\n\n\n\nStudent\nRepo to Review\nFile to Review\n\n\n\n\nAudrey Sileci\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nAvery Turner\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nTracy Zehner\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nXiaoqi Ma\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nDanielle Jones\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nKatie Perez\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nAlejandra Pedraza\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nJamie Yang\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nShannan Stoll\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nAlexus Rock\nhttps://github.com/jabunquin/edld651_finalproject/tree/main/scripts\nfinalproject.qmd\n\n\nBen Pfingston\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nLeah Peterson\nhttps://github.com/ddjones-slp/final_project_651.git\nFinal Project DJ Clean Data.qmd\n\n\nElyse Calhoun\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nEunji Kong\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nFrances Pinkham\nhttps://github.com/pfingston/data_final.git\nmanuscript.qmd\n\n\nYitong Jiang\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nFaria Shaikh\nhttps://github.com/andrewcastil/finalproject\nFinal_project.qmd\n\n\nNafisul Huq\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nBen Bunquin\nhttps://github.com/apedraza1234/socialfear.git\nmanuscript.qmd\n\n\nAndrew Castillo\nhttps://github.com/francesyess/EDLD651_final_v2\nedld651_final_v2.qmd\n\n\nAnia Grudzien\nhttps://github.com/tracy-zehner/SubstanceAI.git\nSubstanceAI.qmd\n\n\nKayla McComb\nhttps://github.com/ddjones-slp/final_project_651.git\nFinal Project DJ Clean Data.qmd"
   },
   {
     "objectID": "slides/w9_factors.html#fork-the-repo",
@@ -4757,14 +4757,14 @@
     "href": "slides/w9_factors.html#clone-the-repo",
     "title": "Week 9: Factors &Pull Requests",
     "section": "3. Clone the repo",
-    "text": "3. Clone the repo\n\nClone the repo\n\n\ncopy the URL"
+    "text": "3. Clone the repo\n\nClone the repo\n\ncopy the URL"
   },
   {
     "objectID": "slides/w9_factors.html#provide-script-feedback",
     "href": "slides/w9_factors.html#provide-script-feedback",
     "title": "Week 9: Factors &Pull Requests",
     "section": "4. Provide script feedback",
-    "text": "4. Provide script feedback\n\nOpen RProj in your local (i.e., on your machine)\nFind the .Rmd document you will be reviewing\n\nit should be an.q md document\n\nMake your edits/comments\n\nedit code as you like\ninclude a comment for each edit!\nProvide comments in code and/or text (Ctrl/Command + Shift + C)\n\nCommit as you go (if you are working on this across sessions/days)\n.green[Push] only when you are finished"
+    "text": "4. Provide script feedback\n\nOpen RProj in your local (i.e., on your machine)\nFind the .Rmd document you will be reviewing\n\nit should be an.q md document\n\nMake your edits/comments\n\nedit code as you like\ninclude a comment for each edit!\nProvide comments in code and/or text (Ctrl/Command + Shift + C)\n\nCommit as you go (if you are working on this across sessions/days)\nPush only when you are finished**"
   },
   {
     "objectID": "slides/w9_factors.html#create-pull-request-pr",
@@ -4834,14 +4834,14 @@
     "href": "slides/w9_factors.html#clone-the-repo-1",
     "title": "Week 9: Factors &Pull Requests",
     "section": "3. Clone the repo",
-    "text": "3. Clone the repo\n\nOpen GitKraken\n\n\nClone with URL\nWhere will it live on your local machine?\n\nit’s own folder, with no other RProjects"
+    "text": "3. Clone the repo\n\nOpen GitKraken\n\nClone with URL\nWhere will it live on your local machine? It’s own folder, with no other RProjects"
   },
   {
     "objectID": "slides/w9_factors.html#create-pull-request-pr-5",
     "href": "slides/w9_factors.html#create-pull-request-pr-5",
     "title": "Week 9: Factors &Pull Requests",
     "section": "5. Create Pull Request (PR)",
-    "text": "5. Create Pull Request (PR)\nRecap\n\nNavigate back to the (host) GitHub repo\nClick “Pull requests”\nClick “New pull request”\nClick “Compare across forks”\n\n\nUse drop-downs so that:\n\nHost .green[repo] is on the left, your .green[repo] is on the right\n\nView changes\n\n\nClick “Create pull request”\n\n\nWrite brief summary list of the .green[PR] that includes\n\n&gt;= 3 strengths\n&gt;= 1 thing you learned\n1 to 3 three areas of improvement\nUse markdown formatting, headers, or list!\n\n\n\nClick “Create pull request”"
+    "text": "5. Create Pull Request (PR)\nRecap\n\nNavigate back to the (host) GitHub repo\nClick “Pull requests”\nClick “New pull request”\nClick “Compare across forks”\n\n\nUse drop-downs so that:\n\nHost repo is on the left, your repo is on the right\n\nView changes\n\n\nClick “Create pull request”\n\n\nWrite brief summary list of the PR that includes\n\n&gt;= 3 strengths\n&gt;= 1 thing you learned\n1 to 3 three areas of improvement\nUse markdown formatting, headers, or list!\n\n\n\nClick “Create pull request”"
   },
   {
     "objectID": "slides/w8_tidydata.html",
@@ -4863,5 +4863,12 @@
     "title": "Homework 8",
     "section": "",
     "text": "Getting Started\nThe data for this homework comes from the Open University Learning Analytics Dataset (OULAD). It contains data about courses, students, and their interactions with Virtual Learning Environment (VLE) for seven selected courses (called modules). Presentations of courses start in February and October - they are marked by “B” and “J” respectively. The dataset (tables) are connected using unique identifiers. All datasets are stored in the .csv format. Please check out the OULAD site to learn more about the data and understand the keys.\n\n1. Start a new RStudio Project\n\n1.1. Be sure to add a folder for “data” and “scripts”.\n\n\n\n2. Data\n\n2.1. Download the studentInfo.csv, studentAssessment.csv, and assessments.csv data from the course website.\n\n\n2.2. Place the files in the “data” folder in your project.\n\n\n2.3. Read in the data.\n\n\n\n3. Join\n\n3.1. Join the studentassessment data and the assessments data, keeping all rows in studentassessment. Specify to join by id_assessment and date. Note that the date column has a different name in studentassessment (date_submitted). Name the joined data assess_full. Filter assess_full to remove NA values in the code_module column.\n\n\n3.2. Join the studentinfo data with the newly created assess_full data, keeping all rows in the assess_full data. Name the joined data student.\n\n\n3.3. What key(s) were used in the join?\n\n\n3.4. How many rows are in the newly created student data? If that is different than the number of rows in the studentInfo data, why?\n\n\n3.5. What new variables were added with this join?\n\n\n\n4. Wrangle\n\n4.1. From the student data, create a new dataset named student_tma that consists only of TMA (Tutor Marked Assessment) assessments.\n\n\n4.2. Create a new dataset named student_tma_max. First, remove NA values in the score column. Then keep only the maximum (max()) TMA score for each student (note: Use mutate() and filter() so that all columns are retained)\n\n\n4.3. How many rows are in this filtered data? What does each row represent?\n\n\n4.4. From student_tma_max, reate a dataset named agg_tma_max that contains the mean TMA score by highest_education, disability, and final_result.\n\n\n\n5. Plot\n\n5.1. Reproduce the following plot, using any theme and colors you want except for the defaults."
+  },
+  {
+    "objectID": "slides/w9_factors.html#section-10",
+    "href": "slides/w9_factors.html#section-10",
+    "title": "Week 9: Factors &Pull Requests",
+    "section": "",
+    "text": "peer_review %&gt;% \n  select(Student, group = samp) %&gt;% \n  left_join(\n    roster %&gt;% \n      select(group, git_page, file) %&gt;% \n      distinct()\n  ) %&gt;% \n  select(Student, `Repo to Review` = git_page, `File to Review` = file) %&gt;% \n  DT::datatable()"
   }
 ]
